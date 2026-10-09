@@ -1,0 +1,19 @@
+﻿button.mba-pcal-performance-widget-iframe-cont {
+    width: 100%;
+    border: none;
+    background: none;
+}
+
+button.mba-pcal-performance-widget-iframe-cont:hover {
+    box-shadow: 3px 3px 8px 3px #76a6d2;
+}
+
+
+iframe.mba-pcal-performance-widget-iframe {
+    object-position: 50% 50%;
+    object-fit: scale-down;
+    margin:0 auto;
+    width:95%;
+    overflow:hidden;
+    pointer-events:none;
+}

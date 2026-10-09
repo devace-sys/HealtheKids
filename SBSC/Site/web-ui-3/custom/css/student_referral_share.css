@@ -1,0 +1,281 @@
+﻿.card-container {
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ribbon-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    width: 170px;
+    height: 160px;
+    z-index: 10;
+}
+
+.checkmark {
+    position: absolute;
+    width: 269px;
+    padding: 1.2rem 0;
+    text-align: center;
+    font-weight: bold;
+    transform: rotate(45deg);
+    transform-origin: top right;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    top: 130px;
+    right: -51px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.routine .checkmark {
+    background: lightgreen;
+    color: #333;
+}
+
+.urgent .checkmark {
+    background: orange;
+    color: #333;
+}
+
+.crisis .checkmark {
+    background: red;
+    color: #fff;
+}
+
+.divider-left {
+    border-left: 1px solid #ccc;
+}
+
+.prac-pat-ref-tabs {
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#prac-pat-ref-pdf-content {
+    max-width: 1600px;
+    height: auto;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.prac-pat-ref-info-header {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+    .prac-pat-ref-info-header h1 {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .prac-pat-ref-info-header p {
+        font-size: 24px;
+        opacity: 0.9;
+    }
+
+.prac-pat-ref-patient-info {
+    background: #f8fafc;
+    padding: 25px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.prac-pat-ref-patient-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.prac-pat-ref-patient-details h3 {
+    font-size: 20px;
+    color: #1a202c;
+    margin-bottom: 5px;
+}
+
+.prac-pat-ref-patient-meta {
+    display: flex;
+    gap: 20px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.prac-pat-ref-nav-tabs {
+    background: white;
+    padding: 0 25px;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    gap: 5px;
+}
+
+.tab-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px;
+    display: flex;
+    gap: 20px;
+    background: transparent;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+    .tab-links li {
+        margin: 0;
+    }
+
+        .tab-links li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: #555;
+            background: #f2f2f2;
+            border: 1px solid #ddd;
+            border-bottom: none;
+            border-radius: 10px 10px 0 0;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+            .tab-links li a:hover,
+            .tab-links li.active a {
+                background: #2196F3;
+                color: #fff;
+            }
+
+.prac-pat-ref-tab-content {
+    padding: 15px 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #64748b;
+    border-bottom: 3px solid transparent;
+}
+
+.tab {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+    .tab.active {
+        display: block;
+    }
+
+form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+    input[type="text"]:focus {
+        border-color: #1E90FF;
+        outline: none;
+    }
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+    button:hover {
+        transform: scale(1.02);
+    }
+
+    button:active {
+        transform: scale(0.98);
+    }
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.pdf-card {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    margin-bottom: 16px;
+    transition: transform .2s;
+}
+
+    .pdf-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .pdf-card i {
+        font-size: 48px;
+        color: #5bc0de;
+        margin-bottom: 8px;
+    }
+
+    .pdf-card h5 {
+        margin: 8px 0;
+        font-weight: 600;
+    }

@@ -1,0 +1,158 @@
+h1.upload-header-intro-message {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.3rem;
+	padding: 0;
+	margin: 0;
+}
+
+div.upload-step {
+  padding:0;
+  margin:0;
+  margin-top:1rem;
+  margin-bottom:1rem;
+  width:95%;
+}
+
+h2.upload-step-header {
+	text-align: center;
+	font-weight: bold;
+	font-size:1.2rem;
+	margin:0;
+	padding:0;
+    margin-bottom:1rem;
+}
+
+h3.upload-step-instructions-header {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.1rem;
+	margin: 0;
+	padding: 0;
+	margin-bottom:1rem;
+}
+
+ul.upload-step-instructions-list {
+	font-size: 1rem;
+	padding: 0;
+	padding-left: 1rem;
+	list-style:initial;
+	margin: 0;
+}
+
+ul.upload-step-instructions-list li {
+  font-size: 1rem;
+}
+ul.upload-step-instructions-list li strong {
+  font-weight:bold;
+}
+
+#dropzone {
+	border: .5rem dashed #999;
+	cursor: pointer;
+	color: #333;
+	background: #fafafa;
+	min-height: fit-content;
+	padding:0;
+	padding: 2rem 3rem;		
+}
+
+#dropzone:hover,
+#dropzone.dragover {
+	background: #eef5ff;
+	border-color: #4a78ff;
+}
+
+#fileRowsTable {
+	font-size: .90rem;
+}
+
+button.remove-files
+, button.remove-file
+, button.copy-down {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: none;
+	width: 1rem;
+	height: 1rem;
+	display: block;
+}
+  i.remove-files
+, i.remove-file
+, i-copy-down {
+	margin:0;
+	padding:0;
+	border:none;
+	font-size:.90rem;	
+	display:block;
+}
+
+  i.remove-files
+, i.remove-file {
+	color: red;
+}
+
+i.copy-down {
+	color: #76a6d2
+}
+
+  i.remove-files:hover
+, i.remove-file:hover 
+, i.copy-down:hover {
+  font-size:1rem;
+}
+
+div.file-row-label {
+	font-size: .90em;
+	min-width: 8rem;
+	display: inline-block;
+	line-height: .90rem;
+	font-weight:bold;
+}
+
+div.file-name {
+	font-size: .90rem;
+	min-width: 8rem;
+	display: inline-block;
+	line-height: .90rem;
+	background-color: transparent;
+}
+
+select.practice-type {
+	font-size: .90rem;
+	width: 8rem;
+	line-height: .90rem;
+	/*background-color:transparent;    */
+	background-color:#fff;
+	color: #000;
+}
+
+input.oldest-dos {
+	font-size: .90rem;
+	width: 8rem;
+	line-height: .90rem;
+	/*background-color: transparent;*/
+	background-color: #fff;
+	color: #000;
+}
+
+textarea.file-desc {
+	font-size: .90rem;
+	line-height: .90rem;
+	width: 8rem;
+	/*background-color: transparent;*/
+	background-color: #fff;
+	color: #000;
+}
+
+.row-error {
+	border-color: #dc3545 !important;
+	background: #fff5f5 !important;
+}
+
+span.upload-status {
+	font-size:.90rem;
+	font-weight:bold;
+    text-align:right;
+}

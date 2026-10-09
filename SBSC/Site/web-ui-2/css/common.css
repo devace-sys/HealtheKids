@@ -1,0 +1,15 @@
+body {
+  background: url('images/background-2.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom: 70px; /* Must be same height as footer */
+}
+
+img.logo-nav {
+  display:inline-block;
+  margin:1em;
+}
+
+

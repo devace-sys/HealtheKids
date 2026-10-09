@@ -1,0 +1,10 @@
+body,div             {font-family:'Times New Roman', serif;}
+body                 {background-color:#fff;color:#000;font-size:12pt;}
+div.print_title      {display:block;text-align:center;}
+h1                   {display:block;font-size:24pt;}
+h2                   {display:block;font-size:18pt;border-bottom:2pt solid #000;page-break-before:auto;}
+div.content_contain  {display:block;}
+div.options_contain  {display:none;}
+p.title_contact      {font-weight:100;font-size:18pt;page-break-after:always;}
+
+ 

@@ -1,0 +1,340 @@
+/*https://www.florin-pop.com/blog/2019/03/css-pulse-effect/ */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 #ff8d0000;
+    }
+
+    50% {
+        box-shadow: 0 0 0 10px #ff8d008c;
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px #ff8d0000;
+    }
+}
+
+.spedmon-animation-pulsate {
+    animation: pulse 2s infinite;
+    -webkit-animation: pulse 2s infinite;
+    border-radius: 10px;
+}
+
+#tblCarePlanRecJSON {
+    border-collapse: collapse;
+    box-shadow: 2px 2px 8px 4px #bababa;
+    border-radius: 10px;
+}
+
+#tblCarePlanRecJSON > thead > tr > th {
+    font-weight: bold;
+    background-color: #dddddd;
+    color: #000;
+    padding: .25em;
+    min-width: 30px;
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+#tblCarePlanRecJSON > tbody > tr > td {
+    color: #000;
+    padding: .25em;
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+#tblCarePlanRecJSON > tbody > tr > td {
+    max-width: 9em;
+}
+
+#tblCarePlanRecJSON > tbody > tr > td > select
+{
+    max-width: 100%;
+    min-width: 9em;
+}
+
+#tblCarePlanRecJSON > tbody > tr > td > input[type='date'] {
+    min-width: 7em;
+}
+
+table select {
+    min-width: 7em;
+    max-width: 100%;
+    width: 75%;
+    height: 29px;
+}
+
+i {
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+i:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+i.fa-trash-alt,
+i.fa-trash,
+i.fa-times {
+    color: #995D55;
+}
+
+i.fa-trash-alt:hover,
+i.fa-trash:hover,
+i.fa-times:hover {
+    color: #561B1F;
+}
+
+i.fa-save:hover {
+    color: #636F87; 
+}
+
+i.fa-print {
+    color: #636F87;
+}
+
+i.fa-print:hover {
+    color: #193B53; 
+}
+
+  i.fa-signature
+, i.fa-pencil-alt {
+    color: #BEB07B;
+}
+
+  i.fa-signature:hover
+, i.fa-pencil-alt:hover {
+    color: #D28F79; 
+}
+
+i.fa-check {
+    color: #3c955e;
+}
+
+i.fa-check:hover {
+    color: #7C8981; 
+}
+
+i.fa-user-md {
+    color: #94b4c8;
+}
+
+i.fa-user-md:hover {
+    color: #748A9E; 
+}
+
+i.fa-copy,
+i.fa-plus {
+    color: #76a6d2;
+}
+
+i.fa-copy:hover,
+i.fa-plus:hover {
+    color: #8C9CAA; 
+}
+
+i.fa-edit {
+    color: #887bb0;
+}
+
+i.fa-arrow-down {
+    transform: translate(-12px, -5px);
+}
+
+.fa-stack:hover i.fa-arrow-down, .fa-stack:hover i.fa-file-pdf {
+    color: #995D55 !important;
+}
+
+.plus-icon {
+    font-size: 1.5em;
+    margin: 0.5em 2em;
+}
+
+.inactive-input {
+    background-color: grey;
+    pointer-events: none;
+}
+
+/* 'view service details' button */
+.tblDetsDialogBut {
+    width: 100%;
+    min-width: 7em;
+    max-width: 100%;
+    background: none;
+    border: none;
+}
+
+.tblDetsDialogBut:focus {
+    outline: none;
+}
+
+.tblDetsDialogBut> span {
+    padding: 0px !important;
+}
+
+#svcDetInstructions {
+    padding: 1em;
+    line-height: 2em;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 1em;
+    text-align: center;
+}
+
+.boldText {
+    text-decoration: underline !important;
+    font-weight: bold !important;
+}
+
+#svcDetFlagsCont {
+    margin: 0 auto;
+}
+
+.svcDetFlagLbl {
+    display: inline-block !important;
+    width: 100% !important;
+    text-align: left !important;
+    font-weight: bold !important;
+}
+
+#orpDocCont {
+    text-align: center;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+#grpSelectionCont {
+    display: block;
+    clear: both;
+}
+
+.bold-text {
+    font-weight: bold;
+    margin: 0 1em 0 1em;
+}
+
+#minutes-to-copy {
+    max-width: 5em;
+}
+
+.table-header-data {
+    max-width: 9em;
+}
+
+.radio-button {
+    display: none;
+}
+
+.radio-button-label {
+    margin: 0 0 0 5px !important;
+    background: linear-gradient(to bottom, #ececec, white, #ececec);
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 6px;
+    border: 1px solid black;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+}
+
+.radio-button-label:active {
+    background: black !important;
+    color: white;
+}
+
+.radio-button-label-red:hover {
+    color: white;
+    background: linear-gradient(to bottom, #fe1a00, #ce0100, #fe1a00);
+}
+
+.radio-button:checked + .radio-button-label-red {
+    color: white;
+    background: linear-gradient(to bottom, #fe1a00, #ce0100, #fe1a00);
+}
+
+.radio-button-label-green:hover {
+    color: white;
+    background: linear-gradient(to bottom, #77d42a, #64bb1e, #77d42a);
+}
+
+.radio-button:checked + .radio-button-label-green {
+    color: white;
+    background: linear-gradient(to bottom, #77d42a, #64bb1e, #77d42a);
+}
+
+#dossvcs_cont > button.trigger.datepick-trigger {
+    margin-left: 0.3em;
+    width: 2.3em;
+}
+
+#carePlanDiagnosisDescInputID {
+    min-height: 30em;
+}
+
+#carePlanRec {
+    display: flex;
+    flex-direction: column;
+}
+
+.planwriter-diagnosis-sel-content-parent-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.planwriter-diagnosis-sel-content-parent-cont > *:nth-child(1) {
+    width: 85%;
+}
+
+.planwriter-diagnosis-sel-content-parent-cont > *:nth-child(2) {
+    width: 10%;
+}
+
+.carePlanSignatureCanvas {
+    border: double black;
+}
+
+.btn-link,
+.btn-link:hover {
+    color: unset;
+}
+
+i.fa-heart {
+    color: #B22222;
+}
+
+i.fa-book-medical {
+    color: #62abea;
+}
+
+span.mba-rest-view-data-type-text, span.mba-rest-view-data-type-date, td.mba-rest-view-cell {
+    text-align: center;
+}
+
+.pe-none {
+    pointer-events: none;
+}
+
+@media(min-width:768px){
+  .reverse-on-lg {
+    display: flex;
+    flex-direction:row-reverse;
+  }
+}
+
+#saveCtrlButtons {
+  display: flex;
+  flex-direction:row;
+}
+
+#saveCtrlButtons * {
+  display: flex;
+  flex-direction:row;
+}

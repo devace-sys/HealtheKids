@@ -1,0 +1,166 @@
+﻿
+div.row {
+    margin-bottom:.5em;
+}
+/* Override default styles to match the layout of the service records screen */
+
+#restView {
+  margin-top:1em;
+  width:100%;
+  max-width:100% !important;
+}
+
+
+th.mba-rest-view-col, td.mba-rest-view-col  {
+  min-width:0em;
+}
+th.mba-rest-view.mba-rest-view-visible-tbl-td-or-th
+,td.mba-rest-view.mba-rest-view-visible-tbl-td-or-th {
+  padding-right:.25em;
+}
+/**
+tr.mba-rest-view-row > th.mba-rest-view.mba-rest-view-visible-tbl-td-or-th:nth-child(1){
+  border-top-left-radius: 0;
+}
+
+tr.mba-rest-view-row > th.mba-rest-view.mba-rest-view-visible-tbl-td-or-th:last-child {
+  border-top-right-radius: 0;
+}
+*/
+
+
+
+/* Rest view changes specific for this page content */
+
+ 
+ th[data-mba-rest-view-field-name="isIFSPorIEPStr"] span.mba-rest-view mba-rest-view-col-label
+,td[data-mba-rest-view-field-name="isIFSPorIEPStr"] * {
+  width:5em;
+}
+
+th[data-mba-rest-view-field-name="numMins"] span.mba-rest-view mba-rest-view-col-label
+,td[data-mba-rest-view-field-name="numMins"] * {
+  width:5em;
+}
+
+th[data-mba-rest-view-field-name="notes"] span.mba-rest-view mba-rest-view-col-label
+,td[data-mba-rest-view-field-name="notes"] {
+  width:10em;
+}
+
+button[data-notes-lib="opendia"] {
+  display:inline-block;
+  width:1em;
+}
+
+textarea[data-mba-rest-view-save-using="notes"] {
+  display:inline-block;
+  width:8em;
+}
+
+/* Service details */
+
+details.service-details {
+  transition: all 1s ease;
+  overflow: hidden;
+  padding:.25em;
+  height:23em; 
+  line-height:1em;
+}
+
+details.service-details:not([open])
+{
+  height:2.25em;
+}
+
+details.service-details:details[open]
+{
+  height:23em; /* Keep same height as details.service-details */
+}
+
+summary.service-details {
+  height:1em;
+  text-align:center;
+  vertical-align:middle;
+  border:1px solid #000;
+  background-color:#ccc;
+  line-height:1em;
+  color:black;
+}
+
+fieldset.service-detail-container {
+  display:block;
+  margin:0;
+  padding:0;
+  margin-top:.50em;
+  margin-bottom:.50em;
+}
+
+legend.service-detail-question {
+  font-size:1em;
+  display:block;
+  text-align:left;
+  margin:0 !important;
+  padding:0 !important;
+}
+ 
+fieldset.service-detail-answers {
+  display:block;
+  margin:0 !important;
+  padding:0 !important;
+  text-align:right;
+}
+
+label.service-detail-answer {
+   background: linear-gradient(to bottom, #ececec, white, #ececec);
+   cursor: pointer;
+   border-radius: 6px;
+   border: 1px solid black;
+   display: inline-block;
+   color: black;
+   padding:.10em !important;
+   text-decoration: none;
+   margin-right:.25em !important;
+}
+
+
+/*label.service-detail-answer span.ui-button-text {
+   padding:0 !important;
+   margin:0 !important;
+}
+*/
+
+input.service-detail-answer {
+    display:none;
+}
+
+input.service-detail-answer:checked  + label.service-detail-answer {
+    color: white;
+}
+
+label.service-detail-answer-yes:hover{
+    color: white;
+    opacity:.5;
+    background: linear-gradient(to bottom, #77d42a, #64bb1e, #77d42a);
+}
+
+input.service-detail-answer:checked  + label.service-detail-answer-yes  {
+    color: white;
+    background: linear-gradient(to bottom, #77d42a, #64bb1e, #77d42a);
+}
+
+label.service-detail-answer-no:hover {
+    color: white;
+    opacity:.5;
+	background: linear-gradient(to bottom, #fe1a00, #ce0100, #fe1a00);
+}
+
+input.service-detail-answer:checked  + label.service-detail-answer-no   {
+   color: white;
+   background: linear-gradient(to bottom, #fe1a00, #ce0100, #fe1a00);
+}
+
+i.fa-clock.svcrec-is-rmts-moment {
+    background: #ffd230;
+    border-radius: 50%;
+}

@@ -1,0 +1,65 @@
+﻿/*https://www.florin-pop.com/blog/2019/03/css-pulse-effect/ */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 #ff8d0000;
+    }
+
+    50% {
+        box-shadow: 0 0 0 10px #ff8d008c;
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px #ff8d0000;
+    }
+}
+
+.spedmon-animation-pulsate {
+    animation: pulse 2s infinite;
+    -webkit-animation: pulse 2s infinite;
+    border-radius: 10px;
+}
+
+td.mba-rest-view select,
+td.mba-rest-view input,
+td.mba-rest-view textarea {
+    width: 100%;
+    font-size: 1em;
+}
+
+.mba-rest-view-visible-tbl-td-or-th {
+    text-align: center;
+}
+
+th.mba-rest-view {
+    position: sticky !important;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+*.mba-rest-view-cell-value, th.mba-rest-view {
+    font-size: 1em;
+}
+
+span.mba-rest-view-data-type-text, span.mba-rest-view-data-type-number {
+    text-align: center;
+}
+
+i.mba-rest-view.fa-exclamation-triangle {
+    color: #ff8d00;
+}
+
+i.fa-clipboard-list {
+    font-size: 1.25em;
+    color: #389dff;
+}
+
+/* Transportation */
+
+span[data-mba-rest-view-field-name="salaryRatioStr"],
+span[data-mba-rest-view-field-name="benefitsRatioStr"],
+span[data-mba-rest-view-field-name="federalRatioStr"],
+span[data-mba-rest-view-field-name="grossRatioStr"],
+span[data-mba-rest-view-field-name="expendituresRatioStr"],
+span[data-mba-rest-view-field-name="depreciationForReportPeriodRatioStr"] {
+    color: red;
+}

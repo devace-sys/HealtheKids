@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://raw.github.com/smartsheet-platform/smartsheet-csharp-sdk/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/smartsheet-platform/smartsheet-csharp-sdk</projectUrl>
+    <iconUrl>https://googledrive.com/host/0B0ESt9lII6BWZUcyZmlsalBDdlE/smartsheetAPI.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>$description$</description>
+    <!--<releaseNotes>Summary of changes made in this release of the package.</releaseNotes>-->
+    <copyright>Copyright 2014</copyright>
+    <tags>Smartsheet Collaboration Project Management Excel spreadsheet</tags>
+  </metadata>
+</package>

@@ -1,0 +1,13 @@
+﻿
+td.mba-rest-view {
+    text-align: center;
+}
+
+.mba-rest-view-col-show-for-edit {
+  display: none;
+}
+ 
+table.mba-rest-view-tbl-is-editing .mba-rest-view-col-show-for-edit {
+ 
+  display: table-cell;
+}

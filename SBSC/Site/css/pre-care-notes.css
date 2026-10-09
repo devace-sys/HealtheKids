@@ -1,0 +1,90 @@
+﻿div.visit-notes-label {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: .50em;
+}
+
+.but-pat-visit-pre-care-savenotes {
+    display: inline-block;
+    background: none;
+    border: none;
+    margin-top: 1.50em;
+}
+
+    .but-pat-visit-pre-care-savenotes.hasdata {
+        animation: heartbeat 1s ease-in-out infinite;
+        color: black;
+    }
+
+/* Heartbeat animation*/
+@keyframes heartbeat {
+    0% {
+        border-radius: 50%;
+        transform: scale(1);
+        box-shadow: 0 0 0 0px cyan;
+    }
+
+    25% {
+        border-radius: 50%;
+        transform: scale(1.1);
+        box-shadow: 0 0 0 3px cyan;
+    }
+
+    50% {
+        border-radius: 50%;
+        transform: scale(1.2);
+        box-shadow: 0 0 0 4px cyan;
+    }
+
+    75% {
+        border-radius: 50%;
+        transform: scale(1.1);
+        box-shadow: 0 0 0 5px cyan;
+    }
+
+    100% {
+        border-radius: 50%;
+        transform: scale(1);
+        box-shadow: 0 0 0 6px cyan;
+    }
+}
+
+/* Textarea Notes Style */
+.txtarea-pat-visit-pre-care-note {
+    width: 63%; 
+    height: 5em;
+    padding: 0.625em; 
+    font-size: 0.87em;
+    font-family: Arial, sans-serif; 
+    border: 0.06em solid #ccc; 
+    border-radius: 0.31em; 
+    background-color: #f9f9f9; 
+    resize: horizontal; 
+    box-sizing: border-box; 
+    margin-top: 0.625em;
+}
+
+    .txtarea-pat-visit-pre-care-note:hover {
+        outline: none;
+        border: 1px solid #cccccc;
+        border-radius: 6px;
+        box-shadow: 1px 1px 3px 1px #e4e4e4;
+    }
+
+    .txtarea-pat-visit-pre-care-note:focus {
+        outline: none;
+        border-color: cyan;
+        background-color: #fff;
+    }
+
+    .txtarea-pat-visit-pre-care-note::placeholder {
+        color: #888;
+        font-style: italic;
+        padding: 1em;
+    }
+
+    .txtarea-pat-visit-pre-care-note:disabled {
+        background-color: #e9ecef;
+        border-color: #ddd;
+        cursor: not-allowed;
+    }

@@ -1,0 +1,32 @@
+using System;
+using System.Collections;
+using System.Globalization;
+using System.Threading;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Web;
+using System.Web.SessionState;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.HtmlControls;
+using System.Text.RegularExpressions;
+
+namespace MBA
+{
+
+  /***************************************************************************
+   * DetailList */
+  /**
+   * Generates a detail list control
+   * Used for displaying details[] from Return
+   ***************************************************************************/
+
+  public class DetailList : WebUIControlContainer
+  {
+    public DetailList() : base("ul", false) { this.cssClass = "details"; }
+  }
+
+}
+

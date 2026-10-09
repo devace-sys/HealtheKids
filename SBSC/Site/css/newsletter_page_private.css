@@ -1,0 +1,13 @@
+
+
+#fullpage-iframe-wrapper {
+  width: 100%;
+  height: 90vh;  /* TODO: idk if this is nonstandard but nothing else I've tried is rendering properly */
+  display: flex;
+}
+
+#contentIframe {
+  width: 100%;
+  height: 100%;
+  display: flex;  /* both the iframe and the wrapper need to be set as display flex for some reason */
+}

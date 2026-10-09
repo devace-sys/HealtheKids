@@ -1,0 +1,181 @@
+/* format date inputs to look like other dataEntryRow inputs */
+
+
+input[type=date], input[type=text] {
+    width: 16em;
+    height: 2.2em;
+    border-radius: 4px;
+    border: 1px solid #aaaaaa;
+}
+
+input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+}
+
+/* for Address completion field */
+
+#prac_prof_address {
+    margin: 0.8em 0em;
+}
+
+#prac_prof_address > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#prac_prof_address > div > * {
+    margin-bottom: 0.5em;
+}
+
+#zip5_street1_contprac_prof_address > span:nth-child(3) {
+    order: 1;
+}
+#zip5_street1_contprac_prof_address > span:nth-child(1) {
+    order: 2;
+}
+#zip5_street1_contprac_prof_address > span:nth-child(2) {
+    order: 3;
+}
+
+/* for NPI # field */
+
+#prac_npi {
+    display: flex;
+}
+
+#prac_npi > div {
+    padding: 0 !important;
+    margin: auto 0;
+    order: 2;
+}
+
+/* for valid orp field */
+
+#DHS-ORP-links {
+    max-width: 20em;
+    margin-bottom: 1em;
+}
+
+
+/* for Tables */
+
+#tblRecsQualificationJSON {
+    border-collapse: collapse;
+    margin-bottom: 3em;
+}
+
+#tblRecsQualificationJSON > thead > tr > th {
+  font-weight:bold;
+  background-color:rgb(157, 200, 204);
+  color:#000;
+  padding:.25em;
+  text-align: center;
+}
+
+#tblRecsQualificationJSON > tbody > tr > td {
+  color:#000;
+  padding: 0.25em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#tblRecsQualificationJSON td input {
+    max-width: 13em;
+    height: 2em;
+}
+
+#tblRecsQualificationJSON >tbody > tr > td > input[type='date'] {
+    width: 9em;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+i.fa-trash-alt {
+    color: #995D55;
+}
+
+i.fa-trash-alt:hover {
+    color: #561B1F;
+}
+
+/* Prac name and Client selection */
+
+#pracNameCont {
+    margin-bottom: 1.5em;
+}
+
+#pracName * {
+    font-weight: bold;
+}
+
+/* Qualification Spacing */
+
+#qualificationSel_status {
+    height: unset;
+    margin: 0;
+}
+
+#qualifDirections {
+    margin-bottom: 1em;
+}
+
+/* Red Asterisk for required fieds */
+
+.requiredField:before {
+    color: red;
+    content: "*";
+}
+
+
+div#npi-searchcol {
+  text-align: right;
+  /* input and buttons are inline elems, not worth the trouble of making block and flexd */
+  padding-right: 0.9em;
+}
+
+div#npi-searchcol select {
+  border: solid 2px #ff8a00;
+  /* matches tab-color selection */
+  border-radius: 3px;
+}
+
+div#npi-searchcol button {
+  margin: 3px;
+}
+
+#npi-search-value {
+  border: solid 1px #aaa;
+  border-radius: 4px;
+  height: 33px;
+  font-size: 22px;
+  width: 155px;
+}
+
+.cybhi-degree-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
+    column-gap: 36px;
+    row-gap: 16px;
+    margin-bottom: 28px;
+}
+
+.cybhi-specialty-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 190px);
+    column-gap: 30px;
+    row-gap: 16px;
+}
+
+.cybhi-field {
+    width: 100%;
+    max-width: 100%;
+}
+
+    .cybhi-field select {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+    }

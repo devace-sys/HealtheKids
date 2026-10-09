@@ -1,0 +1,33 @@
+﻿details.page-instructions {
+    width: 100%;
+    max-height: 2rem; /* Set a value just enough to show the summary */
+    overflow: hidden;
+    transition: max-height .5s ease-in-out;
+}
+
+details.page-instructions[open] {
+  max-height:20rem;
+}
+
+summary.page-instructions {
+    text-align: center;    
+    font-weight: bold;
+    width:fit-content;
+    margin:0 auto;
+}
+
+div.page-instructions-content {
+    border:1px solid #000;
+    padding:1em;
+    margin:1em;
+    background-color:lightgoldenrodyellow;    
+}
+
+div.page-instructions-content ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+div.page-instructions-content li {
+    display: list-item;
+}

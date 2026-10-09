@@ -1,0 +1,1 @@
+<%@ WebHandler Language="C#" Class="Spedmon.ServiceAuthorizationRequestsRpt" CodeBehind="service_authorization_requests.ashx.cs"%>

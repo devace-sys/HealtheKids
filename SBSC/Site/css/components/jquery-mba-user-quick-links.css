@@ -1,0 +1,90 @@
+﻿@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes sweep-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes sweep-out {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+}
+
+  .mba-user-quick-links-wrapper .fa-cog
+, .mba-user-quick-links-wrapper .fa-save
+{
+    color: #808080;
+    font-size: 2em;
+}
+
+.mba-user-quick-links-wrapper .fa-cog:hover {
+    color: #909090;
+    animation: spin 2s infinite linear;
+}
+
+.mba-user-quick-links-link-item {
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    border-radius: 5px;
+    background-color: #d6d8d975;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+    color: inherit;
+}
+
+.mba-user-quick-links-link-item:hover {
+    text-decoration: none;
+    color: inherit;
+    background-color: #dcdfe0;
+    cursor: pointer;
+}
+
+.mba-user-quick-links-list-accordian-group-parent {
+    background-color: #d9e1f1;
+    border-radius: 5px;
+    font-weight: bold;
+    border: solid #b8bfcc 2px;
+    transition: all 0.2s ease-in-out;
+}
+
+.mba-user-quick-links-list-accordian-group-parent:hover {
+    background-color: #d9e1f198;
+}
+
+.mba-user-quick-links-list-accordian-group-child {
+    background-color: #eff9ff;
+    transition: all 0.2s ease-in-out;
+    border: solid #b8bfcc 2px;
+    border-radius: 5px;
+}
+
+.mba-user-quick-links-list-accordian-group-parent[open] {
+    margin-top: 10px;
+    margin-bottom: 10px !important;
+}
+
+.mba-user-quick-links-list-accordian-group-parent[open] summary ~ * {
+    animation: sweep-in .5s ease-in-out;
+}

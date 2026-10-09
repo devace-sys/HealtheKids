@@ -1,0 +1,239 @@
+@font-face {font-family: copperplateBold;        src:url('./web-ui-3/mba/css/copperplate-bold.ttf');}
+@font-face {font-family: robotoCondensedRegular; src:url('./web-ui-3/mba/css/roboto-condensed-regular.ttf');}
+@font-face {font-family: abelRegular;            src:url('./web-ui-3/mba/css/Abel-Regular-400.ttf');}
+
+/*https://www.florin-pop.com/blog/2019/03/css-pulse-effect/ */
+
+@keyframes highlightpulse {
+    0% {
+        box-shadow: 0 0 0 0 #ff8d0000;
+    }
+
+    50% {
+        box-shadow: 0 0 0 10px #ff8d008c;
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px #ff8d0000;
+    }
+}
+
+main {
+  display: block !important;  /* Fix for IE */
+}
+
+body {
+  background-color:#ffffff;
+  color:#000000;
+}
+
+body * {
+  font-family:abelRegular; /* Override child elements */
+}
+
+body.mba-privacy-screen {
+  background-color: #000000 !important;
+  color: #000000 !important;
+  opacity: 0.1 !important;
+  background-image: url('./web-ui-3/mba/css/mba-privacy-screen.png') !important;
+  background-repeat: no-repeat !important;
+  background-attachment:fixed !important;
+  background-size:auto !important;
+  background-position:center !important;
+}
+
+/* Body - Child elements */
+
+#app-drawer {
+  font-family:abelRegular !important; /* Override Material Design font*/
+}
+
+#app-content {
+
+}
+
+/* App content - Child Elements */
+
+#page-header {
+  font-size:1em;
+}
+
+#page-content {
+  font-size:1em;
+  line-height:1em;
+  width: 100%;
+  padding-bottom: 1em;
+}
+
+/* Header - Child Elements */
+
+#app-bar {
+  /* Override MD */
+  background-color:#ffffff !important;
+}
+
+#page-title {
+  /* Override MD */
+  padding: 0;
+  text-align: center;  
+  display:block  !important;
+  min-width:268px !important;
+  width:268px !important;
+  /* max-width:268px !important; */
+  margin:0 auto !important;  
+  font-family:abelRegular !important; /* Override Material Design font*/
+  font-size:1em !important;
+  text-overflow: ellipsis !important;
+  color:#36454f /* Charcoal */ !important;  
+}
+
+@media only screen and (max-width: 660px)  {
+  #page-title {
+	display:none !important;
+  }
+}
+
+#my-account-avatar-list-li:hover {
+  /* Override MD */
+  cursor:pointer !important;
+}
+
+#my-account-avatar-list-li span.mdc-list-item__graphic {
+  /* Override MD */
+  color:#000 !important;
+}
+
+#my-account-avatar-list-li span.mdc-list-item__text span.mdc-list-item__primary-text {
+  /* Override MD */
+  text-align:center !important;
+  color:#000 !important;
+  font-family:abelRegular !important; /* Override Material Design font*/
+  font-size:1.5em !important;
+  font-weight:bold !important;
+}
+
+#my-account-avatar-list-li span.mdc-list-item__text span.mdc-list-item__secondary-text {
+  /* Override MD */
+  text-align:center !important;
+  color:#36454f !important;
+  font-family:abelRegular !important; /* Override Material Design font*/
+  font-size:.80em !important;
+}
+
+/*
+#my-account-avatar-list-li span.mdc-list-item__text span.mdc-list-item-user-title {
+    color: #616161 !important;
+}
+
+#my-account-avatar-list-li span.mdc-list-item__text  span.mdc-list-item-app-info {
+  font-size: .90em !important;
+  color: #616161 !important;
+}
+
+#my-account-avatar-list-li span.mdc-list-item__text  span.mdc-list-item-app-title {
+  font-size: .90em !important;
+}
+
+#my-account-avatar-list-li span.mdc-list-item__text  span.mdc-list-item-app-version {
+  font-size: .80em !important;
+}
+*/
+
+#page-notifications {
+  margin-top:1em;
+  margin-bottom:1em;
+}
+
+/* Various elements */
+
+h1.welcome-message , h2.welcome-message {
+   font-family:abelRegular;
+   text-align:center;
+   width:100%;
+   display:block;
+   margin:0 auto;
+}
+
+h1.welcome-message-greeting {
+  font-size:1.5em !important;
+  font-weight:bold !important;
+  color:#505965; /* as per Vic 06 07 2019 */
+}
+
+h2.welcome-message-greeting-title-org {
+	font-size: .90em;	
+	color: #505965; /* as per Vic 06 07 2019 */
+}
+
+h2.welcome-message-call-to-action {
+  font-size:1.3em !important;
+}
+
+ul.mdc-list li.mdc-list-item {
+   font-family:abelRegular;
+  font-size:1em;
+}
+ul.mdc-list li.mdc-list-item a {
+     font-family:abelRegular;
+  text-decoration:none;
+  display:block;
+  color:#000;
+  width:100%;
+  font-size:1em;
+}
+
+#app-bar a.applogo {
+  margin-left: -240px;
+  /*display: flex;
+  align-items: center;*/
+}
+
+#app-bar a.applogo img.branding,
+#app-bar a.applogo picture.branding {
+    border: none;
+    margin: 0 auto;
+    display: inline-block;
+    height: 46px;
+    width: 608px;
+}
+
+#app-bar section.mdc-top-app-bar__section {
+  min-width: 31vw;
+}
+
+a.mdc-top-app-bar__navigation-icon {
+  color:#000000 !important;   /* Override MD */
+}
+
+a.material-icons {
+  color:#000000 !important;  /* Override MD */
+}
+
+div.mdc-text-field {
+  width:100%; /* Override MD */
+  font-family:abelRegular; /* Override MD */
+}
+
+div.mdc-text-field  label, div.mdc-text-field  input {
+    font-family:abelRegular; /* Override MD */
+}
+
+/* Pulsate the x icon */
+
+#ctrl-close-icon-this-page[data-mba-animate-ctrl="true"]{
+    animation: highlightpulse 2s infinite;
+    -webkit-animation: highlightpulse 2s infinite;
+    border-radius: 100%;
+}
+
+
+/*
+@media screen and (min-width: 508px) {
+    .logos-wrapper {
+        transform: translateX(0) !important;
+        animation: none important;
+        
+    }
+
+}
+    */

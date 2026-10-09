@@ -1,0 +1,11 @@
+﻿.mba-data-entry-row-iframe-content-wrapper {
+    position: relative;
+}
+
+iframe.mba-data-entry-row-iframe-content {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    min-height: 78vh;
+    border: 1px solid #ccc;
+}

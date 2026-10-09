@@ -1,0 +1,31 @@
+/* Common values */
+
+textarea.mba-check-box-selections-json-hidden-text-area {
+    display:none;
+}
+
+fieldset.mba-check-box-selections-json-fieldset {
+    border: none;
+    display: inline-block;
+}
+
+legend.mba-check-box-selections-json-legend {
+  display:block;  
+}
+
+span.mba-check-box-selections-json-selection-container {
+  display:inline-block;
+  padding:.25em;
+}
+
+input.mba-check-box-selections-json-selection-input {
+  display:block;
+}
+
+label.mba-check-box-selections-json-selection-label {
+  display:block;
+}
+
+legend.mba-check-box-selections-json-hidden {
+   display: none;
+}

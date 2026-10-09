@@ -1,0 +1,257 @@
+﻿:root {
+    --input_color: #f7f7f7;
+    --input-color-hover: #d1fff0;
+    --spedcare-green: #ade0d0;
+    --spedcare-blue: #9dc8cc;
+} 
+
+body {
+    padding: 10px;
+}
+
+p {
+    margin: 5px 0px;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: sub;
+}
+
+input[type=button],
+input[type=submit] {
+    height: 2em;
+    width: 20vw;
+    background-color: var(--input_color);
+}
+
+input[type=button]:hover,
+input[type=submit]:hover {
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 2px var(--spedcare-green);
+}
+
+input[type=button]:focus,
+input[type=submit]:focus {
+    background-color: white;
+    cursor: pointer;
+}
+
+input[type=button],
+input[type=submit],
+textarea {
+    border: solid 1px grey;
+    transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+    background-color: var(--input-color-hover);
+}
+
+textarea:focus {
+    background-color: white;
+    outline-color: var(--spedcare-blue);
+    box-shadow: 2px 2px 5px 0px var(--spedcare-blue);
+}
+
+
+#iep-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.iep-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    /* https://stackoverflow.com/a/54175718 */
+    height: 100%;
+    height: -moz-available; /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+    height: fill-available;
+}
+
+#iep-info {
+    align-items: center;
+}
+
+#iep-info div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#iep-info h2 {
+    text-decoration: underline;
+}
+
+#iep-info video {
+    width: 70%;
+    height: 70%;
+}
+
+#iep-info-comments textarea {
+    width: 70%;
+    min-height: 20vh;
+}
+
+#iep-form {
+    align-items: flex-start;
+}
+
+#iep-form h4 {
+    text-decoration: underline;
+}
+
+#roles-tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.checkbox-margin {
+    margin-left: 1.8em; /* about the outerwidth of checkbox */
+}
+
+.checkbox-margin.p {
+    margin-left: 1.5em; /* about the outerwidth of checkbox */
+}
+
+#exception-textarea {
+    width: 90%;
+}
+
+#accept-decline-tab {
+    display: flex;
+    flex-direction: column;
+}
+
+#accept-decline-tab div {
+    align-self: center;
+}
+
+.approve-btn:hover {
+    background-color: var(--input-color-hover) !important;
+}
+
+.disapprove-btn:hover {
+    background-color: #ff00006b !important;
+    box-shadow: 2px 2px 5px 0px rgba(255, 0, 0, 0.3) !important;
+}
+
+#submit-tab {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.form-submit:hover {
+    background-color: #c9ddff !important;
+    box-shadow: 2px 2px 5px 0px #77aaff !important;
+}
+
+.checkbox-text-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#iep-participation-agreement {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bordered-area {
+    border: double 4px black;
+    padding: 5px;
+}
+
+#iep-agree-with-plan textarea {
+    width: 90%;
+}
+
+#iep-siras-auth-prvschl {
+    margin-top: 15px;
+}
+
+#iep-siras-auth-prvschl input {
+    width: 100px;
+}
+
+#roles-tab-dropdown {
+    margin-top: 10px;
+}
+
+#more-info-tab {
+    border: solid 2px black;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.checkbox-text-container input[type=checkbox] {
+    width: 15px;
+    min-width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.bordered-input {
+    border: grey 1px solid;
+}
+
+#offered-translation-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 1200px) {
+    #iep-container {
+        flex-direction: column;
+    }
+
+    .iep-column {
+        width: 100%;
+    }
+
+    .iep-column {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    input [type=button] {
+        width: 40vw;
+    }
+
+    #roles-tab {
+        flex-direction: column;
+    }
+
+    #accept-decline-tab div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #accept-decline-tab input,
+    .approve-btn
+    {
+        width: 50% !important;
+    }
+
+    #submit-tab {
+        width: 60%;        
+    }
+
+    #submit-tab input {
+        width: 100%;
+    }
+}

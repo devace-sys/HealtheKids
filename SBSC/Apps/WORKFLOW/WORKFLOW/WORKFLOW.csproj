@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3B180955-92F3-4B09-B4D9-9FA0D263119A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WORKFLOW</RootNamespace>
+    <AssemblyName>WORKFLOW</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>workflow.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>WORKFLOW.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="bccrypto">
+      <HintPath>..\..\..\..\..\MBA\Common\Libraries\iTextFixed\bccrypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\..\MBA\Common\Libraries\iTextFixed\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NPOI, Version=1.2.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\MBA\Common\Libraries\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EmailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmailForm.Designer.cs">
+      <DependentUpon>EmailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoRequestResponseFilesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoRequestResponseFilesForm.Designer.cs">
+      <DependentUpon>InfoRequestResponseFilesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoRequestResponseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoRequestResponseForm.Designer.cs">
+      <DependentUpon>InfoRequestResponseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputBatches.cs" />
+    <Compile Include="InputBatchesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputBatchesView.Designer.cs">
+      <DependentUpon>InputBatchesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilePaths.cs" />
+    <Compile Include="FileStatus.cs" />
+    <Compile Include="ManageTrainedStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageTrainedStaff.Designer.cs">
+      <DependentUpon>ManageTrainedStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputBatchesEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputBatchesEdit.Designer.cs">
+      <DependentUpon>InputBatchesEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PractitionerReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PractitionerReview.Designer.cs">
+      <DependentUpon>PractitionerReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PractitionersProblemsHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PractitionersProblemsHistory.Designer.cs">
+      <DependentUpon>PractitionersProblemsHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EmailForm.resx">
+      <DependentUpon>EmailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputBatchesView.resx">
+      <DependentUpon>InputBatchesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputBatchesEdit.resx">
+      <DependentUpon>InputBatchesEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageTrainedStaff.resx">
+      <DependentUpon>ManageTrainedStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SBSCParent.resx">
+      <DependentUpon>SBSCParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplitFile.resx">
+      <DependentUpon>SplitFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffHoursSave.resx">
+      <DependentUpon>StaffHoursSave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffHoursView.resx">
+      <DependentUpon>StaffHoursView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrainedStaffView.resx">
+      <DependentUpon>TrainedStaffView.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="A&amp;I Weekly Template.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="TemplateWFSummaryReport.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Workflow-cmds.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Workflow.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ResearchForDuplicateClaims.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResearchForDuplicateClaims.designer.cs">
+      <DependentUpon>ResearchForDuplicateClaims.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SBSCParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SBSCParent.Designer.cs">
+      <DependentUpon>SBSCParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectQuestion.Designer.cs">
+      <DependentUpon>SelectQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplitFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplitFile.Designer.cs">
+      <DependentUpon>SplitFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff.cs" />
+    <Compile Include="StaffHoursSave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffHoursSave.Designer.cs">
+      <DependentUpon>StaffHoursSave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffHoursView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffHoursView.Designer.cs">
+      <DependentUpon>StaffHoursView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffProblemHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffProblemHistory.Designer.cs">
+      <DependentUpon>StaffProblemHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffReview.Designer.cs">
+      <DependentUpon>StaffReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stamps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stamps.Designer.cs">
+      <DependentUpon>Stamps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrainedStaffView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrainedStaffView.Designer.cs">
+      <DependentUpon>TrainedStaffView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkControl.Designer.cs">
+      <DependentUpon>WorkControl.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\MBA\Common\AppFramework\AppFramework.csproj">
+      <Project>{5757641D-110F-4057-89BF-A22AF239DAD6}</Project>
+      <Name>AppFramework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="InfoRequestResponseFilesForm.resx">
+      <DependentUpon>InfoRequestResponseFilesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoRequestResponseForm.resx">
+      <DependentUpon>InfoRequestResponseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PractitionerReview.resx">
+      <DependentUpon>PractitionerReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PractitionersProblemsHistory.resx">
+      <DependentUpon>PractitionersProblemsHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResearchForDuplicateClaims.resx">
+      <DependentUpon>ResearchForDuplicateClaims.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectQuestion.resx">
+      <DependentUpon>SelectQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffProblemHistory.resx">
+      <DependentUpon>StaffProblemHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffReview.resx">
+      <DependentUpon>StaffReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stamps.resx">
+      <DependentUpon>Stamps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workflow.ico" />
+    <EmbeddedResource Include="WorkControl.resx">
+      <DependentUpon>WorkControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

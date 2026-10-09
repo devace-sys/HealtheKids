@@ -1,0 +1,149 @@
+table tr, ul li {
+    font-family: 'Abel' !important;
+    font-weight: bolder;
+}
+
+tr.payroll-summarydetail-content td {
+    padding: .16em
+}
+
+.tr-thead {
+  font-weight:bold; height: 40px
+}
+
+.tr-thead th {
+  vertical-align:bottom;
+  padding-bottom: 8px !important;
+  background-color:#9FC6CB;
+  position: sticky;
+  top: 70px;
+}
+
+.rowsave {
+  opacity: 0.33;
+  line-height: 11px;
+  font-size: 11px;
+  padding: 5px;       
+}
+
+.rowsave.requiresSave {
+  opacity: 1;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+}
+
+table textarea {
+  height:1.25em;
+  overflow-y:hidden;
+}
+
+table textarea:focus {
+  height:5em;
+  overflow-y:scroll;
+  margin: 4px 0;
+  padding: 4px 0;
+}
+
+table .alert-warning textarea {
+  height:2.3em;
+  overflow-y:scroll;
+  margin: 4px 0;
+  padding: 4px 0;
+}
+
+#fourstate-navtab  > li {
+    background: linear-gradient(#a1d4d8, #fff 26%, #d6f1f3, #a1d4d8) !important;
+    transition: all 0.2s ease-in-out;
+    border: 1px #8c8b8b solid !important;
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-topright: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin:  0px 1px;
+}
+
+#fourstate-navtab {
+    margin: 10px 0px;
+}
+ 
+#fourstate-navtab  > li:hover {
+    background: aliceblue !important;
+}
+ 
+#fourstate-navtab > li > a {
+    font-weight: bold;
+}
+
+#fourstate-navtab > li.active {
+    background: #9dc8cc !important;
+}
+
+.recorded-tasks-notes-val-td, .recorded-tasks-task-namestr-td {
+  display:block;
+  overflow-y: hidden;
+  max-height: 24px;
+}
+
+.toggle-click.ui-spedmon-gradient-rounded-but-md {
+  font-size: 15px;
+  height: 18px;
+  width: 18px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.recorded-tasks-task-namestr-td.expanded {
+  max-height: 100%;  /* here we're assuming that notes will almost always be longer than the task name */
+  overflow-y: visible;
+}
+
+.recorded-tasks-notes-val-td.expanded {
+  max-height: 700px;  /* here we're assuming that notes will almost always be longer than the task name */
+  overflow-y: scroll;
+  padding: 12px 0;
+}
+
+/*                  ------                      */
+
+.payroll-summary-notes-val-td {
+  display:block;
+  overflow-y: hidden;
+  max-height: 120px;
+}
+
+.payroll-summary-notes-val-td.expanded {
+  max-height: 308px;
+}
+
+
+.payroll-summary-notes-val-td.expanded textarea {
+  height: 300px;
+  overflow-y: scroll;
+  padding: 12px 0;
+}
+
+
+
+@media print {
+
+  table tr.tr-odd {
+    background-color: #f7f9f9 !important;
+    border-bottom: 2px ridge black !important;
+  }
+
+
+* {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+
+  @page {
+    size: A3 landscape;
+  }
+
+}
+
+
+@page {
+  size: A3 landscape;
+}

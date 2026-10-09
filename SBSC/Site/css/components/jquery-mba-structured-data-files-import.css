@@ -1,0 +1,129 @@
+textarea.mba-structured-data-files-import-data-to-import-json {
+    display:none;
+    visibility:hidden;
+}
+
+div.mba-structured-data-files-import-layout-container {
+  display:block;
+  width:100%;
+}
+
+div.mba-structured-data-files-import-layout-row {
+   display:flex;
+   width:100%;
+}
+
+section.mba-structured-data-files-import-layout-col {
+  display:inline-block;
+}
+
+  input.mba-structured-data-files-import
+, select.mba-structured-data-files-import
+, table.mba-structured-data-files-import-preview-data-table 
+{
+    line-height: var(--mba-data-entry-box-base-dimension);
+    outline: none;
+    border: 1px solid var(--mba-data-entry-box-border-color);
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px 1px var(--mba-data-entry-box-color-shadow);
+}
+
+  input.mba-structured-data-files-import
+, select.mba-structured-data-files-import
+{
+    padding: calc(var(--mba-data-entry-box-base-dimension) / 4 );
+    padding-top: var(--mba-data-entry-box-base-dimension);
+    margin: calc(var(--mba-data-entry-box-base-dimension) / 2 );
+}
+
+select.mba-structured-data-files-import-select-output-column {
+    margin: calc(var(--mba-data-entry-box-base-dimension) / 4 );
+    padding: calc(var(--mba-data-entry-box-base-dimension) / 4 );
+}
+
+h4.mba-structured-data-files-import-input-data-preview-title, h4.mba-structured-data-files-import-output-data-preview-title {
+    padding:.25em;
+    line-height: var(--mba-data-entry-box-base-dimension);
+    font-size:.90em;
+    min-width:5em;
+    max-width:5em;
+    text-align: center;
+    vertical-align:middle;
+}
+
+div.mba-structured-data-files-import-preview-data-table-container {
+    overflow-y: auto;
+    overflow-x: auto;
+    min-width: 90vw;
+    max-width: 90vw;
+    min-height: 25vh;
+    max-height: 25vh;
+    margin: calc(var(--mba-data-entry-box-base-dimension) / 2 );
+}
+
+table.mba-structured-data-files-import-preview-data-table 
+{
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0;
+}
+
+thead.mba-structured-data-files-import-preview-data-table-head {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+  table.mba-structured-data-files-import-preview-data-table th
+, table.mba-structured-data-files-import-preview-data-table td {
+    padding: 0;
+    margin: 0;
+    padding-left: .25em;
+    padding-right: .25em;
+    font-size: .90em;
+}
+
+tr.mba-structured-data-files-import-preview-data-table-row-col-hdrs th {
+    background-color: lightgrey;
+    padding-top:.25em;
+    padding-bottom:.25em;
+    font-weight: bold;    
+}
+
+tr.mba-structured-data-files-import-preview-data-table-row-col-ctrls th {
+    background-color:white;
+}
+
+table.mba-structured-data-files-import-preview-data-table td {
+    border: 1px dotted #000000;
+    background-color: #ffffff;
+    font-weight: normal;
+}
+
+  table.mba-structured-data-files-import-preview-data-table th[data-mba-structured-data-files-import-output-col-match-state="match-found"]
+, table.mba-structured-data-files-import-preview-data-table select[data-mba-structured-data-files-import-output-col-match-state="match-found"] 
+{
+    background-color: aquamarine;
+}
+
+table.mba-structured-data-files-import-preview-data-table th[data-mba-structured-data-files-import-output-col-match-state="required-not-found"] {
+    background-color: lightpink;
+}
+
+table.mba-structured-data-files-import-preview-data-table th[data-mba-structured-data-files-import-output-col-match-state="optional-not-found"] {
+    background-color: blanchedalmond
+}
+
+p.structured-data-import-exceptions {
+    display:block;
+}
+
+
+table.structured-data-import-exceptions > thead > tr > th {
+    text-decoration:underline;
+}
+
+strong.structured-data-import-exceptions {
+  font-weight:bold;
+}
+

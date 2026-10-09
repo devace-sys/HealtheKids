@@ -1,0 +1,5 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartArguments>"C:\spedmon\data\qform_uploads" "C:\spedmon\data\workflow_qform_uploads" "C:\Program Files\ESET\ESET NOD32 Antivirus\ecls.exe" 0</StartArguments>
+  </PropertyGroup>
+</Project>

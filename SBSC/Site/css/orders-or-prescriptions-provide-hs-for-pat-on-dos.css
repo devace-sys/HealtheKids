@@ -1,0 +1,21 @@
+
+/* service journal recent procedure entries summary */
+
+
+summary.orders-or-prescriptions-provide-hs-for-pat-on-dos-prev-entries
+, #ordersorprescriptionshsprovidedfordos-summary {
+    width: 9em;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 0;
+    transition: all 300ms linear;
+    list-style: none;
+}
+
+/* details[open] > summary */
+  details.orders-or-prescriptions-provide-hs-for-pat-on-dos-prev-entries > summary.orders-or-prescriptions-provide-hs-for-pat-on-dos-prev-entries
+, #ordersorprescriptionshsprovidedfordos-restview-container[open] > #ordersorprescriptionshsprovidedfordos-summary {
+    width: 100%;
+    border-bottom: 1px solid #000;
+    margin-bottom: 1em;
+}

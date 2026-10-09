@@ -1,0 +1,1 @@
+<%@ WebHandler Language="C#" Class="Spedmon.ClaimsRpt" CodeBehind="claims.ashx.cs"%>

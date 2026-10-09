@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Web;
+using MBA;
+
+namespace Spedmon
+{
+  /***************************************************************************
+   * FileUploadsRpt
+   */
+  /*
+   ***************************************************************************/
+
+  public class FileUploadsRpt : WebReportDocument
+  {    
+    
+    public const int REPT_NUM_VIEW = 1;
+
+    public FileUploadsRpt()
+    {
+
+      /*-------------------------------
+       * Define permitted roles 
+       * Refine access
+       * Call framework method based
+       * on report number
+       *------------------------------*/
+
+      this._permittedRoles = Spedmon.Constants.ROLE_ALL_PCAL_AND_CLIENT;
+
+      this.cbReportData = delegate()
+      {
+              
+        if (this._reportNumber == REPT_NUM_VIEW)
+        {                            
+          return FileUploads.rptFileUploads (dbConnApp, log, uInfo, _reportPaging, _reportPageNumber, clientid, dateRange, fileclass);
+		    }
+        
+        else
+        {
+          return null;
+        }
+      };
+    }
+  }
+}

@@ -1,0 +1,8 @@
+﻿
+div.mba-action-item-pie-chart-meter > div.plotly.plot-container > div.svg-container {
+
+}
+
+div.mba-action-item-pie-chart-meter > div.plotly.plot-container > div.svg-container g.pielayer {
+    cursor: pointer;
+}

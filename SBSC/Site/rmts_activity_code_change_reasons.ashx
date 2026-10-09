@@ -1,0 +1,1 @@
+<%@ WebHandler Language="C#" Class="Spedmon.RMTSActivityCodeChangeReasonsViw" CodeBehind="rmts_activity_code_change_reasons.ashx.cs"%>

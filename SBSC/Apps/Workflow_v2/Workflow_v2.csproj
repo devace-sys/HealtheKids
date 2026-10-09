@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6A069053-590B-4B4E-B5D8-E9492B43B7BD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Workflow_v2</RootNamespace>
+    <AssemblyName>Workflow_v2</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>workflow_v2_icon_v2_LJh_icon.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Workflow_v2.WorkflowCore</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataGridViewAutoFilter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\MBA\Common\Libraries\DataGridViewAutoFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Presentation">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="InputBatches.cs" />
+    <Compile Include="singleStaffPickerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="singleStaffPickerControl.Designer.cs">
+      <DependentUpon>singleStaffPickerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlRptControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SqlRptControl.Designer.cs">
+      <DependentUpon>SqlRptControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workflowInstanceMethods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkflowInstance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkflowInstance.Designer.cs">
+      <DependentUpon>WorkflowInstance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkflowCore.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleStaffPickerControl.resx">
+      <DependentUpon>singleStaffPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SqlRptControl.resx">
+      <DependentUpon>SqlRptControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkflowInstance.resx">
+      <DependentUpon>WorkflowInstance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkPickerControl.resx">
+      <DependentUpon>WorkPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkPickerOrderConfigurationControl.resx">
+      <DependentUpon>WorkPickerOrderConfigurationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="workflowInstanceTabMethods.cs">
+    </Compile>
+    <Compile Include="WorkflowUser.cs" />
+    <Compile Include="WorkPickerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkPickerControl.Designer.cs">
+      <DependentUpon>WorkPickerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkPickerOrderConfigurationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkPickerOrderConfigurationControl.Designer.cs">
+      <DependentUpon>WorkPickerOrderConfigurationControl.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\MBA\Common\AppFramework\AppFramework.csproj">
+      <Project>{5757641D-110F-4057-89BF-A22AF239DAD6}</Project>
+      <Name>AppFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\Spedmon.csproj">
+      <Project>{9F64DC46-2997-480F-9A5E-594FE35013F8}</Project>
+      <Name>Spedmon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Workflow.ico" />
+    <Content Include="workflow_v2_icon_v1_qL6_icon.ico" />
+    <Content Include="workflow_v2_icon_v2_LJh_icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

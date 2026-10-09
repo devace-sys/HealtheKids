@@ -1,0 +1,7 @@
+﻿.mba-dept-head-link {
+    cursor: pointer;
+}
+
+.mba-dept-head-link:hover {
+    box-shadow: 3px 3px 8px 3px #76a6d2;
+}

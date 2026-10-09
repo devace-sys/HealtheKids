@@ -1,0 +1,23 @@
+body,div               {font-family:Arial, Helvetica, sans-serif;margin:0px;padding:0px;}
+body                   {background-color:#fff;color:#333;font-size:12px;margin:0px;padding:0px;}
+div.contain            {width:800px;margin:0px auto;clear:both;}
+div.options_contain    {width:225px;height:90%;float:left;position:fixed;top:40px;border-right:1px solid #555}
+img.logo               {display:block;position:relative;top:-40px;left:10px}
+div.title              {display:block;font-size:12px;font-weight:800;color:#798092;text-align:center;width:225px;margin-bottom:-30px;position:relative;top:-38px;}
+div.help               {display:block;font-size:16px;font-weight:800;color:#000;text-align:center;width:225px;margin:0px;}
+div.subtitle           {font-size:10px;padding-top:5px;padding-bottom:5px;display:block;text-align:center;margin:0px;}
+div.menu               {width:200px;margin:0px auto;}
+ul.menu                {width:180px;list-style-type:none;margin:0px auto;padding:0px;}
+li.menu                {border:1px solid #555;width:180px;height:15px;margin-bottom:5px;}
+a.menu                 {text-decoration:none;width:180px;height:15px;display:block;color:#fff;background-color:#7C8F59;text-align:center;font-weight:900;}
+a.menu:hover           {background-color:#8FBF3B;}
+form.search            {margin:0px auto;text-align:center;}
+input.search_txt       {border:1px solid #555;width:130px;display:inline;}
+input.search_but       {border:1px solid #555;width:50px;display:inline;background-color:#ccc;}
+input.search_but:hover {background-color:#ff0}
+div.content_contain    {width:560px;float:right;background-color:#fff;padding-left:5px;position:relative;top:10px}
+h2                     {font-size:16px;font-weight:800;width:560px;text-align:center;border-bottom:1px solid #000}
+div.print_title        {display:none;} /* Hide print title page */
+.highlight             {background-color:#ff0;border:1px solid #000;}
+#searchcount           {text-align:center;}
+

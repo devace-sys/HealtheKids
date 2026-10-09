@@ -1,0 +1,7 @@
+span.mba-rest-view-data-type-text, span.mba-rest-view-data-type-date, td.mba-rest-view-cell {
+    text-align: center;
+}
+
+i.fas.fa-user-plus {
+    color: #76a6d2;
+}

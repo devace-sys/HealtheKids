@@ -1,0 +1,554 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9F64DC46-2997-480F-9A5E-594FE35013F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Spedmon</RootNamespace>
+    <AssemblyName>Spedmon</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="bccrypto">
+      <HintPath>..\..\..\MBA\Common\Libraries\iTextFixed\bccrypto.dll</HintPath>
+    </Reference>
+    <Reference Include="CsvHelper">
+      <HintPath>..\..\..\MBA\Common\Libraries\CSVHelper\net47\CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.0.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\MBA\Common\Libraries\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\MBA\Common\Libraries\iTextFixed\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\MBA\Common\Libraries\NewtsonJson12_0_3_Net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=1.2.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\MBA\Common\Libraries\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\System.Web.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\System.Web.Extensions.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\Parse.cs" />
+    <Compile Include="Data\Serialize.cs" />
+    <Compile Include="Data\Validate.cs" />
+    <Compile Include="Entities\ARIES.cs" />
+    <Compile Include="Entities\CdeComplianceBucketDetailsByPcalComplianceRatingAndPatients.cs" />
+    <Compile Include="Entities\CdeComplianceBucketSummariesByPcalComplianceRating.cs" />
+    <Compile Include="Entities\ClientStudentInformationSystem.cs" />
+    <Compile Include="Entities\ContactMethod.cs" />
+    <Compile Include="Entities\CrossClientPatients.cs" />
+    <Compile Include="Entities\CYBHIConsortiumMembers.cs" />
+    <Compile Include="Entities\CYBHIHoldsManageCommon.cs" />
+    <Compile Include="Entities\CYBHIHoldsMissingInfoPats.cs" />
+    <Compile Include="Entities\CYBHIProgramHealthStats.cs" />
+    <Compile Include="Entities\CybhiServiceRecordsOrpReviews.cs" />
+    <Compile Include="Entities\CYBHIServiceSelections.cs" />
+    <Compile Include="Entities\ICD10CMCodes.cs" />
+    <Compile Include="Entities\CaseLoad.cs" />
+    <Compile Include="Entities\CdeComplianceBucketDetailsByService.cs" />
+    <Compile Include="Entities\CdeComplianceBucketSummaries.cs" />
+    <Compile Include="Entities\CdeComplianceBucketSummariesByService.cs" />
+    <Compile Include="Entities\CdeComplianceBucketSummariesForSelpa.cs" />
+    <Compile Include="Entities\CdeComplianceCommon.cs" />
+    <Compile Include="Entities\CdeRecords.cs" />
+    <Compile Include="Entities\ClaimProcedures.cs" />
+    <Compile Include="Entities\Claims.cs" />
+    <Compile Include="Constants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\ClaimDenialResubmissions.cs" />
+    <Compile Include="Entities\ClaimServiceNameXrefAndFormDataRecords.cs" />
+    <Compile Include="Entities\ClaimsProcessingExceptionList.cs" />
+    <Compile Include="Entities\ClaimsProcessingExceptions.cs" />
+    <Compile Include="Entities\ClaimsRetroactiveForSpa.cs" />
+    <Compile Include="Entities\ClientAttendance.cs" />
+    <Compile Include="Entities\ClientAttendanceCalendarDates.cs" />
+    <Compile Include="Entities\ClientAttendanceCalendars.cs" />
+    <Compile Include="Entities\ClientAttendanceDayTypes.cs" />
+    <Compile Include="Entities\ClientAttendanceSchedules.cs" />
+    <Compile Include="Entities\ClientAttendanceScheduleTimes.cs" />
+    <Compile Include="Entities\ClientAttendanceYears.cs" />
+    <Compile Include="Entities\ClientComplianceClientItems.cs" />
+    <Compile Include="Entities\ClientComplianceCommon.cs" />
+    <Compile Include="Entities\ClientComplianceItems.cs" />
+    <Compile Include="Entities\ClientComplianceTasks.cs" />
+    <Compile Include="Entities\ClientContacts.cs" />
+    <Compile Include="Entities\ClientContracts.cs" />
+    <Compile Include="Entities\ClientDomains.cs" />
+    <Compile Include="Entities\ClientGroupServiceClassNameSpecificPracticeRuleSets.cs" />
+    <Compile Include="Entities\ClientInvoices.cs" />
+    <Compile Include="Entities\ClientsNotes.cs" />
+    <Compile Include="Entities\ClientsNotesTopics.cs" />
+    <Compile Include="Entities\ClientPBSDocumentation.cs" />
+    <Compile Include="Entities\ClientReps.cs" />
+    <Compile Include="Entities\Clients.cs" />
+    <Compile Include="Entities\ClientSchoolSessionAcademicYears.cs" />
+    <Compile Include="Entities\ClientSchoolSessionBreaks.cs" />
+    <Compile Include="Entities\Companies.cs" />
+    <Compile Include="Entities\CompanyFiscalQuarters.cs" />
+    <Compile Include="Entities\CompanyFiscalYears.cs" />
+    <Compile Include="Entities\CrcsCategoriesCompleted.cs" />
+    <Compile Include="Entities\CrcsCommon.cs" />
+    <Compile Include="Entities\CRCSCompletionReport.cs" />
+    <Compile Include="Entities\CRCSCompletionReportForAllClients.cs" />
+    <Compile Include="Entities\CrcsContractorCosts.cs" />
+    <Compile Include="Entities\CrcsContractorCostsReport.cs" />
+    <Compile Include="Entities\CrcsDeferralCommon.cs" />
+    <Compile Include="Entities\CrcsMedEquipmentDepreciationCosts.cs" />
+    <Compile Include="Entities\CrcsOtherCosts.cs" />
+    <Compile Include="Entities\CrcsOtherCostsReport.cs" />
+    <Compile Include="Entities\CrcsPracSalaries.cs" />
+    <Compile Include="Entities\CrcsPracSalariesBefore1920FY.cs" />
+    <Compile Include="Entities\CrcsPracSalariesReport.cs" />
+    <Compile Include="Entities\CrcsProgramInfo.cs" />
+    <Compile Include="Entities\CrcsTransportationEquipmentDepreciationCosts.cs" />
+    <Compile Include="Entities\CrcsTransportationOtherCosts.cs" />
+    <Compile Include="Entities\CrcsTransportationPersonnelCosts.cs" />
+    <Compile Include="Entities\CrcsTransportationReimbursements.cs" />
+    <Compile Include="Entities\CYBHIProviderDegrees.cs" />
+    <Compile Include="Entities\CYBHIProviderSpecialties.cs" />
+    <Compile Include="Entities\CYBHIProgramHealthDetailedServicesDocumented.cs" />
+    <Compile Include="Entities\DataDrivenFormPages.cs" />
+    <Compile Include="Entities\FileClasses.cs" />
+    <Compile Include="Entities\FileUploads.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\FromDHCSFiles.cs" />
+    <Compile Include="Entities\GroupsServiceClasses.cs" />
+    <Compile Include="Entities\Allergies.cs" />
+    <Compile Include="Entities\ImportFromPatientGoalRecords.cs" />
+    <Compile Include="Entities\KnownHealthProblems.cs" />
+    <Compile Include="Entities\InputBatchesCommon.cs" />
+    <Compile Include="Entities\InputBatchesInProcess.cs" />
+    <Compile Include="Entities\InputBatchesStatus.cs" />
+    <Compile Include="Entities\InputBatchesWorkType.cs" />
+    <Compile Include="Entities\InsuranceCarriers.cs" />
+    <Compile Include="Entities\LeaBopHealthCommon.cs" />
+    <Compile Include="Entities\LecOrLga.cs" />
+    <Compile Include="Entities\ManPages.cs" />
+    <Compile Include="Entities\MissingServicesTreatmentsCommon.cs" />
+    <Compile Include="Entities\MissingServicesTreatmentsDetails.cs" />
+    <Compile Include="Entities\MissingServicesTreatmentsForAPatient.cs" />
+    <Compile Include="Entities\MissingServicesTreatmentsSummary.cs" />
+    <Compile Include="Entities\NewsletterPages.cs" />
+    <Compile Include="Entities\NoteLibrarySavedNotes.cs" />
+    <Compile Include="Entities\NoteLibraryTemplates.cs" />
+    <Compile Include="Entities\ORPDocuments.cs" />
+    <Compile Include="Entities\ORPDocumentsStandardSelectionNames.cs" />
+    <Compile Include="Entities\PatExpectedServices.cs" />
+    <Compile Include="Entities\PatientAccommodation.cs" />
+    <Compile Include="Entities\PatientCareNotes.cs" />
+    <Compile Include="Entities\PatientDiagnosis.cs" />
+    <Compile Include="Entities\PatientGoalsProgressMeasurements.cs" />
+    <Compile Include="Entities\PatientInfoRequestOptionsCommon.cs" />
+    <Compile Include="Entities\PatientInfoRequestsFormOptions.cs" />
+    <Compile Include="Entities\PatientInfoRequestsPublicFormOptions.cs" />
+    <Compile Include="Entities\PatientInfoRequestsPublicInsuranceFormResponses.cs" />
+    <Compile Include="Entities\PatientInfoRequestsPublicInsuranceForms.cs" />
+    <Compile Include="Entities\PatientInfoRequestsResponses.cs" />
+    <Compile Include="Entities\PatientInfoRequestsResponsesCommon.cs" />
+    <Compile Include="Entities\PatientInfoRequestsResponsesMassUpdateRows.cs" />
+    <Compile Include="Entities\PatientInfoRequestsResponsesMassUpdates.cs" />
+    <Compile Include="Entities\PatientKnownHealthProblems.cs" />
+    <Compile Include="Entities\PatientAllergies.cs" />
+    <Compile Include="Entities\PatientGoals.cs" />
+    <Compile Include="Entities\PatientGoalsDefaultDates.cs" />
+    <Compile Include="Entities\PatientGoalsProgressIndividualGoals.cs" />
+    <Compile Include="Entities\PatientInsuranceCarriers.cs" />
+    <Compile Include="Entities\PatientParentMcalConsents.cs" />
+    <Compile Include="Entities\PatientPersonPortalCommon.cs" />
+    <Compile Include="Entities\PatientPersons.cs" />
+    <Compile Include="Entities\PatientPlaces.cs" />
+    <Compile Include="Entities\PatientPortalCommon.cs" />
+    <Compile Include="Entities\PatientPractitioners.cs" />
+    <Compile Include="Entities\PatientProfilePictures.cs" />
+    <Compile Include="Entities\PatientPromisedServices.cs" />
+    <Compile Include="Entities\PatientPromisedServicesDeliveryExceptionAddedReasons.cs" />
+    <Compile Include="Entities\PatientPromisedServicesDeliveryExceptionRemovedReasons.cs" />
+    <Compile Include="Entities\PatientPromisedServicesDeliveryExceptions.cs" />
+    <Compile Include="Entities\PatientsCurrentMcalBenefits.cs" />
+    <Compile Include="Entities\PatientsPromisedServicesCDEAuditsCurrent.cs" />
+    <Compile Include="Entities\PatientsPromisedServicesComplianceCurrentFY.cs" />
+    <Compile Include="Entities\PatientsPromisedServicesCDEAuditsCurrentForSelpas.cs" />
+    <Compile Include="Entities\PatientsPromisedServicesCDEAuditsCurrentPatients.cs" />
+    <Compile Include="Entities\PatientsPromisedServicesCDEAuditsCurrentPatientsExpectedServices.cs" />
+    <Compile Include="Entities\PatientsPromisedServicesMinsConsideredSatisfiedSetPoints.cs" />
+    <Compile Include="Entities\PatientsPromisedServicesPcalComplianceRatingForPatCodes.cs" />
+    <Compile Include="Entities\PatientsWithMissingInfo.cs" />
+    <Compile Include="Entities\PatientVitalsMeasurements.cs" />
+    <Compile Include="Entities\PersonClasses.cs" />
+    <Compile Include="Entities\PlanWriterPlans.cs" />
+    <Compile Include="Entities\PlanWriterPlansPrescribedOrders.cs" />
+    <Compile Include="Entities\PlanWriterPlansServiceDescriptions.cs" />
+    <Compile Include="Entities\PlanWriterDiagnoses.cs" />
+    <Compile Include="Entities\PlanWriterPlansPatientPersons.cs" />
+    <Compile Include="Entities\PlanWriterRecords.cs" />
+    <Compile Include="Entities\PotentialLostReimbursementActionItems.cs" />
+    <Compile Include="Entities\PotentialLostReimbursements.cs" />
+    <Compile Include="Entities\PotentialLostReimbursementsResponses.cs" />
+    <Compile Include="Entities\PracPatReferralCommon.cs" />
+    <Compile Include="Entities\PracticeOfficeCommon.cs" />
+    <Compile Include="Entities\PracticeOfficeKiosks.cs" />
+    <Compile Include="Entities\PracticeOfficeVisitReasons.cs" />
+    <Compile Include="Entities\PracticeOfficeVisitResolutions.cs" />
+    <Compile Include="Entities\PracticeOfficeVisits.cs" />
+    <Compile Include="Entities\PractionerPatientReferalOptions.cs" />
+    <Compile Include="Entities\PractitioenrPatientReferralsPublicMentalHealthRequestReferrallFormResponses.cs" />
+    <Compile Include="Entities\PractitioenrPatientReferralsPublicMentalHealthRequestReferrallForms.cs" />
+    <Compile Include="Entities\PractitionerCaseloadMembers.cs" />
+    <Compile Include="Entities\PractitionerDepartmentServicesReview.cs" />
+    <Compile Include="Entities\PractitionerDirectSupervisedSupervisors.cs" />
+    <Compile Include="Entities\PractitionerDirectSupervisors.cs" />
+    <Compile Include="Entities\PractitionerEmploymentRelationships.cs" />
+    <Compile Include="Entities\PractitionerPatientCaseloadExpectedServices.cs" />
+    <Compile Include="Entities\PractitionerPatientCaseloadExpectedServicesSpEdPlansAndSpEdSvcCodes.cs" />
+    <Compile Include="Entities\PractitionerPatientGroupMembers.cs" />
+    <Compile Include="Entities\PractitionerPatientGroups.cs" />
+    <Compile Include="Entities\ClientContactRoles.cs" />
+    <Compile Include="Entities\PractitionerPatientReferrals.cs" />
+    <Compile Include="Entities\PractitionerPatientScheduledServices.cs" />
+    <Compile Include="Entities\PractitionerPreferenceSpedServices.cs" />
+    <Compile Include="Entities\PractitionersEfficiency.cs" />
+    <Compile Include="Entities\PractitionerSites.cs" />
+    <Compile Include="Entities\RecurringServices.cs" />
+    <Compile Include="Entities\Distribution.cs" />
+    <Compile Include="Entities\DistributionHistory.cs" />
+    <Compile Include="Entities\Groups.cs" />
+    <Compile Include="Entities\ClaimProcedureFees.cs" />
+    <Compile Include="Entities\OneOnOneAideAssignments.cs" />
+    <Compile Include="Entities\PatientGroups.cs" />
+    <Compile Include="Entities\Publications.cs" />
+    <Compile Include="Entities\RMTSActivityCodeChangeReasons.cs" />
+    <Compile Include="Entities\RmtsCurrentQuarters.cs" />
+    <Compile Include="Entities\RmtsParticipants.cs" />
+    <Compile Include="Entities\RmtsParticipantsWoSvcRecs.cs" />
+    <Compile Include="Entities\RmtsParticipantsExcluded.cs" />
+    <Compile Include="Entities\RmtsParticipantsIncluded.cs" />
+    <Compile Include="Entities\RmtsParticipantsPossible.cs" />
+    <Compile Include="Entities\RmtsParticipationRosters.cs" />
+    <Compile Include="Entities\RmtsReasonsForEndDateChange.cs" />
+    <Compile Include="Entities\RmtsReasonsForStartDateChange.cs" />
+    <Compile Include="Entities\SelpaRelatedClients.cs" />
+    <Compile Include="Entities\SELPAS.cs" />
+    <Compile Include="Entities\ServiceAuthorizationCommon.cs" />
+    <Compile Include="Entities\ServiceAuthorizationRequestFilesToInclude.cs" />
+    <Compile Include="Entities\ServiceAuthorizationRequestResponses.cs" />
+    <Compile Include="Entities\ServiceAuthorizationRequests.cs" />
+    <Compile Include="Entities\ServiceAuthorizationRequestsPermanentRecords.cs" />
+    <Compile Include="Entities\ServiceJournalRecentProcedureEntries.cs" />
+    <Compile Include="Entities\ServiceJournals.cs" />
+    <Compile Include="Entities\ServiceJournalsEventSelections.cs" />
+    <Compile Include="Entities\ServiceJournalsJournalEntries.cs" />
+    <Compile Include="Entities\ServiceJournalsJournals.cs" />
+    <Compile Include="Entities\ServiceJournalsPrescribedOrders.cs" />
+    <Compile Include="Entities\ServiceJournalsServiceDescriptions.cs" />
+    <Compile Include="Entities\ServiceNote.cs" />
+    <Compile Include="Entities\ServiceNoteAnswer.cs" />
+    <Compile Include="Entities\ServiceNoteAnswerHeader.cs" />
+    <Compile Include="Entities\ServiceNoteAnswerHeaders.cs" />
+    <Compile Include="Entities\ServiceNoteAnswerSelectBase.cs" />
+    <Compile Include="Entities\ServiceNoteAnswerSelection.cs" />
+    <Compile Include="Entities\ServiceNoteAnswerSelections.cs" />
+    <Compile Include="Entities\ServiceNoteAnswerSubmitted.cs" />
+    <Compile Include="Entities\ServiceNoteCommon.cs" />
+    <Compile Include="Entities\ServiceNotePreferences.cs" />
+    <Compile Include="Entities\ServiceNoteQuestion.cs" />
+    <Compile Include="Entities\ServiceNoteQuestions.cs" />
+    <Compile Include="Entities\ServiceNoteRequest.cs" />
+    <Compile Include="Entities\ServiceNoteRequests.cs" />
+    <Compile Include="Entities\ServiceNotes.cs" />
+    <Compile Include="Entities\ServiceNoteSelectedAnswer.cs" />
+    <Compile Include="Entities\ServiceNoteSelectedAnswers.cs" />
+    <Compile Include="Entities\ServiceRecordAttendanceSelections.cs" />
+    <Compile Include="Entities\ServiceRecords.cs" />
+    <Compile Include="Entities\ServiceRecordsApproval.cs" />
+    <Compile Include="Entities\ServiceRecordsApprovalDetails.cs" />
+    <Compile Include="Entities\ServiceRecordsApprovalSummary.cs" />
+    <Compile Include="Entities\ServiceRecordsApprovalSupervisors.cs" />
+    <Compile Include="Entities\ServiceRecordsApprovalSvcRecsToChangeDetails.cs" />
+    <Compile Include="Entities\ServiceRecordsDataImports.cs" />
+    <Compile Include="Entities\PatientInsuranceCarriersDataImports.cs" />
+    <Compile Include="Entities\ServiceRecordsDataIncomplete.cs" />
+    <Compile Include="Entities\ServiceRecordsEntryExit.cs" />
+    <Compile Include="Entities\ServiceRecordsExpectedEntryRows.cs" />
+    <Compile Include="Entities\ServiceRecordsInternalReviews.cs" />
+    <Compile Include="Entities\ServiceRecordsNotes.cs" />
+    <Compile Include="Entities\ServiceRecordsNotesFormatted.cs" />
+    <Compile Include="Entities\ServiceRecordsNotesSvcRec.cs" />
+    <Compile Include="Entities\ServiceRecordsNotesUnformatted.cs" />
+    <Compile Include="Entities\ServicesByPracRpt.cs" />
+    <Compile Include="Entities\Sessions.cs" />
+    <Compile Include="Entities\SitePlaces.cs" />
+    <Compile Include="Entities\SpEdAccommodationLookups.cs" />
+    <Compile Include="Entities\SpEdAssessmentTools.cs" />
+    <Compile Include="Entities\SpEdBaselineUnits.cs" />
+    <Compile Include="Entities\SpEdDisabilityCodes.cs" />
+    <Compile Include="Entities\SpEdDocumentTemplates.cs" />
+    <Compile Include="Entities\SpEdGenders.cs" />
+    <Compile Include="Entities\SpEdGrades.cs" />
+    <Compile Include="Entities\SpEdLanguages.cs" />
+    <Compile Include="Entities\SpEdPatientPrimaryResidences.cs" />
+    <Compile Include="Entities\SpEdPlanTypes.cs" />
+    <Compile Include="Entities\SpEdPresentLevelSources.cs" />
+    <Compile Include="Entities\SpEdProgramTypes.cs" />
+    <Compile Include="Entities\SpEdRaces.cs" />
+    <Compile Include="Entities\SpEdReferringParties.cs" />
+    <Compile Include="Entities\SpEdServiceFrequencies.cs" />
+    <Compile Include="Entities\SpEdServiceLocations.cs" />
+    <Compile Include="Entities\SpEdServiceProviders.cs" />
+    <Compile Include="Entities\SpEdServices.cs" />
+    <Compile Include="Entities\SpEdServiceSettings.cs" />
+    <Compile Include="Entities\SpEdVehicleAdaptations.cs" />
+    <Compile Include="Entities\StoredFiles.cs" />
+    <Compile Include="Entities\StructuredDataImportFilesPatientData.cs" />
+    <Compile Include="Entities\StructuredDataImportFilesRmtsMomentsData.cs" />
+    <Compile Include="Entities\StructuredDataImportFilesRmtsParticipantsData.cs" />
+    <Compile Include="Entities\StructuredDataImportFilesRmtsParticipantsNotInSpEdCare.cs" />
+    <Compile Include="Entities\StudentInformationSystem.cs" />
+    <Compile Include="Entities\Subscribers.cs" />
+    <Compile Include="Entities\Subscriptions.cs" />
+    <Compile Include="Entities\SvcAuthStatsHist.cs" />
+    <Compile Include="Entities\TimekeeperAccountabilityRpt.cs" />
+    <Compile Include="Entities\TimeKeeperTaskEntryCalendarEvents.cs" />
+    <Compile Include="Entities\TelecommIEPTypes.cs" />
+    <Compile Include="Entities\TeleCommParticipantsTeleHealth.cs" />
+    <Compile Include="Entities\TeleCommSessionsTeleHealth.cs" />
+    <Compile Include="Entities\TeleCommSessionsTeleIEP.cs" />
+    <Compile Include="Entities\TimekeeperEmployeeFavorites.cs" />
+    <Compile Include="Entities\TimekeeperEmployees.cs" />
+    <Compile Include="Entities\TransportationMgmtAuthorizedPatients.cs" />
+    <Compile Include="Entities\TransportationMgmtAuthorizedRouteMembers.cs" />
+    <Compile Include="Entities\TransportationMgmtAuthorizedRoutes.cs" />
+    <Compile Include="Entities\TransportationMgmtBusDrivers.cs" />
+    <Compile Include="Entities\TransportationMgmtPlaces.cs" />
+    <Compile Include="Entities\TransportationMgmtRecords.cs" />
+    <Compile Include="Entities\TransportationMgmtRouteSheetMembers.cs" />
+    <Compile Include="Entities\TransportationMgmtRouteSheetProcessing.cs" />
+    <Compile Include="Entities\TransportationMgmtRouteSheets.cs" />
+    <Compile Include="Entities\TransportationMgmtServiceRecordReview.cs" />
+    <Compile Include="Entities\TransportationMgmtTripCalculations.cs" />
+    <Compile Include="Entities\UserMessages.cs" />
+    <Compile Include="Entities\UserSignatures.cs" />
+    <Compile Include="Entities\UsersPcal.cs" />
+    <Compile Include="Entities\TimeKeeperTasks.cs" />
+    <Compile Include="Entities\RmtsMoments.cs" />
+    <Compile Include="Entities\RmtsMomentMissingOrUndocumentedStatsObjs.cs" />
+    <Compile Include="Entities\WorkInProgressSavePoints.cs" />
+    <Compile Include="Web\NewsletterPageViewContentHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\AllergiesRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\CdeComplianceBucketDetailsByPcalComplianceRatingAndPatientsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\CdeComplianceBucketsDetailsByServiceRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\ClaimServiceNameXrefAndFormDataRecordsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\ClaimsRetroactiveForSpaRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\ClientDomainsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\ClientGroupServiceClassNameSpecificPracticeRuleSetsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\ClientInvoicesRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\ClientNotesRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\ClientSchoolSessionBreaksRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\ClientSchoolSessionsAcademicYearsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\ClientComplianceClientItemsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\ClientsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\ClientStudentInformationSystemsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\CRCSContractorCostsReportRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\CRCSContractorCostsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\CRCSMedEquipmentDepreciationCostsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\CRCSOtherCostsReportRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\CRCSOtherCostsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\CRCSPracSalariesBefore1920FYRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\CRCSPracSalariesReportRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\CRCSPracSalariesRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\CRCSPracSalariesRateRebasingRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\CRCSTransportationEquipmentDepreciationCostsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\CRCSTransportationOtherCostsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\CRCSTransportationPersonnelCostsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\CRCSTransportationReimbursementsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\CYBHIConsortiumMembersRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\CYBHIHoldsMissingInfoPatsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\CYBHIProgramHealthDetailedServiceDocumentedRestHttpApiHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\CybhiServiceRecordsOrpReviewsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\InsuranceCarriersRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\KnownHealthProblemsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PatientDiagnosesRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PatientInfoRequestsPublicInsuranceFormResponsesRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PatientInfoRequestsResponsesRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PatientKnownHealthProblemsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PatientAlleriesRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\InputBatchesInProcessRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\ManPagesRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\MissingServicesTreatmentsDetailsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\MissingServicesTreatmentsForAPatientRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\MissingServicesTreatmentsSummaryRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\NewslettersRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\OpenServiceJournalsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\OrpDocumentsOrdersAndProfilesRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\OrpDocumentsStandardSelectionNamesRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PatientGoalsProgressIndividualGoalsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PatientGoalsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PatientInsuranceCarriersRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PatientParentMcalConsentsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PatientPromisedServicesDeliveryExceptionsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PatientPromisedServicesRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PatientsCurrentMcalBenefitsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PatientsPromisedServicesCDEAuditsCurrentPatientsExpectedServicesRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PatientsPromisedServicesCDEAuditsCurrentPatientsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PatientsWithMissingInfoRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PatientVitalsMeasurmentsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PlanWriterPlansRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PotentialLostReimbursementsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PracDirectSupervisionRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PracticeOfficeKiosksRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PracticeOfficeVisitReasonsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PracticeOfficeVisitResolutionsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PracticeOfficeVisitsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PractitionerCaseloadMembersRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PractitionerEmploymentRelationshipsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PractitionerPatientCaseloadExpectedServicesRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PractitionerPatientGroupMembersRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PractitionerPatientReferralRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PractitionerPatientScheduledServicesRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PractitionerPreferenceSpedServicesRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PractitionersEfficiencyRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PractitionerSitesrestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\RMTSActivityCodeChangeReasonsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\RMTSMomentsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\RmtsParticipantRostersRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\RmtsParticipantsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\RmtsParticipantsWoSvcRecsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\ServiceJournalRecentProcedureEntriesRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\ServiceRecordsApprovalDetailsBySvcRecIDRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\ServiceRecordsApprovalDetailsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\ServiceRecordsApprovalSummaryByJournalRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\ServiceRecordsApprovalSummaryByPracRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\ServiceRecordsDataIncompleteRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\ServiceRecordsInternalReviewsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\ServiceRecordsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\SitesRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\SpEdDocumentTemplatesRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\StoredFilesRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\StructuredDataImportFilesPatientDataRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\StructuredDataImportFilesRmtsParticipantsNotInSpEdCareRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\TeleHealthSessionsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\TeleIepSessionsRestApiHttpHander.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\TimeKeeperServiceRecordsPerMinuteRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\TransportationMgmtAuthorizedRouteMembersRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\UserPersonalNotesRestApiHttpHandler.cs" />
+    <Compile Include="Windows\ProcessBulkNotifications.cs" />
+    <Compile Include="Windows\ProcessEmailNotifications.cs" />
+    <Compile Include="Windows\ProcessPatientDataImports.cs" />
+    <Compile Include="Windows\ProcessUploadFile.cs" />
+    <Compile Include="Reports\Financial.cs" />
+    <Compile Include="Entities\Roles.cs" />
+    <Compile Include="Entities\Sites.cs" />
+    <Compile Include="Entities\Patients.cs" />
+    <Compile Include="Entities\Practitioners.cs" />
+    <Compile Include="Entities\Services.cs" />
+    <Compile Include="Entities\Users.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entities\Workflow.cs" />
+    <Compile Include="Web\FormPageHandler.cs" />
+    <Compile Include="Web\FormPagesSvc.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Web\RestAPIHttpHandlers\PatientPersonsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PatientsRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\PractitionersRestApiHttpHandler.cs" />
+    <Compile Include="Web\RestAPIHttpHandlers\UsersRestApiHttpHandler.cs" />
+    <Compile Include="Web\WebUI2.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\WebUI3.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\WebUiJqm.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\WebDataDocument.cs" />
+    <Compile Include="Web\WebReportDocument.cs" />
+    <Compile Include="Web\WebUI.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\WebUITeleCommBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\MBA\Common\AppFramework\AppFramework.csproj">
+      <Project>{5757641D-110F-4057-89BF-A22AF239DAD6}</Project>
+      <Name>AppFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MBA\Common\EAW\WebUI\EAW.Web.UI.csproj">
+      <Project>{1c14b165-542f-4728-bc68-7bf36f1f3369}</Project>
+      <Name>EAW.Web.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MBA\Common\Geo\Geo.csproj">
+      <Project>{21289608-DA2E-4B2C-A89F-A65D2A89FFE7}</Project>
+      <Name>Geo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MBA\Common\MediaFile\MediaFile.csproj">
+      <Project>{EC7481C0-456A-4367-9ABC-EE6754D5B176}</Project>
+      <Name>MediaFile</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1 @@
+<%@ WebService Language="C#" CodeBehind="import_from_patient_goal_records.asmx.cs" Class="Spedmon.ImportFromPatientGoalRecordsSvc" %>

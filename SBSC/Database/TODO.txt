@@ -1,0 +1,32 @@
+
+-- DO NOT REMOVE THESE COMMENTS UNTIL THESE BUGFIXES/ACTION ITEMS HAVE BEEN IMPLEMENTED AND DEPLOYED
+
+
+--NOTE: The table [Import_From_B_and_C_File_rows] contains and populates all the necessary fields to replace the existing table [dbo].[PATIENTS_StudentData_Correlation].
+--We can get rid of [dbo].[PATIENTS_StudentData_Correlation], eventually.
+
+
+-- DO NOT REMOVE THESE COMMENTS UNTIL THESE BUGFIXES/ACTION ITEMS HAVE BEEN IMPLEMENTED AND DEPLOYED
+
+/*
+
+--TODO:
+
+IF NOT EXISTS(SELECT * FROM sys.columns WHERE Name = 'Date_Uploaded' AND Object_ID = Object_ID('dbo.Import_From_A_from_client_ToSPED_Files'))
+BEGIN
+  ALTER TABLE Import_From_A_from_client_ToSPED_Files add Date_Uploaded date null
+END
+GO
+*/
+
+
+-- NOTE: The tables [Import_From_B_to_dhcs_ToSPED_Files] and [Import_From_C_from_dhcs_ToSPED_Files] are intended to contain and populates all the necessary fields
+-- to replace the existing table [dbo].[PATIENTS_StudentData_FileID].
+-- We can can refactor the B & C rtns, ever so slightly, and retire [dbo].[PATIENTS_StudentData_FileID], eventually.
+
+-- TODO: At some point, when we are not awaiting any return files for the C routine, let's drop the table [dbo].[PATIENTS_StudentData_FileID]
+
+-- NOTE: The table [Import_From_B_and_C_File_rows] contains and populates all the necessary fields to replace the existing table [dbo].[PATIENTS_StudentData_Correlation].
+-- We can get rid of [dbo].[PATIENTS_StudentData_Correlation], eventually.
+
+-- TODO: At some point, when we are not awaiting any return files for the C routine, let's drop the table [dbo].[PATIENTS_StudentData_Correlation].

@@ -1,0 +1,5 @@
+C:\SBSC\Spedmon\Apps\ScanAndMoveFiles\bin\Debug\ScanAndMoveFiles.exe
+C:\SBSC\Spedmon\Apps\ScanAndMoveFiles\bin\Debug\ScanAndMoveFiles.pdb
+C:\SBSC\Spedmon\Apps\ScanAndMoveFiles\obj\Debug\ScanAndMoveFiles.csproj.CoreCompileInputs.cache
+C:\SBSC\Spedmon\Apps\ScanAndMoveFiles\obj\Debug\ScanAndMoveFiles.exe
+C:\SBSC\Spedmon\Apps\ScanAndMoveFiles\obj\Debug\ScanAndMoveFiles.pdb

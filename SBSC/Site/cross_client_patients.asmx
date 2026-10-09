@@ -1,0 +1,1 @@
+<%@ WebService Language="C#" CodeBehind="cross_client_patients.asmx.cs" Class="Spedmon.CrossClientPatientsSvc" %>

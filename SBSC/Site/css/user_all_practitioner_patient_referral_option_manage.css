@@ -1,0 +1,297 @@
+﻿.referral-container-new-client {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-nc {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    position: relative;
+    flex-shrink: 0;
+}
+    .header-nc::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .header-nc h1 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .header-nc p {
+        font-size: 0.9rem;
+        opacity: 0.9;
+        position: relative;
+        z-index: 1;
+        margin: 0;
+    }
+
+.form-content-nc {
+    padding: 20px 30px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.section-nc {
+    margin-bottom: 20px;
+}
+
+.section-title-nc {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #e8f4fd;
+}
+
+    .section-title-nc i {
+        margin-right: 8px;
+        color: #4facfe;
+        width: 18px;
+        text-align: center;
+    }
+
+/* Priority Selection */
+.priority-grid-nc {
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    gap: 40px;
+    margin-bottom: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.priority-card-nc {
+    position: relative;
+    background: white;
+    border: 2px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 160px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .priority-card-nc:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .priority-card-nc.routine-nc {
+        background: #28a745;
+    }
+
+    .priority-card-nc.urgent-nc {
+        background: #ffc107;
+    }
+
+    .priority-card-nc.crisis-nc {
+        background: #dc3545;
+    }
+
+    .priority-card-nc.selected {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .priority-card-nc.routine-nc.selected {
+        background: linear-gradient(135deg, #28a745, #20c997);
+        color: white;
+        border-color: #28a745;
+    }
+
+    .priority-card-nc.urgent-nc.selected {
+        background: linear-gradient(135deg, #ffc107, #fd7e14);
+        color: white;
+        border-color: #ffc107;
+    }
+
+    .priority-card-nc.crisis-nc.selected {
+        background: linear-gradient(135deg, #dc3545, #e83e8c);
+        color: white;
+        border-color: #dc3545;
+    }
+
+    .priority-card-nc i {
+        font-size: 1.2rem;
+        margin-bottom: 4px;
+        display: block;
+    }
+
+    .priority-card-nc .priority-label-nc {
+        font-weight: 600;
+        font-size: 0.8rem;
+        line-height: 1.2;
+    }
+
+    .priority-card-nc input[type="checkbox"] {
+        display: none;
+    }
+
+/* Submit Button */
+.submit-section-nc {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 2px solid #e8f4fd;
+    margin-top: 15px;
+}
+
+.submit-btn-nc {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 20px rgba(79, 172, 254, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+    .submit-btn-nc::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        transition: left 0.5s;
+    }
+
+    .submit-btn-nc:hover::before {
+        left: 100%;
+    }
+
+    .submit-btn-nc:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 28px rgba(79, 172, 254, 0.4);
+    }
+
+    .submit-btn-nc:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+        transform: none;
+    }
+
+    .submit-btn-nc i {
+        margin-right: 10px;
+    }
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .referral-container-new-client {
+        width: 98%;
+        height: 55vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .referral-container-new-client {
+        width: 95%;
+        height: 70vh;
+        min-height: 500px;
+    }
+
+    .form-content-nc {
+        padding: 15px 20px;
+    }
+
+    .header-nc h1 {
+        font-size: 1.5rem;
+    }
+
+    .priority-grid-nc {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .form-grid-nc {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+}
+
+.line-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.line-container .line{
+    flex: 1;
+    height: 2px;
+    background: black;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.line-container .line-title{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* Success Animation */
+.success-checkmark-nc {
+    display: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #28a745;
+    position: relative;
+    margin: 15px auto;
+}
+
+    .success-checkmark-nc::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 25px;
+        height: 12px;
+        border: 3px solid white;
+        border-top: none;
+        border-right: none;
+        transform: translate(-50%, -60%) rotate(-45deg);
+    }

@@ -1,0 +1,161 @@
+﻿@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+i.mba-messages-widget-class {
+    color: #6ab96a;
+}
+
+i.mba-messages-widget-class:hover {
+    color: #6ab96aaa;
+    animation: flash 1.3s infinite linear;
+}
+
+i.mba-messages-widget-class:active {
+    color: #940a00;
+    transform: rotate(-25deg);
+    animation: none;
+}
+
+i.fa-paper-plane {
+    color: #609260;
+}
+
+i.fa-trash-alt, i.fa-window-close {
+    color: #995D55;
+}
+
+i.fa-reply {
+    color: #7b87b3;
+}
+
+i.fa-trash-alt.fa-1-2em {
+    font-size: 1.2em;
+    color: #995D55;
+}
+
+i.fa-share-square {
+    font-size: 1.2em;
+    color: #ff8d6b;
+}
+
+.max-height-100 {
+    max-height: 100px;
+    overflow-y: scroll;
+}
+
+.max-height-100-ellipsis {
+    max-height: 100px;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.max-height-100-ellipsis:hover {
+    overflow-y: scroll; 
+}
+
+.white-space-pre {
+    white-space: pre;
+}
+
+.mba-messages-widget-message-dialog-minimize-btn,
+.mba-messages-widget-message-dialog-maximize-btn {
+    right: 2em !important;
+}
+
+div.mba-messages-widget-hippa-compliance-notice {
+  padding:1em;
+  margin:1em;
+  width:auto;
+  font-size:1em;
+  text-align:center;
+  background-color:#faf3d1;
+  color:#000;
+  border:1px solid #000;
+}
+
+div.mba-messages-widget-hippa-compliance-notice strong {
+  font-weight:bold;
+}
+
+div.mba-messages-widget-hippa-compliance-notice a {
+  
+}
+
+div.mba-messages-widget-container {
+ 
+}
+
+div.mba-messages-widget-title-and-options-row {
+
+}
+
+div.mba-messages-widget-messages-row {
+
+}
+
+div.mba-messages-widget-message {
+
+}
+
+a.mba-messages-widget-message-preview-container {
+    text-decoration: none;
+}
+
+span.mba-messages-widget-message-preview-container {
+
+}
+
+div.mba-messages-widget-message-preview-content {
+color:#000000;
+}
+
+div.mba-messages-widget-message-preview-content-row-1 {
+    font-size:.75em;
+}
+
+div.mba-messages-widget-message-preview-content-row-2 {
+  font-size:.90em;    
+}
+
+i.mba-messages-widget-message-preview-content-msg-icon {
+
+}
+
+span.mba-messages-widget-message-preview-content-msg-title {
+    font-weight:bold;
+}
+
+span.mba-messages-widget-message-preview-content-msg-title-faded-secondary {
+    font-weight:bold;
+    color: #717171;
+}
+
+span.mba-messages-widget-message-preview-content-msg-title-faded-secondary-lowerc {
+    font-weight:bold;
+    font-size: 15px;
+    color: #717171;
+}
+
+
+span.mba-messages-widget-message-preview-content-msg-date {
+    font-weight:bold;
+}
+
+span.mba-messages-widget-message-preview-content-msg-text {
+    font-weight:normal;
+}
+

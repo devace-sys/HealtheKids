@@ -1,0 +1,449 @@
+:root {
+    --input_color: #f7f7f7;
+    --input-color-hover: #d1fff0;
+    --button-color-join: #d1fbff; /*#c9e2ff*/
+    --button-color-leave: #ffb700; /*#c9e2ff*/
+    --spedcare-green: #ade0d0;
+    --spedcare-blue: #9dc8cc;
+    --spedcare-blue-opaque: #9dc8cc7a;
+    --vid-width: 240px;
+    --vid-cont-height: 240px;
+    --vid-height: 200px; /* used in js */
+}
+
+@font-face { 
+    font-family: robotoCondensedRegular; 
+    src: url('roboto-condensed-regular.ttf');
+}
+
+div.show-present-file {
+  display:block;
+  height:100%;
+  width:100%;
+}
+
+iframe.show-present-file {
+  display:block;
+  width:100%;
+  height:100%;  
+  border:none;
+}
+
+div.view-file {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+iframe.view-file {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+div.full-screen-stream-container {
+
+}
+
+div.full-screen-stream-container video {
+  width:100%;
+  height:60vh;
+}
+
+ul.telecomm-meeting-files {
+  list-style: none;
+}
+
+li.telecomm-meeting-file > span.telecomm-meeting-file-name {
+  display: block;
+  font-size: 1em;
+}
+
+li.telecomm-meeting-file > span.telecomm-meeting-file-name > a.telecomm-meeting-file-view {
+  font-size: 1em;
+  color: #000;
+  text-decoration: none;
+}
+
+li.telecomm-meeting-file > button.btn {
+  margin-right: .25em;
+  font-size: .75em;
+  display: inline-block;
+}
+
+li.telecomm-meeting-file > a.btn {
+  margin-right: .25em;
+  font-size: .75em;
+  display: inline-block;
+}
+
+
+div.stream-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: linear-gradient(black, #12181b, black);
+    border: solid 1px black;
+    color: #fff;
+    margin-bottom: .25em;
+    border: none;
+}
+
+.stream-element-container {
+    background-color: #ffffff00;
+}
+
+.stream-element-container-resp-height {
+    height: calc(var(--vid-height) - 6px);
+    max-height: calc(var(--vid-height) - 6px);
+}
+
+div.stream-element-container video {
+    width: 100%;
+    height: 100%;
+}
+
+i.stream-control {
+  display:inline;
+}
+
+meter.stream-control {
+  display:inline-block;
+}
+
+i {
+    transition: color 0.2s ease-in-out;
+    display: block;
+    font-size: 1.2em;
+    margin: 5px;
+}
+
+i.fa-video-slash,
+
+i.fa-microphone-slash {
+    color: red;
+}
+
+i.fa-video,
+i.fa-microphone {
+    color: #7aff4f;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+div.participantsstreamscontainer {
+    height: var(--vid-cont-height);
+}
+
+div.participantstreams {
+    height: 100%;
+    background-color: #292b2c;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.flex-space-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.video-controls {
+    background: linear-gradient(#292b2c, black, #292b2c);
+}
+
+.video-controls > * {
+    /*margin-right: 10px;*/
+}
+
+/* used for fullscreening videos */
+.full-screen-vid-cont {
+    max-height: unset !important;
+}
+
+.stream-participant-info {
+    max-width: 70%;
+    overflow: auto;
+    text-overflow: ellipsis;
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    z-index: 2;
+    background-color: #000000a1;
+    padding: 0px 5px;
+    color: white;
+}
+
+.current-audio-level {
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    z-index: 2;
+    height: 10px;
+    max-width: 70%;
+    overflow: hidden;
+}
+
+/*#sessionpresentcontent video {
+    max-height: 100%;
+}*/
+
+#sessionpresentcontent .stream-element-container {
+    max-height: 65vh;
+    padding: 0px;
+}
+
+.full-screen-stream-container {
+    padding: 0px;
+}
+
+
+#full-screen-label {
+    /* https://stackoverflow.com/a/25776315 */
+    position: absolute;
+    top: 50%; /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%); /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+}
+
+.color-green {
+    color: #7aff4f;
+}
+
+.color-red {
+   color: red;
+}
+
+.left-right-video-arrow {
+    width: 5%;
+    height: var(--vid-cont-height);
+    transition: all 0.2s ease-in-out;
+    z-index: 3;
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+
+.left-right-video-arrow:hover {
+    opacity: 0.5;
+}
+
+/*.left-right-video-arrow:active {
+    background-color: #a0d1ff;
+}*/
+
+.left-right-video-arrow i {
+    color: #007bff;
+    padding: 10px 13px;
+    background-color: #c6d4ec;
+    border-radius: 50%;
+    border: solid 2px white;
+    pointer-events: all;
+}
+
+
+#left-video-arrow {
+    left: 15px;
+    top: 0px;
+}
+
+#right-video-arrow {
+    right: 15px;
+    top: 0px;
+}
+
+.btn-checkbox-white-blue,
+.btn-checkbox-white-red,
+.btn-checkbox-white-green {
+    color: white;
+    border-color: black;
+}
+
+.btn-checkbox-white-blue:active,
+.btn-checkbox-white-red:active,
+.btn-checkbox-white-green:active {
+    background-color: black !important;
+}
+
+/* blue button */
+.btn-checkbox-white-blue {
+    background-color: #0275d8BF;
+}
+
+.btn-checkbox-white-blue.active,
+.btn-checkbox-white-blue:hover {
+    background-color: #0275d8;
+    box-shadow: none;
+}
+
+.btn-checkbox-white-blue:hover {
+    background-color: #0275d880;
+}
+
+/* red button */
+.btn-checkbox-white-red {
+    background-color: #d9534fBF;
+}
+
+.btn-checkbox-white-red.active,
+.btn-checkbox-white-red:hover {
+    background-color: #d9534f;
+    box-shadow: none;
+}
+
+.btn-checkbox-white-red:hover {
+    background-color: #d9534f80;
+
+}
+
+/* green button */
+.btn-checkbox-white-green {
+    background-color: #5cb85cBF;
+}
+
+.btn-checkbox-white-green.active,
+.btn-checkbox-white-green:hover {
+    background-color: #4c984c;
+    box-shadow: none;
+}
+
+.btn-checkbox-white-green:hover {
+    background-color: #5cb85c80;
+}
+
+div.btn-group-toggle > label.active:after {
+    content: " \2713"
+}
+
+.min-height-35 {
+    min-height: 35px;
+}
+
+.gallery-view {
+    height: unset !important;
+}
+
+.gallery-view .left-right-video-arrow {
+    display: none !important;
+}
+
+.gallery-view #participantstreams {
+    white-space: unset !important;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ui-dialog-titlebar-close {
+    background: url('../images/ui-icons_888888_256x240.png') repeat scroll -93px -128px rgba(0, 0, 0, 0) !important;
+    border: medium none;
+    margin-left: -11px !important;
+}
+
+.ui-dialog-titlebar-close:hover {
+    background: url('../images/ui-icons_222222_256x240.png') repeat scroll -93px -128px rgba(0, 0, 0, 0) !important;
+    margin-left: -11px !important;
+}
+
+/**********************************************************/
+/************        Responsive Queries        ************/
+/**********************************************************/
+/* bootstrap lg */
+@media screen and (max-width: 1199px) {
+    .stream-element-container-resp-height {
+        height: calc(var(--vid-height) - 39px);
+        max-height: calc(var(--vid-height) - 39px);
+    }
+
+    div.participantsstreamscontainer,
+    .left-right-video-arrow {
+        height: calc(var(--vid-cont-height) - 32px);
+    }
+}
+
+/* bootstrap md */
+@media screen and (max-width: 991px) {
+    .stream-element-container-resp-height {
+        height: calc(var(--vid-height) - 86px);
+        max-height: calc(var(--vid-height) - 86px);
+    }
+
+    div.participantsstreamscontainer,
+    .left-right-video-arrow {
+        height: calc(var(--vid-cont-height) - 82px);
+    }
+
+    #fullscreencontainer video {
+        max-width: 45%;
+        max-height: 20vh;
+    }
+
+    /*#sessionpresentcontent .stream-element-container {
+        max-height: unset;
+    }*/
+}
+
+/* bootstrap s */
+@media screen and (max-width: 767px) {
+    .stream-element-container-resp-height {
+        height: calc(var(--vid-height) - 112px);
+        max-height: calc(var(--vid-height) - 112px);
+    }
+
+    div.participantsstreamscontainer,
+    .left-right-video-arrow {
+        height: calc(var(--vid-cont-height) - 117px);
+    }
+
+    .stream-container {
+        font-size: 10px;
+    }
+
+    #fullscreencontainer video {
+        max-width: 100%;
+        max-height: 40vh;
+    }
+
+    #sessionpresentcontent .stream-element-container {
+        max-height: 50vh;
+    }
+}
+
+/* bootstrap xs */
+@media screen and (max-width: 575px) {
+    .stream-element-container-resp-height {
+        height: calc(var(--vid-height) - 113px);
+        max-height: calc(var(--vid-height) - 113px);
+    }
+
+    div.participantsstreamscontainer,
+    .left-right-video-arrow {
+        height: calc(var(--vid-cont-height) - 99px);
+    }
+
+    .left-right-video-arrow {
+        width: 7%;
+    }
+}
+
+/* xxs */
+@media screen and (max-width: 332) {
+    div.participantsstreamscontainer,
+    .left-right-video-arrow {
+        height: calc(var(--vid-cont-height) - 75px);
+    }
+
+    .left-right-video-arrow {
+        width: 25%;
+    }
+}
+
+/* xxxs might not be necessary */
+@media screen and (max-width: 332) {
+    div.participantsstreamscontainer,
+    .left-right-video-arrow {
+        height: calc(var(--vid-cont-height) - 50px);
+    }
+}

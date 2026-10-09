@@ -1,0 +1,34 @@
+﻿
+  h5.rmts-moment-info-title
+, h5.rmts-moment-action-title {
+    text-align:left;
+    font-size:1.3em;
+	font-weight:bold;
+}
+
+h6.rmts-moment-info-question {
+  font-size:var(--mba-data-entry-box-base-font-size);
+}
+
+p.rmts-moment-info-answer {
+    border: 1px solid var(--mba-data-entry-box-border-color);
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px 1px var(--mba-data-entry-box-color-shadow);
+    line-height: var(--mba-data-entry-box-base-dimension);
+    outline: none;
+    font-family: abelRegular;
+    font-size: var(--mba-data-entry-box-base-font-size);
+	padding:var(--mba-data-entry-box-base-dimension);
+}
+
+
+div.rmts-moment-match-status-matched {
+  display:block;
+  background-color:green;
+  font-size:1.3em;
+}
+
+div.rmts-moment-match-status-no-match {
+  display:none;
+}
+ 

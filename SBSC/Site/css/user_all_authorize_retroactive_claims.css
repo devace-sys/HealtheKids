@@ -1,0 +1,59 @@
+﻿/* Ovveride radio box controls */
+
+div.ui-spedmon-box-radio-box-container {
+  padding:0;
+  margin:0;
+}
+
+div.ui-spedmon-box-radio-box-container > span.ui-spedmon-box-radio-box-label {
+display:none;
+}
+
+label.ui-spedmon-box-radio-box-option-label {
+  background:none;
+  border:none;
+  border-radius:0;
+  padding:.25em;
+  text-align:left;
+  margin:0 !important;
+  display:inline-block;
+  vertical-align:middle;
+}
+
+label.ui-spedmon-box-radio-box-option-label > span.ui-button-text {
+  margin-right:1em;
+  padding:0;
+  border:none;
+  text-align:left;
+  display:inline;
+  border-bottom:3px solid white;
+ /* transition: all 0.2s ease-in-out;*/
+}
+
+label.ui-spedmon-box-radio-box-option-label:hover > span.ui-button-text {
+  border-bottom:3px solid #ccc;
+}
+
+label.ui-spedmon-box-radio-box-option-label.ui-state-active > span.ui-button-text {
+  border-bottom:3px solid black; 
+}
+
+#restView {
+    margin-top:1em;
+}
+
+i.mba-rest-view.fa-thumbs-up {
+    color: #338e33;
+}
+
+i.mba-rest-view.fa-thumbs-up:hover {
+    color: #60b360f8
+}
+
+i.mba-rest-view.fa-thumbs-down {
+    color: #c34141;
+}
+
+i.mba-rest-view.fa-thumbs-down:hover {
+    color: #c34141f8
+}

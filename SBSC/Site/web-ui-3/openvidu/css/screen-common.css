@@ -1,0 +1,543 @@
+:root {
+    --input_color: #f7f7f7;
+    --input-color-hover: #d1fff0;
+    --button-color-join: #d1fbff; /*#c9e2ff*/
+    --button-color-leave: #ffb700; /*#c9e2ff*/
+    --spedcare-green: #ade0d0;
+    --spedcare-blue: #9dc8cc;
+    --spedcare-blue-opaque: #9dc8cc7a;
+    --vid-width: 240px;
+    --vid-border: solid 2px #797900;
+}
+
+@font-face { 
+    font-family: robotoCondensedRegular; 
+    src: url('roboto-condensed-regular.ttf');
+}
+
+body {
+    width: auto;
+    height: auto;
+    font-family: robotoCondensedRegular;
+    font-size: 1em;
+    background-color: #ffffff;
+    color: #000000;    
+}
+
+input {
+    transition: all 0.2s ease-in-out;
+    /*background-color: var(--input_color);*/
+    font-family: robotoCondensedRegular;
+    outline: none;
+    font-size: 1em;
+    border: 1px solid #aaaaaa;
+    background: #ffffff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+    color: #222222;
+    width: 7em;
+    padding-left: .45em;
+}
+
+video {
+    /*border: inset 5px var(--spedcare-blue);*/
+    background: linear-gradient(black, #12181b, black);
+    border: solid 1px black;
+}
+
+i {
+    transition: color 0.2s ease-in-out;
+    display: block;
+    font-size: 1.2em;
+    margin: 5px;
+    color: white;
+}
+
+i.fa-video-slash,
+i.fa-microphone-slash {
+    color: red;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+#mute_options {
+    display: flex;
+    order: 2; /* video will be 1 */
+    width: 100%;
+    justify-content: space-around;
+    margin-right: 10px;
+}
+
+input:hover {
+    /*background-color: var(--input-color-hover);*/
+}
+
+input:focus {
+    background-color: white;
+    /*outline-color: var(--spedcare-green);*/
+    /*box-shadow: 1px 1px 5px 0px var(--spedcare-blue);*/
+    border-color: black;
+}
+
+button {
+    /*border-radius: 10px;*/
+    font-size: 1em;
+    outline: none;
+    background-color: var(--spedcare-blue-opaque);
+    line-height: 2em;
+    text-align: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+    #butjoin,
+    #butleave {
+        transition: all 0.3s ease-in-out;
+        border: solid 1px grey;
+        min-height: 2em;
+        /*background: var(--button-color-join);*/
+        font-weight: bold;
+        font-size: 0.6em;
+    }
+
+#butleave {
+    /*background: var(--button-color-leave);*/
+}
+
+#butjoin:hover,
+#butleave:hover {
+    /*background-color: white;*/
+    border-color: var(--spedcare-green);
+    /*box-shadow: 1px 1px 5px 1px var(--button-color-join);*/
+    cursor: pointer;
+}
+
+#butjoin:focus,
+#butleave:focus {
+    /*background-color: var(--spedcare-blue-opaque);*/
+    cursor: pointer;
+}
+
+#room-custom-content-cont.inside-room {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    background-color: #9dc8cc42;
+    position: relative;
+    height: fit-content;
+    height: intrinsic; /* Safari/WebKit uses a non-standard name */
+    height: -moz-max-content; /* Firefox/Gecko */
+    height: -webkit-max-content;
+}
+
+#room-custom-content-cont.inside-room > button {
+    width: 25%;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#app-logo {
+    border: none;
+    display: inline-block;
+    min-height: 50px;
+    max-height: 50px;
+    max-width: 100%;
+}
+
+#room-title {
+    font-size: 1.3em;
+    display: inline-block;
+}
+
+#user-content-and-controls.inside-room {
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#user-content-and-controls.inside-room #publisher video {
+    order: 1; /* 2 is #mute_options */
+    width: 7em;
+}
+
+form.room-enter-exit {
+    display: inline-block;
+    font-size: x-large;
+}
+
+form.room-enter-exit > input[type=hidden] {
+    display:none;
+}
+
+#room-enter {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#room-enter > * {
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: .25em;
+}
+
+#room-enter > *:not(:first-child) {
+    margin: 5px;
+}
+
+#room-enter > label {
+  font-size: .75em;
+}
+
+#room-enter > input {
+    min-width: 15%;
+}
+
+#publisher  {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin: 0 2vw;
+}
+
+#room-exit > * {
+  display:block;
+}
+
+#room-exit > h2 {
+  font-size:1em;
+}
+
+#room-exit > h3 {
+  font-size:.75em;
+}
+
+.room-text-div {
+    margin-top: 50px;
+    padding: 10px;
+    line-height: 2em;
+    font-size: 1.1em;
+    background-color: var(--spedcare-blue-opaque);
+    box-shadow: 3px 3px 5px 0px #a2a2a2;
+    border-radius: 10px;
+}
+
+#meeting-stats {
+    font-weight: bold;
+    line-height: 2em;
+    font-size: 1.1em;
+    background-color: var(--spedcare-blue-opaque);
+    box-shadow: 3px 3px 5px 0px #a2a2a2;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.participants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 40em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px 20px 0px 20px;
+    background-color: #292b2c;
+
+    /* these are the new styles! I will leave the old ones here in case we need to revert back to them */
+    height: 35em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px 20px 0px 20px;
+    background-color: #292b2c;
+    display: block;
+    position: relative;
+}
+
+/* the video modal related stuff */
+#modal-container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    background-color: black;
+    display: flex;
+}
+
+.full-screen-vid {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100% !important; /* the height goes over the page for some reason! this might need to be 97vw */
+    z-index: 6;
+    pointer-events: none;
+    border: none !important;
+}
+
+.full-screen-vid:hover {
+    cursor: auto !important;
+}
+
+#close-partial {
+    transition: all 0.2s ease-in-out;
+    color: red;
+    font-size: 2em;
+    top: 5px;
+    right: 5px;
+    position: fixed;
+    z-index: 700; /* one more than #video-modal-container video */
+    color: #f30101;
+}
+
+#close-partial:hover {
+    cursor: pointer;
+    color: #ff2626;
+}
+
+#subscriber-videos {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 0.5em;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.video-container {
+    height: 15em;
+    position: relative;
+    width: 40%;
+    margin-bottom: 10px;
+    border: var(--vid-border);
+    background: linear-gradient(black, #12181b, black);
+
+    /* these are the new styles! I will leave the old ones here in case we need to revert back to them */
+    width: var(--vid-width);
+    height: 140px;
+}
+
+/*.video-container:nth-child(even) {
+    margin-left: auto;
+
+}*/
+
+.video-container video {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.video-container-name {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px 0.3em;
+    background-color: #000000d9;
+    color: white;
+    font-size: 1em;
+    z-index: 2;
+}
+
+.big-name {
+    font-size: 2em !important;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 23.5%;
+}
+
+.video-container-fs {
+    position: absolute;
+    color: white;
+    bottom: 0px;
+    right: 0px;
+    margin: 0px;
+    z-index: 2;
+    padding: 0.1em;
+    background-color: #000000d9;
+    font-size: 1em;
+}
+
+.color-blue {
+    color: dodgerblue;
+}
+
+.disabled {
+    pointer-events: none !important;
+}
+
+#room-controls {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border: var(--vid-border);
+    height: 40px;
+    width: calc(100% - var(--vid-width) - 8em);
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(black, #12181b, black);
+    color: white;
+}
+
+.right-controls {
+    float: right;
+}
+
+.left-controls,
+.right-controls {
+    min-width: 30%;
+}
+
+#room-controls > div {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+#room-controls > div > div {
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    font-size: 15px;
+    flex-wrap: wrap;
+}
+
+#room-controls > div > div:hover {
+    background-color: #ffffff33;
+    cursor: pointer;
+}
+
+#screen-share-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: calc(100% - var(--vid-width) - 8em);
+    height: calc(100% - 40px);
+}
+
+#screen-share-container video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.participant-video-controls,
+#publisher-video-controls {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #000000d9;
+    font-size: 1em;
+    padding: 0.1em;
+    z-index: 2;
+}
+
+.ban-user-control {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #000000d9;
+    font-size: 1em;
+    padding: 0.1em;
+    transition: all 0.2s ease-in-out;
+}
+
+.ban-user-control:hover {
+    color: red;
+}
+
+#partscont {
+    padding: 0px;
+}
+
+/* Responsive functionality */
+@media screen and (max-width: 940px) {
+    #room-enter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #room-enter *:not(:first-child) {
+        margin-top: 1vh;
+    }
+
+    #butjoin {
+        margin-top: 3vh !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /*.video-container {
+        width: 50%;
+    }*/
+
+    #room-custom-content-cont.inside-room > button {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .participants {
+        overflow-y: scroll;
+    }
+
+    #room-controls {
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        height: 70%;
+        flex-wrap: wrap;
+        width: unset;
+        max-width: calc(100% - 140px);
+    }
+
+    #room-controls > div {
+        height: unset;
+        width: 100%;
+        flex-direction: column;
+        min-height: 30%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #room-controls > div > div {
+        justify-content: center;
+        padding: 10px 0px;
+        width: 100%;
+        text-align: center;
+        font-size: 90%;
+    }
+
+    #screen-share-container {
+        top: 72%;
+        max-width: calc(100% - 140px);
+    }
+
+}
+
+
+@media screen and (max-width: 370px) {
+    #room-controls > div > div {
+        font-size: 70%;
+    }
+
+    .video-container {
+        width: 130px;
+        height: 100px;
+    }
+
+    #screen-share-container {
+        max-width: calc(100% - 140px);
+    }
+}

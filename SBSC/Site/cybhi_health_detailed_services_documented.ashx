@@ -1,0 +1,1 @@
+<%@ WebHandler Language="C#" CodeBehind="cybhi_health_detailed_services_documented.ashx.cs" Class="Spedmon.CybhiHealthDetailedServicesDocumentedRptView" %>

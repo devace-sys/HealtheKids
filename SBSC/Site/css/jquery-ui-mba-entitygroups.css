@@ -1,0 +1,87 @@
+
+.mba-entity-group-placeholder {
+    display:inline-block;
+    width:90%;
+    margin-left:3%;
+    margin-right:3%;
+    margin-top:2%;
+    margin-bottom:2%;
+    padding: .25em;
+    height:5em;
+    border: 1px dotted black;
+}
+
+div.mba-entity-groups div.mba-entity-group {  
+  display:block;
+  width:90%;
+  margin-left:3%;
+  margin-right:3%;
+  margin-top:2%;
+  margin-bottom:2%;
+}
+
+
+div.mba-entity-groups {
+}
+
+div.mba-entity-groups-header {
+  padding: 1em;
+  margin-bottom: 1em;  
+  clear:both;
+}
+
+span.mba-entity-groups-header-title {
+  display:inline-block;
+  float:left;
+  margin-bottom:1em;
+  font-weight:bold;
+}
+
+span.mba-entity-groups-header-controls {
+  display:inline-block;
+  float:right;
+  margin-bottom:1em;
+}
+
+button.mba-entity-groups-header-control {
+
+}
+
+button.mba-entity-groups-header-control span.ui-button-text {
+  text-align:center;
+  font-size:.60em;
+}
+
+i.mba-entity-groups-header-control {
+    margin: 0 0.25em;
+    cursor: pointer;
+}
+
+div.mba-entity-groups-content {
+    padding-bottom: 20%;
+}
+
+
+div.mba-entity-groups-content-controls {
+  display:block;
+  padding:1%;
+  text-align:center;
+}
+
+input.mba-entity-groups-content-control {
+  display:inline-block;
+  width:70%;
+}
+
+div.mba-entity-groups-status {
+  display:block;
+  text-align:center;
+  font-weight:bold;
+  font-size:1.5em;
+}
+
+
+
+
+
+

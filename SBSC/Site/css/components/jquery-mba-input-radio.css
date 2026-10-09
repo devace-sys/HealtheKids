@@ -1,0 +1,27 @@
+/* Common values */
+
+fieldset.mba-input-radio-fieldset {
+  border:none;
+  display:inline-block;
+}
+
+legend.mba-input-radio-legend {
+  display:inline-block;  
+}
+
+input.mba-input-radio-radio-input {
+    display:none;
+}
+
+label.mba-input-radio-radio-label {
+  display:inline-block;
+  margin-right:1em;
+}
+
+input.mba-input-radio-radio-input:checked + label.mba-input-radio-radio-label {
+  border-bottom:1px solid #000;
+}
+
+input.mba-input-radio-radio-input:checked + label.mba-input-radio-radio-label:after {
+  content:  "\2713 ";
+}

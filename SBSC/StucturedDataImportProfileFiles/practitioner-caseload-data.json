@@ -1,0 +1,114 @@
+[ 
+            {
+                  id: 'PCD-700'
+                , fileClass: '700'
+                , fileSubClass: ''
+                , name: 'Practitioner Caseload'
+                , label: 'Practitioner Caseload File'
+                , description: ''
+                , headerRowNum:1
+                , fields: [
+				  {
+                          name: 'lastName'
+                        , columnRequired: true
+                        , dataRequired: false
+						, dataType: 'noun'
+                        , label: 'Student Last Name'
+                        , description: 'Last name only please'
+                        , commonColumnNames: [
+                              'Last Name'                            
+                            , 'LastName'
+                            , 'Last Name'
+                            , 'Last_Name'
+                            , 'Last Name 20'
+                            , 'Last'
+                            , 'Student Last Name'
+                            , 'Student_Last_Name'
+                            , 'lname'
+                            , 'LAST_NAME'
+                            , 'STUDLNAME']
+                    }
+                    , {
+                        name: 'firstName'
+                        , columnRequired: true
+                        , dataRequired: false
+                        , dataType: 'noun'
+						, label: 'Student First Name'
+                        , description: 'First name only please'
+                        , commonColumnNames: [
+                              'firstName'
+                            , 'FirstName'
+                            , 'First Name'
+                            , 'First_Name'
+                            , 'First Name 15'
+                            , 'First'
+                            , 'Student First Name'
+                            , 'Student_First_Name'
+                            , 'fname'
+                            , 'FIRST_NAME'
+                            , 'STUDFNAME']
+                    }
+                    ,{
+                        name: 'ssid'
+                        , columnRequired: true
+                        , dataRequired: false
+						, dataType: 'ssid'
+                        , label: 'CSIS/SSID #'
+                        , description: 'Statewide Student Identifier (SSID)'
+                        , commonColumnNames: [
+                              'ssid'
+                            , 'csis'
+                            , 'CSIS / SSID #'
+                            , 'CSIS / SSID#'
+							, 'CSIS / SSID'
+                            , 'SSID'
+                            , 'SSID 10'
+                            , 'CSIS'
+                            , 'State Student ID'                            
+                            , 'State_StudentNumber'
+                            , 'State Student Number'
+                            , 'State ID'
+                            , 'stateID'
+                            , 'Student SSID'
+                            , 'SSID #'
+                            , 'CSIS #'
+                            , 'CSIS/SSID#'
+                            , 'SSID#'
+                            , 'CSIS#'
+                            , 'SSID/CSIS#'
+                            , 'SSID / CSIS #'
+                            , 'CSIS/SSID #'
+                            , 'State SID#'
+                            , 'SSID Number'                            
+							, 'SSID Num'   
+                        ]
+                    }                    
+					, {
+                          name: 'studentID'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , label: 'Student ID'
+                        , dataType: 'string'
+						, description: 'Local school student ID number'
+                        , commonColumnNames: [
+                              'Student_School_ID'
+                            , 'Perm ID'
+                            , 'Local ID 20'
+                            , 'Student ID'
+                            , 'Student School ID'
+                            , 'SID#'
+                            , 'Student_ID'
+                            , 'StuID'
+                            , 'Student Number'
+                            , 'Student ID Number'
+                            , 'District ID'
+                            , 'Local ID'
+                            , 'Student#'
+                            , 'studentNumber'
+                            , 'SCHSTUDID'
+							]
+                    }
+ 
+                ]
+            }
+]

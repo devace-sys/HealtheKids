@@ -1,0 +1,130 @@
+[
+               {
+
+
+                  id: 'PIC-1700'
+                , fileClass: '1700'
+                , fileSubClass: ''
+                , name: 'Standard Layout'
+                , label: 'Service Records'
+                , description: 'Service records exported from an external system'
+                , headerRowNum:1
+                , fields: [
+                   
+                     {
+                        name: 'patSSID'
+                        , columnRequired: true
+                        , dataRequired: true
+			, dataType: 'ssid'
+                        , label: 'Student SSID'
+                        , description: 'Statewide Student Identifier (SSID)'
+                        , commonColumnNames: ['SSID']
+                    },
+
+
+                     {
+                        name: 'CarrierName'
+                        , columnRequired: false
+                        , dataRequired: false
+			, dataType: 'string'
+                        , label: 'CarrierName'
+                        , description: 'CarrierName'
+                        , commonColumnNames: []
+                    },   
+
+                     {
+                        name: 'CarrierCode'
+                        , columnRequired: true
+                        , dataRequired: true
+			, dataType: 'string'
+                        , label: 'CarrierCode'
+                        , description: 'CarrierCode'
+                        , commonColumnNames: []
+                    },               
+				
+                     {
+                        name: 'PolicyNumber'
+                        , columnRequired: false
+                        , dataRequired: false
+			, dataType: 'string'
+                        , label: 'PolicyNumber'
+                        , description: 'PolicyNumber'
+                        , commonColumnNames: []
+                    },  
+			
+                     {
+                        name: 'GroupID'
+                        , columnRequired: false
+                        , dataRequired: false
+			, dataType: 'string'
+                        , label: 'GroupID'
+                        , description: 'GroupID'
+                        , commonColumnNames: []
+                    },  
+	  
+                    {
+                        name: 'MID'
+                        , columnRequired: false
+                        , dataRequired: false
+
+			, dataType: 'string'
+
+                        , label: 'MID'
+                        , description: 'MID'
+                        , commonColumnNames: []
+                    },  
+
+                    {
+                       name: 'SubscriberFirstName'
+                        , columnRequired: false
+                        , dataRequired: false
+
+			, dataType: 'string'
+
+                        , label: 'SubscriberFirstName'
+                        , description: 'SubscriberFirstName'
+                        , commonColumnNames: []
+                    },  
+
+                     {
+                        name: 'SubscriberLastName'
+                        , columnRequired: false
+                        , dataRequired: false
+
+			, dataType: 'string'
+
+                        , label:  'SubscriberLastName'
+                        , description:  'SubscriberLastName'
+                        , commonColumnNames: []
+                    },  
+                    {
+
+                        name: 'ConsentToBill'
+                        , columnRequired: false
+                        , dataRequired: false
+
+			, dataType: 'string'
+
+                        , label:  'ConsentToBill'
+                        , description:  'ConsentToBill'
+                        , commonColumnNames: []
+                    },  
+
+                    {
+
+                        name: 'AuthorizationDate'
+                        , columnRequired: false
+                        , dataRequired: false
+
+			, dataType: 'string'
+
+                        , label:  'AuthorizationDate'
+                        , description:  'AuthorizationDate'
+                        , commonColumnNames: []
+                    }
+					                   
+                ]
+
+            }                       
+          
+]

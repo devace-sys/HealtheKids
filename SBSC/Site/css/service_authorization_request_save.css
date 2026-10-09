@@ -1,0 +1,33 @@
+form.service-authorization-request {
+  display:block;
+  width:95%;
+  margin:0 auto;
+}
+
+#supportingFiles  {  
+  padding-top:1em;
+  padding-bottom:1em;
+}
+
+#supportingFiles  table.returninfo , #supportingFiles  div.returninfo {  
+  display:block;
+  width:70%;
+  margin:0 auto !important;
+}
+
+span.ui-spedmon-box-container {
+  width:100%;
+}
+
+span.ui-spedmon-box-container input.ui-spedmon-box {
+  width:70%;
+}
+
+span.ui-spedmon-box-container button.ui-button {
+  width:2em;
+}
+
+/* Pushes combo box status under */
+ul.details-inline li {
+   display:block;    
+}

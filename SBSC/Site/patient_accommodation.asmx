@@ -1,0 +1,1 @@
+<%@ WebService Language="C#"  CodeBehind="patient_accommodation.asmx.cs" Class="Spedmon.PatientAccommodationsSvc" %>

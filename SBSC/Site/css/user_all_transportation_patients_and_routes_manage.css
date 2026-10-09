@@ -1,0 +1,120 @@
+@keyframes icon-pulse {
+    0% {
+        box-shadow: 0 0 0 0 #ff8d0000;
+    }
+
+    50% {
+        box-shadow: 0 0 0 10px #ff8d008c;
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px #ff8d0000;
+    }
+}
+
+.pulse-icon-class {
+    animation: icon-pulse 2s infinite;
+}
+
+#addNewRouteBut,
+#printRouteSheetsBut,
+#dupRouteBut,
+#dupRouteReverseBut,
+#printRouteSheetSingleBut,
+#removeRouteBut,
+#editRouteBut,
+#addNewSiteBut,
+#sortMembersBut,
+#exportAllAuthPatsBut,
+#doExportAllAuthPatsBut {
+    background: none;
+    border: none;
+    width:3em;
+}
+
+#addNewRouteBut:focus,
+#printRouteSheetsBut:focus,
+#dupRouteBut:focus,
+#dupRouteReverseBut:focus,
+#printRouteSheetSingleBut:focus,
+#removeRouteBut:focus,
+#editRouteBut:focus,
+#addNewSiteBut:focus,
+#sortMembersBut:focus,
+#exportAllAuthPatsBut,
+#doExportAllAuthPatsBut
+{
+    outline: none;
+}
+
+i.route-icon {
+    font-size: 1.3em;
+    text-align:center;
+}
+
+i.route-icon.fa-sort-alpha-down {
+    font-size: 1.5em;
+}
+
+i.fa-plus, i.route-icon.fa-clone, i.fa-user-edit {
+    color: #7a9fbf;
+}
+
+i.route-icon.fa-print {
+    color: #636F87;
+}
+
+i.route-icon.fa-pencil-alt {
+    color: #D28F79;
+}
+
+i.route-icon.fa-times {
+    color: red;
+}
+
+i.route-icon:hover {
+    transform: scale(1.2);
+}
+
+#dupRouteReverseBut i.route-icon.fa-clone {
+    transform: translate(-4px, -1.5px);
+    color: #bf5f5f;
+}
+
+#dupRouteReverseBut i.route-icon.fa-random {
+    transform: translate(8px, -3px);
+    color: #bf5f5f;
+}
+
+#dupRouteReverseBut > span.ui-button-text {
+    height: 1.7em;
+}
+
+#addNewSiteBut i.route-icon.fa-building {
+    font-size: 1.5em;
+    color: #9b9b9b;
+}
+
+#addNewSiteBut i.route-icon.fa-plus {
+    transform: translate(11px,-4px);
+    font-size: 0.8em;
+    color: #7a9fbf;
+}
+
+#addNewSiteBut > span.ui-button-text {
+    height: 1.7em;
+}
+
+#doExportAllAuthPatsBut {
+    color:green;
+}
+
+li.ui-state-default.mba-entity-group-member {
+    background: #dddddd;
+}
+
+/* Rest View */
+.mba-rest-view-visible-tbl-td-or-th {
+    text-align: center;
+}
+

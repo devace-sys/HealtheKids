@@ -1,0 +1,126 @@
+﻿.spedmon-form-builder-element-row-span-100 {
+    width: 98%;
+    margin-right: 3px !important;
+}
+
+.spedmon-form-builder-element-row-span-75 {
+    width: 73%;
+    margin-right: 3px !important;
+}
+
+.spedmon-form-builder-element-row-span-50 {
+    width: 48%;
+    margin-right: 3px !important;
+}
+
+.spedmon-form-builder-element-row-span-25 {
+    width: 23%;
+    margin-right: 3px !important;
+}
+
+/******************************************** 
+    MEDIA QUERIES
+*********************************************/
+@media screen and (max-width: 410px) {
+    .spedmon-form-builder-element-row-span-100 {
+        margin-right: 5px !important;
+    }
+
+    .spedmon-form-builder-element-row-span-75 {
+        margin-right: 5px !important;
+    }
+
+    .spedmon-form-builder-element-row-span-50 {
+        margin-right: 5px !important;
+    }
+
+    .spedmon-form-builder-element-row-span-25 {
+        margin-right: 5px !important;
+    }
+}
+
+/* larger borders */
+
+input.form-control,
+select.form-control,
+textarea.form-control,
+fieldset.form-control,
+section.form-control
+{
+    border-color: #2a5e96;
+}
+
+fieldset.form-control-fieldset {
+  height: auto !important;
+  background-color:transparent !important;
+}
+
+section.form-control-rich-text,
+section.form-control-table
+{
+    height: auto !important;
+}
+
+section.form-control-rich-text ul {
+  list-style-type:disc;
+  list-style-position: outside;
+  margin-left:1em;
+}
+
+section.form-control-rich-text ol {
+  list-style-type:decimal;
+  list-style-position: outside;
+  margin-left:1em;
+}
+
+
+section.form-control-table > table {
+  /* We are applying the BS table styles in the plugin.  This overrides them*/
+        width: 100% !important;
+        margin: 0 auto !important;
+        
+}
+
+h1.form-control-document-title {
+    border: none !important;
+    font-size: 24pt !important;
+}
+
+img.form-control-document-logo {
+  border:none !important;
+  width:100px !important;
+  height:100px !important;
+}
+
+/* Patient Goals control */
+
+select.spedmon-form-builder-pat-select-control {
+    height: 34px;
+    display: block;
+    width: 85%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    border-color: #2a5e96;
+}
+
+.rendered-form .form-group i.fa-university {
+  color: #90739c;
+  margin-left: 1em;
+  padding-top: 0.25em;
+}
+
+/* Tabular data like participants and services */
+
+
+/* Display more selections in viewport */
+ .formbuilder-autocomplete-list {
+  max-height: 510px !important;
+  position: relative !important;
+}
+
+.formbuilder-private-textarea {
+    background-color: #ffffc5 !important;
+}
+

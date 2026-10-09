@@ -1,0 +1,238 @@
+[ 
+            {
+                  id: 'CDE-901'
+                , fileClass: '901'
+                , fileSubClass: ''
+                , name: 'CRCSBulkPayrollImportForCalculatedBreakdown'
+                , label: 'CRCS Bulk Payroll Import For Calculated Breakdown'
+                , description: ''
+                , headerRowNum:1
+                , fields: [
+		    {
+                          name: 'employeeFullName'
+                        , columnRequired: true
+                        , dataRequired: true
+			, dataType: 'noun'
+                        , label: 'Employee Full Name'
+                        , description: 'Last name only please'
+                        , commonColumnNames: [
+                              'Employee Name'                            
+                            , 'EmployeeName'
+                            , 'Employee Full Name'
+                            ]
+                    }
+                    , {
+                        name: 'employeeNumber'
+                        , columnRequired: true
+                        , dataRequired: true
+                        , dataType: 'string'
+			, label: 'Employee Number'
+                        , description: ''
+                        , commonColumnNames: [
+                              'employeeNumber'                         
+                            , 'EmployeeName'
+                            ]
+                    }
+
+                    , {
+                        name: 'resource'
+                        , columnRequired: true
+                        , dataRequired: true
+                        , dataType: 'integer'
+			, label: 'Resource'
+                        , description: ''
+                        , commonColumnNames: [
+                              'resource'                  
+                            , 'Resource'
+                            ]
+                    }
+
+                    , {
+                        name: 'FTE'
+                        , columnRequired: false
+                        , dataRequired: false
+			, dataType: 'number'
+                        , label: 'FTE'
+                        , description: ''
+                        , commonColumnNames: [
+
+                        ]
+                    }
+
+                    , {
+                        name: 'Gross'
+                        , columnRequired: true
+                        , dataRequired: true
+			, dataType: 'number'
+                        , label: 'Gross'
+                        , description: ''
+                        , commonColumnNames: [
+
+                        ]
+                    }
+
+                    , {
+                        name: 'Net'
+                        , columnRequired: false
+                        , dataRequired: false
+			, dataType: 'number'
+                        , label: 'Net'
+                        , description: ''
+                        , commonColumnNames: [
+
+                        ]
+                    }
+
+                    , {
+                        name: 'Cash Opt'
+                        , columnRequired: false
+                        , dataRequired: false
+			, dataType: 'number'
+                        , label: 'Cash Opt'
+                        , description: ''
+                        , commonColumnNames: [
+
+                        ]
+                    }
+
+                    , {
+                        name: 'Wrk_Cmp'
+                        , columnRequired: false
+                        , dataRequired: false
+			, dataType: 'number'
+                        , label: 'Wrk Cmp'
+                        , description: ''
+                        , commonColumnNames: [
+                            'Wrk_Cmp', 'Wrk Cmp'
+
+                        ]
+                    }
+
+                    , {
+                        name: 'Unemp'
+                        , columnRequired: false
+                        , dataRequired: false
+			, dataType: 'number'
+                        , label: 'Unemp'
+                        , description: ''
+                        , commonColumnNames: [
+
+                        ]
+                    }
+
+                    , {
+                        name: 'FICA'
+                        , columnRequired: false
+                        , dataRequired: false
+			, dataType: 'number'
+                        , label: 'FICA'
+                        , description: ''
+                        , commonColumnNames: [
+
+                        ]
+                    }
+
+                    , {
+                        name: 'HW'
+                        , columnRequired: false
+                        , dataRequired: false
+			, dataType: 'number'
+                        , label: 'HW'
+                        , description: ''
+                        , commonColumnNames: [
+
+                        ]
+                    }
+
+                    , {
+                        name: 'Medicare'
+                        , columnRequired: false
+                        , dataRequired: false
+			, dataType: 'number'
+                        , label: 'Medicare'
+                        , description: ''
+                        , commonColumnNames: [
+
+                        ]
+                    }
+
+                    , {
+                        name: 'Ret_Empr'
+                        , columnRequired: false
+                        , dataRequired: false
+			, dataType: 'number'
+                        , label: 'Ret Empr'
+                        , description: ''
+                        , commonColumnNames: [
+                            'Ret Empr', 'Ret_Empr'
+
+                        ]
+                    }
+
+                    , {
+                        name: 'Ret Empr Paid'
+                        , columnRequired: false
+                        , dataRequired: false
+			, dataType: 'number'
+                        , label: 'Ret Empr Paid'
+                        , description: ''
+                        , commonColumnNames: [
+                            'Ret Empr Paid', 'Ret_Empr_Paid'
+
+                        ]
+                    }
+
+                    , {
+                        name: 'OPEB'
+                        , columnRequired: false
+                        , dataRequired: false
+			, dataType: 'number'
+                        , label: 'OPEB'
+                        , description: ''
+                        , commonColumnNames: [
+
+                        ]
+                    }
+
+                    , {
+                        name: 'Total_Employer_Paid_Benefits'
+                        , columnRequired: false
+                        , dataRequired: false
+			, dataType: 'number'
+                        , label: 'Total Employer Paid Benefits'
+                        , description: ''
+                        , commonColumnNames: [
+                            'Total Employer Paid Benefits', 'Total_Employer_Paid_Benefits'
+
+                        ]
+                    }
+
+                    , {
+                        name: 'PERS_Reduct_Amt'
+                        , columnRequired: false
+                        , dataRequired: false
+			, dataType: 'number'
+                        , label: 'PERS Reduct Amt'
+                        , description: ''
+                        , commonColumnNames: [
+                            'PERS Reduct Amt', 'PERS_Reduct_Amt' 
+                        ]
+                    }
+
+                    , {
+                        name: 'Total_Employer_Paid_Benefits_W_hw'
+                        , columnRequired: true
+                        , dataRequired: true
+			, dataType: 'number'
+                        , label: 'Total Employer Paid Benefits W h&w'
+                        , description: ''
+                        , commonColumnNames: [
+                            'Total Employer Paid Benefits W h&w', 'Total_Employer_Paid_Benefits_W_hw'
+
+                        ]
+                    }
+                    
+ 
+                ]
+            }
+]

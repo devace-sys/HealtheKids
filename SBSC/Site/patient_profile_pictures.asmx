@@ -1,0 +1,1 @@
+<%@ WebService Language="C#" CodeBehind="patient_profile_pictures.asmx.cs" Class="Spedmon.PatientProfilePicturesSvc" %>

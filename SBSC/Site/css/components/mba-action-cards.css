@@ -1,0 +1,307 @@
+/* mba-action-cards.css*/
+
+/* Namespace by adding mba- in front of class names and make sure every css rule is named in context*/
+
+.mba-action-cards {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    position: relative;
+}
+
+
+
+.mba-action-card {
+    flex: 1;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+    height: 68px;
+    display: flex;
+    align-items: stretch;
+    cursor: pointer;
+    min-width: 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12), inset 0 1px 3px rgba(255, 255, 255, 1), inset 0 -1px 3px rgba(0, 0, 0, 0.07);
+    backdrop-filter: blur(4px);
+}
+
+    .mba-action-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08), inset 0 1px 2px rgba(255, 255, 255, 0.9), inset 0 -1px 2px rgba(0, 0, 0, 0.05);
+    }
+
+.mba-card-accent {
+    width: 6px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.mba-card-accent-blue {
+    background: linear-gradient(to bottom, #1E55C9, #3671E9);
+    box-shadow: inset -1px 0 3px -1px rgba(0, 0, 0, 0.1), 0 5px 10px -5px rgba(30, 85, 201, 0.5);
+}
+
+.mba-card-accent-purple {
+    background: linear-gradient(to bottom, #520652, #880288);
+    box-shadow: inset -1px 0 3px -1px rgba(0, 0, 0, 0.1), 0 5px 10px -5px rgba(82, 6, 82, 0.5);
+}
+
+.mba-card-accent-teal {
+    background: linear-gradient(to bottom, #00E0FF, #00C5E0);
+    box-shadow: inset -1px 0 3px -1px rgba(0, 0, 0, 0.1), 0 5px 10px -5px rgba(0, 224, 255, 0.5);
+}
+
+.mba-card-accent-green {
+    background: linear-gradient(to bottom, #00F0B5, #00D0A0);
+    box-shadow: inset -1px 0 3px -1px rgba(0, 0, 0, 0.1), 0 5px 10px -5px rgba(0, 240, 181, 0.5);
+}
+
+.mba-card-accent-red {
+    background: linear-gradient(to bottom, #FF3B30, #FF6B60);
+    box-shadow: inset -1px 0 3px -1px rgba(0, 0, 0, 0.1), 0 5px 10px -5px rgba(255, 59, 48, 0.5);
+}
+
+.mba-card-accent-orange {
+    background: linear-gradient(to bottom, #FF9500, #FFC060);
+    box-shadow: inset -1px 0 3px -1px rgba(0, 0, 0, 0.1), 0 5px 10px -5px rgba(255, 149, 0, 0.5);
+}
+
+.mba-card-accent-yellow {
+    background: linear-gradient(to bottom, #FFCC00, #FFE066);
+    box-shadow: inset -1px 0 3px -1px rgba(0, 0, 0, 0.1), 0 5px 10px -5px rgba(255, 204, 0, 0.5);
+}
+
+.mba-card-accent-beige {
+    background: linear-gradient(to bottom, #D2B48C, #E6CCAC);
+    box-shadow: inset -1px 0 3px -1px rgba(0, 0, 0, 0.1), 0 5px 10px -5px rgba(210, 180, 140, 0.5);
+}
+
+.mba-card-accent-emerald {
+    background: linear-gradient(to bottom, #046307, #0A8F0D);
+    box-shadow: inset -1px 0 3px -1px rgba(0, 0, 0, 0.1), 0 5px 10px -5px rgba(4, 99, 7, 0.5);
+}
+
+.mba-card-icon-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    padding: 0 10px;
+}
+
+.mba-card-icon-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.1), inset 0 -2px 3px -1px rgba(0, 0, 0, 0.1), 0 -5px 10px -2px rgba(255, 255, 255, 0.8), inset 0 2px 3px -1px rgba(255, 255, 255, 0.4);
+}
+
+.mba-card-icon-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+    background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.9), transparent 70%);
+}
+
+.mba-card-icon-blue .mba-card-icon-bg {
+    background-color: #1E55C9;
+}
+
+.mba-card-icon-purple .mba-card-icon-bg {
+    background-color: #520652;
+}
+
+.mba-card-icon-teal .mba-card-icon-bg {
+    background-color: #00E0FF;
+}
+
+.mba-card-icon-green .mba-card-icon-bg {
+    background-color: #00F0B5;
+}
+
+.mba-card-icon-red .mba-card-icon-bg {
+    background-color: #FF3B30;
+}
+
+.mba-card-icon-orange .mba-card-icon-bg {
+    background-color: #FF9500;
+}
+
+.mba-card-icon-yellow .mba-card-icon-bg {
+    background-color: #FFCC00;
+}
+
+.mba-card-icon-pink .mba-card-icon-bg {
+    background-color: #FF2D55;
+}
+
+.mba-card-icon-beige .mba-card-icon-bg {
+    background-color: #D2B48C;
+}
+
+.mba-card-icon-emerald .mba-card-icon-bg {
+    background-color: #046307;
+}
+
+.mba-card-icon {
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.mba-card-icon-blue .mba-card-icon {
+    color: #1E55C9;
+}
+
+.mba-card-icon-purple .mba-card-icon {
+    color: #520652;
+}
+
+.mba-card-icon-teal .mba-card-icon {
+    color: #00C5E0;
+}
+
+.mba-card-icon-green .mba-card-icon {
+    color: #00D0A0;
+}
+
+.mba-card-icon-red .mba-card-icon {
+    color: #FF3B30;
+}
+
+.mba-card-icon-orange .mba-card-icon {
+    color: #FF9500;
+}
+
+.mba-card-icon-yellow .mba-card-icon {
+    color: #FFCC00;
+}
+
+.mba-card-icon-pink .mba-card-icon {
+    color: #FF2D55;
+}
+
+.mba-card-icon-beige .mba-card-icon {
+    color: #A67C52;
+}
+
+.mba-card-icon-emerald .mba-card-icon {
+    color: #046307;
+}
+
+.mba-card-content {
+    display: flex;
+    align-items: center;
+    padding-right: -15px;
+    padding: 0 15px;
+    flex: 1;
+}
+
+.mba-card-text {
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 30px;
+    color: #1D1942;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.mba-card-arrow {
+    margin-left: auto;
+    padding-right: 17px;
+    color: #BBB;
+    transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.mba-action-card.mba-blue-bg {
+    background: rgba(30, 85, 201, 0.08);
+}
+
+    .mba-action-card.mba-blue-bg:hover {
+        background: rgba(30, 85, 201, 0.12);
+    }
+
+.mba-action-card.mba-purple-bg {
+    background: rgba(82, 6, 82, 0.08);
+}
+
+    .mba-action-card.mba-purple-bg:hover {
+        background: rgba(82, 6, 82, 0.12);
+    }
+
+.mba-action-card.mba-teal-bg {
+    background: rgba(0, 197, 224, 0.08);
+}
+
+    .mba-action-card.mba-teal-bg:hover {
+        background: rgba(0, 197, 224, 0.12);
+    }
+
+.mba-action-card.mba-green-bg {
+    background: rgba(0, 208, 160, 0.08);
+}
+
+    .mba-action-card.mba-green-bg:hover {
+        background: rgba(0, 208, 160, 0.12);
+    }
+
+.mba-action-card.mba-red-bg {
+    background: rgba(255, 59, 48, 0.08);
+}
+
+    .mba-action-card.mba-red-bg:hover {
+        background: rgba(255, 59, 48, 0.12);
+    }
+
+.mba-action-card.mba-orange-bg {
+    background: rgba(255, 149, 0, 0.08);
+}
+
+    .mba-action-card.mba-orange-bg:hover {
+        background: rgba(255, 149, 0, 0.12);
+    }
+
+.mba-action-card.mba-yellow-bg {
+    background: rgba(255, 204, 0, 0.08);
+}
+
+    .mba-action-card.mba-yellow-bg:hover {
+        background: rgba(255, 204, 0, 0.12);
+    }
+
+.mba-action-card.mba-pink-bg {
+    background: rgba(255, 45, 190, 0.08);
+}
+
+    .mba-action-card.mba-pink-bg:hover {
+        background: rgba(255, 45, 190, 0.12);
+    }
+
+.mba-action-card.mba-beige-bg {
+    background: rgba(210, 180, 140, 0.08);
+}
+
+    .mba-action-card.mba-beige-bg:hover {
+        background: rgba(210, 180, 140, 0.12);
+    }
+
+.mba-action-card.mba-emerald-bg {
+    background: rgba(4, 99, 7, 0.08);
+}
+
+    .mba-action-card.mba-emerald-bg:hover {
+        background: rgba(4, 99, 7, 0.12);
+    }

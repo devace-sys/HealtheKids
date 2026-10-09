@@ -1,0 +1,36 @@
+﻿/*Based on https://www.florin-pop.com/blog/2019/03/css-pulse-effect/ */
+
+@keyframes mba-action-item-gauge-kf-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+div.mba-action-item-gauge-meter > div.plotly.plot-container > div.svg-container {
+
+}
+
+*.mba-action-item-gauge-animation-pulse {
+    animation: mba-action-item-gauge-kf-pulse 2s infinite;
+}
+
+div.mba-action-item-gauge-reports {
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+div.mba-action-item-gauge-reports:hover {
+    transform: scale(1.2);
+}
+
+div.mba-action-item-gauge-reports span {
+    cursor: pointer;
+}

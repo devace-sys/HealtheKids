@@ -1,0 +1,78 @@
+div.manage-patient-label {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: .50em;
+    padding-left: 2.5em;
+}
+
+div.manage-patient-label-svcrec {
+    font-size: 1.02em;
+    font-weight: bold;
+    margin-top: .50em;
+    padding-left: 1.5em;
+}
+
+#vitalsignscomponentview-restview-container[open] > #vitalsignscomponentview-summary {
+    width: 100%;
+    border-bottom: 1px solid #000;
+    margin-bottom: 1em;
+}
+
+/* patient vitals (summary) */
+
+#vitalsignscomponentview-summary {
+    width: 7em;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 0;
+    transition: all 300ms linear;
+    list-style: none;
+}
+
+/* New Visit Btn */
+.btn_create_new_visit {
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    color: black;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    transition-duration: .3s;
+}
+
+.btn_create_new_visit::after {
+    content: 'Create New Visit';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-70%);
+    opacity: 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+    transition: opacity 0.3s ease, left 0.3s ease;        
+}
+
+
+.btn_create_new_visit:hover {
+    width: 200px;
+    border-radius: 30px;
+    transition-duration: .3s;
+}
+
+.btn_create_new_visit:hover::after {
+    opacity: 1; 
+}
+
+.btn_create_new_visit:hover i {
+    color: #fff;
+}
+ 
+.btn_create_new_visit:focus, .btn_create_new_visit:active {
+    box-shadow: none; 
+}

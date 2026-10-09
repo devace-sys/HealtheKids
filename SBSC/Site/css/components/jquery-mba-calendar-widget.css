@@ -1,0 +1,20 @@
+﻿.calendar {
+    width: 95% !important;
+    margin:0 auto;
+}
+
+.calendar td {
+    padding: 0 !important;
+}
+
+.mba-google-calendar-widget-container {
+    height: 500px;
+}
+
+div.mba-calendar-widget-title {
+    margin-bottom:1em;
+}
+
+h4.mba-calendar-widget-title {
+    text-align: center;
+}

@@ -1,0 +1,25 @@
+:root {
+  --mba-patient-goal-chart-border-color: #cccccc;
+  --mba-patient-goal-chart-shadow-color: #e4e4e4;
+}
+
+div.patient-goal-progress-chart-container {
+    padding: 0;
+    outline: none;
+    display: block;
+}
+
+div.patient-goal-progress-chart-container-dialog {
+    width:95%;    
+    margin:0 auto;
+}
+
+div.patient-goal-progress-chart-container-screen {
+    width:90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    border: 1px solid var(--mba-patient-goal-chart-border-color);
+    box-shadow: 1px 1px 3px 1px var(--mba-patient-goal-chart-shadow-color);
+}

@@ -1,0 +1,571 @@
+﻿.meeting-history-container {
+    margin-bottom: 1rem;
+}
+
+.meeting-history-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+}
+
+.meeting-history-header-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.meeting-history-header-icon {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.meeting-history-header-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #343a40;
+}
+
+.meeting-history-header-count {
+    font-size: 12px;
+    color: #6c757d;
+}
+
+.meeting-history-header-right {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.meeting-history-sort-label {
+    font-size: 11px;
+    color: #6c757d;
+    margin-right: 4px;
+}
+
+.meeting-history-sort-option {
+    padding: 3px 10px;
+    font-size: 11px;
+    color: #495057;
+    background: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    .meeting-history-sort-option:hover {
+        background: #e9ecef;
+    }
+
+.meeting-history-sort-option-active {
+    background: #1a73a7;
+    color: #fff;
+    border-color: #1a73a7;
+}
+
+    .meeting-history-sort-option-active:hover {
+        background: #15608c;
+    }
+
+.meeting-history-sort-dir-btn {
+    padding: 3px 8px;
+    font-size: 11px;
+    color: #495057;
+    background: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 2px;
+}
+
+    .meeting-history-sort-dir-btn:hover {
+        background: #e9ecef;
+    }
+
+.meeting-history-table-wrap {
+    border: 1px solid #dee2e6;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+}
+
+.meeting-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.meeting-history-table-head-cell {
+    text-align: left;
+    padding: 10px 12px;
+    background: #f8f9fa;
+    color: #6c757d;
+    font-weight: 500;
+    font-size: 12px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.meeting-history-table-cell {
+    padding: 10px 12px;
+    border-bottom: 1px solid #f0f0f0;
+    vertical-align: middle;
+    color: #495057;
+}
+
+.meeting-history-table-cell-date {
+    font-weight: 500;
+    color: #212529;
+    white-space: nowrap;
+}
+
+.meeting-history-table-cell-title {
+    font-weight: 500;
+    color: #212529;
+}
+
+.meeting-history-table-cell-action {
+    text-align: center;
+    width: 60px;
+}
+
+.meeting-history-table-cell-participants {
+    font-size: 12px;
+    color: #6c757d;
+}
+
+.meeting-history-table-cell-status {
+    white-space: nowrap;
+}
+
+.meeting-history-table-row {
+    cursor: pointer;
+}
+
+    .meeting-history-table-row:hover .meeting-history-table-cell {
+        background: #f8f9fa;
+    }
+
+.meeting-history-table-row-expanded .meeting-history-table-cell {
+    background: #f8f9fa;
+    border-bottom-color: transparent;
+}
+
+.meeting-history-table-row:last-of-type .meeting-history-table-cell {
+    border-bottom: none;
+}
+
+.meeting-history-view-btn {
+    font-size: 12px;
+    color: #1a73a7;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 2px 6px;
+    font-weight: 500;
+}
+
+    .meeting-history-view-btn:hover {
+        text-decoration: underline;
+    }
+
+.meeting-history-status-badge {
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    display: inline-block;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.meeting-history-status-badge-upcoming {
+    background: #e8f4fd;
+    color: #1a73a7;
+}
+
+.meeting-history-status-badge-pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.meeting-history-status-badge-cancelled {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.meeting-history-status-badge-didnotoccur {
+    background: #e9ecef;
+    color: #495057;
+}
+
+.meeting-history-status-badge-attended {
+    background: #d4edda;
+    color: #155724;
+}
+
+.meeting-history-status-select {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #ced4da;
+    background: #fff;
+    color: #495057;
+}
+
+    .meeting-history-status-select:hover {
+        border-color: #adb5bd;
+    }
+
+    .meeting-history-status-select:focus {
+        border-color: #1a73a7;
+        box-shadow: 0 0 0 2px rgba(26,115,167,0.15);
+    }
+
+.meeting-history-rsvp-summary {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.meeting-history-rsvp-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.meeting-history-rsvp-dot-accepted {
+    background: #28a745;
+}
+
+.meeting-history-rsvp-dot-declined {
+    background: #dc3545;
+}
+
+.meeting-history-rsvp-dot-conflict {
+    background: #ffc107;
+}
+
+.meeting-history-rsvp-dot-none {
+    background: #adb5bd;
+}
+
+.meeting-history-rsvp-count {
+    font-size: 11px;
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+.meeting-history-rsvp-count-accepted {
+    color: #28a745;
+}
+
+.meeting-history-rsvp-count-declined {
+    color: #dc3545;
+}
+
+.meeting-history-rsvp-count-conflict {
+    color: #856404;
+}
+
+.meeting-history-rsvp-count-none {
+    color: #6c757d;
+}
+
+.meeting-history-detail-row {
+    display: none;
+}
+
+.meeting-history-detail-row-open {
+    display: table-row;
+}
+
+.meeting-history-detail-row-cell {
+    padding: 0 12px 14px 12px;
+    background: #fafbfc;
+}
+
+.meeting-history-detail-card {
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin-top: 4px;
+}
+
+.meeting-history-detail-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.meeting-history-detail-card-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #212529;
+}
+
+.meeting-history-detail-card-meta {
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+    color: #6c757d;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+    .meeting-history-detail-card-meta span {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+.meeting-history-detail-meta-icon {
+    font-size: 11px;
+    color: #adb5bd;
+}
+
+.meeting-history-detail-divider {
+    height: 1px;
+    background: #e9ecef;
+    margin: 12px 0;
+}
+
+.meeting-history-detail-section-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+.meeting-history-participant-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.meeting-history-participant-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 8px 4px;
+}
+
+    .meeting-history-participant-row:hover {
+        background: #f8f9fa;
+        border-radius: 4px;
+    }
+
+.meeting-history-participant-timeline-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 14px;
+    flex-shrink: 0;
+    align-self: stretch;
+    padding-top: 5px;
+}
+
+.meeting-history-participant-timeline-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 2px solid #fff;
+    box-sizing: content-box;
+}
+
+.meeting-history-participant-timeline-dot-accepted {
+    background: #28a745;
+}
+
+.meeting-history-participant-timeline-dot-declined {
+    background: #dc3545;
+}
+
+.meeting-history-participant-timeline-dot-conflict {
+    background: #ffc107;
+}
+
+.meeting-history-participant-timeline-dot-none {
+    background: #adb5bd;
+}
+
+.meeting-history-participant-timeline-stem {
+    flex: 1;
+    width: 2px;
+    background: #dee2e6;
+    min-height: 8px;
+}
+
+.meeting-history-participant-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.meeting-history-participant-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: #212529;
+}
+
+.meeting-history-participant-role {
+    font-size: 11px;
+    color: #6c757d;
+    font-style: italic;
+}
+
+.meeting-history-participant-contact {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 2px;
+}
+
+.meeting-history-participant-contact-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    color: #6c757d;
+}
+
+.meeting-history-participant-contact-icon {
+    font-size: 10px;
+    color: #adb5bd;
+}
+
+.meeting-history-participant-rsvp-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+    padding-top: 2px;
+}
+
+.meeting-history-participant-rsvp-text {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.meeting-history-participant-rsvp-text-accepted {
+    color: #28a745;
+}
+
+.meeting-history-participant-rsvp-text-declined {
+    color: #dc3545;
+}
+
+.meeting-history-participant-rsvp-text-conflict {
+    color: #856404;
+}
+
+.meeting-history-participant-rsvp-text-none {
+    color: #6c757d;
+}
+
+.meeting-history-rsvp-icon-accepted {
+    color: #28a745;
+    font-size: 14px;
+}
+
+.meeting-history-rsvp-icon-declined {
+    color: #dc3545;
+    font-size: 14px;
+}
+
+.meeting-history-rsvp-icon-conflict {
+    color: #ffc107;
+    font-size: 14px;
+}
+
+.meeting-history-rsvp-icon-none {
+    color: #adb5bd;
+    font-size: 14px;
+}
+
+.meeting-history-detail-notes {
+    margin-top: 4px;
+}
+
+.meeting-history-notes-textarea {
+    width: 100%;
+    min-height: 70px;
+    max-height: 200px;
+    padding: 10px 12px;
+    font-size: 13px;
+    color: #495057;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    resize: vertical;
+    font-family: inherit;
+    line-height: 1.5;
+}
+
+    .meeting-history-notes-textarea:focus {
+        border-color: #1a73a7;
+        box-shadow: 0 0 0 2px rgba(26,115,167,0.12);
+        outline: none;
+    }
+
+    .meeting-history-notes-textarea::placeholder {
+        color: #adb5bd;
+        font-style: italic;
+    }
+
+.meeting-history-notes-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.meeting-history-notes-save-btn {
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    background: #1a73a7;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 14px;
+    cursor: pointer;
+}
+
+    .meeting-history-notes-save-btn:hover {
+        background: #15608c;
+    }
+
+.meeting-history-notes-saved-msg {
+    font-size: 11px;
+    color: #28a745;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.meeting-history-notes-saved-msg--visible {
+    opacity: 1;
+}
+
+.meeting-history-no-participants {
+    text-align: center;
+    padding: 12px;
+    color: #6c757d;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.meeting-history-no-records {
+    text-align: center;
+    padding: 24px;
+    color: #6c757d;
+    font-size: 13px;
+}

@@ -1,0 +1,1 @@
+<%@ WebHandler Language="C#" Class="Spedmon.ClientDomainsViw" CodeBehind="client_domains.ashx.cs"%>

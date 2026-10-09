@@ -1,0 +1,141 @@
+
+/* NOTE: copy-pasting from jquery-ui-mba-content-selection.css.
+         the YUI compressor is badly mangling some of the rules I think */
+
+iframe.ui-mba-content-selection-content-frame {
+    width: 100%;
+    min-height: 100vh;
+    border: none;
+    border-radius: 16px 16px 0px 16px;
+    box-shadow: 0px 0px 2px 2px #fffffff7;
+    background-color: white;
+    height:100%;
+}
+
+
+div.help-box-info {
+  background-color: #fda635;
+  border-color: #f8c88b;
+}
+
+div.help-box-info-w-search {
+    min-height:  225px;
+}
+
+.help-box-info-w-search p {
+    font-size: 12pt;
+}
+
+
+/*  ---------------------------------  */
+
+.ui-mba-content-selection-content-list-item a {
+    color: #222;
+    background-color: #ececee;
+
+}
+
+.ui-mba-content-selection-content-list-item a.tab-selected {
+    background-color: #fda635;
+    width:100%;
+    margin-right: 0%;
+}
+
+a.ui-mba-content-selection-content-list-item {
+    width:94%;
+    margin:0;
+    margin-right: 6%;
+    border: solid 1px #fff;
+    border-left: none;
+    border-radius: 0px 6px 6px 0px;
+
+}
+
+@media (min-width: 992px) {
+
+  div#man_page_selections {
+    border-left: solid 7px #fda635;
+  }
+}
+
+.headerRow2Control {
+    background-color: #D1ECF1;
+}
+
+
+#dropdownSelectPage_all_cont {
+    width: fit-content;
+    margin: 1.33em auto;
+}
+
+#dropdownSelectPage_all_cont span.ui-widget.ui-widget-container {
+    box-shadow:  0px 0px 3px 5px #f29a29;
+    height: fit-content;
+    display: inline-flex;
+}
+
+.help-parag-2 * {
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+#dropdownSelectPage_status  {
+    left: 35%;
+    top: 105% !important;
+    position: absolute;
+    width: 30%;
+}
+
+
+li.detail_wait {
+    display: inline-block;
+    padding: 5px 0;
+    border: 1px solid #cedeff;
+    margin-right: 2px;
+    font-size: 1em;
+    font-weight: bolder;
+    width: 100%;
+}
+
+#dropdownSelectPage_status .detail_wait {
+  background-color: #cedeff
+}
+
+.detail_wait, li.detail_wait, span.detail_wait {
+  background-color: #cedeff
+}
+
+
+#dropdownSelectPage_selection_cont {
+    background-color: white;
+    width: 400px;
+    padding: 0;
+}
+
+#dropdownSelectPage_selection {
+    width: 90%px;
+    line-height: 1.75em;
+    font-size: 1.6em;
+    padding: 11px 0;
+    box-shadow: 0px 0px 5px 6px #ffffffb3;
+}
+
+#dropdownSelectPage_all_cont .input-group-append .btn {
+    align-content: center;
+    background-color: #08489b;
+    color: #faf4e6;
+    border: none;
+    width: 68px;
+}
+
+#man_page_selections-title {
+    
+    color: rgb(255, 255, 255);
+}
+
+  span.need-help-contact-us-name
+, span.need-help-contact-us-email a
+, span.need-help-contact-us-phone a
+{
+    color: rgb(255, 255, 255);
+}

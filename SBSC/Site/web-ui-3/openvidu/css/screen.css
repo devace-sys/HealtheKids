@@ -1,0 +1,212 @@
+:root {
+    --input_color: #f7f7f7;
+    --input-color-hover: white;
+    --spedcare-green: #ade0d0;
+    --spedcare-blue: #9dc8cc;
+} 
+
+@font-face {font-family: robotoCondensedRegular; src:url('roboto-condensed-regular.ttf');}
+
+body {
+    /*width: 100vw;*/
+    height: 100vh;
+    font-family: robotoCondensedRegular;
+    font-size: 1em;
+    background-color: #ffffff;
+    color: #000000;
+    background: linear-gradient(white, rgba(173, 224, 208, 0.5), rgba(157,200,204,0.5));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#room-header { 
+    display:block;
+    height: 30%;
+}
+#room-content { display:block;}
+
+#app-logo {
+    border:none;
+    margin:0 auto;
+    display:inline-block;
+    height: 46px;
+    width: 138px;
+}
+
+#room-title {
+  font-size:1.3em;
+  display:inline-block;
+  text-align:center;
+  vertical-align:top;
+}
+
+#room {
+  display:block;
+}
+
+#partscont {
+  display:block;
+}
+
+video {
+    display: block;
+}
+
+/* Make sure we have a 3-per-row video layout */
+.participants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: max-content;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.participants video {
+    width: 30%;
+    height: 30%;
+    margin-top: 10px;
+}
+
+#participant-names {
+    /* https://stackoverflow.com/a/54175718 */
+    height: 100%;
+    height: -moz-available; /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+    height: fill-available;
+}
+button {
+    width: 10vw;
+    height: 2em;
+}
+
+button:hover {
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 2px var(--spedcare-green);
+}
+
+button:focus {
+    background-color: white;
+    cursor: pointer;
+}
+
+/* styling for the telecomm sign-in form */
+
+.room-form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1em;
+    background-color: var(--spedcare-blue);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 9px 1px #cacaca;
+    transition: all 0.2s ease-in-out;
+    margin-top: 10px;
+    width: 25vw;
+    height: inherit;
+    position: absolute; /* position specified in media queries */
+    top: 15px;
+    right: 15px;
+}
+
+.room-form:hover {
+    box-shadow: 5px 5px 9px 1.5px #cacaca;
+    background-color: #9dc8ccf1;
+}
+
+.room-form > video {
+    width: 70%;
+    height: 70%;
+}
+
+.room-form > h4 {
+    margin: 0px;
+}
+
+.room-form > button {
+    transition: all 0.2s ease-in-out;
+    width: 40%;
+    height: 2em;
+}
+
+.room-form > button:hover {
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 2px var(--spedcare-green);
+}
+
+.room-form > button:focus {
+    background-color: white;
+    cursor: pointer;
+}
+
+.room-form > .form-field-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.room-form > .form-field-container > * {
+    width: 45%;
+    margin-top: 10px;
+}
+
+.room-form > .form-field-container > input {
+    transition: all 0.2s ease-in-out;
+    background-color: var(--input_color);
+    height: 1.3em;
+}
+
+.room-form > .form-field-container > input:hover {
+    background-color: #edfff9;
+}
+
+.room-form > .form-field-container > input:focus {
+    background-color: var(--input-color-hover);
+    outline-color: var(--spedcare-green);
+}
+
+/* Make sure our page is responsive*/
+@media screen and (max-width: 1250px) {
+    .room-form {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .room-form {
+        position: unset;
+        height: 40%;
+        margin: auto;
+    }
+
+    #room-enter {
+        /* https://stackoverflow.com/a/18032891 */
+        height: intrinsic; /* Safari/WebKit uses a non-standard name */
+        height: -moz-max-content; /* Firefox/Gecko */
+        height: -webkit-max-content; /* Chrome */
+    }
+
+    .room-form > button {
+        width: 50%;
+    }
+
+
+    .participants > video {
+        width: 40%;
+    }
+
+    #participant-names {
+        height: 10%;
+    }
+
+    #butjoin {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,39 @@
+Release Notes for ASP.NET AJAX Extensions Source Code
+-----------------------------------------------------
+
+The ASP.NET AJAX Extensions Source Code release installs the source code and debugging symbols for
+ASP.NET AJAX Extensions for use in maintaining and debugging your applications. You can install
+the source code by itself or you can use it with Visual Studio 2005 or Visual Web Developer
+Express Edition. You can get a free copy of Visual Web Developer Express Edition from
+http://msdn.microsoft.com/vstudio/express/vwd/download/. When you install the source code with
+one of these development environments, you can use the Visual Studio debugger to step into both
+your own code and into the ASP.NET AJAX source code.
+
+To provide feedback, please use the "AJAX Discussion and Suggestions" forum at http://forums.asp.net.   
+
+Pre-Installation
+----------------
+
+If you want to use the ASP.NET AJAX Extensions Source Code with Visual Studio 2005 or Visual Web
+Developer Express Edition, install the development environment before installing the ASP.NET AJAX
+Extensions Source Code release.  Installing Visual Studio or Visual Web Developer first makes sure 
+that the debugger in the development environment is automatically configured to work with the debugging
+symbol files and source code.
+
+
+Installation
+------------
+
+To install the release, from Windows Explorer, launch ASPAJAXSourceCode.msi. For silent or 
+unattended installation, enter the following command at a Windows command prompt:
+
+msiexec /i ASPAJAXSourceCode.msi [/q] [/log <logfile name>] [INSTALLPATH=<installation path>]
+
+where:
+
+- /q runs the installation in silent mode.
+- <logfile name> is the path and file name of an optional log file.
+- <installation path> is the path of an optional installation folder.
+
+
+

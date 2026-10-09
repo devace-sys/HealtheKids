@@ -1,0 +1,1371 @@
+
+@font-face {font-family: robotoCondensedRegular; src:url('./css/roboto-condensed-regular.ttf');}
+@font-face {font-family: abelRegular; src:url('./css/Abel-Regular-400.ttf');}
+
+/*-------------------------------
+ * Overrides
+ *------------------------------*/ 
+ 
+/* Fonts */
+
+/* 
+main * {
+  font-family:robotoCondensedRegular !important;
+  font-size:1em !important;
+  line-height:1em !important;
+}
+*/ 
+ 
+/* Record previews, file selection, etc. */
+
+div.mba-record-preview-or-selections {
+
+}
+
+div.dataTables_wrapper th, div.dataTables_wrapper td  {
+  font-size:.90em !important;
+}
+
+div.mba-record-detail {
+  width:95%;
+  margin:0 auto;
+}
+
+/* Note area box */
+ 
+textarea.ui-spedmon-noteareabox {
+   line-height:1em;
+   min-height: 2em;
+   max-height: 50vh;
+   width: 100%;
+}
+
+/* Tweaks font size for buttons */
+
+button.ui-button span.ui-button-text {  
+  font-size:.90em;
+}
+button.ui-spedmon-box-inline-ok {
+  margin-left:.25em;
+}
+
+button.ui-spedmon-box-inline-ctrl {
+  margin-left:.25em;
+}
+
+/* Tweak radio box.. Add a check box next to the current selection and also make the current selection text bold */
+
+div.ui-spedmon-box-radio-box-container label.ui-state-active span.ui-button-text:after {content:" \2713"}
+div.ui-spedmon-box-radio-box-container label.ui-state-active span.ui-button-text {font-weight:bold;}
+
+div.ui-spedmon-box-radio-box-options-container {
+  display:inline;
+}
+
+/* Create a vertical display option */
+
+div.ui-spedmon-box-radio-box-options-container-display-selections-vertical {
+  display:block;
+}
+
+div.ui-spedmon-box-radio-box-options-container-display-selections-vertical label.ui-spedmon-box-radio-box-option-label {
+  display:block;
+  width:100%;
+}
+
+/* Tweak tabs... Add a check box to the current tab */
+
+li.ui-tabs-selected a:after  {content:" \2713"}
+
+
+/**************** Select box controls ****************/
+
+@keyframes ui-spedmon-select-box-results-list {
+    0% {
+        transform: scaleY(0)
+    }
+
+    80% {
+        transform: scaleY(1.1)
+    }
+
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+div.ui-spedmon-box-select-box-container { 
+  clear:both;
+  margin-bottom: 0.5em;
+  white-space: nowrap;
+}
+
+div.ui-spedmon-box-select-box-container-disp-inline {
+  display:inline-block;
+}
+
+ul.ui-spedmon-box-select-box-inline-search-status {
+}
+
+button.ui-spedmon-box-select-box-select-action,
+button.ui-spedmon-box-select-box-multi-selection-list-item-remove {
+  background: none;
+  border: none;
+}
+
+button.ui-spedmon-box-select-box-select-action > i {
+  vertical-align: middle;
+}
+
+button.ui-spedmon-box-select-box-select-action > i:hover {
+  transform: scale(1.3);
+}
+
+button.ui-spedmon-box-select-box-select-action > i.fa-chevron-down {
+  color: #76a6d2;
+}
+
+button.ui-spedmon-box-select-box-multi-selection-list-item-remove i:hover {
+  opacity: 0.7;
+}
+
+button.ui-spedmon-box-select-box-multi-selection-list-item-remove i.fa-minus-circle {
+  color: #995D55;
+}
+
+
+div.ui-spedmon-box-select-box-container input.ui-spedmon-box.mba-web-ui-field-input-base {
+  border: none;
+  height: 100%;
+  padding: 0 0.5em;
+}
+
+div.ui-spedmon-box-select-box-container span.ui-widget.ui-widget-container.ui-spedmon-box-container {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px 1px #e4e4e4;
+    transition: all 0.2s ease-in-out;
+    background: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(16px) saturate(200%) brightness(1.15);
+    -webkit-backdrop-filter: blur(12px) saturate(180%) brightness(1.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2), inset 0 2px 4px 0 rgba(255, 255, 255, 0.6), inset 0 -2px 4px 0 rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+div.ui-spedmon-box-select-box-container span.ui-widget.ui-widget-container.ui-spedmon-box-container::after {
+/*
+  background: radial-gradient(
+      ellipse at 30% 20%,
+      rgba(255, 255, 255, 0.3) 0%,
+      transparent 50%
+  );*/
+}
+
+div.ui-spedmon-box-select-box-container span.ui-widget.ui-widget-container.ui-spedmon-box-container:hover {
+  background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.35) 0%,
+      rgba(255, 255, 255, 0.15) 50%,
+      rgba(255, 255, 255, 0.25) 100%
+  );
+  backdrop-filter:         blur(16px) saturate(200%) brightness(1.15) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='orb'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.012 0.018' numOctaves='3' seed='5' stitchTiles='stitch' result='noise'/%3E%3CfeDisplacementMap in='SourceGraphic' in2='noise' scale='25' xChannelSelector='R' yChannelSelector='G'/%3E%3C/filter%3E%3C/svg%3E#orb");
+  -webkit-backdrop-filter: blur(16px) saturate(200%) brightness(1.15);
+  box-shadow:
+      0 20px 48px 0 rgba(31, 38, 135, 0.25),
+      inset 0 2px 4px 0 rgba(255, 255, 255, 0.7),
+      inset 0 -2px 4px 0 rgba(0, 0, 0, 0.05),
+      0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+/* ul created by autocomplete widget */
+ul.ui-spedmon-box-select-box-search-results-list-items {
+  animation: ui-spedmon-select-box-results-list 0.5s ease-in-out forwards;
+  transform-origin: top center; /* need this in order to generate the list below our input*/
+}
+
+div.ui-spedmon-box-select-box-multi-selection-container {
+  margin-top:.25em;
+  border:none;
+  display:block;
+  text-align:left;
+  width:100%;  
+  clear:both;
+}
+
+h3.ui-spedmon-box-select-box-multi-selection-title {
+  font-size:1em;
+  border:none;
+  display:block;
+  text-align:left;  
+  clear:both;
+}
+
+ul.ui-spedmon-box-select-box-multi-selection-list {
+  display:block;
+  clear:both;
+  margin:0;
+}
+
+li.ui-spedmon-box-select-box-multi-selection-list-item  { 
+  padding:.25em;      
+  height:3em;
+  clear:both;
+}
+
+span.ui-spedmon-box-select-box-multi-selection-list-item-selection-label {
+}
+
+span.ui-spedmon-box-select-box-multi-selection-list-item-selection-context {
+}
+
+button.ui-spedmon-box-select-box-multi-selection-list-item-remove {
+  display:inline-block;
+  float:right;    
+}
+button.ui-spedmon-box-select-box-multi-selection-list-item-remove-adjust-1 {
+  margin-top:-0.5 !important;
+}
+
+button.ui-spedmon-box-select-box-multi-selection-list-item-remove-adjust-2 {
+  margin-top:-1.5em !important;
+}
+
+/* Clear float */
+button.ui-spedmon-box-select-box-multi-selection-list-item-remove:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+li.ui-spedmon-box-select-box-multi-selection-list-item-no-items-placeholder {
+  border:none;
+  text-align:center;
+}
+
+div.ui-spedmon-box-select-box-multi-selection-controls {
+  border:none;
+  margin:0;
+  display:block;
+  padding:.25em;
+  text-align:center;
+  clear:both;
+}
+
+
+/*-------------------------------
+ * Standard Dialogs
+ *------------------------------*/ 
+
+#dialogMessage{display:none;}
+#dialogConfirm{display:none;}
+#dialogConfirmReason{display:none;}
+
+/*-------------------------------
+ * WebUIControls
+ *------------------------------*/
+ 
+img.spedmon      {border:none;}
+span.instruction {margin-bottom:1em;font-size:1em;display:block;text-align:center;}
+span.sellabel    {font-size:1em;margin:0px auto;text-align:center;color:#000;}
+span.selcontext  {font-size:.90em;margin:0px;text-align:center;color:#222;}
+
+.ui-spedmon-ctrl                         {}
+
+.ui-spedmon-label-inline                 {margin-right:.25em; padding: 0.48em 0.45em 0.47em 0.45em;font-size:1em; }
+.ui-spedmon-step-ntc-cont                {font-size:1em;clear:both;}
+div.ui-spedmon-step-highlight           {border:none;}
+.ui-spedmon-step-number                  {margin-left:.2em;margin-right:.8em;}
+/*.ui-spedmon-step-title                   {font-weight:bold;}*/
+.ui-spedmon-step-optional                {margin-left:.5em;}
+
+.ui-spedmon-step-sel-opts-cont           {text-align:right;clear:both;min-height:22px;}
+.ui-spedmon-step-sel-opt                      {height:22px;}
+.ui-spedmon-step-sel-opt  .ui-button-text {font-size:.80em;margin-top:-10px;}
+
+.ui-spedmon-step-label                   {margin:0 auto;text-align:center;}
+
+.ui-spedmon-step-instructions            {color:#000;font-size:1em;padding:1em;}
+div.ui-spedmon-step-instructions        {text-align:center;display:block;}
+ul.ui-spedmon-step-instructions        {text-align:left;list-style:circle; list-style-position:inside;}
+ol.ui-spedmon-step-instructions        {text-align:left; list-style-position:inside;}
+.ui-spedmon-step-instructions  li       {color:#000;font-size:1em;}
+li.ui-spedmon-step-instruction           {margin-left:3em;}
+
+div.ui-instructions-list {color:#000;font-size:1em;}
+div.ui-instructions-list * {color:#000;font-size:1em;}
+ul.ui-instruction-list {padding:.5em;list-style-type:square}
+li.ui-instruction-list {font-size:1em;}
+
+.ui-spedmon-step-content                 {text-align:center;margin:0 auto;clear:both;height:auto;}
+.ui-spedmon-step-opts-cont               {text-align:right;clear:both;min-height:22px;}
+.ui-spedmon-step-opt                     {height:22px;}
+.ui-spedmon-step-opt .ui-button-text     {font-size:.90em;margin-top:-5px;}
+.ui-spedmon-step-sel-opt  .ui-button-text {font-size:.90em;margin-top:-5px;}
+
+a.mba-web-ui-link-external {
+  font-weight:normal;
+  padding:.25em;
+  text-decoration:underline;
+}
+
+fieldset.mba-fieldset {
+  border:1px solid #888; 
+  padding:.5em;  
+  margin-bottom:1em;
+}
+
+legend.mba-fieldset { 
+    font-style:italic;
+}
+
+label.mba-web-ui  {
+  text-align:left;  
+}
+
+label.mba-web-ui.mba-web-ui-inline  {
+  margin-left:.5em;
+  margin-right:.5em;
+}
+
+.ui-spedmon-box-container     {position: relative;width:22em;display:inline;margin-right:.5em}
+.ui-spedmon-box               {margin: 0; padding: 0.48em 0 0.47em 0.45em; width:16em;font-size:1em;}
+.ui-spedmon-box-label         {position:absolute; margin:0; padding:0;font-size:.9em;color:#bbb;}
+.ui-spedmon-box-status        {position:absolute; margin:0; padding:0;}
+.ui-spedmon-textareabox       {width:55em;height:20em;font-size:14px;font-family:"Courier New",Courier,monospace}
+/*.ui-spedmon-noteareabox       {width:55em;height:10em;resize: none;}*/
+.mba-web-ui-field-data-text-area              { margin:.25em !important;border:1px solid #999 !important; padding:.25em !important;}
+.mba-web-ui-field-data-text-area:focus  { border:1px solid #000 !important;}
+
+
+.ui-spedmon-dialog-mono-txt   {font-size:14px;font-family:"Courier New",Courier,monospace}
+
+.ui-spedmon-button            {}
+.ui-spedmon-button-blank      {background: none; border: none;}
+.ui-spedmon-button-small   {height:22px}
+.ui-spedmon-button-small .ui-button-text{font-size:.80em; margin-top:-5px;}
+div.ui-spedmon-button-line {margin:.5em;}
+.ui-spedmon-status-list       {display:block;}
+.ui-spedmon-status-item       {width:50px;height:18px;padding:2px;display:inline;}
+.ui-spedmon-status-icon       {width:16px;height:16px;display:inline;overflow: hidden; background-repeat: no-repeat;text-indent: -99999px;}
+.ui-spedmon-status-icon-info  {background-image:url(./images/msg/info_16.png);}
+
+.ui-autocomplete              {max-height:200px;overflow-y:auto;overflow-x:hidden;}
+.ui-menu-item a                {width:700px;}
+
+.ui-spedmon-datagrid          {margin:0px auto;}
+
+.ui-spedmon-datagrid-cell-label {}
+
+table.ui-spedmon-datagrid tbody tr.ui-spedmon-datagrid-current-row {outline:3px solid blue;}
+table.ui-spedmon-datagrid thead tr th            {vertical-align:middle;}
+table.ui-spedmon-datagrid  tbody tr td           {vertical-align:middle;padding:.25em;}
+div.ui-spedmon-datagrid-ctrls    {margin-top:.25em;padding-top:.25em;}
+
+table.ui-spedmon-datagrid thead tr th textarea, table.ui-spedmon-datagrid tbody tr td textarea {
+	font-weight:normal !important;
+	font-size:.90em !important;
+	min-height:2em !important;
+}
+
+table.ui-spedmon-datagrid thead tr th input, table.ui-spedmon-datagrid tbody tr td.dg-cell input {
+  font-weight:normal !important;  
+  font-size:.90em !important;
+}
+
+/* Instructions */
+
+div.ui-instruction-list-title
+{
+  padding-bottom:2em;
+  text-align:center;
+  clear:both;
+}
+
+div.ui-instruction-list-title > span
+{
+  display:inline;
+}
+
+span.ui-instruction-list-title
+{
+  font-weight:bold;
+}
+
+/* Workaround for button controls inside instructions */
+
+div.ui-instruction-list-content  span.ui-button-text
+{
+  color:#000;
+}
+
+pre.ui-instruction-list
+{
+  font-size:14px;font-family:"Courier New",Courier,monospace;
+}
+
+pre.pseudo-code {
+    margin:.5em;
+    padding:.5em;
+    background-color:#000;
+    color:#fff;
+    font-size: 14px;
+    font-family: "Courier New",Courier,monospace;
+}
+
+div.ui-spedmon-columns
+{
+  width:100%;  
+  clear:both;
+  height:100%;
+}
+
+div.ui-spedmon-columns-header
+{
+  width:100%;
+  text-align:center;
+  padding:10px;
+  clear:both;
+  margin-bottom:10px;
+}
+
+h2.ui-spedmon-columns-header
+{
+  font-size:1.4em;
+  font-weight:bold;
+  text-align:center;    
+}
+
+div.ui-spedmon-column
+{
+  margin-top:10px;
+  width:45%;
+  min-width:45%;
+  min-height:250px;
+  padding:10px;
+}
+
+div.ui-spedmon-column-r
+{
+  float:right;
+}
+
+div.ui-spedmon-column-l
+{
+  float:left;
+}
+
+h3.ui-spedmon-column
+{
+  font-size:1.2em;
+  font-weight:bold;
+  text-align:center;
+  padding-bottom:10px;
+}
+
+h4.ui-spedmon-column
+{
+  font-size:.90em;
+  text-align:center;
+  padding-bottom:5px;
+}
+
+ul.ui-spedmon-column
+{
+  padding:5px;  
+}
+
+ul.ui-spedmon-column li
+{
+  padding:2px;    
+}
+
+/*
+ul.ui-spedmon-column-news li
+{
+  margin-top:5px;
+  font-size:.90em;
+}
+
+ul.ui-spedmon-column-news li h3
+{
+  font-weight:bold;
+  border-bottom:1px solid;  
+  margin-top:3px;
+  padding-bottom:2px;
+  margin-bottom:5px;
+}
+
+ul.ui-spedmon-column-news li p
+{
+  font-weight:normal;
+  text-align:left;
+  padding:.5em;
+  display:block;
+  margin-top:.5em;
+}
+*/
+
+/*-------------------------------
+ * Tables
+ *------------------------------*/
+
+/*th, td                 {font-size:.85em}*/
+
+th.dt-col , td.dt-col {padding-left:.25em;padding-right:.25em;}
+
+th.dt-string,  td.dt-string             {text-align:left;}
+th.dt-numeric, td.dt-numeric          {text-align:right;}
+th.dt-date,    td.dt-date                 {text-align:left;}
+th.dt-bool,    td.dt-bool                 {text-align:center;}
+
+td.dt-string             {  white-space: nowrap; overflow: hidden;text-overflow: ellipsis;}
+
+/*th:hover                          {cursor:pointer;}*/
+tr.even, tr.even > td  {background-color:#ddd; /*font-weight:bold*/}
+tr.odd,  tr.odd >  td  {background-color:#fff}
+tr.selected > td       {background-color:#0066ff; color:#fff;}
+tr.selected_flagged > td       {background-color:#ffff33; color:#000;text-decoration:underline;}
+
+tr.hover_over > td     {background-color:#0099ff; color:#fff; cursor: pointer;}
+
+/*-------------------------------
+ * Sections
+ *------------------------------*/
+
+div.stdform_section_contain       {position:relative;background-color:#6FB42C;border:1px solid #cccccc;width:960px;padding:5px;margin-bottom:2px;}
+div.stdform_section_title_contain {height:24px;}
+span.stdform_section_title        {color:#ffffff;height:24px;font-size:1em;font-weight:bold;display:inline;}
+div.stdform_section_content       {position:relative;margin:0px auto;text-align:center;}
+
+/*-------------------------------
+ * Status and Detail List
+ * Controls
+ *------------------------------*/
+
+/* Status container structure */
+/* todo: pull out of code */
+/* Detail list container structure */
+
+ul.details
+{
+  text-align: center;
+  margin:0px auto;
+  padding:2px;
+  width: 90%;
+  /*height:30px; */
+  min-height:30px;
+  font-weight:bold;
+  line-height: 2;
+}
+
+ul.details-inline
+{
+  height:30px;
+  font-weight:bold;
+  display:inline;
+}
+
+/* Status and Detail List Item Content Variants for Different Return States*/
+
+img.detail      {border:none;display:inline;}
+.status_none    {display:none;}
+
+li.detail      {display:inline; padding:5px; border:1px solid #000;margin-right:2px;background-color:#6FB42C; color:#ffffff !important;font-size: 1em;}   /* Default */
+li.detail_good {display:inline; padding:5px; border:1px solid #000;margin-right:2px;background-color:#33cc00; color:#000000;font-size: 1em;}   /* Success */
+li.detail_info {display:inline; padding:5px; border:1px solid #000;margin-right:2px;background-color:#0066ff; color:#ffffff;font-size: 1em;}   /* Info */
+li.detail_warn {display:inline; padding:5px; border:1px solid #000;margin-right:2px;background-color:#ffff33; color:#000000;font-size: 1em;}   /* Warn */
+li.detail_crit {display:inline; padding:5px; border:1px solid #000;margin-right:2px;background-color:#660000; color:#ffffff !important;font-size: 1em;}   /* Critical */
+li.detail_wait {display:inline; padding:5px; border:1px solid #000;margin-right:2px;background-color:#ffffff; color:#000000;font-size: 1em;}   /* Status wait */
+
+a.detail      {margin-right:2px;text-decoration:none;background-color:#6FB42C; color:#ffffff !important;font-size:1em;}    /* Default */
+a.detail_good {margin-right:2px;text-decoration:none;background-color:#33cc00; color:#000000;font-size:1em;}   /* Success */
+a.detail_info {margin-right:2px;text-decoration:none;background-color:#0066ff; color:#ffffff !important;font-size:1em;}   /* Info */
+a.detail_warn {margin-right:2px;text-decoration:none;background-color:#ffff33; color:#000000;font-size:1em;}   /* Warn */
+a.detail_crit {margin-right:2px;text-decoration:none;background-color:#660000; color:#ffffff !important;font-size:1em;}   /* Critical */
+a.detail_wait {margin-right:2px;text-decoration:none;background-color:#ffffff; color:#000000;font-size:1em;}   /* Status wait */
+
+span.detail      {margin-left:2px;display:inline;background-color:#6FB42C; color:#ffffff !important;font-size: 1em}    /* Default */
+span.detail_good {margin-left:2px;display:inline;background-color:#33cc00; color:#000000;font-size: 1em;}   /* Success */
+span.detail_info {margin-left:2px;display:inline;background-color:#0066ff; color:#ffffff !important;font-size: 1em}   /* Info */
+span.detail_warn {margin-left:2px;display:inline;background-color:#ffff33; color:#000000;font-size: 1em;}   /* Warn */
+span.detail_crit {margin-left:2px;display:inline;background-color:#660000; color:#ffffff !important;font-size: 1em;}   /* Critical */
+span.detail_wait {margin-left:2px;display:inline;background-color:#ffffff; color:#000000;font-size: 1em;}   /* Status wait */
+
+/* Step instructions */
+
+div.instruction_info
+{
+ background-color :#0066ff;
+ color:#FFFF00;
+ padding:.5em;
+ margin:.5em;
+ width:95%;
+ font-size:1.3em;
+}
+
+/*-------------------------------
+ * Media files
+ *------------------------------*/
+
+/* Media file links */
+
+.ui-spedmon-files-link-folder {margin-bottom:1em;margin-top:1em;}
+
+h2.ui-spedmon-files-link-folder {font-size:1.7em;font-weight:bold;border-bottom:1px solid;}
+h3.ui-spedmon-files-link-folder {font-size:1.5em;font-weight:bold;border-bottom:1px solid;}
+h4.ui-spedmon-files-link-folder {font-size:1.3em;font-weight:bold;}
+h5.ui-spedmon-files-link-folder {font-size:1.1em;font-weight:bold;}
+h6.ui-spedmon-files-link-folder {font-size:1em;font-weight:bold;}
+h7.ui-spedmon-files-link-folder {font-size:1em;font-weight:bold;}
+
+div.ui-spedmon-files-link-file     {width:100%;height:1.3em;clear:both;vertical-align:text-middle;}
+a.ui-spedmon-files-link-file              {font-size:1.1em;}
+a.ui-spedmon-files-link-file:hover {font-weight:bold;}
+span.ui-spedmon-files-link-file {font-size:1.1em;}
+span.ui-spedmon-files-link-file:hover {font-weight:bold;}
+
+.ui-spedmon-files-level-1 {margin-left:1em;}
+.ui-spedmon-files-level-3 {margin-left:2em;}
+.ui-spedmon-files-level-4 {margin-left:3em;}
+.ui-spedmon-files-level-5 {margin-left:4em;}
+.ui-spedmon-files-level-6 {margin-left:5em;}
+.ui-spedmon-files-level-7 {margin-left:6em;}
+
+.ui-spedmon-strike-through {text-decoration:line-through;}
+
+div.practitioner-attest-statement {
+  padding:.25em;
+}
+
+div.practitioner-attest-statement-review {
+  padding:.25em;
+}
+
+/*-------------------------------
+ * Return Info
+ *------------------------------*/
+
+table.returninfo {
+  display: block;
+  table-layout: auto;
+  border-collapse: collapse;
+  width:95%;
+  max-width:95%;  
+  margin:0 auto;  
+ }
+
+table.returninfo caption {
+  text-align:center;
+  font-weight:bold;  
+  padding-top:1em;
+  padding-bottom:1em;
+}
+
+table.returninfo tr {
+  text-align: left;
+}
+
+table.returninfo tfoot tr th {
+  text-align:center;
+  font-weight:bold;  
+  padding-top:1em;
+  padding-bottom:1em;
+}
+
+table.returninfo th,td {
+  padding:.25em;
+}
+
+table.returninfo th {
+  font-weight:bold;
+  border:1px solid #ccc;
+  background-color:#ddd;  
+}
+
+table.returninfo td {
+  border:1px solid #ccc;
+  background-color:#fff;  
+}
+ 
+
+/*-------------------------------
+ * Summary/detail
+ *------------------------------*/
+
+table.summarydetail {
+  display: block;
+  table-layout: auto;
+  border-collapse: collapse;
+  width:95%;
+  max-width:95%;  
+  margin:0 auto;  
+ }
+
+table.summarydetail caption {
+  text-align:center;
+  font-weight:bold;  
+  padding-top:1em;
+  padding-bottom:1em;
+}
+
+table.summarydetail tr {
+  text-align: left;
+}
+
+table.summarydetail tfoot tr th {
+  text-align:center;
+  font-weight:bold;  
+  padding-top:1em;
+  padding-bottom:1em;
+}
+
+table.summarydetail th,td {
+  padding:.25em;
+}
+
+table.summarydetail th {
+  font-weight:bold;
+  border:1px solid #ccc;
+  background-color:#ddd;  
+}
+
+table.summarydetail td {
+  border:1px solid #ccc;
+  background-color:#fff;  
+}
+ 
+/*-------------------------------
+ * Smartsheet Integration
+ *------------------------------*/
+
+ /* Sheet list */
+ 
+ table.smartsheet.smartsheet-links {
+  display: block;
+  table-layout: auto;
+  border-collapse: collapse;
+  width:95%;
+  max-width:95%;  
+  margin:0 auto;  
+ }
+
+table.smartsheet.smartsheet-links caption {
+  text-align:center;
+  font-weight:bold;  
+  padding-top:1em;
+  padding-bottom:1em;
+}
+
+table.smartsheet.smartsheet-links tr {
+  text-align: left;
+}
+
+table.smartsheet.smartsheet-links tfoot tr th {
+  text-align:center;
+  font-weight:bold;  
+  padding-top:1em;
+  padding-bottom:1em;
+}
+
+table.smartsheet.smartsheet-links th,td {
+  padding:.25em;
+}
+
+table.smartsheet.smartsheet-links th {
+  font-weight:bold;
+  border:1px solid #ccc;
+  background-color:#ddd;  
+}
+
+table.smartsheet.smartsheet-links td {
+  border:1px solid #ccc;
+  background-color:#fff;  
+}
+
+
+div.svc-journal-service-description-diag {
+  margin:1em;
+}
+
+div.svc-journal-service-description-diag h3 {
+  font-weight:bold;
+  text-align:center;
+  padding:.25em;
+}
+
+div.svc-journal-service-description-diag h4 {
+  font-weight:bold;
+  padding-bottom:.5em;
+}
+
+div.svc-journal-service-description-diag p {
+  padding-top:.5em;
+}
+
+div.svc-journal-service-prescribed-order-diag  h3{
+  font-weight:bold;
+  text-align:center;
+  padding:.25em;
+}
+
+div.svc-journal-service-prescribed-order-diag  h4{
+  font-weight:bold;
+  text-align:center;
+  padding:.25em;
+}
+
+div.svc-journal-service-prescribed-order-diag  h5 {
+  font-weight:bold;
+  text-align:center;
+  padding:.25em;
+}
+
+div.svc-journal-service-prescribed-order-diag  p {  
+  padding-top:.5em;
+}
+
+div.top-options  {
+  position:relative;
+  clear:both;
+  padding-left:1em;
+  padding-right:1em;
+  padding-bottom:2em;
+  text-align:center;
+}
+
+div.top-options button.ui-spedmon-button {
+  display:inline-block;
+  margin:0 auto;
+  text-align:center;
+  width:25em;
+}
+
+/*-------------------------------
+ * Quick Links
+ *------------------------------*/
+ 
+div.quick-links-container {
+  display:block;
+  height:auto;
+  width:30%;
+/*  margin:2% auto;  */
+  text-align:center;
+}
+
+
+ul.quick-links  {
+  display:block;   
+  padding:0;
+  margin-top:1em;
+  width:100%;
+}
+
+li.quick-link  { 
+   display:block;
+   width:100%;
+   margin:0;
+   padding:0;
+   margin-bottom:.25em;
+}
+
+button.quick-link {
+  display:block;
+  margin:0;
+  width:100%;
+}
+button.quick-link span.ui-button-text {  
+  font-size:1em;
+}
+
+/*-------------------------------
+ * Custom step additional info
+ *------------------------------*/
+ 
+div.additional-info-below-select-entity {
+  font-size:1em;
+  font-weight:normal;
+  font-style: italic;
+  padding:1em;
+}
+
+form.steps {
+	display: block;
+	width:auto;	
+}
+
+div.steps {
+	display:block;
+	width: 70%;
+	margin: 0 auto;
+}
+
+/*-------------------------------
+ * Contact persons
+ *------------------------------*/
+
+address.contact-container {
+  display:block;  
+  font-size:1em;
+  font-weight:normal;
+  margin:0;
+  padding:0;
+}
+
+address.contact-container span.contact {
+  margin-right:.5em;
+}
+
+address.contact-container span.contact-name {
+  font-size:1em;
+  vertical-align:middle;
+}
+address.contact-container span.contact-title {
+  font-size:.90em;
+  font-style:italic;
+  vertical-align: bottom;
+}
+
+address.contact-container span.contact-email a[href^="mailto"]::before {
+  content: "\2709 \2009"; /* Envelope followed by thin space */
+}
+
+address.contact-container span.contact-phone a[href^="tel"] ::before {
+   content: "\260F \2009"; /* White phone followed by thin space */ 
+}
+
+
+/*-------------------------------
+ * Telehealth options
+ *------------------------------*/
+
+div.telehealthoptions p {
+  font-size:.90em;
+}
+a.telehealthoption {
+  margin-top:.25em;
+  width:100%;
+}
+
+a.teleheathrequest {
+  text-decoration:underline;
+  color:blue;
+}
+
+
+
+/* Datagrid */
+
+button.dg-row-control-remove {
+}
+
+button.dg-row-control-remove > span.ui-button-text {
+  font-size:.80em;
+}
+
+
+
+/*-------------------------------
+ * Service journal specific
+ *
+ * TODO: Move these to their own
+ * CSS file and include these 
+ * just on the svc journal screens
+ *------------------------------*/
+ 
+ div.svc-journal-journal-entries-container {
+   width:95%;
+   margin:0 auto;
+   border:1px solid #000;
+   margin-bottom:1em;
+   overflow-x:auto;
+ }
+ 
+div.svc-journal-journal-entries-none {
+   width:100%;
+   padding:.25em;
+}
+ 
+ div.svc-journal-journal-entries-none p {
+   font-weight:bold;
+   text-align:center;
+ }
+ 
+ table.svc-journal-journal-entries {
+   width:100%;
+ }
+
+table.svc-journal-journal-entries > caption {
+   text-align:center;
+   caption-side:top;
+   font-size:1em;
+   font-weight:bold;
+   color:#000;
+ }
+ 
+table.svc-journal-journal-entries > thead th {
+   font-weight:bold;
+}
+
+table.svc-journal-journal-entries > tfoot > tr > th {
+   text-align:center;
+   color:#000;
+   font-size:.90em;
+}
+ 
+ table.svc-journal-journal-entries th.svc-journal-journal-entries-hidden-col {
+   display:none;
+ }
+ 
+ table.svc-journal-journal-entries td.svc-journal-journal-entries-hidden-col {
+   display:none;
+ }
+ 
+ table.svc-journal-journal-entries span[data-col-title="Notes"] {
+   display:inline-block;
+   max-width: 20em;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+ }
+ 
+/* Warning and problems on journal close screen -- overrides autogenerated table */
+
+ div.svc-journal-journal-warnings-and-problems-container {
+   width:95%;
+   margin:0 auto;
+   border:1px solid #000;
+   margin-bottom:1em;
+   overflow-x:auto;
+ }
+ 
+div.svc-journal-journal-warnings-and-problems-container > table  {
+  width:100% !important; 
+}
+ 
+div.svc-journal-journal-warnings-and-problems-container > table  > thead  th{
+  font-weight:bold;
+}
+
+div.svc-journal-journal-warnings-and-problems-container > table > caption {
+   text-align:center;
+   font-size:1em;
+   font-weight:bold;
+   color:#000;
+   text-align:center;
+   caption-side:top;
+}
+ 
+ div.svc-journal-journal-warnings-and-problems-container > table > tfoot > tr > th {
+   text-align:center;
+   color:#000;
+   text-align:center;
+   font-size:.90em;
+}
+ 
+/* For timekeeper TODO: Move to its own style sheet */
+
+#PanelVerifyHours {
+  border:1px solid #000;
+  margin:1em;
+  width:auto;
+  color:#000;
+  padding:1em;
+  background-color:#FF0;
+}
+
+/* Provide modern (2021) style override for ui-spedmon-radio-box (rules start)*/
+
+div.ui-spedmon-box-radio-box-container.modern2021 {
+  padding:0;
+  margin:0;
+ }
+
+div.ui-spedmon-box-radio-box-container.modern2021 > div.ui-spedmon-box-radio-box-options-container > label.ui-spedmon-box-radio-box-option-label {
+  background:none;
+  border:none;
+  border-radius:0;
+  padding:.25em;
+  text-align:left;
+  margin:0 !important;
+  display:inline-block;
+  vertical-align:middle;
+}
+
+div.ui-spedmon-box-radio-box-container.modern2021 > div.ui-spedmon-box-radio-box-options-container > label.ui-spedmon-box-radio-box-option-label > span.ui-button-text {
+  margin-right:1em;
+  padding:0;
+  border:none;
+  text-align:left;
+  display:inline;
+  border-bottom:3px solid white;
+ /* transition: all 0.2s ease-in-out;*/
+}
+
+div.ui-spedmon-box-radio-box-container.modern2021 > div.ui-spedmon-box-radio-box-options-container > label.ui-spedmon-box-radio-box-option-label:hover > span.ui-button-text {
+  border-bottom:3px solid #ffc391;
+}
+
+div.ui-spedmon-box-radio-box-container.modern2021 > div.ui-spedmon-box-radio-box-options-container > label.ui-spedmon-box-radio-box-option-label.ui-state-active > span.ui-button-text {
+  border-bottom:4px solid #ff8a00; 
+}
+
+div.ui-spedmon-box-radio-box-container.modern2021 > div.ui-spedmon-box-radio-box-options-container > label.ui-spedmon-box-radio-box-option-label.ui-state-active > span.ui-button-text:after {
+  content: none; 
+}
+
+/* Provide modern (2021) style override for ui-spedmon-radio-box (rules end)*/
+
+/* Provide modern (2021) style override for ui-spedmon-menu-option-link (rules start)*/
+
+button.modern2021.ui-spedmon-menu-option-link  {
+  background:none;
+  border:none;
+  border-radius:0;
+  padding:.25em;
+  text-align:left;
+  margin:0 !important;
+  display:inline-block;
+  vertical-align:middle;
+}
+
+button.modern2021.ui-spedmon-menu-option-link > span.ui-button-text {
+  padding:0;
+  border:none;
+  text-align:left;
+  display:inline;
+  font-size:1em;
+  border-bottom:3px solid #fff;
+ /* transition: all 0.2s ease-in-out;*/
+}
+
+button.modern2021.ui-spedmon-menu-option-link:hover  > span.ui-button-text {
+  border-bottom:3px solid #ccc;
+}
+
+/* Provide modern (2021) style override for ui-spedmon-menu-option-link (rules end)*/
+
+/* Tabs control */
+
+div.data-entry-row-tabs {
+  margin-bottom: 2em;
+  box-shadow: 3px 3px 8px 3px #bababa;
+}
+
+div.data-entry-row-tabs ul.ui-tabs-nav {
+  display: flex;
+  background: unset;
+  border: none;
+}
+
+div.data-entry-row-tabs ul > li {
+  flex: 1;
+  text-align: center;
+  background: none !important;
+  transition: all 0.2s ease-in-out;
+  border: none !important;
+}
+
+div.data-entry-row-tabs ul > li > a:hover {
+  border-bottom:2px solid #ffc391;
+}
+
+div.data-entry-row-tabs ul > li > a {
+  width: 100%;
+  font-weight: bold;
+}
+
+div.data-entry-row-tabs ul > li.ui-state-active {
+  background: none !important;
+}
+
+div.data-entry-row-tabs ul > li.ui-state-active > a {
+  border-bottom:3px solid #ff8a00;
+}
+
+div.data-entry-row-tabs ul > li.ui-state-active > a:after {
+  content: none;
+}
+
+div.mba-dup-rec-instructions {
+  display:block;
+  margin:.5em;
+  padding:.5em;
+}
+
+ul.mba-dup-rec-list {
+  display:block;
+  margin:.5em;
+}
+
+ul.mba-dup-rec-list > li.mba-dup-rec-list-item {
+  border: 1px solid #aaa;
+  padding:.25em;
+  margin-bottom:.5em;
+}
+
+ul.mba-dup-rec-list > li.mba-dup-rec-list-item:hover {
+   border: 1px solid #000;
+    cursor:pointer;
+}
+
+li.mba-dup-rec-list-item > span.mba-dup-rec-list-item-label {
+   display:block;
+  font-size:1em;
+}
+
+li.mba-dup-rec-list-item > span.mba-dup-rec-list-item-context {
+  display:block;
+  font-size:.80em;
+}
+
+
+button.mba-web-ui-link-external-button {
+    display: inline-block;
+    border: none;
+    border-bottom: 3px solid transparent;
+    background-color: transparent;
+    color: #000;
+}
+
+button.mba-web-ui-link-internal-button {
+    display: inline-block;
+    border:none;
+    border-bottom: 3px solid transparent;
+    background-color: transparent;
+    color:#000;
+}
+
+button.mba-web-ui-link-external-button:hover {
+   border-bottom:3px solid #ff8a00;
+}
+
+button.mba-web-ui-link-internal-button:hover {
+    border-bottom: 3px solid #ff8a00;
+}
+
+span.mba-web-ui-link-external-label {
+  display: inline-block;
+  margin-right:.25em;
+}
+
+span.mba-web-ui-link-internal-label {
+    display: inline-block;
+    margin-right: .25em;
+}
+
+i.mba-web-ui-link-external-icon {
+  display:inline-block;
+}
+
+i.mba-web-ui-link-internal-icon {
+    display: inline-block;
+}
+
+iframe.mba-full-wvp-hvp {
+
+    width:100vw;
+    height:100vh;
+    display:block;
+    border:none;
+}
+
+div.fb-note-preview, div.fb-note-preview * {
+    font-family:"Times New Roman", Times, serif !important;
+    font-size:14pt;
+}
+
+/*manage libarary*/
+
+.gridlines-layout-meeting-info .gridlines-layout-meeting-info__field-row #butmanagefiles.ui-button {
+    display:                 inline-flex !important;
+    align-items:             center;
+    gap:                     6px;
+    width:                   auto;
+    max-width:               100%;
+    padding:                 5px 10px;
+    margin:                  0 0 -1px 0;
+    background:              #edf2f7 !important;
+    border:                  1px solid #d5dde5 !important;
+    border-bottom:           none !important;
+    border-radius:           6px 6px 0 0 !important;
+    box-shadow:              inset 0 1px 2px rgba(0, 0, 0, 0.04) !important;
+    cursor:                  default !important;
+    position:                relative;
+    box-sizing:              border-box;
+    height:                  auto !important;
+    min-height:              0 !important;
+}
+
+.gridlines-layout-meeting-info .gridlines-layout-meeting-info__field-row #butmanagefiles.ui-button .ui-button-icon-primary,
+.gridlines-layout-meeting-info .gridlines-layout-meeting-info__field-row #butmanagefiles.ui-button .ui-icon {
+    display:                 none !important;
+}
+
+.gridlines-layout-meeting-info .gridlines-layout-meeting-info__field-row #butmanagefiles.ui-button::before {
+    content:                 '\f07b';
+    font-family:             'Font Awesome 5 Free', 'FontAwesome';
+    font-weight:             900;
+    font-size:               9px;
+    color:                   #7a8fa0;
+    width:                   18px;
+    height:                  18px;
+    min-width:               18px;
+    background:              #c7d4e0;
+    border-radius:           4px;
+    display:                 flex;
+    align-items:             center;
+    justify-content:         center;
+    box-shadow:              inset 0 1px 1px rgba(0, 0, 0, 0.06);
+    flex-shrink:             0;
+    line-height:             1;
+}
+
+.gridlines-layout-meeting-info .gridlines-layout-meeting-info__field-row #butmanagefiles.ui-button::after {
+    content:                 'PDF only';
+    margin-left:             auto;
+    font-size:               9px;
+    font-weight:             400;
+    color:                   #8a9bac;
+    background:              #dce4ec;
+    padding:                 1px 6px;
+    border-radius:           3px;
+    letter-spacing:          0.3px;
+    box-shadow:              inset 0 1px 1px rgba(0, 0, 0, 0.04);
+    line-height:             normal;
+    flex-shrink:             0;
+}
+
+.gridlines-layout-meeting-info .gridlines-layout-meeting-info__field-row #butmanagefiles span.ui-button-text {
+    font-size:               11px !important;
+    font-weight:             600;
+    color:                   #64788a;
+    letter-spacing:          0.5px;
+    text-transform:          uppercase;
+    padding:                 0 !important;
+    margin:                  0;
+    line-height:             18px;
+    flex-shrink:             0;
+}
+
+.gridlines-layout-meeting-info .gridlines-layout-meeting-info__field-row #butmanagefiles.ui-button:hover,
+.gridlines-layout-meeting-info .gridlines-layout-meeting-info__field-row #butmanagefiles.ui-button:focus {
+    background:              #edf2f7 !important;
+    border-color:            #d5dde5 !important;
+    cursor:                  default !important;
+}
+
+.gridlines-layout-meeting-info .gridlines-layout-meeting-info__field-row #butmanagefiles.ui-button:active {
+    transform:               none !important;
+}
+
+.gridlines-layout-meeting-info #butManageConsentText span.ui-button-text {
+    font-size:               1em;
+}
+
+.gridlines-layout-meeting-info #butManageFiles span.ui-button-text {
+    font-size:               1em;
+}
+
+.gridlines-layout-meeting-info #restViewPatientParentMcalConsents {
+    margin-top:              1em;
+}

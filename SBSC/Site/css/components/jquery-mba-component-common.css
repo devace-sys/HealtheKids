@@ -1,0 +1,40 @@
+/*#################################################################################################
+  #                                       Colors
+  #################################################################################################*/
+
+*.mba-color-file {
+   color: #000000;
+}
+  
+*.mba-color-file-pdf {
+   color: #F40F02;
+}
+
+*.mba-color-file-word {
+   color: #2b579a;
+}
+
+*.mba-color-file-excel {
+  color: #217346;
+}
+
+*.mba-color-file-image {
+  color: #17a2b8;
+}
+
+*.mba-color-file-csv {
+  color: #4DB6AC;
+}
+
+a.mba-file-download {
+    display:block;
+    text-decoration: none;
+    padding:.25em;
+    border:1px solid transparent;
+    color: #000;
+}
+
+a.mba-file-download:hover {
+  background-color:#f5f5dc;      
+  border:1px solid #000;
+}

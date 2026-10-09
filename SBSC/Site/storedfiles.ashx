@@ -1,0 +1,1 @@
+<%@ WebHandler Language="C#" Class="Spedmon.StoredFilesRpt" CodeBehind="storedfiles.ashx.cs"%>

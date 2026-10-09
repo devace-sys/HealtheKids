@@ -1,0 +1,14 @@
+﻿html {
+    scroll-behavior: smooth;
+}
+
+
+div.mba-action-item-common-meter {
+  height:auto !important;
+}
+
+
+body#cdecompliancemanage  h3.mba-action-item-common-label {
+   font-size: 1.15em;
+   height: 1.55em;
+}

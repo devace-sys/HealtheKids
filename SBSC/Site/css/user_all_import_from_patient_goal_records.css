@@ -1,0 +1,577 @@
+
+.patient-goal-import-page {
+    padding: 18px 18px 28px 18px;
+    color: #1f2a44;
+    background: #f4f8fd;
+}
+
+    .patient-goal-import-page .pg-import-goal {
+        display: flex;
+        align-items: center;
+        min-height: 96px;
+        margin-bottom: 18px;
+        padding: 20px 24px;
+        color: #ffffff;
+        background: linear-gradient(135deg, #0f4c9a 0%, #1769c2 55%, #2b84df 100%);
+        border: 1px solid #0f5baa;
+        border-radius: 14px;
+        box-shadow: 0 8px 24px rgba(15, 76, 154, 0.20);
+    }
+
+    .patient-goal-import-page .pg-import-goal-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 58px;
+        width: 58px;
+        height: 58px;
+        margin-right: 18px;
+        font-size: 27px;
+        color: #ffffff;
+        background: rgba(255, 255, 255, 0.16);
+        border: 1px solid rgba(255, 255, 255, 0.24);
+        border-radius: 14px;
+    }
+
+    .patient-goal-import-page .pg-import-goal-copy h2 {
+        margin: 0 0 5px 0;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .patient-goal-import-page .pg-import-goal-copy p {
+        margin: 0;
+        font-size: 14px;
+        color: #e8f3ff;
+    }
+
+    .patient-goal-import-page .pg-import-card {
+        margin-bottom: 18px;
+        padding: 20px;
+        background: #ffffff;
+        border: 1px solid #d9e5f2;
+        border-radius: 14px;
+        box-shadow: 0 5px 18px rgba(28, 72, 119, 0.08);
+    }
+
+    .patient-goal-import-page .pg-import-workspace-card {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .patient-goal-import-page .pg-import-section-heading,
+    .patient-goal-import-page .pg-import-results-heading,
+    .patient-goal-import-page .pg-import-action-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+    }
+
+    .patient-goal-import-page .pg-import-section-heading {
+        margin-bottom: 14px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #e5edf6;
+    }
+
+        .patient-goal-import-page .pg-import-section-heading h3,
+        .patient-goal-import-page .pg-import-results-heading h3,
+        .patient-goal-import-page .pg-import-action-copy h3 {
+            margin: 0 0 4px 0;
+            font-size: 18px;
+            font-weight: 700;
+            color: #173d6b;
+        }
+
+        .patient-goal-import-page .pg-import-section-heading p,
+        .patient-goal-import-page .pg-import-results-heading p,
+        .patient-goal-import-page .pg-import-action-copy p {
+            margin: 0;
+            font-size: 13px;
+            color: #6b7f95;
+        }
+
+
+    .patient-goal-import-page .pg-import-tabs,
+    .patient-goal-import-page .pg-import-tabs.ui-widget-content {
+        padding: 0;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+    }
+
+        .patient-goal-import-page .pg-import-tabs > ul,
+        .patient-goal-import-page .pg-import-tabs .ui-tabs-nav {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            margin: 0;
+            padding: 12px 14px 0 14px;
+            background: #eef5fc;
+            border: 0;
+            border-bottom: 1px solid #d7e4f1;
+            border-radius: 0;
+        }
+
+            .patient-goal-import-page .pg-import-tabs > ul > li,
+            .patient-goal-import-page .pg-import-tabs .ui-tabs-nav li {
+                margin: 0;
+                padding: 0;
+                background: transparent;
+                border: 0;
+                border-radius: 0;
+            }
+
+                .patient-goal-import-page .pg-import-tabs > ul > li > a,
+                .patient-goal-import-page .pg-import-tabs .ui-tabs-nav li a {
+                    display: block;
+                    padding: 11px 16px;
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: #3c5f82;
+                    text-decoration: none;
+                    background: transparent;
+                    border: 1px solid transparent;
+                    border-bottom: 0;
+                    border-radius: 9px 9px 0 0;
+                    outline: none;
+                }
+
+                    .patient-goal-import-page .pg-import-tabs > ul > li > a i,
+                    .patient-goal-import-page .pg-import-tabs .ui-tabs-nav li a i {
+                        margin-right: 7px;
+                    }
+
+                .patient-goal-import-page .pg-import-tabs > ul > li.ui-tabs-active > a,
+                .patient-goal-import-page .pg-import-tabs > ul > li.ui-state-active > a,
+                .patient-goal-import-page .pg-import-tabs .ui-tabs-nav li.ui-tabs-active a,
+                .patient-goal-import-page .pg-import-tabs .ui-tabs-nav li.ui-state-active a {
+                    color: #1258a7;
+                    background: #ffffff;
+                    border-color: #d7e4f1;
+                    box-shadow: 0 -2px 8px rgba(23, 105, 194, 0.05);
+                }
+
+        .patient-goal-import-page .pg-import-tabs .ui-tabs-panel,
+        .patient-goal-import-page #tab-import-request,
+        .patient-goal-import-page #tab-import-response {
+            padding: 20px;
+            background: #ffffff;
+        }
+
+
+    .patient-goal-import-page .pg-import-action-bar,
+    .patient-goal-import-page .pg-import-results-heading {
+        margin-bottom: 16px;
+        padding-bottom: 14px;
+        border-bottom: 1px solid #e5edf6;
+    }
+
+    .patient-goal-import-page .pg-import-action-controls,
+    .patient-goal-import-page .pg-import-results-actions {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        gap: 14px;
+        flex-wrap: wrap;
+    }
+
+    .patient-goal-import-page .pg-import-test-control,
+    .patient-goal-import-page .pg-import-diagnostics-control {
+        min-width: 190px;
+    }
+
+    .patient-goal-import-page .pg-import-btn {
+        min-height: 39px;
+        padding: 8px 16px;
+        font-size: 13px;
+        font-weight: 600;
+        border-radius: 9px;
+        transition: background-color 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+    }
+
+        .patient-goal-import-page .pg-import-btn i {
+            margin-right: 7px;
+        }
+
+        .patient-goal-import-page .pg-import-btn:hover {
+            transform: translateY(-1px);
+        }
+
+    .patient-goal-import-page .pg-import-btn-primary {
+        color: #ffffff;
+        background: linear-gradient(135deg, #1264b8 0%, #237fd5 100%);
+        border: 1px solid #115ba7;
+        box-shadow: 0 4px 11px rgba(18, 100, 184, 0.20);
+    }
+
+        .patient-goal-import-page .pg-import-btn-primary:hover,
+        .patient-goal-import-page .pg-import-btn-primary:focus {
+            color: #ffffff;
+            background: linear-gradient(135deg, #0e559f 0%, #176cbd 100%);
+            border-color: #0d4f93;
+        }
+
+    .patient-goal-import-page .pg-import-btn-secondary {
+        color: #155da8;
+        background: #ffffff;
+        border: 1px solid #7fb5e8;
+        box-shadow: 0 3px 9px rgba(18, 100, 184, 0.09);
+    }
+
+        .patient-goal-import-page .pg-import-btn-secondary:hover,
+        .patient-goal-import-page .pg-import-btn-secondary:focus {
+            color: #0f4f91;
+            background: #edf6ff;
+            border-color: #4f97da;
+        }
+
+    .patient-goal-import-page #tab-import-request thead th {
+        color: #24577f;
+        background: #eaf4fd;
+        border-color: #d4e5f4;
+        box-sizing: border-box;
+        padding: 8px 10px;
+    }
+
+    .patient-goal-import-page #datatoimportjson {
+        width: 100%;
+        min-height: 80px;
+        border: 1px solid #cbdced;
+        border-radius: 8px;
+    }
+
+    .patient-goal-import-page #tab-import-request tbody td {
+        color: #344d66;
+        border-color: #e0eaf4;
+        vertical-align: top;
+    }
+
+    .patient-goal-import-page #tab-import-request table tbody tr:nth-child(even) td {
+        background: #f8fbff;
+    }
+
+    .patient-goal-import-page #tab-import-request table tbody tr:hover td {
+        background: #edf6ff;
+    }
+
+    .patient-goal-import-page #tab-import-request select,
+    .patient-goal-import-page #tab-import-request input[type="text"],
+    .patient-goal-import-page #tab-import-request input[type="number"] {
+        min-height: 34px;
+        color: #29435e;
+        background: #ffffff;
+        border: 1px solid #b9cee3;
+        border-radius: 7px;
+    }
+
+        .patient-goal-import-page #tab-import-request select:focus,
+        .patient-goal-import-page #tab-import-request input:focus {
+            border-color: #4b91d2;
+            box-shadow: 0 0 0 2px rgba(43, 132, 223, 0.14);
+            outline: none;
+        }
+
+    .patient-goal-import-page #tab-import-request input[type="file"] {
+        padding: 7px;
+        color: #405a73;
+        background: #ffffff;
+        border: 1px dashed #82b6e6;
+        border-radius: 8px;
+    }
+
+    .patient-goal-import-page .pg-import-stat-row {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 16px;
+    }
+
+    .patient-goal-import-page .pg-import-stat-card {
+        display: flex;
+        align-items: center;
+        flex: 1 1 0;
+        min-width: 0;
+        padding: 13px 14px;
+        background: #ffffff;
+        border: 1px solid #dce7f2;
+        border-radius: 11px;
+        box-shadow: 0 3px 10px rgba(26, 72, 119, 0.06);
+    }
+
+    .patient-goal-import-page .pg-import-stat-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 40px;
+        width: 40px;
+        height: 40px;
+        margin-right: 11px;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+
+    .patient-goal-import-page .pg-import-stat-blue {
+        color: #165fa9;
+        background: #e7f2fe;
+    }
+
+    .patient-goal-import-page .pg-import-stat-cyan {
+        color: #087b91;
+        background: #e1f7fb;
+    }
+
+    .patient-goal-import-page .pg-import-stat-amber {
+        color: #9a6500;
+        background: #fff4d8;
+    }
+
+    .patient-goal-import-page .pg-import-stat-green {
+        color: #1e7c4c;
+        background: #e6f7ee;
+    }
+
+    .patient-goal-import-page .pg-import-stat-value,
+    .patient-goal-import-page .pg-import-stat-label {
+        display: block;
+    }
+
+    .patient-goal-import-page .pg-import-stat-value {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.05;
+        color: #193e68;
+    }
+
+    .patient-goal-import-page .pg-import-stat-label {
+        margin-top: 3px;
+        font-size: 11px;
+        color: #6f8296;
+    }
+
+    .patient-goal-import-page .pg-import-table-shell {
+        overflow: hidden;
+        background: #ffffff;
+        border: 1px solid #d4e1ee;
+        border-radius: 12px;
+        box-shadow: 0 4px 14px rgba(27, 71, 116, 0.07);
+    }
+
+    .patient-goal-import-page .pg-import-table-scroll {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .patient-goal-import-page .pg-import-results-table {
+        min-width: 1180px;
+        margin: 0;
+        font-size: 12px;
+    }
+
+        .patient-goal-import-page .pg-import-results-table thead th {
+            padding: 10px 8px;
+            color: #24577f;
+            text-align: center;
+            vertical-align: middle;
+            white-space: nowrap;
+            background: #e6f1fb;
+            border-color: #d1e2f1;
+            font-size: 11px;
+            font-weight: 700;
+            line-height: 1.25;
+        }
+
+        .patient-goal-import-page .pg-import-results-table tbody td {
+            padding: 9px 8px;
+            color: #354d66;
+            text-align: center;
+            vertical-align: middle;
+            background: #ffffff;
+            border-color: #e2ebf4;
+            line-height: 1.35;
+        }
+
+        .patient-goal-import-page .pg-import-results-table tbody tr:nth-child(even) td {
+            background: #f9fbfe;
+        }
+
+        .patient-goal-import-page .pg-import-results-table tbody tr:hover td {
+            background: #eef6ff;
+        }
+
+    .patient-goal-import-page .pg-import-row-info td {
+        background: #eef7ff !important;
+    }
+
+    .patient-goal-import-page .pg-import-row-success td {
+        background: #eefaf4 !important;
+    }
+
+    .patient-goal-import-page .pg-import-row-warning td {
+        background: #fff9eb !important;
+    }
+
+    .patient-goal-import-page .pg-import-row-danger td {
+        background: #fff3f3 !important;
+    }
+
+    .patient-goal-import-page .pg-import-row-number,
+    .patient-goal-import-page .pg-import-status-cell,
+    .patient-goal-import-page .pg-import-date,
+    .patient-goal-import-page .pg-import-goal-number {
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .patient-goal-import-page .pg-import-ssid {
+        font-family: Consolas, "Courier New", monospace;
+        white-space: nowrap;
+    }
+
+    .patient-goal-import-page .pg-import-patient-name {
+        min-width: 150px;
+        font-weight: 600;
+        color: #244d76;
+    }
+
+    .patient-goal-import-page .pg-import-area-of-need {
+        min-width: 155px;
+    }
+
+    .patient-goal-import-page .pg-import-processing-notes {
+        min-width: 300px;
+        max-width: 430px;
+        white-space: normal;
+    }
+
+    .patient-goal-import-page .pg-import-empty-row td {
+        padding: 24px !important;
+        color: #6c8095 !important;
+        text-align: center;
+        background: #f8fbff !important;
+    }
+
+    .patient-goal-import-page .pg-import-empty-row i {
+        margin-right: 6px;
+        color: #2b78c5;
+    }
+
+    .patient-goal-import-page .pg-import-badge {
+        display: inline-block;
+        min-width: 42px;
+        padding: 4px 8px;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: center;
+        white-space: nowrap;
+        border: 1px solid transparent;
+        border-radius: 12px;
+    }
+
+    .patient-goal-import-page .pg-import-badge-success {
+        color: #17643e;
+        background: #e2f5ea;
+        border-color: #bce5cd;
+    }
+
+    .patient-goal-import-page .pg-import-badge-danger {
+        color: #a33535;
+        background: #fde8e8;
+        border-color: #f4c5c5;
+    }
+
+    .patient-goal-import-page .pg-import-badge-warning {
+        color: #8a5b00;
+        background: #fff1cb;
+        border-color: #f2d88d;
+    }
+
+    .patient-goal-import-page .pg-import-badge-info {
+        color: #155e92;
+        background: #dff1ff;
+        border-color: #b8daf3;
+    }
+
+    .patient-goal-import-page .pg-import-badge-neutral {
+        color: #5d6f82;
+        background: #edf1f5;
+        border-color: #d8e0e8;
+    }
+
+@media (max-width: 991px) {
+
+    .patient-goal-import-page .pg-import-action-bar,
+    .patient-goal-import-page .pg-import-results-heading,
+    .patient-goal-import-page .pg-import-section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .patient-goal-import-page .pg-import-action-controls,
+    .patient-goal-import-page .pg-import-results-actions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .patient-goal-import-page .pg-import-stat-row {
+        flex-wrap: wrap;
+    }
+
+    .patient-goal-import-page .pg-import-stat-card {
+        flex: 1 1 calc(50% - 12px);
+    }
+}
+
+@media (max-width: 640px) {
+
+    .patient-goal-import-page {
+        padding: 10px;
+    }
+
+        .patient-goal-import-page .pg-import-goal {
+            align-items: flex-start;
+            padding: 17px;
+        }
+
+        .patient-goal-import-page .pg-import-goal-icon {
+            flex-basis: 46px;
+            width: 46px;
+            height: 46px;
+            font-size: 21px;
+        }
+
+        .patient-goal-import-page .pg-import-goal-copy h2 {
+            font-size: 20px;
+        }
+
+        .patient-goal-import-page .pg-import-tabs > ul,
+        .patient-goal-import-page .pg-import-tabs .ui-tabs-nav {
+            align-items: stretch;
+            flex-direction: column;
+            gap: 4px;
+            padding: 10px;
+        }
+
+            .patient-goal-import-page .pg-import-tabs > ul > li > a,
+            .patient-goal-import-page .pg-import-tabs .ui-tabs-nav li a {
+                border: 1px solid #d7e4f1;
+                border-radius: 8px;
+            }
+
+        .patient-goal-import-page .pg-import-stat-card {
+            flex-basis: 100%;
+        }
+
+        .patient-goal-import-page .pg-import-action-controls,
+        .patient-goal-import-page .pg-import-results-actions {
+            align-items: stretch;
+            flex-direction: column;
+        }
+
+        .patient-goal-import-page .pg-import-btn,
+        .patient-goal-import-page .pg-import-test-control,
+        .patient-goal-import-page .pg-import-diagnostics-control {
+            width: 100%;
+        }
+}

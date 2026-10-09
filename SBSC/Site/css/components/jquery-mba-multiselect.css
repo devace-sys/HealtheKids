@@ -1,0 +1,793 @@
+﻿.ui-spedmon-multiselect-container {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+}
+
+.ui-spedmon-multiselect-container-inline {
+    display: inline-block;
+}
+
+.ui-spedmon-multiselect-input-wrapper {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    position: relative;
+    min-height: 26px;
+    max-height: 38px;
+    width: 280px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    background: #fff;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+    .ui-spedmon-multiselect-input-wrapper:hover {
+        border-color: #888;
+    }
+
+    .ui-spedmon-multiselect-input-wrapper.ui-spedmon-multiselect-focused {
+        border-color: #66afe9;
+        outline: 0;
+    }
+
+    .ui-spedmon-multiselect-input-wrapper.ui-spedmon-multiselect-disabled {
+        background: #eee;
+        cursor: not-allowed;
+    }
+
+    .ui-spedmon-multiselect-input-wrapper.ui-spedmon-multiselect-expand-active {
+        border-color: #6366f1;
+    }
+
+        .ui-spedmon-multiselect-input-wrapper.ui-spedmon-multiselect-expand-active:hover {
+            border-color: #4f46e5;
+        }
+
+.ui-spedmon-multiselect-expand-btn {
+    display: none;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 20px;
+    -ms-flex: 0 0 20px;
+    flex: 0 0 20px;
+    width: 20px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-right: 1px solid #6366f1;
+    background: #f0f0ff;
+    color: #6366f1;
+    cursor: pointer;
+    outline: none;
+    border-radius: 3px 0 0 3px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+    .ui-spedmon-multiselect-expand-btn:hover {
+        background: #e0e0ff;
+    }
+
+    .ui-spedmon-multiselect-expand-btn:disabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+
+    .ui-spedmon-multiselect-expand-btn.ui-spedmon-multiselect-expand-visible {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+.ui-spedmon-multiselect-expand-icon {
+    width: 10px;
+    height: 10px;
+}
+
+    .ui-spedmon-multiselect-expand-icon path {
+        fill: none;
+        stroke: #6366f1;
+        stroke-width: 1.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+.ui-spedmon-multiselect-tags {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3px 1fr 3px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+    -ms-flex-align: start;
+    align-items: start;
+    align-content: start;
+    min-height: 22px;
+    max-height: 34px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 2px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0,0,0,0.2) rgba(0,0,0,0.05);
+}
+
+    .ui-spedmon-multiselect-tags::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .ui-spedmon-multiselect-tags::-webkit-scrollbar-track {
+        background: rgba(0,0,0,0.05);
+        border-radius: 3px;
+    }
+
+    .ui-spedmon-multiselect-tags::-webkit-scrollbar-thumb {
+        background: rgba(0,0,0,0.2);
+        border-radius: 3px;
+    }
+
+        .ui-spedmon-multiselect-tags::-webkit-scrollbar-thumb:hover {
+            background: rgba(0,0,0,0.35);
+        }
+
+.ui-spedmon-multiselect-tag {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-width: 0;
+    padding: 2px 2px 2px 5px;
+    font-size: 10px;
+    line-height: 1.2;
+    color: #fff;
+    background: #6366f1;
+    border: none;
+    border-radius: 2px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-animation: uiSpedmonTagIn 0.15s ease-out;
+    animation: uiSpedmonTagIn 0.15s ease-out;
+}
+
+@-webkit-keyframes uiSpedmonTagIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes uiSpedmonTagIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.ui-spedmon-multiselect-tag:hover {
+    background: #4f46e5;
+}
+
+.ui-spedmon-multiselect-tag-label {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ui-spedmon-multiselect-tag-marquee {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.ui-spedmon-multiselect-tag-overflow .ui-spedmon-multiselect-tag-label {
+    text-overflow: clip;
+}
+
+.ui-spedmon-multiselect-tag-overflow:hover .ui-spedmon-multiselect-tag-marquee {
+    -webkit-animation: uiSpedmonMarquee 4s linear infinite;
+    animation: uiSpedmonMarquee 4s linear infinite;
+}
+
+@-webkit-keyframes uiSpedmonMarquee {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes uiSpedmonMarquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.ui-spedmon-multiselect-tag-remove {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 12px;
+    height: 12px;
+    min-width: 12px;
+    padding: 0;
+    margin: 0 0 0 2px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    color: rgba(255,255,255,0.7);
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+}
+
+    .ui-spedmon-multiselect-tag-remove:hover {
+        background: rgba(255,255,255,0.2);
+        color: #fff;
+    }
+
+.ui-spedmon-multiselect-count {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1 / -1;
+    display: inline-block;
+    padding: 2px 5px;
+    font-size: 9px;
+    font-weight: 600;
+    color: #4338ca;
+    background: #e0e7ff;
+    border-radius: 10px;
+    white-space: nowrap;
+    justify-self: start;
+}
+
+.ui-spedmon-multiselect-empty {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1 / -1;
+    color: #999;
+    font-size: 10px;
+    font-style: italic;
+    padding: 2px 4px;
+    line-height: 18px;
+}
+
+.ui-spedmon-multiselect-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    border: none !important;
+    outline: none !important;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.ui-spedmon-multiselect-action-btn {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 18px;
+    -ms-flex: 0 0 18px;
+    flex: 0 0 18px;
+    width: 18px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-left: 1px solid #aaa;
+    background: #f5f5f5;
+    color: #555;
+    cursor: pointer;
+    outline: none;
+    border-radius: 0 3px 3px 0;
+}
+
+    .ui-spedmon-multiselect-action-btn:hover {
+        background: #e0e0e0;
+    }
+
+    .ui-spedmon-multiselect-action-btn:disabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+
+.ui-spedmon-multiselect-chevron {
+    font-size: 8px;
+    line-height: 1;
+}
+
+.ui-spedmon-multiselect-expand-active .ui-spedmon-multiselect-action-btn {
+    border-left-color: #6366f1;
+}
+
+.ui-spedmon-multiselect-status {
+    display: none;
+}
+
+.ui-spedmon-multiselect-original {
+    display: none !important;
+}
+
+.ui-spedmon-multiselect-dropdown {
+    z-index: 1050 !important;
+    position: absolute;
+    top: 100% !important;
+    left: 0 !important;
+    right: auto !important;
+    margin-top: 0 !important;
+    padding: 4px 0 !important;
+    list-style: none;
+    background: #fff;
+    border: 1px solid #aaa;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    -webkit-box-shadow: 0 4px 12px rgba(0,0,0,.15);
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+    max-height: 180px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0,0,0,0.2) rgba(0,0,0,0.05);
+}
+
+    .ui-spedmon-multiselect-dropdown::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .ui-spedmon-multiselect-dropdown::-webkit-scrollbar-track {
+        background: rgba(0,0,0,0.05);
+        border-radius: 3px;
+        margin: 4px 0;
+    }
+
+    .ui-spedmon-multiselect-dropdown::-webkit-scrollbar-thumb {
+        background: rgba(0,0,0,0.2);
+        border-radius: 3px;
+    }
+
+        .ui-spedmon-multiselect-dropdown::-webkit-scrollbar-thumb:hover {
+            background: rgba(0,0,0,0.35);
+        }
+
+    .ui-spedmon-multiselect-dropdown .ui-menu-item,
+    .ui-spedmon-multiselect-dropdown .ui-spedmon-multiselect-item {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        border: none !important;
+        background: none !important;
+    }
+
+        .ui-spedmon-multiselect-dropdown .ui-menu-item a,
+        .ui-spedmon-multiselect-dropdown .ui-spedmon-multiselect-item a,
+        .ui-spedmon-multiselect-dropdown li a {
+            display: -webkit-box !important;
+            display: -webkit-flex !important;
+            display: flex !important;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-box-pack: start;
+            -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+            padding: 6px 10px !important;
+            margin: 0 !important;
+            font-size: 11px;
+            line-height: 1.3;
+            color: #333 !important;
+            text-decoration: none !important;
+            cursor: pointer;
+            white-space: nowrap;
+            border: none !important;
+            background: transparent !important;
+        }
+
+            .ui-spedmon-multiselect-dropdown .ui-menu-item a:hover,
+            .ui-spedmon-multiselect-dropdown .ui-spedmon-multiselect-item a:hover,
+            .ui-spedmon-multiselect-dropdown li a:hover,
+            .ui-spedmon-multiselect-dropdown .ui-state-focus a,
+            .ui-spedmon-multiselect-dropdown li.ui-state-focus a {
+                background: #f3f4f6 !important;
+                color: #111 !important;
+            }
+
+    .ui-spedmon-multiselect-dropdown .ui-spedmon-multiselect-item-selected a {
+        background: #eef2ff !important;
+    }
+
+.ui-spedmon-multiselect-dropdown-checkbox {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 13px;
+    height: 13px;
+    min-width: 13px;
+    margin-right: 6px;
+    border: 2px solid #d1d5db;
+    border-radius: 2px;
+    background: #fff;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+    .ui-spedmon-multiselect-dropdown-checkbox.checked {
+        background: #6366f1;
+        border-color: #6366f1;
+    }
+
+    .ui-spedmon-multiselect-dropdown-checkbox svg {
+        display: none;
+        width: 7px;
+        height: 7px;
+    }
+
+    .ui-spedmon-multiselect-dropdown-checkbox.checked svg {
+        display: block;
+    }
+
+    .ui-spedmon-multiselect-dropdown-checkbox svg path {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+.ui-spedmon-multiselect-dropdown-label {
+    display: inline;
+    font-weight: 500;
+    color: #333;
+    text-align: left;
+}
+
+.ui-spedmon-multiselect-dropdown-context {
+    display: inline;
+    margin-left: 6px;
+    padding-left: 6px;
+    border-left: 1px solid #ddd;
+    color: #888;
+    font-size: 9px;
+    font-style: italic;
+}
+
+.ui-spedmon-multiselect-ctrl-label {
+    display: inline-block;
+    margin-right: 8px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #333;
+    vertical-align: middle;
+}
+
+.ui-spedmon-multiselect-modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 2000;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+    .ui-spedmon-multiselect-modal-overlay.ui-spedmon-multiselect-modal-visible {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+.ui-spedmon-multiselect-modal {
+    position: relative;
+    width: 520px;
+    max-width: 90vw;
+    max-height: 80vh;
+    background: #fff;
+    border: 1px solid #6366f1;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 8px 24px rgba(0,0,0,.25);
+    box-shadow: 0 8px 24px rgba(0,0,0,.25);
+    overflow: hidden;
+    -webkit-animation: uiSpedmonModalIn 0.2s ease-out;
+    animation: uiSpedmonModalIn 0.2s ease-out;
+}
+
+@-webkit-keyframes uiSpedmonModalIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes uiSpedmonModalIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.ui-spedmon-multiselect-modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 10px 14px;
+    background: #f0f0ff;
+    border-bottom: 1px solid #6366f1;
+}
+
+.ui-spedmon-multiselect-modal-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #4338ca;
+    margin: 0;
+}
+
+.ui-spedmon-multiselect-modal-count {
+    font-size: 11px;
+    font-weight: normal;
+    color: #6366f1;
+    margin-left: 6px;
+}
+
+.ui-spedmon-multiselect-modal-close {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
+    color: #6366f1;
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    .ui-spedmon-multiselect-modal-close:hover {
+        background: #e0e0ff;
+        color: #4338ca;
+    }
+
+.ui-spedmon-multiselect-modal-body {
+    padding: 12px;
+    max-height: 350px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0,0,0,0.2) rgba(0,0,0,0.05);
+}
+
+    .ui-spedmon-multiselect-modal-body::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .ui-spedmon-multiselect-modal-body::-webkit-scrollbar-track {
+        background: rgba(0,0,0,0.05);
+        border-radius: 3px;
+        margin: 4px 0;
+    }
+
+    .ui-spedmon-multiselect-modal-body::-webkit-scrollbar-thumb {
+        background: rgba(0,0,0,0.2);
+        border-radius: 3px;
+    }
+
+        .ui-spedmon-multiselect-modal-body::-webkit-scrollbar-thumb:hover {
+            background: rgba(0,0,0,0.35);
+        }
+
+.ui-spedmon-multiselect-modal-tags {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 6px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+}
+
+.ui-spedmon-multiselect-modal-tag {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-width: 0;
+    padding: 5px 8px 5px 10px;
+    font-size: 11px;
+    line-height: 1.3;
+    color: #fff;
+    background: #6366f1;
+    border: none;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+    .ui-spedmon-multiselect-modal-tag:hover {
+        background: #4f46e5;
+    }
+
+.ui-spedmon-multiselect-modal-tag-label {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ui-spedmon-multiselect-modal-tag-marquee {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.ui-spedmon-multiselect-modal-tag-overflow .ui-spedmon-multiselect-modal-tag-label {
+    text-overflow: clip;
+}
+
+.ui-spedmon-multiselect-modal-tag-overflow:hover .ui-spedmon-multiselect-modal-tag-marquee {
+    -webkit-animation: uiSpedmonMarquee 4s linear infinite;
+    animation: uiSpedmonMarquee 4s linear infinite;
+}
+
+.ui-spedmon-multiselect-modal-tag-remove {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    padding: 0;
+    margin: 0 0 0 6px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    color: rgba(255,255,255,0.7);
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+}
+
+    .ui-spedmon-multiselect-modal-tag-remove:hover {
+        background: rgba(255,255,255,0.2);
+        color: #fff;
+    }
+
+.ui-autocomplete.ui-spedmon-multiselect-dropdown {
+    z-index: 1050 !important;
+    top: 100% !important;
+    margin-top: 0 !important;
+}
+
+    .ui-autocomplete.ui-spedmon-multiselect-dropdown .ui-menu-item {
+        margin: 0 !important;
+        padding: 0 !important;
+    }

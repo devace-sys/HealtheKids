@@ -1,0 +1,287 @@
+div.mba-entity-group {  
+  margin: 0 auto;
+  width:95%;
+  display:block;
+  padding: .25em;
+}
+
+div.mba-entity-group-header {
+  padding: 0.4em 0.4em;  
+  margin-bottom: 0.5em;
+  clear:both;
+}
+
+span.mba-entity-group-header-title {
+  display:inline-block;
+  float:left;
+  font-weight:bold;
+}
+
+span.mba-entity-group-header-controls {
+  display:inline-block;
+  float:right;
+}
+
+button.mba-entity-group-header-control {
+}
+
+
+button.mba-entity-group-header-control span.ui-button-text {
+  text-align:center;
+  font-size:.60em;
+}
+
+  i.mba-entity-groups-header-control
+, i.mba-entity-group-header-control
+, i.mba-entity-group-member-control {
+  margin: 0 0.25em;
+  cursor: pointer;
+}
+
+  i.mba-entity-groups-header-control:hover
+, i.mba-entity-group-header-control:hover
+, i.mba-entity-group-member-control:hover {
+    color: #636F87;
+}
+
+  i.mba-entity-groups-header-control.fa-trash-alt
+, i.mba-entity-groups-header-control.fa-minus-circle
+, i.mba-entity-group-header-control.fa-trash-alt
+, i.mba-entity-group-header-control.fa-minus-circle
+, i.mba-entity-group-member-control.fa-trash-alt
+, i.mba-entity-group-member-control.fa-minus-circle {
+  color: #995D55;
+}
+
+  i.mba-entity-groups-header-control.fa-trash-alt:hover
+, i.mba-entity-groups-header-control.fa-minus-circle:hover
+, i.mba-entity-group-header-control.fa-trash-alt:hover
+, i.mba-entity-group-header-control.fa-minus-circle:hover 
+, i.mba-entity-group-member-control.fa-trash-alt:hover
+, i.mba-entity-group-member-control.fa-minus-circle:hover {
+  color: #561B1F;
+}
+
+  i.mba-entity-groups-header-control.fa-print
+, i.mba-entity-group-header-control.fa-print
+, i.mba-entity-group-member-control.fa-print  {
+  color: #636F87;
+}
+
+  i.mba-entity-groups-header-control.fa-print:hover
+, i.mba-entity-group-header-control.fa-print:hover
+, i.mba-entity-group-member-control.fa-print:hover {
+  color: #193B53;
+}
+
+  i.mba-entity-groups-header-control.fa-pencil-alt
+, i.mba-entity-group-header-control.fa-pencil-alt
+, i.mba-entity-group-member-control.fa-pencil-alt  {
+  color: #D28F79;
+}
+
+  i.mba-entity-groups-header-control.fa-pencil-alt:hover
+, i.mba-entity-group-header-control.fa-pencil-alt:hover
+, i.mba-entity-group-member-control.fa-pencil-alt:hover {
+  color: #BEB07B;
+}
+
+  i.mba-entity-groups-header-control.fa-plus
+, i.mba-entity-groups-header-control.fa-clone
+, i.mba-entity-group-header-control.fa-plus
+, i.mba-entity-group-header-control.fa-clone 
+, i.mba-entity-group-member-control.fa-plus
+, i.mba-entity-group-member-control.fa-clone {
+  color: #7a9fbf;
+}
+
+  i.mba-entity-groups-header-control.fa-plus:hover
+, i.mba-entity-groups-header-control.fa-clone:hover
+, i.mba-entity-group-header-control.fa-plus:hover
+, i.mba-entity-group-header-control.fa-clone:hover
+, i.mba-entity-group-member-control.fa-plus:hover
+, i.mba-entity-group-member-control.fa-clone:hover  {
+  color: #8C9CAA;
+}
+
+  i.mba-entity-groups-header-control.fa-sync
+, i.mba-entity-group-header-control.fa-sync
+, i.mba-entity-group-member-control.fa-sync  {
+  color: #4b9b45;
+}
+
+  i.mba-entity-groups-header-control.fa-sync:hover
+, i.mba-entity-group-header-control.fa-sync:hover
+, i.mba-entity-group-member-control.fa-sync:hover  {
+  color: #96bd93;
+}
+
+  i.mba-entity-groups-header-control.fa-random
+, i.mba-entity-group-header-control.fa-random
+, i.mba-entity-group-member-control.fa-random {
+  color: #90739c;
+}
+
+  i.mba-entity-groups-header-control.fa-random:hover
+, i.mba-entity-group-header-control.fa-random:hover 
+, i.mba-entity-group-member-control.fa-random:hover {
+  color: #c39ed2;
+}
+
+div.mba-entity-group-content {
+  padding: 0.4em;
+}
+
+
+div.mba-entity-group-content-controls {
+  display:block;
+  padding:1%;
+  text-align:center;
+}
+
+input.mba-entity-group-content-control {
+  display:inline-block;
+  width:70%;
+}
+
+button.mba-entity-group-content-control {
+  display:inline-block;
+  width:20%;
+}
+
+button.mba-entity-group-content-control span.ui-button-text {
+  text-align:center;
+  font-size:.60em;
+}
+
+ul.mba-entity-group-members {
+  display:block;
+}
+
+li.mba-entity-group-member {
+  clear:both;
+}
+
+div.mba-entity-group-member-line {
+  display:block;
+  clear:both;
+}
+
+span.mba-entity-group-member-label {
+  display:inline-block;
+  padding-left:1%;
+  text-align:left;
+  font-size:.90em;
+  font-weight:bold;
+  float:left;
+}
+
+span.mba-entity-group-member-controls {
+  display:inline-block;
+  float:right;
+}
+
+button.mba-entity-group-member-control {
+}
+
+button.mba-entity-group-member-control span.ui-button-text {
+  font-size:.60em;
+  text-align:center;
+}
+
+span.mba-entity-group-member-context {
+  display: inline-block;
+  text-align: left;
+  padding-left: 1%;
+  font-size: .75em;
+}
+
+/* Fix for spedmon-box control buttons */
+
+span.ui-spedmon-box-container button {
+  height:32px !important;
+}
+
+input.mba-entity-group-member-field-read-only {
+  border:none;
+  background-color:inherit;
+  font-weight:bold;
+  width:100%;
+}
+
+span.mba-entity-group-member-extra-data {
+  border:none;
+  margin:0 auto;
+  background-color:inherit;
+  font-weight:bold;
+  display:inline-block;
+  width:100%;
+}
+
+span.mba-entity-dia-inline-label {
+  background-color:inherit;
+  font-weight:bold;  
+}
+label.mba-entity-dia-form-grid-col-label {text-align:left;}
+
+div.mba-entity-dia-form-grid-cont   {display:table;width:95%;margin:0 auto;}
+div.mba-entity-dia-form-grid-row     {display:table-row;}
+span.mba-entity-dia-form-grid-col  { display:table-cell;padding:.25em;}
+div.mba-entity-group-member-info-table {display:block;width:95%;margin:0 auto;text-align:center;}
+table.mba-entity-group-member-info-table  {display:block;width:95%;margin:0 auto; } 
+table.mba-entity-group-member-info-table th {border:none; padding:.50em; color:inherit; background-color:inherit;}
+table.mba-entity-group-member-info-table td {border:1px solid #ccc; padding:.50em; color:inherit; background-color:inherit;}
+  
+div.mba-entity-group-status {
+  display:block;
+  text-align:center;
+  font-weight:bold;
+  font-size:1.5em;
+}
+
+div.mba-entity-group-dia-form-instructions-container {
+  display:block;
+  width:100%;
+  margin-bottom:.5em;
+}
+div.mba-entity-group-dia-form-instructions-content{
+  margin:0 auto;
+  padding-bottom:.5em;
+  display:block;
+  border-bottom:1px solid #ccc;
+}
+
+div.mba-entity-group-dia-form-instructions-content ul {
+  margin:0 auto;
+  width:98%;
+  display:block;
+  list-style-position: outside;
+  list-style-type: square;
+}
+
+div.mba-entity-group-dia-form-instructions-content
+,div.mba-entity-group-dia-form-instructions-content ul li {
+  font-size:.95em;
+}
+
+i {
+    transition: all 0.2s ease-in-out;
+}
+
+.fa-stack .fa-clone, .fa-stack .fa-random {
+    color: #944747;
+}
+
+.fa-stack .fa-clone {
+    transform: translate(-4px, -1.5px);
+    font-size: 1.1em;
+}
+
+.fa-stack .fa-random {
+    transform: translate(5px, -3px);
+}
+
+.fa-stack:hover .fa-clone, .fa-stack:hover .fa-random {
+    color: #bf5f5f;
+    cursor: pointer;
+}

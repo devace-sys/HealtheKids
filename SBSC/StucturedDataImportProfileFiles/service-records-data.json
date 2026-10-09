@@ -1,0 +1,179 @@
+[
+               {
+
+                  id: 'SRI-900'
+                , fileClass: '900'
+                , fileSubClass: ''
+                , name: 'Standard Layout'
+                , label: 'Service Records'
+                , description: 'Service records exported from an external system'
+                , headerRowNum:1
+                , fields: [
+                   
+                     {
+                        name: 'patSSID'
+                        , columnRequired: false
+                        , dataRequired: false
+						, dataType: 'ssid'
+                        , label: 'Student SSID'
+                        , description: 'Statewide Student Identifier (SSID)'
+                        , commonColumnNames: ['SSID','Patient SSID']
+                    }
+                   
+				    ,{
+                        name: 'patStudentID'
+                        , columnRequired: false
+                        , dataRequired: false
+						, dataType: 'string'
+                        , label: 'District Student ID'
+                        , description: 'District Student ID'
+                        , commonColumnNames: ['studentid','district student id']
+                    }
+					,{
+                        name: 'pracNPI'
+                        , columnRequired: false
+                        , dataRequired: false
+						, dataType: 'string'
+                        , label: 'Practitioner NPI'
+                        , description: 'Practitioners National Provider ID'
+                        , commonColumnNames: ['npi','provider npi']
+                    }
+					, {
+                          name: 'pracEmail'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'email'
+                        , label: 'Practitioner Email'
+                        , description: 'Practitioners district provided email address'
+                        , commonColumnNames: ['Practitioner Email','Clinician Email']
+                      }
+                	
+					
+				  , {
+                          name: 'dos'
+                        , columnRequired: true
+                        , dataRequired: true
+                        , dataType: 'date'
+                        , label: 'Date of Service'
+                        , description: 'Date that service was provided'
+                        , commonColumnNames: ['Date of Service','Completed','Service Date','Date','Visit Date','Visit Due Date']
+                    }
+                    
+
+					, {
+                          name: 'procCode'
+                        , columnRequired: false
+                        , dataRequired: false
+						, dataType: 'string'
+                        , label: 'CPT Procedure Code'
+                        , description: 'CPT Procedure Code for Service Rendered'
+                        , commonColumnNames: ['CPT','CPT Code','Procedure Code','Service Code']
+                    }
+					
+					, {
+                          name: 'procMod1'
+                        , columnRequired: false
+                        , dataRequired: false
+						, dataType: 'string'
+                        , label: 'Modifier 1'
+                        , description: 'Procedure Modifier 1'
+                        , commonColumnNames: ['Program Modifier']
+                    }
+					
+					, {
+                          name: 'procMod2'
+                        , columnRequired: false
+                        , dataRequired: false
+						, dataType: 'string'
+                        , label: 'Modifier 2'
+                        , description: 'Procedure Modifier 2'
+                        , commonColumnNames: ['Group Modifier']
+                    }
+					
+					, {
+                          name: 'procMod3'
+                        , columnRequired: false
+                        , dataRequired: false
+						, dataType: 'string'
+                        , label: 'Modifier 3'
+                        , description: 'Procedure Modifier 3'
+                        , commonColumnNames: ['Dyadic Modifier']
+                    }
+					
+					, {
+                          name: 'procMod4'
+                        , columnRequired: false
+                        , dataRequired: false
+						, dataType: 'string'
+                        , label: 'Modifier 4'
+                        , description: 'Procedure Modifier 4'
+                        , commonColumnNames: ['Telehealth Modifier']
+                    }
+					
+					, {
+                          name: 'svcName'
+                        , columnRequired: false
+                        , dataRequired: false
+						, dataType: 'string'
+                        , label: 'Name of Service'
+                        , description: 'Name of the service in SpEdCare'
+                        , commonColumnNames: ['Service Provided','Activity','Service']
+                      }
+					  
+					
+					, {
+                          name: 'startTime'
+                        , columnRequired: false
+                        , dataRequired: false
+						, dataType: 'time'
+                        , label: 'Start Time'
+                        , description: 'Service Start Time'
+                        , commonColumnNames: ['Start Time']
+                    }
+					
+                    , {
+                          name: 'endTime'
+                        , columnRequired: false
+                        , dataRequired: false
+						, dataType: 'time'
+                        , label: 'End Time'
+                        , description: 'Service End time'
+                        , commonColumnNames: ['End Time']
+                    }
+					                    
+				    , {
+                          name: 'numMins'
+                        , columnRequired: false
+                        , dataRequired: false
+						, dataType: 'integer'
+                        , label: 'Number of Minutes'
+                        , description: 'Service duration in minutes'
+                        , commonColumnNames: ['Duration','Minutes','Mins','Number of Mins','Num of Mins','Total Minutes of Service Rendered']
+                    }
+				
+                    					
+					, {
+                          name: 'teleHealth'
+                        , columnRequired: false
+                        , dataRequired: false
+						, dataType: 'flagdfltno'
+                        , label: 'Via Telehealth'
+                        , description: 'Service delivered via telehealth.'
+                        , commonColumnNames: ['viaTelehealth','telehealth']
+                    }
+				
+					, {
+                          name: 'notes'
+                        , columnRequired: false
+                        , dataRequired: false
+						, dataType: 'string'
+                        , label: 'Notes'
+                        , description: 'Notes'
+                        , commonColumnNames: []
+                      }					  
+					                   
+                ]
+
+            }                       
+          
+]

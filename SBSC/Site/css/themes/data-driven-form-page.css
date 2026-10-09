@@ -1,0 +1,161 @@
+/* Takes care of formatting issue with JQM */
+
+ h1
+,h2
+,h3
+,h4
+,h5
+,h6
+,ul.ui-listview li a 
+,div.ui-title
+{
+  overflow: visible   !important;
+  white-space: normal !important;
+}
+
+
+div.ui-header h6.data-driven-form-app-notice {
+  font-size:.60em !important;
+  margin:0 !important;
+  padding:.25em !important;
+  border:1px solid black;
+  background-color:yellow;
+  font-color:black;
+  text-align:center;
+}
+
+ div.ui-header h1.data-driven-form-form-title
+,div.ui-header h2.data-driven-form-page-title 
+ {
+  font-size:1.3em !important;
+  margin:0 !important;
+  padding:0 !important;
+  padding-bottom:.25em !important;
+  text-align:center !important;
+}
+
+ h3.data-driven-form-form-instructions
+,h3.data-driven-form-page-instructions 
+,h4.data-driven-form-page-instructions-standard
+{
+  text-align:center;
+  margin:0;
+  padding-bottom:.25em;
+}
+
+
+form.data-driven-form-page-form {
+  margin-top:.5em;
+}
+
+div.data-driven-field-container
+,div.ui-field-contain {
+  border:1px solid #aaa !important;
+  margin-top:.5em !important;
+  padding:1em !important;
+}
+
+div.ui-field-contain label {
+  width:55% !important;
+}
+
+label.data-driven-field-label strong {
+  font-size:1.1em !important;
+  font-weight: bolder !important;
+}
+
+ div.ui-field-contain fieldset.ui-controlgroup
+,div.ui-field-contain div.ui-select
+,div.ui-field-contain div.ui-input-text
+,div.ui-field-contain div.ui-grid-solo
+,div.ui-field-contain textarea.ui-input-text {
+  width:40% !important;
+}
+
+ div.ui-field-contain div.ui-input-text
+,div.ui-field-contain textarea.ui-input-text
+,div.ui-input-search {
+  border:1px solid #999 !important;
+}
+
+ label.data-driven-field-label 
+,label.eaw-entity-select
+{
+  font-weight:bold !important;
+}
+
+div.ui-footer  div.ui-grid-b  p {
+  margin-top:.25em;
+  margin-left:0;
+  margin-right:0;
+  margin-bottom:0;
+}
+
+p.footer
+{
+  font-size:.60em;
+  text-align:center;
+  margin:0;  
+}
+
+ul.data-driven-form-navigation-items {
+  margin:2em !important;
+}
+
+ul.data-driven-form-navigation-items li {
+  margin-bottom:1em !important;
+}
+
+
+ul.data-driven-form-navigation-items li a {
+  padding:1em !important;
+  text-align:center !important;
+}
+
+
+.required-field {
+  color:red !important;
+  font-size:1.3em !important;
+  padding:.25em !important;
+  margin:0 !important;
+}
+
+.invalid {
+  border:2px solid red !important;
+}
+
+/* Message  */
+
+.message {
+  border:1px solid;
+  padding:.25em;
+  margin:.25em;
+  text-align:center;
+  font-weight:bold;
+}
+
+div.ui-input-text button.ui-datepicker-trigger {
+  display:block;
+  margin-top:.25em;
+  margin-bottom:.25em;
+  font-size:.75em;
+  text-align:center;  
+  float:right;
+  clear:both;
+}
+
+
+/* Message colors */
+
+.message-dflt       {background-color:#6FB42C; color:#ffffff;}   /* Default */
+.message-good       {background-color:#33cc00; color:#000000;}   /* Success */
+.message-info       {background-color:#0066ff; color:#ffffff;}   /* Info */
+.message-warn       {background-color:#ffff33; color:#000000;}   /* Warn */
+.message-crit       {background-color:#660000; color:#ffffff;}   /* Critical */
+.message-wait       {background-color:#ffffff; color:#000000;}   /* Status wait */
+
+
+/*.controlgroup-textinput{
+    padding-top:.22em;
+    padding-bottom:.22em;
+}*/

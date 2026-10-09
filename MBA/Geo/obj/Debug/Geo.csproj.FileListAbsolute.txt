@@ -1,0 +1,12 @@
+C:\MBA\Common\Geo\bin\Debug\Geo.dll
+C:\MBA\Common\Geo\bin\Debug\Geo.pdb
+C:\MBA\Common\Geo\bin\Debug\HtmlAgilityPack.dll
+C:\MBA\Common\Geo\bin\Debug\Newtonsoft.Json.dll
+C:\MBA\Common\Geo\bin\Debug\HtmlAgilityPack.pdb
+C:\MBA\Common\Geo\bin\Debug\HtmlAgilityPack.xml
+C:\MBA\Common\Geo\bin\Debug\Newtonsoft.Json.xml
+C:\MBA\Common\Geo\obj\Debug\Geo.csproj.AssemblyReference.cache
+C:\MBA\Common\Geo\obj\Debug\Geo.csproj.CoreCompileInputs.cache
+C:\MBA\Common\Geo\obj\Debug\Geo.csproj.CopyComplete
+C:\MBA\Common\Geo\obj\Debug\Geo.dll
+C:\MBA\Common\Geo\obj\Debug\Geo.pdb

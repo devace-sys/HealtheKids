@@ -1,0 +1,37 @@
+﻿sped-document-output-option-button {
+  font-size:1em;
+}
+
+#formbuilderdataelements {
+  display: none;
+}
+
+#sped-document-output-options {
+  border-bottom: 1px solid #d5d5d5;
+}
+
+#speddoccontent {
+  width: 195mm;
+  margin:0 auto;
+  background-color:#fff;
+  color:#000;
+}
+
+fieldset[disabled] * {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+input:disabled {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+input[readonly] {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+textarea[readonly] {
+    background-color: #fff !important;
+    color: #000 !important;
+}

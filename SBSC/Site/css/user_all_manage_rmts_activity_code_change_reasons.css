@@ -1,0 +1,21 @@
+/* Custom css for this screen */
+
+/* Rest view changes specific for this page content */
+
+ 
+th[data-mba-rest-view-field-name="rmtsCodeValue"] span.mba-rest-view mba-rest-view-col-label {
+	width:4em;
+}
+
+td [data-mba-rest-view-field-name="rmtsCodeValue"] select {
+  width:4em;
+}
+
+th[data-mba-rest-view-field-name="name"] span.mba-rest-view mba-rest-view-col-label{
+	width:40em;
+}
+
+td[data-mba-rest-view-field-name="name"] input {
+  width:40em;
+}
+

@@ -1,0 +1,1 @@
+<%@ WebHandler Language="C#" Class="Spedmon.ClaimDenialsResubmissionsViw" CodeBehind="claim_denial_resubmissions.ashx.cs"%>

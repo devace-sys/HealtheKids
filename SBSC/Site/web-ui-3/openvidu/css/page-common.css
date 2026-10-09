@@ -1,0 +1,196 @@
+﻿:root {
+    --very_black: #000000;
+	--very_white: #ffffff;
+	--input_color: #f7f7f7;
+    --input-color-hover: #d1fff0;
+    --button-color-join: #d1fbff; /*#c9e2ff*/
+    --button-color-leave: #ffb700; /*#c9e2ff*/
+    --spedcare-green: #ade0d0;
+    --spedcare-blue: #9dc8cc;
+    --spedcare-blue-opaque: #9dc8cc7a;
+    --vid-width: 240px;
+    --vid-cont-height: 240px;
+    --vid-height: 170px; /* used in js */
+}
+
+@font-face { 
+    font-family: robotoCondensedRegular; 
+    src: url('roboto-condensed-regular.ttf');
+}
+
+body {
+    width: auto;
+    height: auto;
+    font-family: robotoCondensedRegular;
+    font-size: 1em;
+    background-color: var(--very_white);
+    color: var(--very_black);    
+}
+
+div.page {
+  background-color:inherit;
+  color:inherit;  
+  font-family: inherit;
+  font-size: inherit;
+}
+
+
+header.pageheader {
+  background-color:inherit;
+  color:inherit;  
+  font-family: inherit;
+  font-size: inherit;
+  padding-top:.25em;
+  padding-bottom:.25em;
+}
+
+main.pagemain {
+  background-color:inherit;
+  color:inherit;  
+  font-family: inherit;
+  font-size: inherit;
+}
+
+footer.pagefooter {
+  background-color: var(--very_black);
+  color: var(--very_white);    
+  font-family: inherit;
+  font-size: inherit;
+  padding-top:.25em;
+  padding-bottom:.25em;
+}
+
+img.pagelogo {
+    border: none;
+    display: inline-block;
+    min-height: 50px;
+    max-height: 100px;
+    max-width: 200px;
+    margin-bottom: 5px;
+}
+
+div.mba-dialog-save-form-section {
+  margin:.25em;
+}
+
+div.mba-dialog-save-form-section-instructions {
+  font-weight:bold;
+  text-align:center;
+}
+
+div.mba-dialog-save-form-section-details {
+  margin-top:1em;
+}
+
+ul.mba-details {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li.mba-detail {
+  padding:0;
+  margin:0;
+  margin-bottom:.25em;
+}
+
+i.mba-detail-icon {
+  display: inline-block;
+}
+
+span.mba-detail-msg {
+  display:inline-block;
+  margin-left:.25em;
+  font-size:.75em;
+}
+
+form.telecomm-form-join div.row {
+  padding-top: .5em;
+}
+
+div.room-join-row-submit {
+  padding-top:1em;
+}
+
+form.telecomm-form-join label {
+    display: block;
+    width:100%;
+    text-align:right;
+}
+
+button.telecomm-form-button-join {
+  display:block;
+  width:100%;
+}
+
+form.telecomm-form-join h6 {
+  font-size:.75em;
+}
+
+
+h1.pagetitle {
+  display:inline-block;
+  text-align:center;
+  vertical-align:middle;
+  font-size:1.3em;
+  width:100%;
+}
+
+/* Takes care of jQuery UI modal dialog overlay */
+body > div.ui-widget-overlay {
+  opacity: 0.3 !important;
+}
+
+button.ui-dialog-titlebar-close {
+  border:none;
+}
+
+div.systemstatus, ul.systemstatus {
+    width: 100%;
+    text-align: center;
+    font-size: .90em;
+    vertical-align: middle;
+  }
+
+#formleave {
+  display:inline-block;
+}
+
+div.publicationcontrols > i {
+  margin-right:1em;
+}
+button.telecomm-form-button-leave {
+  font-size:.75em;
+  display:inline-block;
+}
+
+span.meeting-counter-label {
+  display:inline-block;
+  font-size:.75em;
+  padding:.25em;  
+}
+
+span.meeting-counter-data {
+  display:inline-block;
+  font-size:.80em;
+  border:1px solid #fff;
+  padding:.25em;
+  min-width:2em;
+  text-align:right;
+}
+
+input.stored-file-upload {
+   width:90%;
+   margin:0 auto;
+   margin-top:1em;
+   display:block;  
+}
+
+p.stored-file-upload-processing-notice {
+    display:block;
+    width:90%;
+    margin:0 auto;
+    font-size:.75em;
+}
+
+

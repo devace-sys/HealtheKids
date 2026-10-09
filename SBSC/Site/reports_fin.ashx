@@ -1,0 +1,1 @@
+<%@ WebHandler Language="C#" Class="Spedmon.ReportsFin" CodeBehind="reports_fin.ashx.cs"%>

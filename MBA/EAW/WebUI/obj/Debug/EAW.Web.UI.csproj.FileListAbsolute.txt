@@ -1,0 +1,6 @@
+C:\MBA\Common\EAW\WebUI\bin\Debug\EAW.Web.UI.dll
+C:\MBA\Common\EAW\WebUI\bin\Debug\EAW.Web.UI.pdb
+C:\MBA\Common\EAW\WebUI\obj\Debug\EAW.Web.UI.csproj.AssemblyReference.cache
+C:\MBA\Common\EAW\WebUI\obj\Debug\EAW.Web.UI.csproj.CoreCompileInputs.cache
+C:\MBA\Common\EAW\WebUI\obj\Debug\EAW.Web.UI.dll
+C:\MBA\Common\EAW\WebUI\obj\Debug\EAW.Web.UI.pdb

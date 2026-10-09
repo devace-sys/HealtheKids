@@ -1,0 +1,227 @@
+/*https://www.florin-pop.com/blog/2019/03/css-pulse-effect/ */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 #ff8d0000;
+    }
+
+    50% {
+        box-shadow: 0 0 0 7px #ff8d008c;
+    }
+
+    100% {
+        box-shadow: 0 0 0 7px #ff8d0000;
+    }
+}
+
+#tblSvcRecsForDOSJSON {
+    border-collapse: collapse;
+}
+
+#tblSvcRecsForDOSJSON > thead > tr > th {
+    font-weight: bold;
+    background-color: #bbd1df;
+    color: #000;
+    padding: .25em;
+    min-width: 30px;
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+#tblSvcRecsForDOSJSON > tbody > tr > td {
+    color: #000;
+    padding: .25em;
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+#tblSvcRecsForDOSJSON > tbody > tr > td {
+    max-width: 9em;
+}
+
+  #tblSvcRecsForDOSJSON > tbody > tr > td > select
+, #tblSvcRecsForDOSJSON > tbody > tr > td > input[type='date'] {
+    max-width: 100%;
+    min-width: 9em;
+}
+
+#tblSvcRecsForDOSJSON > tbody > tr > td > input[type='date'] {
+    min-width: 7em;
+}
+
+input.form-checkbox-input {
+  width: 15px;
+  height: 15px;
+  margin-top: 0px;
+}
+
+select {
+    font-size:15px;
+}
+
+h3 {
+    margin-bottom: 15px;
+    margin-left: 25px;
+}
+
+i {
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+i:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+i.fa-trash-alt {
+    color: #995D55;
+}
+
+i.fa-copy {
+    color: #76a6d2;
+}
+
+i.fa-users#svcRecsBeginLiveGroupSessionBtn {
+    color: #36454F;
+}
+
+i.fa-bell {
+    display: none;
+    color: #ff8d00; 
+    border-radius: 50%;
+}
+
+i.fa-bell.svcrec-notification-bell-active {
+    display: unset;
+    transform: scale(1);
+    color: #ff8d00; 
+    animation: pulse 2s infinite;
+    -webkit-animation: pulse 2s infinite;
+}
+
+.inactive-input {
+    background-color: grey;
+    pointer-events: none;
+}
+
+/* 'view service details' button */
+.svcDetsBut {
+    width: 100%;
+}
+
+.svcDetsBut > span {
+    padding: 0px !important;
+}
+
+#svcDetInstructions {
+    padding: 1em;
+    line-height: 2em;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 1em;
+    text-align: center;
+}
+
+.boldText {
+    text-decoration: underline !important;
+    font-weight: bold !important;
+}
+
+#svcDetFlagsCont {
+    margin: 0 auto;
+}
+
+.svcDetFlagLbl {
+    display: inline-block !important;
+    width: 100% !important;
+    text-align: left !important;
+    font-weight: bold !important;
+}
+
+#orpDocCont {
+    text-align: center;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+#grpSelectionCont {
+    display: block;
+    clear: both;
+}
+
+.bold-text {
+    font-weight: bold;
+    margin: 0 1em 0 1em;
+}
+
+#minutes-to-copy {
+    max-width: 5em;
+}
+
+.table-header-data {
+    max-width: 9em;
+}
+
+.radio-button {
+    display: none;
+}
+
+.radio-button-label {
+    margin: 0 0 0 5px !important;
+    background: linear-gradient(to bottom, #ececec, white, #ececec);
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 6px;
+    border: 1px solid black;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+}
+
+.radio-button-label:active {
+    background: black !important;
+    color: white;
+}
+
+.radio-button-label-red:hover {
+    color: white;
+    background: linear-gradient(to bottom, #fe1a00, #ce0100, #fe1a00);
+}
+
+.radio-button:checked + .radio-button-label-red {
+    color: white;
+    background: linear-gradient(to bottom, #fe1a00, #ce0100, #fe1a00);
+}
+
+.radio-button-label-green:hover {
+    color: white;
+    background: linear-gradient(to bottom, #77d42a, #64bb1e, #77d42a);
+}
+
+.radio-button:checked + .radio-button-label-green {
+    color: white;
+    background: linear-gradient(to bottom, #77d42a, #64bb1e, #77d42a);
+}
+
+#dossvcs_cont > button.trigger.datepick-trigger {
+    margin-left: 0.3em;
+    width: 2.3em;
+}
+
+.fa-clock.svcrec-is-rmts-moment {
+    background: #ffd230;
+    border-radius: 50%;
+}
+
+/* fix icon overwriting issues */
+
+i.fa-exclamation-triangle {
+    font-size: 10px;
+}

@@ -1,0 +1,90 @@
+1. Release Notes for ASP.NET 2.0 AJAX Extensions
+------------------------------------------------
+
+Note: This document has been updated with information about changes between the Beta, RC, and RTM
+releases.
+
+Microsoft ASP.NET 2.0 AJAX Extensions extends ASP.NET 2.0, adding AJAX functionality and behaviors.
+You can learn more about ASP.NET AJAX at the ASP.NET AJAX Web site (http://ajax.asp.net). To provide 
+feedback, please use the "ASP.NET AJAX Discussion and Suggestions" forum at http://forums.asp.net.  
+
+Complementing ASP.NET 2.0 AJAX Extensions is the ASP.NET AJAX Control Toolkit. This is a
+compilation of samples and components that offers developers a rich variety of client controls
+and extenders. You can download the ASP.NET AJAX Control Toolkit from the CodePlex Web site at
+the following location:
+
+http://www.codeplex.com/Release/ProjectReleases.aspx?ProjectName=AtlasControlToolkit
+
+
+2. Breaking Changes and Migration Guides
+----------------------------------------
+
+If you are migrating to this release from one of the earlier "Atlas" CTPs or from an ASP.NET AJAX
+Beta or RC release, refer to the following resources for details about migrating your applications 
+and for information about breaking changes that can affect your applications when you use the 
+RTM release.
+
+
+    Converting ASP.NET "Atlas" Applications to Microsoft ASP.NET 2.0 AJAX Extensions 1.0
+    ------------------------------------------------------------------------------------
+
+    This whitepaper provides information for developers who are migrating applications that 
+    were created with earlier "Atlas" CTPs to ASP.NET AJAX.
+
+    http://go.microsoft.com/fwlink/?LinkId=79786
+
+
+    Converting Microsoft ASP.NET AJAX Beta 2 and RC Applications to ASP.NET AJAX RTM
+    --------------------------------------------------------------------------------
+
+    This whitepaper provides information for developers who are migrating applications that 
+    were created with Beta or RC releases of ASP.NET AJAX to the ASP.NET AJAX RTM release.
+
+    http://go.microsoft.com/fwlink/?LinkId=79787
+
+
+    Changes between the ASP.NET AJAX ("Atlas") CTP and the Beta 2 and RTM Releases
+    ------------------------------------------------------------------------------
+
+    This whitepaper describes in depth the breaking changes and new features that have
+    been implemented in the ASP.NET AJAX RC and RTM releases since the Beta releases.
+
+    http://go.microsoft.com/fwlink/?LinkId=79784
+
+
+3. Pre-installation
+-------------------
+
+* Remove previous versions. You must remove previously installed versions of ASP.NET AJAX 
+  before installing this release.  You can uninstall previous releases using the Add/Remove 
+  Programs application in Control Panel.   
+
+* Install Visual Studio 2005 SP1. We strongly recommend that you install Visual Studio 2005 
+  Service Pack 1 (SP1) before installing ASP.NET AJAX.  You can obtain the SP1 update from the 
+  following location:
+  
+    http://go.microsoft.com/fwlink/?LinkID=80700
+
+  Also specific details of what's included in the SP1 update can be found at the following
+  location:
+
+    http://blogs.msdn.com/webdevtools/archive/2006/12/20/visual-studio-2005-sp1-released-details-on-changes-for-web-tools.aspx) 
+
+
+4. Installation
+---------------
+
+To install the release, from Windows Explorer, launch ASPAJAXExtSetup.msi. For silent or unattended
+installation, enter the following command at a Windows command prompt:
+
+msiexec /i ASPAJAXExtSetup.msi [/q] [/log <logfilename>] [INSTALLPATH=<installation path>]
+
+where:
+
+- /q runs the installation in silent mode.
+- <logfilename> is the path and file name of an optional log file.
+- <installation path> is the path of an optional installation folder.
+
+
+
+

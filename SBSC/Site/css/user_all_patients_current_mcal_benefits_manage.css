@@ -1,0 +1,24 @@
+td.mba-rest-view select,
+td.mba-rest-view input,
+td.mba-rest-view textarea {
+    width: 100%;
+    font-size: 1em;
+}
+
+.mba-rest-view-visible-tbl-td-or-th {
+    text-align: center;
+}
+
+th.mba-rest-view {
+    position: sticky !important;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+*.mba-rest-view-cell-value, th.mba-rest-view {
+    font-size: 1em;
+}
+
+span.mba-rest-view-data-type-text, span.mba-rest-view-data-type-number {
+    text-align: center;
+}

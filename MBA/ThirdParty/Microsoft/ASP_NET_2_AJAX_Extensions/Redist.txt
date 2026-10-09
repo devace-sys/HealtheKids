@@ -1,0 +1,3 @@
+The following file may be redistributed under the Microsoft ASP.NET 2.0 AJAX Extensions license:
+
+ASPAJAXExtSetup.msi

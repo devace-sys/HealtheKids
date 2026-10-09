@@ -1,0 +1,12 @@
+﻿<Properties VersionControlDisabled="True" StartupItem="Smartsheet-csharp-sdk.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>IntegrationTestSDK\IntegrationTestSDK.csproj</String>
+    <String>TestSDK\TestSDK.csproj</String>
+  </DisabledProjects>
+</Properties>

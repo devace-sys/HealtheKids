@@ -1,0 +1,11 @@
+﻿/* Custom styles for this page go here */
+
+label.mba-web-ui.mba-web-ui-inline.ui-spedmon-box-radio-box-label {
+    display:block;
+    font-weight:bold;
+    font-size:.75em;
+}
+
+span.mba-rest-view-col-label {
+    font-size:.75em;
+}

@@ -1,0 +1,198 @@
+/**************************************************************************
+ * DataEntryBox*/
+/**
+ * 
+ **************************************************************************/
+
+/*###################################################################################
+  #                               Common  
+  ###################################################################################*/
+
+@font-face {font-family: abelRegular; src:url('./css/Abel-Regular-400.ttf');}
+
+:root {
+    --mba-data-entry-box-background-color: #ffffff;
+    --mba-data-entry-box-background-color-invalid: #ffdddd;
+    --mba-data-entry-box-border-color: #cccccc;
+    --mba-data-entry-box-hover-color: #76a6d2;
+    --mba-data-entry-box-color-label-has-value-false: #777777;
+    --mba-data-entry-box-color-label-has-value-true: #000000;
+    --mba-data-entry-box-color-shadow: #e4e4e4;
+    --mba-data-entry-box-base-dimension: 1em;
+    --mba-data-entry-box-base-font-size: 1em;
+    --mba-data-entry-box-icon-font-size: .75em;
+}
+
+/*###################################################################################
+  #                               Floating Label Mode  
+  ###################################################################################*/
+
+/* Container for everything */
+
+span.mba-data-entry-box-container[data-mba-data-entry-box-display-label="floating"]
+{
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: calc(var(--mba-data-entry-box-base-dimension) / 4 );
+    padding-top: var(--mba-data-entry-box-base-dimension);
+    margin: calc(var(--mba-data-entry-box-base-dimension) / 2 );
+    line-height: var(--mba-data-entry-box-base-dimension);
+    outline: none;
+    border: 1px solid var(--mba-data-entry-box-border-color);
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px 1px var(--mba-data-entry-box-color-shadow);
+}
+
+/* Indicate hover and focus */
+
+span.mba-data-entry-box-container[data-mba-data-entry-box-display-label="floating"]:hover
+{
+  box-shadow: 1px 1px 3px 1px var(--mba-data-entry-box-hover-color);
+}
+
+span.mba-data-entry-box-container[data-mba-data-entry-box-display-label="floating"]:focus-within {
+   box-shadow: 2px 2px 4px 2px var(--mba-data-entry-box-hover-color);
+}
+
+/* Field and label container */
+
+span.mba-data-entry-box-field-and-label-container[data-mba-data-entry-box-display-label="floating"]
+{
+    display: inline-block;
+    position: relative; /* Must be relative for floating label */
+    width: auto;
+    height: auto;
+    padding: calc(var(--mba-data-entry-box-base-dimension) / 4);
+    line-height: var(--mba-data-entry-box-base-dimension);
+    margin: 0;
+    border: none;
+    outline: none;
+}
+
+/* Label text */
+
+span.mba-data-entry-box-label-text[data-mba-data-entry-box-display-label="floating"]
+{
+  display:inline-block;
+  position:relative;
+  width:auto;
+}
+
+/* Label annotations */
+
+ul.mba-data-entry-box-label-annotations[data-mba-data-entry-box-display-label="floating"] {
+    list-style: none;
+    position: relative;
+    width: auto;
+    display: inline-block;
+    padding: 0;
+    border: none;
+    margin: 0;
+    outline: none;
+    margin-left: calc(var(--mba-data-entry-box-base-dimension) / 4);
+}
+
+ul.mba-data-entry-box-label-annotations[data-mba-data-entry-box-display-label="floating"] li.mba-data-entry-box-label-annotation {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    border: none;
+    margin: 0;
+    outline: none;
+    font-size: var(--mba-data-entry-box-icon-font-size);
+    width: auto;
+    height: auto;
+    line-height: var(--mba-data-entry-box-base-dimension);
+    height: var(--mba-data-entry-box-base-dimension);
+    text-align: left;
+    vertical-align: middle;
+}
+
+/* Hidden annotation rule */
+
+ul.mba-data-entry-box-label-annotations[data-mba-data-entry-box-display-label="floating"] li.mba-data-entry-box-label-annotation-hidden {
+  display:none;
+}
+
+
+/* Select, option, optgroup */
+  select.mba-data-entry-box-field
+, select.mba-data-entry-box-field optgroup
+, select.mba-data-entry-box-field option {
+    font-family: abelRegular;
+}
+
+/* Input, textareas, label */
+input.mba-data-entry-box-field[data-mba-data-entry-box-display-label="floating"], textarea.mba-data-entry-box-field[data-mba-data-entry-box-display-label="floating"], label.mba-data-entry-box-label[data-mba-data-entry-box-display-label="floating"] {
+    font-family: abelRegular;
+    display: inline-block;
+    position: relative;
+    border: none;
+    margin: 0;
+    outline: none;
+    line-height: var(--mba-data-entry-box-base-dimension);
+    height: auto;
+    padding: calc(var(--mba-data-entry-box-base-dimension)* .10);
+    font-size: var(--mba-data-entry-box-base-font-size);
+    text-align: left;
+    vertical-align: top;
+    min-width: calc(var(--mba-data-entry-box-base-dimension) * 5 ); /* Fallback to 5 */
+    width: calc(var(--mba-data-entry-box-base-dimension) * var(--mba-data-entry-box-size-h, 10) ); /* Fallback to 10 */
+    box-sizing: border-box;
+    resize: none;
+    overflow: hidden;
+}
+
+/* Hide placeholders */
+
+  input.mba-data-entry-box-field[data-mba-data-entry-box-display-label="floating"]::placeholder
+, textarea.mba-data-entry-box-field[data-mba-data-entry-box-display-label="floating"]::placeholder 
+{
+  color:transparent;
+}
+
+/* Label */
+
+label.mba-data-entry-box-label[data-mba-data-entry-box-display-label="floating"] 
+{
+  position:absolute;left:calc(var(--mba-data-entry-box-base-dimension) / 4);top:calc(var(--mba-data-entry-box-base-dimension) / 4);
+  background-color:transparent;
+  transition: all .150s ease-in-out;
+  color:var(--mba-data-entry-box-color-label-has-value-false);
+}
+
+/* Keeps floating label out of way when data is entered 
+ * and when focused for inputs that support placeholder attribute and textarea */
+
+  input.mba-data-entry-box-field[data-mba-data-entry-box-display-label="floating"]:focus + label.mba-data-entry-box-label[data-mba-data-entry-box-display-label="floating"]
+, input.mba-data-entry-box-field[data-mba-data-entry-box-display-label="floating"]:not(:placeholder-shown) + label.mba-data-entry-box-label[data-mba-data-entry-box-display-label="floating"]
+, textarea.mba-data-entry-box-field[data-mba-data-entry-box-display-label="floating"]:focus + label.mba-data-entry-box-label[data-mba-data-entry-box-display-label="floating"]
+, textarea.mba-data-entry-box-field[data-mba-data-entry-box-display-label="floating"]:not(:placeholder-shown) + label.mba-data-entry-box-label[data-mba-data-entry-box-display-label="floating"] 
+, select.mba-data-entry-box-field[data-mba-data-entry-box-display-label="floating"] + label.mba-data-entry-box-label[data-mba-data-entry-box-display-label="floating"]
+{
+    transform: translate(0, -100%);
+    color: var(--mba-data-entry-box-color-label-has-value-true);
+    font-size: calc(var(--mba-data-entry-box-base-font-size)*.75);
+}
+
+/* Character count meter */
+
+meter.mba-data-entry-box-char-count-meter {
+    display: block;
+    width: 100%;
+}
+
+i.mba-data-entry-box-label-annotation-invalid {
+  color:#ff0000;
+}
+
+.mba-data-entry-box-hidden {
+    display:none !important;
+}
+
+/*###################################################################################
+  #                               Inline Label Mode  (TODO)
+  ###################################################################################*/
+

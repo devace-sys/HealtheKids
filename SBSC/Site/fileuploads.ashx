@@ -1,0 +1,1 @@
+<%@ WebHandler Language="C#" Class="Spedmon.FileUploadsRpt" CodeBehind="fileuploads.ashx.cs"%>

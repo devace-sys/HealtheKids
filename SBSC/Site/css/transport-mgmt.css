@@ -1,0 +1,101 @@
+div.tm-top-info-container {
+  width:95%;
+  display:block;
+  padding:0;
+  margin:0 auto;
+}
+
+div.tm-top-info-header {
+  padding:1em;
+}
+
+div.tm-top-info-body {
+  padding:1em;
+}
+
+div.tm-columns {
+  width:100%;
+  display:block;
+  position:relative;
+  padding:0;
+  margin:0 auto;
+  clear:both;
+}
+
+div.tm-column {
+  display:inline-block;
+  width:45%;
+}
+
+div.tm-column-left {
+  display:inline-block;
+  width:45%;
+  float:left;
+}
+
+div.tm-column-right {
+  display:inline-block;
+  width:45%;
+  float:right;
+}  
+
+div.tm-column-controls {
+  text-align:center;
+  padding-bottom:1em;  
+}
+
+div.tm-column-controls button {
+  width:20em;
+}
+
+input.checkbox-item {
+    height: 15px;
+    width: 15px;
+    margin-top: 0.5em;
+}
+
+/* am/pm controls */
+
+.ui-spedmon-box-radio-am-pm-container + div.ui-spedmon-box-radio-box-container label span {
+    transition: all .1s ease-in-out;
+    padding: 0.4em;
+}
+ 
+.ui-spedmon-box-radio-am-pm-container + div.ui-spedmon-box-radio-box-container label.ui-state-default {
+    margin: 0 0 0 5px !important;
+    background: linear-gradient(to bottom, #ececec, white, #ececec);
+    border-radius: 6px;
+    border: 1px solid black;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    width: 4em;
+}
+ 
+  .ui-spedmon-box-radio-am-pm-container + div.ui-spedmon-box-radio-box-container label.ui-corner-left:hover
+, .ui-spedmon-box-radio-am-pm-container + div.ui-spedmon-box-radio-box-container label.ui-corner-left.ui-state-active {
+    background: linear-gradient(to bottom, #99dcf0, white, #99dcf0);
+}
+ 
+  .ui-spedmon-box-radio-am-pm-container + div.ui-spedmon-box-radio-box-container label.ui-corner-right:hover
+, .ui-spedmon-box-radio-am-pm-container + div.ui-spedmon-box-radio-box-container label.ui-corner-right.ui-state-active {
+    background: linear-gradient(to bottom, #88b5f2, white, #88b5f2);
+}
+ 
+.ui-spedmon-box-radio-am-pm-container + div.ui-spedmon-box-radio-box-container label:active span {
+    transform: scale(0.75);
+}
+
+button.fa-stack.mba-add-site-btn i.fa-plus {
+    transform: translate(11px,-13px);
+    font-size: 0.8em;
+    color: #7a9fbf;
+}
+
+button.fa-stack.mba-add-site-btn i.fa-building {
+    font-size: 1.5em;
+    color: #9b9b9b;
+}

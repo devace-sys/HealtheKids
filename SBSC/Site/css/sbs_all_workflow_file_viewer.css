@@ -1,0 +1,73 @@
+/*#################################################################################################
+  #                                       Animations
+  #################################################################################################*/
+
+/*Based on https://www.florin-pop.com/blog/2019/03/css-pulse-effect/ */
+
+@keyframes pulseIcon {
+    0% {
+        box-shadow: 0 0 0 0 #ff8d0000;
+    }
+
+    50% {
+        box-shadow: 0 0 0 10px #ff8d008c;
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px #ff8d0000;
+    }
+}
+
+/*Based on https://www.florin-pop.com/blog/2019/03/css-pulse-effect/ */
+
+@keyframes heartbeat {
+
+    0% {
+        border-radius: 50%;
+        transform: scale(1);
+        box-shadow: 0 0 0 0 #ff8d0000;
+    }
+
+    50% {
+        border-radius: 50%;
+        transform: scale(1.2);
+        box-shadow: 0 0 0 7px #ff8d008c;
+    }
+
+    100% {
+        border-radius: 50%;
+        transform: scale(1);
+        box-shadow: 0 0 0 7px #ff8d0000;
+    }
+}
+
+#workflowfile {
+    z-index:1;
+    width:100%;
+    height:80vh;
+    margin:0 auto;
+}
+
+#ruler {
+    z-index: 99999;
+    width: 90vw;
+    height: 1.2vw;
+    margin:0 auto;
+    border: 1px solid #000000;
+    background-color: red;
+    cursor:move;
+}
+
+i.fas {
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+i.fa-cut:hover {
+    transform: scale(1.2);
+}
+
+i.fa-save {
+    animation: pulseIcon 2s infinite;
+    animation: heartbeat 2s infinite;
+}

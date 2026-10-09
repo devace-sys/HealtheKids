@@ -1,0 +1,93 @@
+﻿@font-face {
+    font-family: robotoCondensedRegular;
+    src: url('css/roboto-condensed-regular.ttf');
+}
+
+@font-face {
+    font-family: robotoCondensedBold;
+    src: url('css/roboto-condensed-bold.ttf');
+}
+
+@font-face {
+    font-family: robotoCondensedItalic;
+    src: url('css/roboto-condensed-italic.ttf');
+}
+
+@font-face {
+    font-family: robotoCondensedBoldItalic;
+    src: url('css/roboto-condensed-bold-italic.ttf');
+}
+
+h2.plan-writer-section {
+    border-bottom:6px solid #000;    
+}
+
+h3.care-plan-presenting-concern-name {
+  border-bottom: 3px solid #000;
+  margin-bottom:.75em;
+}
+
+div.care-plan-presenting-concern-description {
+
+}
+
+h3.care-plan-service-name {
+    border-bottom: 3px solid #000;
+    margin-bottom: .75em;
+}
+
+h4.care-plan-service-auth {
+    border-bottom: 1px solid #000;
+    text-align: center;
+    margin-bottom:.5em;
+}
+
+h4.care-plan-service-desc {
+    border-bottom: 1px solid #000;
+    text-align: center;
+    margin-bottom:.5em;
+}
+
+sped-document-output-option-button {
+    font-size: 1em;
+}
+
+#sped-document-output-options {
+    border-bottom: 1px solid #d5d5d5;
+}
+
+#plandoccontent {
+    width: 215.9mm;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #000;      
+}
+
+
+.bg-baby-blue {
+    background-color: #ebf6ff;
+}
+
+input.form-control[readonly] {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+input[type="checkbox"]:disabled {
+    color: #000 !important;    
+    background-color:#fff !important;    
+}
+
+div.formbuilder-checkbox > label {
+    display:inline;
+}
+
+div.formbuilder-checkbox-inline > label {
+    display: inline;
+}
+
+pre.html-to-pdf-element-replacement {    
+    white-space: pre-wrap;
+    word-break: break-word;
+    min-height:2em;
+}

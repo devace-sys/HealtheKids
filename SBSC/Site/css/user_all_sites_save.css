@@ -1,0 +1,27 @@
+﻿
+/* for Address completion field */
+
+#selectAddress > div {
+    display: flex;
+    flex-direction: column;
+}
+
+    #selectAddress > div > * {
+        margin-bottom: 0.5em;
+    }
+
+#zip5_street1_contselectAddress > span:nth-child(3) {
+    order: 1;
+}
+
+#zip5_street1_contselectAddress > span:nth-child(1) {
+    order: 2;
+}
+
+#zip5_street1_contselectAddress > span:nth-child(2) {
+    order: 3;
+}
+
+#street2_city_state_zip4_contselectAddress > span:nth-child(4) {
+    display: none;
+}

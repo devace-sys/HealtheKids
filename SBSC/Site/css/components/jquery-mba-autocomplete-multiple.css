@@ -1,0 +1,42 @@
+fieldset.mba-autocomplete-multiple-container {
+   display: block !important;
+   width:100%;
+}
+
+section.mba-autocomplete-multiple-section-auto-complete {
+    display:flex;
+    width: 100%;
+}
+
+input.mba-autocomplete-multiple-select-value-autocomplete-input {
+    display:inline-block;
+}
+
+button.mba-autocomplete-multiple-select-value-autocomplete-but-list-all {
+    display:inline-block;
+}
+
+section.mba-autocomplete-multiple-section-selected-values {
+    display: block;
+}
+
+ul.mba-autocomplete-multiple-selected-values-list {
+    display:block;
+}
+
+li.mba-autocomplete-multiple-selected-values-list-item {
+  display:block;
+}
+
+button.mba-autocomplete-multiple-selected-values-list-item-but-remove {
+  margin-right:.5em;
+  display:inline;
+}
+
+i.mba-autocomplete-multiple-selected-values-list-item-ico-remove {
+  color:red;
+}
+
+span.mba-autocomplete-multiple-selected-values-list-item-label {
+    display: inline;
+}

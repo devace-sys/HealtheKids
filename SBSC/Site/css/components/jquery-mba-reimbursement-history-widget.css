@@ -1,0 +1,23 @@
+﻿.mba-reimbursement-history-content-current-year {
+    border: 2px solid #4b9b45;
+    height: 2.2em;
+    width: 90%;
+}
+
+.mba-reimbursement-history-content-last-year {
+    border: 2px solid #76a6d2;
+    height: 2.2em;
+    width: 90%;
+}
+
+.mba-reimbursement-history-content-annual-goal {
+    border: 2px solid #995D55;
+    height: 2.2em;
+    width: 98%;
+}
+
+  .mba-reimbursement-history-content-current-year > span
+, .mba-reimbursement-history-content-last-year > span
+, .mba-reimbursement-history-content-annual-goal > span {
+    font-size: smaller;
+  }

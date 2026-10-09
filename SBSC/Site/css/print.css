@@ -1,0 +1,21 @@
+/***************************************************************************
+* print */
+/**
+* Our standard style sheet for print
+***************************************************************************/
+body                       {font-family:'Times New Roman', serif;font-size:12pt;}
+.site-notice               {text-align:center;}
+#navigation                {display:none;}
+#branding h1               {display:none;}
+#subtitle                  {font-weight:bold;font-size:18pt;border-bottom:1pt solid #000;padding-bottom:5pt;text-align:center;}
+#whologin, #whocontext     {display:none;}
+#dialogMessage             {display:none;}
+#dialogConfirm             {display:none;}
+#dialogConfirmReason       {display:none;}
+#content                   {padding-top:2pt;padding-bottom:2pt;}
+#footer                    {padding-top:5pt;border-top:1pt solid #000}
+#footer p                  {font-weight:bold;font-size:10pt;text-align:center;}
+a{color:#000;}
+button                     {display:none;}
+
+

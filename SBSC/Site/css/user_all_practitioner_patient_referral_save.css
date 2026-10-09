@@ -1,0 +1,426 @@
+﻿.referral-container {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    position: relative;
+    flex-shrink: 0;
+}
+    .header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; 
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .header p {
+        font-size: 0.9rem;
+        opacity: 0.9;
+        position: relative;
+        z-index: 1;
+        margin: 0;
+    }
+
+.form-content {
+    padding: 20px 30px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #e8f4fd;
+}
+
+    .section-title i {
+        margin-right: 8px;
+        color: #4facfe;
+        width: 18px;
+        text-align: center;
+    }
+
+/* Priority Selection */
+.priority-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    gap: 40px;
+    margin-bottom: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.priority-card {
+    position: relative;
+    background: white;
+    border: 2px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 160px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .priority-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .priority-card.routine {
+        background: #28a745;
+    }
+
+    .priority-card.urgent {
+        background: #ffc107;
+    }
+
+    .priority-card.crisis {
+        background: #dc3545;
+    }
+
+    .priority-card.selected {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .priority-card.routine.selected {
+        background: linear-gradient(135deg, #28a745, #20c997);
+        color: white;
+        border-color: #28a745;
+    }
+
+    .priority-card.urgent.selected {
+        background: linear-gradient(135deg, #ffc107, #fd7e14);
+        color: white;
+        border-color: #ffc107;
+    }
+
+    .priority-card.crisis.selected {
+        background: linear-gradient(135deg, #dc3545, #e83e8c);
+        color: white;
+        border-color: #dc3545;
+    }
+
+    .priority-card i {
+        font-size: 1.2rem;
+        margin-bottom: 4px;
+        display: block;
+    }
+
+    .priority-card .priority-label {
+        font-weight: 600;
+        font-size: 0.8rem;
+        line-height: 1.2;
+    }
+
+    .priority-card input[type="checkbox"] {
+        display: none;
+    }
+
+/* Form Grid */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    position: relative;
+}
+
+    .form-group label {
+        display: block;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 5px;
+        font-size: 0.85rem;
+    }
+
+        .form-group label i {
+            margin-right: 6px;
+            color: #4facfe;
+            width: 14px;
+        }
+
+.form-control {
+    width: 100%;
+    padding: 2px 15px;
+    border: 2px solid #e1e8ed;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+    .form-control:focus {
+        outline: none;
+        border-color: #4facfe;
+        box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.1);
+        transform: translateY(-2px);
+    }
+
+    .form-control:disabled {
+        background: #f8f9fa;
+        color: #6c757d;
+    }
+
+    .form-control.error {
+        border-color: #dc3545;
+        animation: shake 0.5s ease-in-out;
+    }
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+/* Textarea */
+.textarea-group {
+    grid-column: 1 / -1;
+}
+
+textarea.form-control {
+    min-height: 80px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+/* Checkboxes */
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.checkbox-item {
+    background: white;
+    border: 2px solid #e1e8ed;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+    .checkbox-item:hover {
+        border-color: #4facfe;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .checkbox-item.checked {
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+        color: white;
+        border-color: #4facfe;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(79, 172, 254, 0.3);
+    }
+
+    .checkbox-item input[type="checkbox"] {
+        display: none;
+    }
+
+    .checkbox-item i {
+        margin-right: 8px;
+        font-size: 1rem;
+        width: 16px;
+        text-align: center;
+    }
+
+    .checkbox-item .checkbox-label {
+        font-weight: 500;
+        flex: 1;
+        font-size: 0.9rem;
+    }
+
+/* Submit Button */
+.submit-section {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 2px solid #e8f4fd;
+    margin-top: 15px;
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 20px rgba(79, 172, 254, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+    .submit-btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        transition: left 0.5s;
+    }
+
+    .submit-btn:hover::before {
+        left: 100%;
+    }
+
+    .submit-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 28px rgba(79, 172, 254, 0.4);
+    }
+
+    .submit-btn:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+        transform: none;
+    }
+
+    .submit-btn i {
+        margin-right: 10px;
+    }
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .referral-container {
+        width: 98%;
+        height: 55vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .referral-container {
+        width: 95%;
+        height: 70vh;
+        min-height: 500px;
+    }
+
+    .form-content {
+        padding: 15px 20px;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .priority-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .checkbox-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+/* Alert Styles */
+.alert {
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.alert-danger {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+    color: white;
+    border: none;
+}
+
+.alert i {
+    margin-right: 12px;
+    font-size: 1.2rem;
+}
+
+/* Success Animation */
+.success-checkmark {
+    display: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #28a745;
+    position: relative;
+    margin: 15px auto;
+}
+
+    .success-checkmark::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 25px;
+        height: 12px;
+        border: 3px solid white;
+        border-top: none;
+        border-right: none;
+        transform: translate(-50%, -60%) rotate(-45deg);
+    }

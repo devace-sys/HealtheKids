@@ -1,0 +1,38 @@
+#restViewScroll {
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+#restViewScroll::-webkit-scrollbar {
+    display: none;
+}
+
+#restView table {
+    width: max-content;
+}
+
+#restView thead th {
+    white-space: nowrap;
+}
+
+#restView tbody td {
+    white-space: nowrap;
+}
+
+#restView textarea {
+    white-space: normal;
+    min-width: 160px;
+    max-width: 260px;
+}
+
+#restViewStickyScroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: sticky;
+    bottom: 0;
+    background: #fff;
+}
+
+#restViewStickyScrollInner {
+    height: 1px;
+}

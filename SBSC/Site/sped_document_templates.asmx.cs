@@ -1,0 +1,137 @@
+using System;
+using System.Collections.Generic;
+using System.Web;
+using System.Web.Services;
+using System.Web.Script.Services;
+using System.Web.Services.Protocols;
+using System.Web.Script.Serialization;
+using System.ComponentModel;
+using System.Data;
+using System.Data.Sql;
+using System.Data.SqlClient;
+using MBA;
+
+namespace Spedmon
+{
+  /***************************************************************************
+   * SpEdDocumentTemplatesSvc */
+  /*
+   * Unless indicated, each of these methods require that the caller is
+   * logged in.
+   *
+   * Each end point method provides a wrapper for a corresponding framework
+   * method that is not accessible from the outside.
+   *
+   * These wrappers handle access control and parameter replacement.
+   *
+   * The method is restricted to calls for given user groups
+   *
+   * Parameter replacement is used to enforce additional access control within
+   * the user group but this is limited.
+   *
+   * The final line of defense for access control are the database udfs or
+   * sprocs that return or save data
+   ***************************************************************************/
+
+  [WebService(Namespace = "http://spedcare.com/")]
+  [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+  [ScriptService]
+  
+  public class SpEdDocumentTemplatesSvc : MBA.WebSvc
+  {
+    public SpEdDocumentTemplatesSvc() : base() { }
+   
+    /***************************************************************************
+     * saveinline */
+    /**
+     * Save new or edit existing record
+     ***************************************************************************/    
+
+    [WebMethod]
+    [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+
+    public ReturnSaveRecord saveinline (
+         string clientid
+       , string name
+       , string description
+       , string formBuilderContentJSON
+       , string display
+       , string savetype
+       , string recid )
+    {
+      return (ReturnSaveRecord) 
+     
+      callMethod(typeof(ReturnSaveRecord),       
+      delegate()
+      {                     
+        return Spedmon.SpEdDocumentTemplates.save (                        
+            this.dbConnApp
+          , this.log
+          , this.uInfo   
+          , clientid
+          , name
+          , description
+          , formBuilderContentJSON
+          , display
+          , ""
+          , "0"
+          , savetype
+          , recid);                                           
+      },
+      Constants.ROLE_SBS_ALL);  // Who can call this method           
+    }        		           
+
+        /***************************************************************************
+         * deleteinline */
+        /**
+         * Inline delete
+         * 
+         ***************************************************************************/
+
+        [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public ReturnSaveRecord deleteinline(
+            string recid
+        )
+        {
+            return (ReturnSaveRecord)
+
+            callMethod(typeof(ReturnSaveRecord),
+            delegate ()
+            {
+                return Spedmon.SpEdDocumentTemplates.delete(
+                  this.dbConnApp
+                , this.log
+                , this.uInfo
+                , ""
+                , "0"
+                , recid);
+            },
+            Constants.ROLE_SBS_ALL);
+        }
+
+    /***************************************************************************
+     * viewSel */
+    /**
+     * 
+     * @param  clientid     Required, client id
+     * @param  term         Required, search term string (blank for all)
+     ***************************************************************************/
+
+    [WebMethod]
+    [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+
+    public ReturnSel viewSel (string clientid, string term)
+    {
+      return (ReturnSel) 
+      callMethod(typeof(ReturnSel),
+      delegate()
+      {
+        return Spedmon.SpEdDocumentTemplates.viewSel(this.dbConnApp, this.log, this.uInfo, true, "", "", term);
+      },
+      Constants.ROLE_ALL_PCAL_AND_CLIENT); // Who can call this method
+    }
+	
+
+  }
+}

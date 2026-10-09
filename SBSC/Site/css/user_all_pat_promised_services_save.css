@@ -1,0 +1,16 @@
+div.ui-spedmon-data-entry-row {
+    display: block !important;
+    margin-top: 1.5em;
+}
+
+div.ui-spedmon-data-entry-col.ui-spedmon-data-entry-col-label {
+    max-width: 95%;
+}
+
+div.ui-spedmon-data-entry-row input[type=date],
+div.ui-spedmon-data-entry-row input.mba-web-ui-field-data-text {
+    width: 19.2em;
+    height: 2.2em;
+    border-radius: 4px;
+    border: 1px solid #aaaaaa;
+}

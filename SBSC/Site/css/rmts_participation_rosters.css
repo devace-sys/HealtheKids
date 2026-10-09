@@ -1,0 +1,12 @@
+﻿span.mba-rest-view-data-type-text, span.mba-rest-view-data-type-number, td[data-mba-rest-view-field-name="pracID"] {
+    text-align: center;
+}
+
+i.fa-folder-open {
+    color: #ff8100;
+    font-size: 1.3em;
+}
+
+i.fas.fa-upload {
+    color: #5a3a85;
+}

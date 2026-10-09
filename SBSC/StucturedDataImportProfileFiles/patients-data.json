@@ -1,0 +1,1240 @@
+[
+            {
+
+                  id: 'PD-2-TOTPOP'
+                , fileClass: '2'
+                , fileSubClass: 'TOTPOP'
+                , name: 'Total Population'
+                , label: 'Total Population File'
+                , description: 'Entire district student population exported from a student data system'
+                , headerRowNum:1
+                , fields: [
+                    {
+                        name: 'lastName'
+                        , columnRequired: true
+                        , dataRequired: true
+						, dataType: 'noun'
+                        , label: 'Student Last Name'
+                        , description: 'Last name only please'
+                        , commonColumnNames: [
+                              'Last Name'                            
+                            , 'LastName'
+                            , 'Last Name'
+                            , 'Last_Name'
+                            , 'Last Name 20'
+                            , 'Last'
+                            , 'Student Last Name'
+                            , 'Student_Last_Name'
+                            , 'lname'
+                            , 'LAST_NAME'
+							, 'Last_Name1'
+                            , 'STUDLNAME']
+                    }
+                    , {
+                        name: 'firstName'
+                        , columnRequired: true
+                        , dataRequired: true
+                        , dataType: 'noun'
+						, label: 'Student First Name'
+                        , description: 'First name only please'
+                        , commonColumnNames: [
+                              'firstName'
+                            , 'FirstName'
+                            , 'First Name'
+                            , 'First_Name'
+                            , 'First Name 15'
+                            , 'First'
+                            , 'Student First Name'
+                            , 'Student_First_Name'
+                            , 'fname'
+                            , 'FIRST_NAME'
+                            , 'First_Name1'
+							, 'STUDFNAME']
+                    }
+                    , {
+                        name: 'middleName'
+                        , columnRequired: false
+                        , dataRequired: false
+						, dataType: 'noun'
+                        , label: 'Student Middle Initial'
+                        , description: 'Initial only please'
+                        , commonColumnNames: [
+                              'middleInitial'
+                            , 'Middle_Initial'
+                            , 'Middle Initial'
+                            , 'MiddleInitial'
+                            , 'Middle Name'
+                            , 'M/I'
+                            , 'MI'
+                            , 'mi'
+                            , 'Middle I 1'
+                            , 'middleI'
+                            , 'Middle I'
+                            , 'Middle'
+                            , 'MIDDLE_NAME'
+                            , 'midInitial'
+                            , 'mInitial'
+                            , 'Student Middle Name'
+                            , 'Student_Middle_Name'
+                            , 'mname'
+                            , 'mName'
+                            , 'STUDMI'
+                            , 'middleName']
+                    }
+
+	          , {
+                        name: 'preferredNickname'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'string'
+			, label: 'Preferred NickName'
+                        , description: ''
+                        , commonColumnNames: [
+	                      'Student Preferred Alias/Name', 'Student Preferred/Alias Name', 'Student Preferred Name', 
+                              'Student Alias', 'student_alias', 'Preferred Alias/Name', 'Preferred/Alias Name', 'Preferred Name', 'Nickname', 'Nick Name'
+	                     ,'Preferred Nickname'					
+			]
+                    }
+                    , {
+                          name: 'studentID'
+                        , columnRequired: true
+                        , dataRequired: false
+                        , label: 'Student ID'
+                        , dataType: 'string'
+						, description: 'Local school student ID number'
+                        , commonColumnNames: [
+                              'Student_School_ID'
+                            , 'Perm ID'
+                            , 'Local ID 20'
+                            , 'Student ID'
+                            , 'Student School ID'
+                            , 'SID#'
+                            , 'Student_ID'
+                            , 'StuID'
+                            , 'Student Number'
+                            , 'Student ID Number'
+                            , 'District ID'
+                            , 'Local ID'
+                            , 'Student#'
+                            , 'studentNumber'
+                            , 'SCHSTUDID'
+							]
+                    }
+                    , {
+                        name: 'grade'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'string'
+                        , label: 'Grade'
+                        , description: 'K, 01-12...tell us what you use for preschool'
+                        , commonColumnNames: [
+                              'grade'
+                            , 'Grade'
+                            , 'Grade 20'
+                            , 'StudentsGrade'
+                            , 'STUDENTS.Grade_Level'
+                            , 'Grade Level'
+                            , 'Students Grade'
+                            , 'studentsGrade'
+                            , 'Grade Code'
+                            , 'Grade Level'
+                            , 'Grade_Level'
+                            , 'gradeLevel'
+                            , 'gradeCode'
+                            , 'Grade Code'
+                            , 'Students Grade Level'
+                            , 'Students Grade Code'                            
+                        ]
+                    }
+
+	          , {
+                        name: 'attendanceTrackName'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'string'
+			, label: 'Attendance Track'
+                        , description: ''
+                        , commonColumnNames: [
+	                      'Attendance Track Name'
+	                     ,'Attendance Track'					
+			]
+                    }
+
+                    , {
+                        name: 'ssid'
+                        , columnRequired: true
+                        , dataRequired: false
+						, dataType: 'ssid'
+                        , label: 'CSIS/SSID #'
+                        , description: 'Statewide Student Identifier (SSID)'
+                        , commonColumnNames: [
+                              'ssid'
+                            , 'csis'
+                            , 'CSIS / SSID #'
+                            , 'CSIS / SSID#'
+							, 'CSIS / SSID'
+                            , 'SSID'
+                            , 'SSID 10'
+                            , 'CSIS'
+                            , 'State Student ID'                            
+                            , 'State_StudentNumber'
+                            , 'State Student Number'
+                            , 'State ID'
+                            , 'stateID'
+                            , 'Student SSID'
+                            , 'SSID #'
+                            , 'CSIS #'
+                            , 'CSIS/SSID#'
+                            , 'SSID#'
+                            , 'CSIS#'
+                            , 'SSID/CSIS#'
+                            , 'SSID / CSIS #'
+                            , 'CSIS/SSID #'
+                            , 'State SID#'
+                            , 'SSID Number'                            
+							, 'SSID Num'   
+                        ]
+                    }
+                    , {
+                        name: 'cdsCode'
+                        , columnRequired: true
+                        , dataRequired: false
+                        , dataType: 'cdsfullorschoolcode'
+                        , label: 'Full CDS Code'
+                        , description: 'CDS Code - 2 digit county code, then 5 digit district code, then 7 digit school code.'
+                        , commonColumnNames: [
+                              'schoolCdsCode'
+                            , 'cdsCode'
+                            , 'School CDS Code'
+                            , 'CDS CODE'
+                            , 'Cds Number'
+                            , 'cds'
+                            , 'CDS'
+                            , 'CDS 14'
+                            , 'CDS14'
+                            , 'School_CDS_Code'
+                            , 'snumber'
+                            , 'School of Residence CDS Code'
+                            , 'schoolCDS'
+							, 'Central Print ID'
+							, 'Enrollment_SchoolID'
+                        ]
+                    }
+                    
+                    , {
+                        name: 'schoolName'
+                        , columnRequired: true
+                        , dataRequired: false
+                        , dataType: 'noun'
+                        , label: 'School Name'
+                        , description: 'Name of the school'
+                        , commonColumnNames: [
+                              'schoolName'
+                            , 'School Name'
+                            , 'School'
+                            , 'School name'
+                            , 'School1'
+                            , 'School 1'
+                            , 'Organization Name'
+                            , 'School_Name'
+                            , 'sname'
+                            , 'SCHNAME'
+                            , 'School of Residence'
+                            , 'School of Attendance'
+                        ]
+                    }
+                    , {
+                        name: 'studentStreetAddress1'
+                        , columnRequired: true
+                        , dataRequired: false
+                        , dataType: 'string'
+                        , label: 'Student Street Address 1'
+                        , description: 'Student’s home address. Needed for transportation services'
+                        , commonColumnNames: [
+                              'studentStreetAddress1'
+                            , 'studentAddress1'
+							, 'Student Address'
+                            , 'addressL1'
+                            , 'Mailing Address'
+                            , 'Residence Address'
+                            , 'Student Street Address 1'
+                            , 'Student Residential Address'
+                            , 'Street'
+                            , 'Student_Street_Address_1'
+                            , 'Home Address'
+                            , 'Address Line 1'                         
+                            , 'STREET'
+                            , 'Student street address 1'
+                            , 'Address line 1 75'
+                            , 'Student_Address_1'
+                            , 'Student Address 1'
+                            , 'ADDR1'
+                            , 'Student Street Address'
+                            , 'Parent 1 Street Address'
+                            , 'HomeAddress'
+                        ]
+                    }
+                    , {
+                        name: 'studentStreetAddress2'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'string'
+                        , label: 'Student Street Address 2'
+                        , description: 'Line 2 of Student’s home address'
+                        , commonColumnNames: [
+                              'studentStreetAddress2'
+                            , 'studentAddress2'
+                            , 'addressL2'
+                            , 'Student Street Address 2'
+                            , 'Student_Street_Address_2'
+                            , 'Address Line 2'
+                            , 'Student street address 2'
+                            , 'Address line 2 75'
+                            , 'Student_Address_2'
+                            , 'Student Address 2'
+                            , 'ADDR2'
+                            , 'Parent 2 Street Address'
+                            , 'HomeAddress2'
+                        ]
+                    }
+                    , {
+                        name: 'studentCity'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'string'
+                        , label: 'City'
+                        , description: 'Student’s city of residence'
+                        , commonColumnNames: [
+                              'studentCity'
+                            , 'city'
+                            , 'City'
+                            , 'Home City'
+                            , 'Residence City'                            
+                            , 'City 20'
+                            , 'CITY'
+                            , 'Parent 1 Street City'
+                        ]
+                    }
+                    , {
+                        name: 'studentZip5'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'zip5'
+                        , label: 'Zip Code 5'
+                        , description: 'Zip Code for Student’s home address'
+                        , commonColumnNames: [
+                             'studentZipCode5'
+                            , 'zip5'
+                            , 'zip'
+                            , 'Res Zip'
+                            , 'Zip Code'
+                            , 'Zip code'
+                            , 'Zip'
+                            , 'Zip Code 5'
+                            , 'Zip_Code_5'
+                            , 'Home ZIP Code'
+                            , 'Parent 1 Street Zip'
+							, 'Parent 1 mail zip'
+                        ]
+                    }
+                    , {
+                        name: 'dateOfBirth'
+                        , columnRequired: true
+                        , dataRequired: true
+                        , dataType: 'date'
+                        , label: 'Date of Birth'
+                        , description: ''
+                        , commonColumnNames: [
+                              'dateOfBirth'
+                            , 'dob'
+                            , 'DOB'
+                            , 'Date of Birth'
+                            , 'dOB'
+                            , 'Birth_Date'
+                            , 'Date_Of_Birth'
+                            , 'Birth_Date'
+                            , 'DOB 10'
+                            , 'DoB'
+                            , 'Date Of Birth'
+                            , 'Birth'
+                            , 'Birthdate'
+                            , 'Birth Date'
+                            , 'BIRTHDATE'
+                            , 'Birthdate'
+                        ]
+                    }
+                    , {
+                        name: 'gender'
+                        , columnRequired: true
+                        , dataRequired: true
+                        , dataType: 'gender'
+                        , label:'Gender / Sex'
+                        , description: 'M or F'
+                        , commonColumnNames: [
+                              'gender'
+                            , 'sex'
+                            , 'Gender'
+                            , 'Sex'
+                            , 'Gender/Sex'
+                            , 'Gender 1'
+                            , 'Gen'
+                            , 'Gender / Sex'
+                            , 'Gender___Sex'
+							, 'Gender Description'
+                        ]
+                    }
+                    , {
+                        name: 'isSpecialEd'
+                        , columnRequired: true
+                        , dataRequired: true
+                        , dataType: 'flagdfltno'
+                        , label:'Special Ed Identifier'
+                        , description: 'Y or N (or blank if not in special ed)'
+                        , commonColumnNames: [
+                              'isSpecialEd'
+                            , 'sped'
+                            , 'specialEdIdentifier'
+                            , 'Special Ed Identifier'
+                            , 'SpEd'
+                            , 'Special_Ed_Identifier'
+                            , 'Sp Ed'
+                            , 'SPECIAL_ED Value'
+                            , 'SPED'
+                            , 'Spec Ed code'
+                            , 'SPECIALED Value'
+                            , 'specialed'
+                            , 'specialeducation'
+                            , 'speducation'
+                            , 'special education'
+                            , 'spec ed'
+                            , 'SPED Identifier'
+                            , 'SpecialEd'
+                            , 'Sped ID'
+                            , 'Special Ed Indentifier'
+                            , 'IEP'
+                            , 'Special Education Identifier'                            
+                            , 'Sped Y/N'
+                            , 'Disability'
+                            , 'Student with Disabilities Active Sp Ed Plan'
+							, 'Special Ed Indicator'
+							, 'Special Education Indicator'
+
+                        ]
+                    }
+					, {
+                          name: 'primaryContactFirstName'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'noun'
+                        , label: 'Primary Contact First Name'
+                        , description: 'Primary contacts first name'
+                        , commonColumnNames: [
+                             'Contact 1 First Name'
+                           , 'contacts_firstName'
+                           , 'PR Contact FN'
+                           , 'Primary Contact First Name'
+                           , 'Primary_Contact_First_Name'
+                           , 'Pri Contact Fn'
+                           , 'Primary Parent / Guardian First Name'
+                           , 'Mother'
+                           , 'Parent/guardian'
+                        ]
+                    }
+                    , {
+                        name: 'primaryContactLastName'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'noun'
+                        , label: 'Primary Contact Last Name'
+                        , description: 'Primary contacts last name'
+                        , commonColumnNames: [
+                            'Contact 1 Last Name'
+                          , 'contacts_lastName'
+                          , 'PR Contact LN'
+                          , 'Primary Contact Last Name'
+                          , 'Primary_Contact_Last_Name'
+                          , 'Pri Contact Ln'
+                          , 'Primary Parent / Guardian Last Name'
+                        ]
+                    }
+                    , {
+                        name: 'primaryContactEmail'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'email'
+                        , label: 'Primary Contact Email'
+                        , description: 'Primary contacts email address'
+                        , commonColumnNames: [
+                           'Contact 1 email'
+                         , 'contacts_email'
+                         , 'Primary Contact Email'
+                         , 'Primary Contact E-Mail'
+                         , 'Primary_Contact_Email'
+                         , 'Primary Parent / Guardian Email Address'
+                         , 'ParentEmail'
+                        ]
+                    }				
+					, {
+                        name: 'primaryContactPhone'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'phonenanp'
+                        , label: 'Primary Contact Phone'
+                        , description: 'Primary contacts phone number'
+                        , commonColumnNames: [
+                           'Contact 1 Telephone'
+                         , 'contacts_cellPhone'
+                         , 'Primary Contact Phone'
+                         , 'Primary_Contact_Phone'
+                         , 'Primary Parent / Guardian Phone Number'
+                        ]
+                    }
+					, {
+                          name: 'secondaryContactFirstName'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'noun'
+                        , label: 'Secondary Contact First Name'
+                        , description: 'Secondary contacts first name'
+                        , commonColumnNames: [
+                           'Secondary Contact First Name'
+                         , 'Contact 2 First Name'
+                         , 'Sec Contact Fn'
+                         , 'Secondary_Contact_First_Name'
+                         , 'Secondary Parent / Guardian First Name'
+                         , 'Father'
+                      ]
+                    }
+                    , {
+                        name: 'secondaryContactLastName'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'noun'
+                        , label: 'Secondary Contact Last Name'
+                        , description: 'Secondary contacts last name'
+                        , commonColumnNames: [
+                            'Secondary Contact Last Name'
+                          , 'Contact 2 Last Name'
+                          , 'Sec Contact LN'
+                          , 'Secondary_Contact_Last_Name'
+                          , 'Seconday Contact Last Name'
+                          , 'Secondary Parent / Guardian Last Name'
+                        ]
+                    }
+                    , {
+                        name: 'secondaryContactEmail'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'email'
+                        , label: 'Secondary Contact Email'
+                        , description: 'Secondary contacts email address'
+                        , commonColumnNames: [
+                          'Contact 2 email'
+                        , 'contacts_secondaryEmail'
+                        , 'Sec contact email'
+                        , 'Secondary Contact Email'
+                        , 'Secondary Contact E-Mail'
+                        , 'Secondary_Contact_Email'
+                        , 'Secondary Parent / Guardian Email Address'
+                      ]
+                    }				
+					, {
+                        name: 'secondaryContactPhone'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'phonenanp'
+                        , label: 'Secondary Contact Phone'
+                        , description: 'Secondary contacts phone number'
+                        , commonColumnNames: [
+                            'Contact 2 Telephone'
+                          , 'Sec Contact phone'
+                          , 'Secondary Contact Phone'
+                          , 'Secondary_Contact_Phone'
+                          , 'Secondary Parent / Guardian Phone Number'
+                          , 'StudentCoreFields.fatherdayphone' 
+                        ]
+                    }
+                    , {
+                        name: 'primaryInsuranceCompany'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'noun'
+                        , label: 'Primary Insurance Company'
+                        , description: 'Name of Primary Health Insurance Company or Carrier'
+                        , commonColumnNames: [
+                           'Primary Insurance Company'
+                         , 'Name of insurance carrier (if available)'
+                         , 'Prim Ins'
+						 , 'Insurance Carrier'
+						 , 'Insurance Company'
+                        ]
+                    }	                    
+                    , {
+                        name: 'insuranceMemberNumber'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'string'
+                        , label: 'Insurance Member Number'
+                        , description: 'Students Insurance Member Number'
+                        , commonColumnNames: [
+                            'Insurance Member Number'
+                          , 'Insurance member number (if available)'
+                          , 'Insurance Member #'
+						  , 'Insurance #'
+						  , 'Insurance Number'						
+						  , 'Insurance Num'						
+						  , 'Ins number'
+                          , 'Ins #'
+						]
+                    }
+
+
+                  , {
+                        name: 'policyHolderName'
+                        , columnRequired: false
+                        , dataRequired: false
+						, dataType: 'string'
+                        , label: 'Policyholder Name'
+                        , description: 'Policy holder name, typically the legal guardian'
+                        , commonColumnNames: [
+                              'policyholder name'
+                            , 'policyHolderName'
+                            , 'policyholder'             
+                        ]
+                    }
+
+                  , {
+                        name: 'policyGroupID'
+                        , columnRequired: false
+                        , dataRequired: false
+						, dataType: 'string'
+                        , label: 'Policy Group ID'
+                        , description: 'Policy group ID'
+                        , commonColumnNames: [
+                              'policygroup ID'
+                            , 'policyGroup ID'
+                            , 'policyGroup' 
+                            , 'policy Group'
+                            , 'policyGroupID'     
+                        ]
+                    }
+
+	          , {
+                        name: 'teacherCounselorName'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'string'
+			, label: 'Teacher or Counselor Name'
+                        , description: ''
+                        , commonColumnNames: [
+	                      'Teacher or Counselor Name', 'Teacher/Counselor Name', 'Teacher Name', 'Teacher' ,
+                              'Counselor Name', 'Counselor'				
+			]
+                    }
+
+                ]
+
+
+            }
+            ,
+            {
+                  id: 'PD-2-SpEdPOP'
+                , fileClass: '2'
+                , fileSubClass: 'SpEdPOP'
+                , name: 'Special Ed Services'
+                , label: 'Special Ed Services File'
+                , description: 'Special Ed Services File from any supported source'
+                , headerRowNum:1
+                , fields: [
+				 {
+                          name: 'lastName'
+                        , columnRequired: true
+                        , dataRequired: true
+						, dataType: 'noun'
+                        , label: 'Student Last Name'
+                        , description: 'Last name only please'
+                        , commonColumnNames: [
+                              'Last Name'                            
+                            , 'LastName'
+                            , 'Last Name'
+                            , 'Last_Name'
+                            , 'Last Name 20'
+                            , 'Last'
+                            , 'Student Last Name'
+                            , 'Student_Last_Name'
+                            , 'lname'
+                            , 'LAST_NAME'
+                            , 'STUDLNAME']
+                    }
+                    , {
+                        name: 'firstName'
+                        , columnRequired: true
+                        , dataRequired: true
+                        , dataType: 'noun'
+						, label: 'Student First Name'
+                        , description: 'First name only please'
+                        , commonColumnNames: [
+                              'firstName'
+                            , 'FirstName'
+                            , 'First Name'
+                            , 'First_Name'
+                            , 'First Name 15'
+                            , 'First'
+                            , 'Student First Name'
+                            , 'Student_First_Name'
+                            , 'fname'
+                            , 'FIRST_NAME'
+                            , 'STUDFNAME']
+                    }
+
+	          , {
+                        name: 'preferredNickname'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'string'
+			, label: 'Preferred NickName'
+                        , description: ''
+                        , commonColumnNames: [
+	                      'Student Preferred Alias/Name', 'Student Preferred/Alias Name', 'Student Preferred Name', 
+                              'Student Alias', 'student_alias', 'Preferred Alias/Name', 'Preferred/Alias Name', 'Preferred Name', 'Nickname', 'Nick Name'
+	                     ,'Preferred Nickname'					
+			]
+                    }
+					  , {
+                        name: 'dateOfBirth'
+                        , columnRequired: true
+                        , dataRequired: true
+                        , dataType: 'date'
+                        , label: 'Date of Birth'
+                        , description: ''
+                        , commonColumnNames: [
+                              'dateOfBirth'
+                            , 'dob'
+                            , 'DOB'
+                            , 'Date of Birth'
+                            , 'dOB'
+                            , 'Birth_Date'
+                            , 'Date_Of_Birth'
+                            , 'Birth_Date'
+                            , 'DOB 10'
+                            , 'DoB'
+                            , 'Date Of Birth'
+                            , 'Birth'
+                            , 'Birthdate'
+                            , 'Birth Date'
+                            , 'BIRTHDATE'
+                            , 'Birthdate'
+                        ]
+                    }
+					 , {
+                        name: 'gender'
+                        , columnRequired: true
+                        , dataRequired: true
+                        , dataType: 'gender'
+                        , label:'Gender / Sex'
+                        , description: 'M or F'
+                        , commonColumnNames: [
+                              'gender'
+                            , 'sex'
+                            , 'Gender'
+                            , 'Sex'
+                            , 'Gender/Sex'
+                            , 'Gender 1'
+                            , 'Gen'
+                            , 'Gender / Sex'
+                            , 'Gender___Sex'
+                            , 'Gender Description'
+						]
+                    }
+				   , {
+                        name: 'ssid'
+                        , columnRequired: true
+                        , dataRequired: false
+						, dataType: 'ssid'
+                        , label: 'CSIS/SSID #'
+                        , description: 'Statewide Student Identifier (SSID)'
+                        , commonColumnNames: [
+                              'ssid'
+                            , 'csis'
+                            , 'CSIS / SSID #'
+                            , 'CSIS / SSID#'
+                            , 'CSIS / SSID'
+                            , 'SSID'
+                            , 'SSID 10'
+                            , 'CSIS'
+                            , 'State Student ID'                            
+                            , 'State_StudentNumber'
+                            , 'State Student Number'
+                            , 'State ID'
+                            , 'stateID'
+                            , 'Student SSID'
+                            , 'SSID #'
+                            , 'CSIS #'
+                            , 'CSIS/SSID#'
+                            , 'SSID#'
+                            , 'CSIS#'
+                            , 'SSID/CSIS#'
+                            , 'SSID / CSIS #'
+                            , 'CSIS/SSID #'
+                            , 'State SID#'
+                            , 'SSID Number'                            
+							, 'SSID Num'                               
+                        ]
+                    }
+					 , {
+                          name: 'studentID'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , label: 'Student ID'
+                        , dataType: 'string'
+						, description: 'Local school student ID number'
+                        , commonColumnNames: [
+                              'Student_School_ID'
+                            , 'Perm ID'
+                            , 'Local ID 20'
+                            , 'Student ID'
+                            , 'Student School ID'
+                            , 'SID#'
+                            , 'Student_ID'
+                            , 'StuID'
+                            , 'Student Number'
+                            , 'Student ID Number'
+                            , 'Local ID'
+                            , 'Student#'
+                            , 'studentNumber'
+                            , 'SCHSTUDID'
+							, 'District ID']
+                    }
+
+	          , {
+                        name: 'attendanceTrackName'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'string'
+			, label: 'attendanceTrackName'
+                        , description: ''
+                        , commonColumnNames: [
+	                      'Attendance Track Name'
+	                     ,'Attendance Track'					
+			]
+                    }
+					 , {
+                        name: 'schoolName'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'noun'
+                        , label: 'School Name'
+                        , description: 'Name of the school'
+                        , commonColumnNames: [
+                              'schoolName'
+                            , 'School Name'
+                            , 'School'
+                            , 'School name'
+                            , 'Organization Name'
+                            , 'School_Name'
+                            , 'sname'
+                            , 'SCHNAME'
+                            , 'School of Residence'
+                            , 'School of Attendance'
+                        ]
+                    }
+					, {
+                        name: 'schoolCdsCode'
+                        , columnRequired: true
+                        , dataRequired: false
+                        , dataType: 'cdsfullorschoolcode'
+                        , label: 'School Portion of CDS Code'
+                        , description: '7 digit school code'
+                        , commonColumnNames: [
+                              'schoolCdsCode'
+                            , 'cdsCode'
+                            , 'School CDS Code'
+                            , 'CDS CODE'
+                            , 'Cds Number'
+                            , 'cds'
+                            , 'CDS'
+							, 'CDS7'
+                            , 'School_CDS_Code'
+                            , 'snumber'
+                            , 'School of Residence CDS Code'
+                            , 'schoolCDS'
+							, 'School code'
+							, 'SCH_CODE'
+                        ]
+                    }
+				   				
+					, {
+                        name: 'serviceCode'
+                        , columnRequired: true
+                        , dataRequired: true
+                        , dataType: 'string'
+						, label: 'Service Code or Name'
+                        , description: ''
+                        , commonColumnNames: [
+                              'code'
+                            , 'svcCode'							
+							, 'Service Code'
+							, 'svcCde'
+							, 'service'
+							, 'Service Name'
+                            , 'svcName'
+							]
+                    }
+				
+				    , {
+                          name: 'svcStartDate'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'date'
+						, label: 'Service Start Date'
+                        , description: ''
+                        , commonColumnNames: [
+							 'startDate'
+                            ,'Start Date'
+                            ,'Service Begin'
+                            ,'Service Start'							
+                            ,'Service Begins'
+                            ,'Service Starts'							
+						]
+                    }
+					, {
+                          name: 'svcEndDate'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'date'
+						, label: 'Service End Date'
+                        , description: ''
+                        , commonColumnNames: [
+							 'endDate'
+                            ,'End Date'  
+                            ,'Service End'
+                            ,'Service Ends'														
+						]
+                    }
+	                , {
+                        name: 'svcProvider'
+                        , columnRequired: true
+                        , dataRequired: false
+                        , dataType: 'string'
+						, label: 'Service Provider'
+                        , description: ''
+                        , commonColumnNames: [
+							 'provider'
+                            ,'serviceProvider'							
+							]
+                    }
+					, {
+                        name: 'svcLocation'
+                        , columnRequired: true
+                        , dataRequired: false
+                        , dataType: 'string'
+						, label: 'Service Location'
+                        , description: ''
+                        , commonColumnNames: [
+							 'location'
+                            ,'serviceLocation'							
+							]
+                    }
+					, {
+                        name: 'svcDelivery'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'string'
+						, label: 'Service Delivery'
+                        , description: ''
+                        , commonColumnNames: [
+							 'delivery'
+                            ,'serviceDelivery'							 
+							]
+                    }
+					, {
+                        name: 'svcFrequency'
+                        , columnRequired: true
+                        , dataRequired: true
+                        , dataType: 'string'
+						, label: 'Service Frequency'
+                        , description: ''
+                        , commonColumnNames: [
+							 'frequency'
+                            ,'serviceFrequency'							 
+							]
+                    }
+					, {
+                        name: 'svcDuration'
+                        , columnRequired: true
+                        , dataRequired: true
+                        , dataType: 'integer'
+						, label: 'Service Duration'
+                        , description: ''
+                        , commonColumnNames: [
+							 'duration'
+                            ,'serviceDuration'
+                            ,'Total Minutes / Frequency'							
+							,'minutes'
+							,'totalMinutes'
+						]
+                    }						
+  	                 , {
+                          name: 'disability1Code'
+                        , columnRequired: true
+                        , dataRequired: true
+                        , dataType: 'text'
+						, label: 'Disability 1 Code'
+                        , description: ''
+                        , commonColumnNames: [
+							 'Disability 1 Code'
+							 ,'DISABILIT1'
+                             ,'Disability 1'
+                             ,'Disability'							 
+							]
+                    }
+                    , {
+                          name: 'disability2Code'
+                        , columnRequired: true
+                        , dataRequired: false
+                        , dataType: 'text'
+						, label: 'Disability 2 Code'
+                        , description: ''
+                        , commonColumnNames: [
+							 'Disability 2 Code'
+							 ,'DISABILIT2'
+                             ,'Disability 2'
+                             ,'Secondary Disability'							 
+						]
+                    }
+					, {
+                        name: 'hasSpecialTransportation'
+                        , columnRequired: true
+                        , dataRequired: true
+                        , dataType: 'flagdfltno'
+						, label: 'Has Special Transportation'
+                        , description: ''
+                        , commonColumnNames: [
+							 'Special Transportation'
+							 ,'SPEC_TRANS'							 
+							]
+                    }
+                    , {
+                        name: 'canBillMediCal'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'flag'
+						, label: 'Can Bill Medi-Cal'
+                        , description: ''
+                        , commonColumnNames: [
+							  'Medi-cal billing'
+							 ,'MediCal Billing'
+							 ,'MediCal Billing Permission'							 
+						]
+                    }
+					
+					, {
+                        name: 'caseManagerName'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'noun'
+						, label: 'Case Manager'
+                        , description: 'Name of case manager'
+                        , commonColumnNames: [
+                              'caseManager'
+                         ]
+                    }
+	                , {
+                          name: 'exitedSpEdDate'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'date'
+						, label: 'Date of Exit from SpEd'
+                        , description: 'Date patient left district or exited from special education'
+                        , commonColumnNames: [
+							 'exitSpEdDate'											
+                            ,'EXIT_DATE'
+                            ,'exit date'
+                            ,'exited date'							
+						]
+                    }				
+					, {
+                          name: 'lastEvaluationDate'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'date'
+						, label: 'Last Evaluation Date'
+                        , description: ''
+                        , commonColumnNames: [
+							 'Date of Last Reevaluation'
+							,'Date of Last Re-Evaluation'							
+							,'Date of Last Evaluation'											
+							,'Date of Last Eligibility Evaluation'
+							,'LAST_EVAL'							
+						]
+                    }
+					, {
+                          name: 'svcInitialStartDate'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'date'
+						, label: 'Service Initial Start Date'
+                        , description: ''
+                        , commonColumnNames: [
+							 'Initial Start Date'
+                            ,'Entry Date'                            						
+						]
+                    }
+					, {
+                          name: 'lastAnnualIEPDate'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'date'
+						, label: 'Last Annual IEP Date'
+                        , description: ''
+                        , commonColumnNames: [
+							 'Date of Last Annual IEP'
+							,'Date of Last Annual Plan Review'
+							,'LAST_IEP'
+							,'Current Annual'
+							]
+                    }					
+                    , {
+                          name: 'nextAnnualIEPDate'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'date'
+						, label: 'Next Annual IEP Date'
+                        , description: ''
+                        , commonColumnNames: [
+							 'Date of Next Annual IEP'
+							,'Date of Next Annual Plan Review'
+							,'Next Annual'
+							,'Next IEP'
+						 ]
+                    }
+
+					, {
+                        name: 'markedDNR'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'flagdfltno'
+						, label: 'Marked DNR'
+                        , description: ''
+                        , commonColumnNames: [
+							 'dnr'
+						]
+                    }
+					
+					, {
+                        name: 'svcStatus'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'string'
+						, label: 'Service Status'
+                        , description: 'Service is amended or discontinued'
+                        , commonColumnNames: [
+							 'Status'
+						]
+                    }
+					, {
+                        name: 'specEdSystemStudentID'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'string'
+						, label: 'Special Ed System Student ID'
+                        , description: 'Unique ID for Student from Special Ed System'
+                        , commonColumnNames: [
+                              'SEIS ID'
+                        ]
+                    }	
+
+					, {
+                        name: 'specEdSystemSvcID'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'string'
+						, label: 'Special Ed System Service ID'
+                        , description: 'Unique ID for Service from Special Ed System'
+                        , commonColumnNames: [
+                              'serviceID'
+                            , 'Service ID']
+                    }
+	                , {
+                        name: 'sessionBasedSvc'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'flag'
+						, label: 'Session Based Service'
+                        , description: ''
+                        , commonColumnNames: [
+							 'Session Based'
+							 ,'sessionBased'
+							 
+						]
+                    }	
+	                , {
+                        name: 'minsPerSession'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'integer'
+						, label: 'Minutes Per Session'
+                        , description: ''
+                        , commonColumnNames: [
+							 'Minutes / Session'													 
+						]
+                    }
+                    , {
+                        name: 'sessionsPerFreq'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'integer'
+						, label: 'Sessions Per Frequency'
+                        , description: ''
+                        , commonColumnNames: [
+							 'Sessions / Frequency'							 
+						]
+                    }
+	               , {
+                        name: 'serviceName'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'string'
+						, label: 'Service Name'
+                        , description: ''
+                        , commonColumnNames: []
+                    }						
+
+	               , {
+                        name: 'commentsOrAdditionalInfo1'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'string'
+						, label: 'Comments or Additional Info 1'
+                        , description: ''
+                        , commonColumnNames: [
+	                      'Comments'
+	                     ,'Service Additional Info 1'					
+						]
+                    }
+                   , {
+                        name: 'commentsOrAdditionalInfo2'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'string'
+						, label: 'Comments or Additional Info 2'
+                        , description: ''
+                        , commonColumnNames: [	                     
+	                      'Service Additional Info 2'					
+						]
+                    }					
+				 , {
+                        name: 'specialTransportationNotes'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'string'
+						, label: 'Special Transportation Notes'
+                        , description: ''
+                        , commonColumnNames: [	                     
+	                      'Special Transportation Text'					
+						]
+                    }
+					
+					]
+            }
+]

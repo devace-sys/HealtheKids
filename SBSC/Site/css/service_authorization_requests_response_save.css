@@ -1,0 +1,437 @@
+:root {
+    --pp-bg-1: #f5f7fa;
+    --pp-bg-2: #e9f0f5;
+    --pp-accent-1: #4facfe;
+    --pp-accent-2: #3cadd9;
+    --pp-text: #1e293b;
+    --pp-muted: #64748b;
+    --pp-card-bg: #ffffff;
+    --pp-card-border: rgba(79,172,254,.22);
+    --pp-shadow: 0 12px 28px rgba(15,23,42,.10);
+    --pp-shadow-hover: 0 18px 40px rgba(15,23,42,.14);
+    --pp-radius: 16px;
+}
+
+body {
+    background: linear-gradient(135deg,var(--pp-bg-1) 0%,var(--pp-bg-2) 100%);
+    color: var(--pp-text);
+}
+
+button:focus,
+button:focus-visible,
+button:active,
+a:focus,
+a:focus-visible,
+a:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+button::-moz-focus-inner {
+    border: 0 !important;
+}
+
+
+div.service-request-operations {
+    clear: both;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .35rem;
+    font-size: .92em;
+    padding: .5rem .25rem;
+    margin: .25rem 0 .75rem;
+}
+
+span.service-request-operation {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .35rem .6rem;
+    font-size: .90em;
+    border-radius: 999px;
+    border: 1px solid rgba(79,172,254,.25);
+    background: linear-gradient(135deg,rgba(79,172,254,.10),rgba(0,242,254,.10));
+    color: var(--pp-text);
+    box-shadow: 0 6px 14px rgba(15,23,42,.08);
+}
+
+/* Request ID label + value */
+span.service-request-id {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: .25rem .2rem;
+    color: var(--pp-muted);
+    font-weight: 700;
+}
+
+span.service-request-id-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .35rem .75rem;
+    font-size: .90em;
+    min-width: 10em;
+    text-align: center;
+    border-radius: 999px;
+    border: 1px solid rgba(79,172,254,.35);
+    background: #fff;
+    color: var(--pp-text);
+    box-shadow: 0 10px 22px rgba(79,172,254,.18);
+}
+
+
+div.svc-auth-request-view-section {
+    width: 95%;
+    margin: 0 auto 1rem;
+    padding: 1rem 1.1rem;
+    background: var(--pp-card-bg);
+    border: 1px solid var(--pp-card-border);
+    border-radius: var(--pp-radius);
+    box-shadow: var(--pp-shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+    div.svc-auth-request-view-section::before {
+        content: "";
+        position: absolute;
+        inset: -70% -70% auto auto;
+        width: 240%;
+        height: 240%;
+        background: linear-gradient(45deg,transparent 35%,rgba(0,242,254,.10) 50%,transparent 65%);
+        transform: rotate(18deg);
+        pointer-events: none;
+    }
+
+    div.svc-auth-request-view-section h3 {
+        margin: 0 0 .55rem;
+        padding: 0 0 .25rem;
+        font-size: 1.02em;
+        font-weight: 800;
+        border-bottom: 2px solid rgba(79,172,254,.18);
+        position: relative;
+        z-index: 1;
+    }
+
+    div.svc-auth-request-view-section p {
+        margin: 0;
+        width: 100%;
+        font-size: .98em;
+        color: var(--pp-text);
+        position: relative;
+        z-index: 1;
+    }
+
+    div.svc-auth-request-view-section pre {
+        margin: .35rem 0 0;
+        padding: .6rem .75rem;
+        width: 100%;
+        font-size: .95em;
+        white-space: pre-wrap;
+        background: linear-gradient(135deg,rgba(79,172,254,.06),rgba(0,242,254,.05));
+        border: 1px solid rgba(79,172,254,.16);
+        border-radius: 12px;
+        color: var(--pp-text);
+        position: relative;
+        z-index: 1;
+    }
+
+    div.svc-auth-request-view-section sup,
+    form.svc-auth-request-view-section sup {
+        font-size: .80em;
+    }
+
+div.svc-auth-request-view-section-response {
+    margin-top: 1em;
+    padding: 1rem 1.1rem;
+    border: 1px solid rgba(79,172,254,.25);
+    background: linear-gradient(135deg,rgba(79,172,254,.18),rgba(0,242,254,.14));
+    color: var(--pp-text);
+    border-radius: var(--pp-radius);
+    box-shadow: 0 12px 28px rgba(15,23,42,.10);
+}
+
+    div.svc-auth-request-view-section-response ul.svc-auth-responses {
+        margin: .25rem 0 0 1em;
+        list-style-type: square;
+    }
+
+        div.svc-auth-request-view-section-response ul.svc-auth-responses li.svc-auth-responses {
+            font-size: .85em;
+            color: var(--pp-text);
+        }
+
+    div.svc-auth-request-view-section-response a {
+        color: #0d6efd;
+        font-weight: 800;
+        text-decoration: none;
+    }
+
+        div.svc-auth-request-view-section-response a:hover {
+            text-decoration: underline;
+        }
+
+form.svc-auth-request-view-section-response h3 {
+    text-align: center;
+    font-weight: 900;
+    text-decoration: none !important;
+}
+
+/* Labels / fields */
+form.svc-auth-request-view-section-response p label {
+    margin-right: 1em;
+    font-weight: 700;
+    color: var(--pp-text);
+}
+
+form.svc-auth-request-view-section-response p span.center-field {
+    display: block;
+    width: auto;
+    text-align: center;
+}
+/* --- Radio buttonset (Approve / Decline) --- */
+form.svc-auth-request-view-section-response .ui-spedmon-box-radio-box-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+}
+
+form.svc-auth-request-view-section-response .ui-spedmon-box-radio-box-label {
+    color: var(--pp-text);
+    font-weight: 800;
+    font-size: 0.90em;
+    margin: 0;
+}
+
+/* segmented shell */
+form.svc-auth-request-view-section-response .ui-spedmon-box-radio-box-options-container {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px;
+    border-radius: 6px;
+    background: rgba(157, 200, 204, 0.18);
+    border: 1px solid rgba(157, 200, 204, 0.85);
+    box-shadow: 0 2px 0 rgba(15, 23, 42, 0.06);
+}
+
+/* each option label (jQuery UI label button) */
+form.svc-auth-request-view-section-response .ui-spedmon-box-radio-box-option-label.ui-button {
+    margin: 0 4px 0 0;
+    border: 1px solid rgba(157, 200, 204, 0.85);
+    background: rgba(209, 227, 229, 0.55);
+    color: #2b3a3f;
+    border-radius: 3px;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+    form.svc-auth-request-view-section-response
+    .ui-spedmon-box-radio-box-option-label.ui-button:last-of-type {
+        margin-right: 0;
+    }
+
+form.svc-auth-request-view-section-response .ui-spedmon-box-radio-box-option-label .ui-button-text {
+    padding: 0.28rem 0.75rem;
+    font-size: 0.86em;
+    font-weight: 800;
+}
+
+form.svc-auth-request-view-section-response .ui-spedmon-box-radio-box-option-label.ui-state-active {
+    background: rgba(190, 213, 216, 0.95);
+    border-color: rgba(157, 200, 204, 0.95);
+    color: #1e293b;
+}
+
+form.svc-auth-request-view-section-response .ui-spedmon-box-radio-box-option-label.ui-button:hover {
+    filter: saturate(1.02);
+}
+
+form.svc-auth-request-view-section-response .ui-spedmon-box-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+form.svc-auth-request-view-section-response input.ui-spedmon-box.hasDatepicker,
+form.svc-auth-request-view-section-response input.ui-spedmon-box {
+    border-radius: 10px;
+    border: 1px solid rgba(148, 163, 184, 0.55);
+    background: #fff;
+    color: var(--pp-text);
+    padding: 0.45rem 0.65rem;
+    box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08);
+}
+
+    form.svc-auth-request-view-section-response input.ui-spedmon-box:focus {
+        outline: none !important;
+        border-color: rgba(79, 172, 254, 0.55);
+        box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.12), 0 14px 30px rgba(15, 23, 42, 0.10) !important;
+    }
+
+form.svc-auth-request-view-section-response button.ui-datepicker-trigger {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border-radius: 10px;
+    border: 1px solid rgba(148, 163, 184, 0.55);
+    background: linear-gradient(135deg, rgba(79, 172, 254, 0.12), rgba(0, 242, 254, 0.10));
+    box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08);
+    cursor: pointer;
+}
+
+    form.svc-auth-request-view-section-response button.ui-datepicker-trigger img {
+        width: 18px;
+        height: 18px;
+        opacity: 0.90;
+    }
+
+.ui-datepicker {
+    border-radius: 12px !important;
+    border: 1px solid rgba(79, 172, 254, 0.22) !important;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18) !important;
+    padding: 0.35rem !important;
+}
+
+    .ui-datepicker .ui-datepicker-header {
+        border: none !important;
+        border-radius: 10px !important;
+        background: linear-gradient(135deg, rgba(79, 172, 254, 0.16), rgba(0, 242, 254, 0.12)) !important;
+    }
+
+    .ui-datepicker .ui-state-default {
+        border: 1px solid rgba(148, 163, 184, 0.35) !important;
+        background: #fff !important;
+        border-radius: 8px !important;
+    }
+
+    .ui-datepicker .ui-state-active,
+    .ui-datepicker .ui-state-hover {
+        border-color: rgba(79, 172, 254, 0.55) !important;
+    }
+
+form.svc-auth-request-view-section-response textarea.ui-spedmon-noteareabox,
+form.svc-auth-request-view-section-response textarea.mba-web-ui-field-data-text-area {
+    width: 100% !important;
+    border-radius: 12px;
+    border: 1px solid rgba(148, 163, 184, 0.55);
+    padding: .7rem .85rem;
+    background: #fff;
+    color: var(--pp-text);
+    box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08);
+}
+
+    form.svc-auth-request-view-section-response textarea.ui-spedmon-noteareabox:focus {
+        outline: none !important;
+        border-color: rgba(79, 172, 254, 0.55);
+        box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.12), 0 14px 30px rgba(15, 23, 42, 0.10) !important;
+    }
+
+#butSaveResp span {
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+#butSaveResp {
+    background: linear-gradient(135deg, var(--pp-accent-1) 2%, var(--pp-accent-2) 100%);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 0.55rem 1.10rem;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    box-shadow: 0 10px 22px rgba(79, 172, 254, 0.28);
+    transition: transform 0.12s ease, box-shadow 0.18s ease, filter 0.18s ease;
+    margin-top: 5px;
+}
+
+    #butSaveResp:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 14px 30px rgba(79, 172, 254, 0.36);
+        filter: saturate(1.05);
+    }
+
+    #butSaveResp:active {
+        transform: translateY(0);
+        box-shadow: 0 9px 18px rgba(79, 172, 254, 0.24);
+    }
+
+div.response-attest-statement {
+    white-space: pre-wrap !important;
+    margin: .25rem 0 0 !important;
+    padding: .6rem .75rem !important;
+    width: 100% !important;
+    font-size: .95em !important;
+    font-weight: normal !important;
+    border-radius: 12px;
+    border: 1px solid rgba(79,172,254,.18);
+    background: #fff;
+    color: var(--pp-text);
+}
+
+textarea.svcDescBox {
+    width: 100%;
+    height: 25em;
+    line-height: 1.2em;
+    border-radius: 12px;
+    border: 1px solid rgba(148,163,184,.55);
+    padding: .7rem .85rem;
+    background: #fff;
+    color: var(--pp-text);
+    box-shadow: 0 10px 22px rgba(15,23,42,.08);
+}
+
+    textarea.svcDescBox:focus {
+        outline: none !important;
+        border-color: rgba(79,172,254,.55);
+        box-shadow: 0 0 0 3px rgba(79,172,254,.12),0 14px 30px rgba(15,23,42,.10) !important;
+    }
+
+ul.svc-auth-request-files {
+    margin: .25rem 0 0;
+    padding: 0;
+    display: block;
+}
+
+li.svc-auth-request-files {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 .50em .35em 0;
+}
+
+a.svc-auth-request-files {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    padding: .35rem .6rem;
+    border-radius: 999px;
+    border: 1px solid rgba(79,172,254,.22);
+    background: linear-gradient(135deg,rgba(79,172,254,.08),rgba(0,242,254,.06));
+    color: var(--pp-text);
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: 0 10px 22px rgba(15,23,42,.08);
+    transition: transform .12s ease, box-shadow .18s ease;
+}
+
+    a.svc-auth-request-files:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 14px 30px rgba(15,23,42,.12);
+    }
+
+i.svc-auth-request-files {
+    font-size: .95em;
+    color: #0d6efd;
+}
+
+span.svc-auth-request-files {
+    font-size: .95em;
+}
+
+div.svc-auth-request-files-none {
+    color: var(--pp-muted);
+    font-weight: 700;
+    padding: .35rem 0;
+}

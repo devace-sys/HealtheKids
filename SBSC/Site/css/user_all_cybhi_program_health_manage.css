@@ -1,0 +1,45 @@
+﻿/* Custom CSS for just this page */
+
+div.cybhi-program-health-stat-hidden {
+    visibility:hidden;
+}
+
+div.cybhi-program-health-stat-container {
+    border-radius: 5px;
+    margin-top: .5em;
+    
+
+}
+
+div.cybhi-program-health-stat-container-summary-tbl {
+  margin-top:1em;
+}
+
+div.cybhi-program-health-counter-big-number-container {
+}
+
+/* Used to contain plotly */
+
+div.cybhi-program-health-counter-big-number-plot-container {
+}
+
+div.cybhi-program-health-counter-big-number-details-screen, div.cybhi-program-health-counter-big-number-report-download {
+    cursor: pointer;
+}
+
+div.cybhi-program-health-counter-big-number-status {
+    background-color: rgba(0,0,0,0); /* Transparent */
+}
+
+div.cybhi-program-health-counter-big-number-report-download {
+    /*background-color: #b6b8bd !important;*/
+}
+
+#amounts-paid-by-disp-group-table-container {
+    max-height: 15em;
+    overflow-y: auto;
+}
+
+a.cybhi-program-health-details-link {
+    cursor: pointer;
+}

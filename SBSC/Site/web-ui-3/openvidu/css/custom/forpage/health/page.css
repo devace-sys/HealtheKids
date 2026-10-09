@@ -1,0 +1,36 @@
+h3 {
+  font-size:1.3em;
+  font-weight:bold;
+}
+
+h3.login-consent-title {
+  font-size:1em;
+}
+
+ol.login-consent-conditions {
+  font-size:1em;
+}
+
+.table-hidden-data {
+  display:none;
+}
+
+th span {
+  width: 10em;
+  display: block;
+  margin-bottom:.5
+}
+
+td button, th button {
+  width: 10em;
+  display:block;
+}
+
+td input[type=number],th input[type=number]{ 
+  width: 10em; 
+}
+
+td input[type=time],th input[type=time]{ 
+  width: 10em; 
+}
+

@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CLEAR_LABEL" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="CLEAR_TITLE" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Common_Header_Request_ID_Label" xml:space="preserve">
+    <value>Request ID</value>
+  </data>
+  <data name="Common_Header_Request_Title" xml:space="preserve">
+    <value>Health Insurance Information Request</value>
+  </data>
+  <data name="Common_Header_Text_Note" xml:space="preserve">
+    <value>There is no cost to your family, and sharing this information will not affect your insurance premiums or service limits in any way.</value>
+  </data>
+  <data name="CONSENT_NO" xml:space="preserve">
+    <value>I DO NOT consent</value>
+  </data>
+  <data name="CONSENT_YES" xml:space="preserve">
+    <value>I consent</value>
+  </data>
+  <data name="CONSENT_YES_NO_COMMON" xml:space="preserve">
+    <value>to the release of my child’s health records and/or access to benefit information for the purpose of billing</value>
+  </data>
+  <data name="Covered_CA_Message_Bottom_Left" xml:space="preserve">
+    <value>Please visit</value>
+  </data>
+  <data name="Covered_CA_Message_Bottom_Right" xml:space="preserve">
+    <value>for more information.</value>
+  </data>
+  <data name="Covered_CA_Message_Top" xml:space="preserve">
+    <value>Did you know that free or low cost health insurance options may be available for your child?</value>
+  </data>
+  <data name="ENTER_DOB" xml:space="preserve">
+    <value>To ensure the privacy of the student please enter the students date of birth</value>
+  </data>
+  <data name="Form_Title" xml:space="preserve">
+    <value>Please Complete The Following Form For Your Child</value>
+  </data>
+  <data name="INSURANCE_CARRIER_CODE_LABEL" xml:space="preserve">
+    <value>Insurance Provider</value>
+  </data>
+  <data name="INSURANCE_CARRIER_CODE_PLACEHOLDER" xml:space="preserve">
+    <value>Select A Carrier</value>
+  </data>
+  <data name="INSURANCE_CARRIER_CODE_TITLE" xml:space="preserve">
+    <value />
+  </data>
+  <data name="INSURANCE_CARRIER_OTHER_NAME_LABEL" xml:space="preserve">
+    <value>Other Insurance Provider</value>
+  </data>
+  <data name="INSURANCE_CARRIER_OTHER_NAME_PLACEHOLDER" xml:space="preserve">
+    <value>Enter Carrier Name</value>
+  </data>
+  <data name="INSURANCE_CARRIER_OTHER_NAME_TITLE" xml:space="preserve">
+    <value />
+  </data>
+  <data name="INSURANCE_CARRIER_POLICY_HOLDER_FIRST_NAME_LABEL" xml:space="preserve">
+    <value>Policy Holder's First Name</value>
+  </data>
+  <data name="INSURANCE_CARRIER_POLICY_HOLDER_FIRST_NAME_PLACEHOLDER" xml:space="preserve">
+    <value>Enter First Name</value>
+  </data>
+  <data name="INSURANCE_CARRIER_POLICY_HOLDER_FIRST_NAME_TITLE" xml:space="preserve">
+    <value />
+  </data>
+  <data name="INSURANCE_CARRIER_POLICY_HOLDER_LAST_NAME_LABEL" xml:space="preserve">
+    <value>Policy Holder's Last Name</value>
+  </data>
+  <data name="INSURANCE_CARRIER_POLICY_HOLDER_LAST_NAME_PLACEHOLDER" xml:space="preserve">
+    <value>Enter Last Name</value>
+  </data>
+  <data name="INSURANCE_CARRIER_POLICY_HOLDER_LAST_NAME_TITLE" xml:space="preserve">
+    <value />
+  </data>
+  <data name="INSURANCE_CARRIER_SELECTION_NO_INSURANCE" xml:space="preserve">
+    <value>No Insurance</value>
+  </data>
+  <data name="INSURANCE_CARRIER_SELECTION_OTHER" xml:space="preserve">
+    <value>Other (Not Listed)</value>
+  </data>
+  <data name="INSURANCE_GROUP_NUMBER_ID_LABEL" xml:space="preserve">
+    <value>Group ID/Number</value>
+  </data>
+  <data name="INSURANCE_GROUP_NUMBER_ID_PLACEHOLDER" xml:space="preserve">
+    <value>Enter Group Number</value>
+  </data>
+  <data name="INSURANCE_GROUP_NUMBER_ID_TITLE" xml:space="preserve">
+    <value />
+  </data>
+  <data name="On_Behalf_Of" xml:space="preserve">
+    <value>On Behalf Of</value>
+  </data>
+  <data name="Page_Init_Not_OK" xml:space="preserve">
+    <value>This information request has been answered already or it has been cancelled or it is invalid.</value>
+  </data>
+  <data name="POLICY_NUMBER_LABEL" xml:space="preserve">
+    <value>Policy Number</value>
+  </data>
+  <data name="POLICY_NUMBER_PLACEHOLDER" xml:space="preserve">
+    <value>Enter Policy Number</value>
+  </data>
+  <data name="POLICY_NUMBER_TITLE" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Request_For_Student_ID_Label" xml:space="preserve">
+    <value>This request is for your child who has a student ID ending with</value>
+  </data>
+  <data name="Request_For_Student_Label" xml:space="preserve">
+    <value>This request is for</value>
+  </data>
+  <data name="Request_Greeting" xml:space="preserve">
+    <value>Dear</value>
+  </data>
+  <data name="Request_Message" xml:space="preserve">
+    <value>We are requesting your child’s health insurance information to help us provide school-based health or mental health services if your child ever needs them.
+
+- This information will only be used if your child receives services. 
+- Sharing this information helps us cover the cost of services, at no cost to your family. 
+- All information will be kept private and secure, in compliance with FERPA and HIPAA. 
+
+Providing this information does not obligate your child to receive services and will not affect your family’s health coverage or benefits outside of school.
+
+Please complete the short form below or confirm if the existing information is correct. Your help ensures we can provide the best care for every student.
+
+Thank you for your support!</value>
+  </data>
+  <data name="Response_Questions_Label" xml:space="preserve">
+    <value>If you have any questions please contact</value>
+  </data>
+  <data name="Response_Title" xml:space="preserve">
+    <value>Your Response Has Been Submitted.  Thank You.</value>
+  </data>
+  <data name="SIGNATURE_LABEL" xml:space="preserve">
+    <value>Please Sign Below</value>
+  </data>
+  <data name="SIGNATURE_TITLE" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SUBMIT_LABEL" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="SUBMIT_TITLE" xml:space="preserve">
+    <value />
+  </data>
+</root>

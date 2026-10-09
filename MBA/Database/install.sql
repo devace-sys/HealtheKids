@@ -1,0 +1,239 @@
+/*-------------------------------------------------------------------
+ * install.sql
+ * Install various T-SQL objects for the users database
+ * Invoked using SQLCMD
+ * Example:
+ * SQLCMD -E -S"PCALDEVOLD\SQLEXPRESS2008" -dusers -i install.sql
+ *------------------------------------------------------------------*/
+
+SET NOCOUNT ON
+GO
+
+/*-------------------------------
+ * Objects that are no longer
+ * needed should have drop
+ * commands placed in
+ * clean_up.sql
+ *------------------------------*/
+
+PRINT 'Cleaning up old objects'
+:r clean_up.sql
+
+/*-------------------------------
+ * Database changes (if any)
+ *------------------------------*/
+
+PRINT 'Applying database changes'
+:r CHANGES.sql
+
+/*-------------------------------
+ * Install objects
+ *
+ * Please note:
+ *
+ * - ALL t-sql objects need to be 
+ *   scripted out and the scripts
+ *   MUST end with a GO
+ * - All objects need to be included
+ *   below using this format 
+ *   :r <filename.sql>
+ * - All objects MUST be included
+ *   below in order of dependecy
+ *------------------------------*/
+ 
+PRINT 'Installing'
+
+
+/* Consts */
+
+:r CONST_MSG_USER_NOT_FOUND.sql
+:r CONST_RET_DUP_RECORD.sql
+:r CONST_RET_ERR.sql
+:r CONST_RET_FAT.sql
+:r CONST_RET_INFO.sql
+:r CONST_RET_SUCCESS.sql
+:r CONST_RET_WARN.sql
+:r CONST_RET_CRIT.sql
+:r CONST_USER_GROUP_CLIENT.sql
+:r CONST_USER_GROUP_SBS.sql
+:r CONST_RET_CODE_SESSION_EXPIRE.sql
+:r CONST_RET_CODE_SUBSCRIPTION_REQUIRED.sql
+:r CONST_RET_CODE_PASSWORD_LOCK.sql
+:r CONST_CHANGE_PASSWORD_USER.sql
+:r CONST_CHANGE_PASSWORD_ADMIN.sql
+:r CONST_CHANGE_PASSWORD_PUBLIC.sql
+:r CONST_SAVE_TYPE_NEW.sql
+:r CONST_SAVE_TYPE_EDIT.sql
+:r CONST_SAVE_TYPE_DELETE.sql
+:r CONST_REC_STATE_NEW.sql
+:r CONST_REC_STATE_MOD.sql
+:r CONST_REC_STATE_DEL.sql
+:r CONST_MIN_DATETIME.sql
+:r CONST_APP_NAME_SPEDCARE.sql
+:r CONST_ROLE_INACTIVE.sql
+:r CONST_ROLE_PROVIDER.sql
+:r CONST_PERSONS_SOURCE_SPEDMON.sql
+:r CONST_PERSONS_SOURCE_USERS.sql
+:r CONST_MAX_ROWS.sql
+:r CONST_USER_RANK_MIN.sql
+
+/* Views */
+
+:r GENERATE_RANDOM_NUMBERS.sql
+:r USERS_ALL.sql
+
+
+:r APP_SETTINGS_VIEW_CORE.sql
+:r APP_SETTINGS_VIEW.sql
+:r APP_SETTING_GET_VALUE.sql
+:r APP_SETTING_SET_VALUE.sql
+
+:r MANAGE_SESSIONS.sql
+:r GENERATE_PASSWORD.sql
+:r HASH_PASSWORD.sql
+:r ALTERNATE_DATE_IF_MIN_OR_NULL.sql
+:r NULL_TO_ZERO_INT.sql
+:r STRING_IS_NULL_OR_EMPTY.sql
+:r STRING_HAS_VALUE.sql
+:r RPT_BIT_TO_YN.sql
+:r RPT_DATE_FMT.sql
+:r RPT_TIME_FMT.sql
+:r INT_HAS_VALUE.sql
+:r ZERO_TO_NULL.sql
+
+:r USERS_DATA_CORE.sql
+
+:r APP_MAN_PAGES_DATA_CORE.sql
+:r APP_MAN_PAGES_USER_ROLES_FOR_USER_ID_VIEW_CORE.sql
+:r APP_MAN_PAGES_USER_RESPONSE_VIEW_STATS_SUMMARY_CORE.sql
+
+:r APP_MAN_PAGE_PIN_TO_TOP.sql
+
+:r APP_MAN_PAGES_RESET_AND_REPUBLISH.sql
+:r USER_IS_ACTIVE.sql
+:r STRING_SPLIT.sql
+:r STRING_CREATE.sql
+:r UPDATE_DETAILS.sql
+:r INT_CONCAT.sql
+:r BIG_INT_CONCAT.sql
+:r AGE_IN_DAYS.sql
+:r MULTI_RECORD_ID_PARSE.sql
+:r ROLES_VIEW_CORE.sql
+:r ROLES_VIEW.sql
+:r USERS_VIEW_CORE.sql
+:r USERS_VIEW.sql
+:r PERSONS_VIEW.sql
+
+:r Web_Login.sql
+:r Web_Logout.sql
+:r Web_App_Transfer.sql
+:r Web_Validate.sql
+:r Web_Change_Password.sql
+:r Web_Users_Audit.sql
+:r USERS_SAVE_CORE.sql
+:r USERS_SAVE.sql
+:r WEB_USER_Save_Core.sql
+:r WEB_USER_Save.sql
+:r WEB_USER_Delete.sql
+:r UsersPreferences_SaveOrReplace.sql
+:r UsersPreferences_View.sql
+:r MANAGE_INDEXES.sql
+:r USER_DELETE.sql
+:r WEB_BROWSER_STATS.sql
+:r WEB_BROWSER_STATS_DETAIL_SUMMARY.sql
+
+-- Qforms project
+:r INFO_REQUEST_RESPONSE_Audit.sql
+:r INFO_REQUEST_RESPONSE_Save.sql
+:r INFO_REQUEST_RESPONSE_Delete.sql
+:r INFO_REQUEST_RESPONSE_DETAILS_Audit.sql
+:r INFO_REQUEST_RESPONSE_DETAILS_Save.sql
+:r INFO_REQUEST_RESPONSE_DETAILS_Delete.sql
+:r INFO_REQUEST_RESPONSE_DETAILS_VIEW.sql
+:r QFORMS_FOLLOWUP_LIST.sql
+
+-- Man Pages (help, announcements, etc)
+
+:r APP_MAN_PAGES_USER_ROLES_VIEW_CORE_OLD.sql
+:r APP_MAN_PAGES_USER_ROLES_VIEW_CORE.sql
+:r APP_MAN_PAGES_FOR_USER_ROLES_VIEW_SUMMARY_CORE.sql
+:r APP_MAN_PAGES_USER_ROLES_VIEW.sql
+:r APP_MAN_PAGE_SAVE_CORE.sql
+:r APP_MAN_PAGE_SAVE.sql
+:r APP_MAN_PAGES_VIEW_CORE.sql
+:r APP_MAN_PAGES_VIEW.sql
+:r APP_MAN_PAGE_LOG_USER_RESPONSE_CORE.sql
+:r APP_MAN_PAGE_LOG_USER_RESPONSE.sql
+:r APP_MAN_PAGE_LOG_USER_RESPONSES.sql
+:r APP_MAN_PAGES_VIEW_CONTENT_CORE.sql
+:r APP_MAN_PAGES_VIEW_CONTENT.sql
+:r APP_MAN_PAGES_VIEW_CONTENT_USER_RESPONSES_CORE.sql
+:r APP_MAN_PAGES_VIEW_CONTENT_USER_RESPONSES_PENDING_EMAIL_NOTIFICATIONS.sql
+:r APP_MAN_PAGES_VIEW_CONTENT_USER_RESPONSES_PENDING_EMAIL_NOTIFICATIONS_ALL.sql
+:r APP_MAN_PAGES_VIEW_CONTENT_USER_RESPONSES.sql
+:r APP_MAN_PAGE_DELETE.sql
+:r USERS_VIEW_PCAL.sql
+:r CURRENT_LOGINS_VIEW.sql
+
+/* User Messages */
+
+:r USER_MESSAGES_DATA_CORE.sql
+:r USER_MESSAGES_VIEW_CORE.sql
+:r USER_MESSAGES_VIEW.sql
+:r USERS_MESSAGES_SAVE_CORE.sql
+:r USERS_MESSAGES_SAVE_GENERATED.sql
+
+:r USERS_MESSAGES_SAVE_SIMPLE.sql
+
+:r USERS_MESSAGES_SAVE_SIMPLE_W_NAV.sql
+
+:r USERS_MESSAGES_SAVE.sql
+:r USER_MESSAGES_DELETE.sql
+:r USER_MESSAGES_VIEW_WAITING_TO_EMAIL.sql
+:r USERS_MESSAGES_RECORD_OP_FLAG_AS_EMAILED.sql
+
+/* User Signatures */
+
+:r USER_SIGNATURES_SAVE_CORE.sql
+:r USER_SIGNATURES_VIEW_CORE.sql
+:r USER_SIGNATURES_VIEW.sql
+
+:r TELECOMM_SESSION_CREATE_LOG_ENTRY_CORE.sql
+:r TELECOMM_SESSION_CAN_EDIT.sql
+:r MANAGE_TELECOMM_SESSIONS.sql
+:r TELECOMM_SESSION_MANAGE_SHARED_FILES_CORE.sql
+:r TELECOMM_SESSION_SAVE.sql
+:r TELECOMM_SESSION_VALIDATE_CORE.sql
+:r TELECOMM_SESSION_VALIDATE.sql
+:r TELECOMM_SESSION_BAN.sql
+:r TELECOMM_SESSION_FORM_SIGNATURES_VIEW_CORE.sql
+:r TELECOMM_SESSION_FORM_AND_SIGNATURE_DATA_VIEW_LATEST_CORE.sql
+:r TELECOMM_SESSION_JOIN.sql
+:r TELECOMM_SESSIONS_VIEW.sql
+:r TELECOMM_PARTICIPANTS_VIEW.sql
+:r TELECOMM_SESSION_SIGN_FORM.sql
+:r TELECOMM_SESSION_SAVE_FORM_DATA_CORE.sql
+:r TELECOMM_SESSION_SAVE_FORM_WIP_DATA.sql
+:r TELECOMM_SESSION_VALIDATE_SHARED_FILE_ACCESS.sql
+:r TELECOMM_SESSION_FILE_SHARES_VIEW.sql
+:r TELECOMM_SESSION_DELETE.sql
+:r TELECOMM_SESSION_APPEND_FILE_SHARE.sql
+:r TELECOMM_SESSION_FORM_SIGNATURES_VIEW_INFO.sql
+:r TELECOMM_SESSION_VIEW_IF_USER_IS_PARTICIPANT.sql
+:r TELECOMM_SESSION_GET_PARTICIPANT_INVITATION_DATA.sql
+:r TELECOMM_SESSION_VALIDATE_SHARED_FILE_ADD.sql
+:r TELECOMM_SESSIONS_VIEW_UPCOMING_FOR_USER.sql
+
+:r TELECOMM_SESSION_GET_INFO_FOR_RSVP.sql
+
+:r TELECOMM_RSVP_SAVE_FLAG.sql
+
+/* Work in progress sub system */
+
+:r WorkInProgressSavePoint_SaveOrReplace.sql
+:r WorkInProgressSavePoints_View.sql
+:r WorkInProgressSavePoint_Delete.sql
+
+:r FILE_EXPORT_DISTRIBUTIONS_VIEW.sql
+
+PRINT 'Done'

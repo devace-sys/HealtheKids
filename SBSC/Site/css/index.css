@@ -1,0 +1,56 @@
+/***************************************************************************
+ * index */
+/**
+ * Rules specific to the public home page (index)
+ * These rules came over as part of the static Practi-Cal site.
+ * They have been slightly modified but for the most part they are the same.
+ *
+ * Note: This stylesheet does override some standard rules so it should
+ *       remain as a separate sheet until it can be refactored and merged
+ *       with screen.css
+ ***************************************************************************/
+
+#index          {background: url('../StaticFile.ashx?f=background.jpg') 50% 0 repeat-y;}
+
+/* Override subtitle and content rules */
+
+#content         {background: url('../StaticFile.ashx?f=background.jpg') 50% 0 repeat-y;border-top:none;border-bottom:none;}
+
+#pagedetails {
+  display:block;
+  clear:both;
+  margin:1em;
+  width:100%;  
+  text-align:center;
+  }
+
+/*#main-2{height:100px;background: url('../StaticFile.ashx?f=home-secondary-background.gif') 100% 0 repeat-x;border-top:none;border-bottom:none;}*/
+
+/* #index #content {margin-bottom: 25px;}*/
+
+#index #main    {background: url('../StaticFile.ashx?f=home-main-background.jpg') 50% 0 no-repeat;padding: 50px 268px 127px;width: 424px;height: 230px;color: #FFF;}
+#index #main h2 {font-family: "EraserDust",Eraser,"Comic Sans MS", cursive;font-size: 38px;line-height: 1em;text-align: center;text-transform: uppercase;margin-bottom: 10px;}
+#index #main h3 {font-family: "Gotham Bold", Gotham, Arial, Helvetica, sans-serif;font-size: 14px;font-weight: bold;margin-bottom: 10px;text-align:center;}
+#index #main p  {font-size: 11px;line-height: 16px;margin-bottom: 10px;}
+
+#index #main #loginform         {margin: 18px 0 0;color: #FFF;}
+#index #main #loginform p       {display:inline-block;font-size: 11px;font-weight: bold;}
+#index #main #loginform p.links  {color: #FFF;}
+#index #main #loginform p.links  a     {margin:.50em;font-weight: bold;color: #FFF;text-decoration: none;}
+#index #main #loginform p.links a:hover {text-decoration: underline;}
+#index #main #loginform label   {display: none;}
+#index #main #loginform input.text,
+#index #main #loginform input.password {background: #FFF;border: none;margin: 0 5px;width: 110px;height: 16px;font-size: 11px;color: #666;vertical-align: middle;}
+#index #main #loginform input.submit   {background: transparent url('../StaticFile.ashx?f=button-go.gif') 0 0 no-repeat;border: none;margin-right: 5px;width: 28px;height: 18px;font-size: 9px;font-weight: bold;text-transform: uppercase;color: #FFF;vertical-align: middle;}
+
+#footer         {margin: -80px 0 0;}
+
+/* Overwrite Browser OS support list rules */
+
+div.browser-os-support-list-cont {
+  padding-top:1em;
+  padding-bottom:1em;
+  background-color:#ffffff;
+  width:100%;  
+}
+

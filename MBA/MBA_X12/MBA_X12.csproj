@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{59151E11-B49C-4D1E-9D7A-3CA8B161E241}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MBA.X12</RootNamespace>
+    <AssemblyName>MBA_X12</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\Libraries\NPOI\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\Libraries\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\Libraries\NPOI\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>..\Libraries\NPOI\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>..\Libraries\NPOI\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>..\Libraries\NPOI\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="OopFactory.X12">
+      <HintPath>..\Libraries\OopFactoryX12\OopFactory.X12.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExitCodes.cs" />
+    <Compile Include="ParsingWorkflow\ParseX835_5010.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleCommandLineParser.cs" />
+    <Compile Include="TempFile.cs" />
+    <Compile Include="X835\ClaimLevelAdjustments.cs" />
+    <Compile Include="X835\HealthCareRemarkCodes.cs" />
+    <Compile Include="X835\TransactionSetDetail.cs" />
+    <Compile Include="X835_5010\ParseFile.cs" />
+    <Compile Include="Utility.cs" />
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="X835\IProviderLevelAdjustment.cs" />
+    <Compile Include="X835\ParsedFileTransactionSetSummary.cs" />
+    <Compile Include="X835\ProviderLevelAdjustments.cs" />
+    <Compile Include="X835\CreateReportFile.cs" />
+    <Compile Include="XDOC\ParseFile.cs" />
+    <Compile Include="XDOC\ProcessFileBase.cs" />
+    <Compile Include="XDOC\TransactionFileGroup.cs" />
+    <Compile Include="XDOC\X12FileParsingInformation.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

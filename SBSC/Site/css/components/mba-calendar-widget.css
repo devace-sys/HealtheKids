@@ -1,0 +1,251 @@
+﻿/* ==========================================================================
+   MBA Calendar Widget - Agenda View
+   ========================================================================== */
+
+.mba-agenda-header-wrap {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.mba-agenda-titlebar {
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 8px 0 12px 0;
+    color: #1f2937;
+}
+
+.mba-agenda-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* Add button */
+.mba-agenda-plus {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000000;
+    background: transparent;
+    border: 1px solid #c7d7fe;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .18);
+    transition: all .18s ease;
+}
+
+    .mba-agenda-plus:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, .22);
+        color: #0d6efd;
+    }
+
+    .mba-agenda-plus:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .18);
+    }
+
+/* Tabs as modern switch buttons */
+.mba-agenda-tabs {
+    display: inline-flex;
+    gap: 0;
+    padding: 3px;
+    background: #eef2f7;
+    border: 1px solid #d5dce8;
+    border-radius: 999px;
+}
+
+    .mba-agenda-tabs a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 90px;
+        padding: 6px 14px;
+        border: none;
+        border-radius: 999px;
+        background: transparent;
+        color: #495057;
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: none !important;
+        cursor: pointer;
+        margin: 0;
+        user-select: none;
+        transition: all .18s ease;
+    }
+
+        .mba-agenda-tabs a:hover {
+            background: rgba(255, 255, 255, .65);
+            color: #1f3f5b;
+        }
+
+        .mba-agenda-tabs a.active {
+            background: #ffffff;
+            color: #0d6efd;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, .16);
+            font-weight: 700;
+        }
+
+/* Agenda list scroll */
+.mba-agenda-view {
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 6px;
+}
+
+    /* Optional: cleaner scrollbar */
+    .mba-agenda-view::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .mba-agenda-view::-webkit-scrollbar-track {
+        background: #f1f3f5;
+        border-radius: 999px;
+    }
+
+    .mba-agenda-view::-webkit-scrollbar-thumb {
+        background: #c7ccd4;
+        border-radius: 999px;
+    }
+
+        .mba-agenda-view::-webkit-scrollbar-thumb:hover {
+            background: #aeb5bf;
+        }
+
+/* Appointment card */
+.mba-agenda-card {
+    border: 1px solid #dbe3ef;
+    border-radius: 14px;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    background: linear-gradient(180deg, #ffffff 0%, #f7f9fb 100%);
+    position: relative;
+    box-shadow: 0 2px 6px rgba(15, 23, 42, .08);
+    transition: all .18s ease;
+}
+
+    .mba-agenda-card:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 14px rgba(15, 23, 42, .14);
+        border-color: #b8c7dc;
+    }
+
+    .mba-agenda-card.mba-agenda-card-personal {
+        background: linear-gradient(180deg, #ffffff 0%, #f7f9fb 100%);
+    }
+
+.mba-agenda-title {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 48px 8px 0;
+    color: #1f2937;
+}
+
+.mba-agenda-time {
+    font-weight: 600;
+    margin: 10px 48px 8px 0;
+    color: #374151;
+}
+
+.mba-agenda-type {
+    margin: 12px 90px 2px 0;
+    font-style: italic;
+    font-size: 1.15em;
+    color: #4b5563;
+}
+
+/* Patient / Group right icon */
+.mba-agenda-righticon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+}
+
+    .mba-agenda-righticon i {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #eef4ff;
+        color: #2563eb;
+        border: 1px solid #c7d7fe;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .12);
+        cursor: pointer;
+        transition: all .18s ease;
+    }
+
+        .mba-agenda-righticon i:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, .18);
+        }
+
+    .mba-agenda-righticon .mba-act-group {
+        background: #f0fdfa;
+        color: #0f766e;
+        border-color: #99f6e4;
+    }
+
+    .mba-agenda-righticon .mba-act-user {
+        background: #eef4ff;
+        color: #2563eb;
+        border-color: #c7d7fe;
+    }
+
+/* Action buttons */
+.mba-agenda-actions {
+    position: absolute;
+    right: 14px;
+    bottom: 8px;
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+    .mba-agenda-actions i {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        cursor: pointer;
+        opacity: 1;
+        background: #ffffff;
+        border: 1px solid #d9dee8;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .12);
+        transition: all .18s ease;
+    }
+
+        .mba-agenda-actions i:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, .18);
+        }
+
+    .mba-agenda-actions .mba-act-edit {
+        color: #b7791f !important;
+        background: #fff8e5;
+        border-color: #f1d38a;
+    }
+
+    .mba-agenda-actions .mba-act-calendar {
+        color: #c53030 !important;
+        background: #fff5f5;
+        border-color: #feb2b2;
+    }

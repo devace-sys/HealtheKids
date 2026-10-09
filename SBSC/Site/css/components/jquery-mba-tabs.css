@@ -1,0 +1,124 @@
+/* Common values */
+
+@keyframes mba-tabs-slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes mba-tabs-fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+div.mba-tabs-container {
+    width: 100%;
+    margin: 0 auto;
+    /*overflow: hidden;*/
+    animation: mba-tabs-slideIn 0.5s ease;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px) saturate(200%) brightness(1.15);
+    -webkit-backdrop-filter: blur(12px) saturate(100%) brightness(0.2);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2), inset 0 2px 4px 0 rgba(255, 255, 255, 0.6), inset 0 -2px 4px 0 rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+    div.mba-tabs-container::after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        pointer-events: none;
+        z-index: 2;
+    }
+
+    div.mba-tabs-container:hover {
+        background: linear-gradient( 135deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0.35) 100% );
+        backdrop-filter: blur(16px) saturate(200%) brightness(1.15);
+        -webkit-backdrop-filter: blur(16px) saturate(200%) brightness(1.15);        
+        box-shadow: 0 20px 48px 0 rgba(31, 38, 135, 0.25), inset 0 2px 4px 0 rgba(255, 255, 255, 0.7), inset 0 -2px 4px 0 rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(255, 255, 255, 0.2);
+    }
+
+ul.mba-tabs-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .50em;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+    ul.mba-tabs-links > li {
+        margin: 0;
+        padding: 0;
+    }
+
+        ul.mba-tabs-links > li > a {
+            display: block;
+            padding: 1em;
+            text-decoration: none;
+            color: #000;
+            background: #f2f2f2;
+            border: 1px solid #ddd;
+            border-bottom: none;
+            border-radius: 10px 10px 0 0;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            line-height: 1em;
+            min-height: 3em;
+            height: 3em;
+            max-height: 5em;
+            font-size: 1em;
+        }
+
+        ul.mba-tabs-links > li:not(.mba-tab-active) > a:hover {
+            background: #2196F3;
+            color: #fff;
+            opacity: 0.7;
+        }
+
+        ul.mba-tabs-links > li.mba-tab-active > a {
+            background: #2196F3;
+            color: #fff;
+        }
+
+div.mba-tab {
+    display: none;
+    animation: mba-tabs-fadeIn 0.5s ease;
+    background: transparent;
+    margin: 0;
+    border: none;
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 0;
+    padding-top: 1em;
+    padding-bottom: .5em;
+}
+
+div.mba-tab-active {
+    display: block;
+    min-height: 60%;
+    height: 60%;
+}

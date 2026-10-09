@@ -1,0 +1,1 @@
+<%@ WebHandler Language="C#" Class="Spedmon.PractitionerPatientScheduledServicesViw" CodeBehind="practitioner_patient_scheduled_services.ashx.cs"%>

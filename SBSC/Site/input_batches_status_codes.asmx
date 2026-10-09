@@ -1,0 +1,1 @@
+<%@ WebService Language="C#" CodeBehind="input_batches_status_codes.asmx.cs" Class="Spedmon.InputBatchesStatusCodesSvc" %>

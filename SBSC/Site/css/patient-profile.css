@@ -1,0 +1,1066 @@
+/* Container */
+
+section.mba-profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    width:100%;
+    min-width:100%;
+    margin:0;
+    height: auto;
+    padding:0;
+    gap: .5rem;
+    flex-wrap: wrap;
+}
+
+/* Header itself */
+
+header.mba-profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(135deg, #f0f7ff 0%, #e8f3ff 100%);
+    border-radius: 30px;
+    padding: 0.3rem 0.5rem 0.2rem 0.5rem;
+    color: #1e293b;
+    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.4), 0 16px 64px rgba(240, 247, 255, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.9), inset 0 -1px 2px rgba(240, 247, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(40px) saturate(200%);
+    -webkit-backdrop-filter: blur(40px) saturate(200%);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+header.mba-profile-header {
+    transition: background 0.45s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.45s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.45s cubic-bezier(0.4, 0, 0.2, 1), transform 0.30s ease;
+}				   
+/* Header rows */
+
+div.mba-profile-header-row-0 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+div.mba-profile-header-row-0-controls {
+    display:block;
+    width:fit-content;
+}
+
+div.mba-profile-header-row-0-person {
+  display:block;
+  width:fit-content;
+}
+
+div.mba-profile-header-row-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1rem;
+    /*flex-wrap: wrap;*/
+}
+
+div.mba-profile-header-row-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Content for header row 0 */
+
+/* Min and max Controls */
+
+  button.mba-profile-button-shrink
+, button.mba-profile-button-restore {
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    width: fit-content;
+    background-color: transparent;
+    border: none;
+}
+
+  i.mba-profile-button-icon-shrink
+, i.mba-profile-button-icon-restore {
+    color: #2563eb;
+    font-size: 1rem;
+}
+
+h1.mba-profile-header-person-name {
+    display: block;
+    width: auto;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    color: #1e293b;
+}
+
+/* Content for header row 1 - Image and Person Containers */
+
+div.mba-profile-header-person-image-cont {
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 2px solid #e5e7eb;
+}
+
+
+    div.mba-profile-header-person-image-cont:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+        border-color: #3b82f6;
+    }
+
+
+div.mba-profile-header-person {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+    overflow: hidden;
+    border: none;
+}
+
+/* Content for header row 1 - Image container */
+
+img.mba-profile-header-person-image {
+    display: block;
+    border: none;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    object-position: center;
+    background: linear-gradient(135deg, #e8f3ff 0%, #d0e7ff 50%, #b8dcff 100%);
+}
+
+/* Content for header row 1 - header row person container */
+
+h2.mba-profile-header-person-age {
+    display: block;
+    width:auto;
+    text-align:right;
+    margin: 0;
+    padding:0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+span.mba-profile-header-person-age-label {
+    color: #1e293b;
+    font-weight: 500;
+    font-size: 1rem;
+    padding:0;
+    margin:0;
+}
+
+span.mba-profile-header-person-age-value {
+    color: #1e293b;
+    font-weight: 600;
+    font-size: 1rem;
+    padding:0;
+    margin:0;
+    margin-left:.5em;
+}
+
+h2.mba-profile-header-person-email-phone {
+    display: block;
+    width: auto;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+a.mba-profile-header-person-email {
+    display: block;
+    text-decoration:none;    
+    text-align: right;
+    margin: 0;    
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 500;    
+}
+
+a.mba-profile-header-person-phone {
+    display: block;
+    text-decoration: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Content for header row 2  */
+
+div.mba-profile-ctrls {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: flex-end;
+    gap: 1rem;
+    flex-wrap: wrap;    
+}
+
+.mba-profile-ctrl-hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);    
+}
+
+div.mba-profile-ctrl-notice-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 1rem;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border-radius: 25px;
+    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.6), 0 16px 64px rgba(248, 250, 252, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.9), inset 0 -2px 4px rgba(248, 250, 252, 0.3);
+    color: #1e40af;
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px) saturate(200%);
+    -webkit-backdrop-filter: blur(20px) saturate(200%);
+}
+
+span.mba-profile-ctrl-notice-message {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1e40af;
+}
+
+i.mba-profile-ctrl-notice-icon {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    color: #1e293b;
+}
+.mba-profile-ctrl-button {
+    padding: 8px 16px;
+    top:10px;
+}
+button.mba-profile-ctrl-button {
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 12px;
+    padding: 8px 20px;
+    height: auto;
+    background: linear-gradient(135deg,#1e293b 0%, #2563eb 50%, #1e40af 100%);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 32px rgba(59, 130, 246, 0.3), 0 16px 64px rgba(59, 130, 246, 0.2), inset 0 2px 4px rgba(255, 255, 255, 0.3), inset 0 -2px 4px rgba(59, 130, 246, 0.3);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+span.mba-profile-ctrl-button-label {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    font-size: 1rem;
+}
+
+i.mba-profile-ctrl-button-icon {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;       
+    transition: all 0.3s ease;
+}
+
+div.mba-profile-ctrl-notice-required-field-notice {
+    display:block;
+    width:100%;
+    text-align:center;
+    background-color:transparent;
+    border:none;
+    padding:0;
+    margin:0;
+    font-size:.80rem;
+    color:red; 
+    width:100%;
+}
+
+/* Form */
+
+form.mba-profile-form {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    align-content:center;
+    gap: .25rem;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #f0f7ff 0%, #e8f3ff 100%);
+    border-radius: 30px;
+    padding: .25rem;
+    box-shadow: 0 12px 48px rgba(255, 255, 255, 0.5), 0 24px 96px rgba(240, 247, 255, 0.3), inset 1px 1px 2px rgba(255, 255, 255, 0.8), inset -1px -1px 2px rgba(240, 247, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(40px) saturate(200%);
+    -webkit-backdrop-filter: blur(40px) saturate(200%);    
+}
+
+/* Field Set - (Details/Summary) */
+
+details.mba-profile-form-field-set {
+    width:100%;
+    display:block;
+    margin:0;
+    margin-bottom: .25rem;
+    padding:0;
+    background-color:#ffffff;
+    border-radius: 30px;    
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+summary.mba-profile-form-field-set-legend {
+    text-align: center;
+    font-size: 0.8rem;
+    margin:0;
+    padding:0;
+    background-color: #ffffff;
+    color: #1e293b;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    width: 100%;
+}
+
+/* Field set content */
+
+div.mba-profile-form-field-set-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .10rem;
+    width: 100%;
+    padding: 0;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+}
+
+/* Field set content line */
+
+div.mba-profile-form-field-set-content-line {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:flex-start;
+    justify-content:flex-start;
+    align-content:flex-start;
+    gap: .5rem;    
+    margin: 0 auto;
+    width: 98%;
+    background: #ffffff;
+}
+
+details.mba-profile-form-field-set[open] > summary.mba-profile-form-field-set-legend {
+    margin-bottom: .10rem;
+}
+
+summary.mba-profile-form-field-set-legend:hover {
+    background-color: #2563eb;
+    color: #fff;
+}
+
+/* Label and field */
+
+div.mba-profile-form-field-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 45%;
+    min-width: 8rem;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+div.mba-profile-form-field-container-hidden {
+    overflow: hidden;
+    opacity: 0;    
+    max-height: 0;
+}
+
+label.mba-profile-form-field-label {
+    display: block;
+    font-size: .8rem;
+    font-weight: 900;
+    margin:0;
+    padding:0;   
+    width:auto;
+    border:none;
+    color: #1e293b;
+    text-align:left;
+}
+
+.mba-profile-form-field {
+    display: block;
+    text-align: left;
+    font-size: .93rem;
+    width:100%;
+    margin: 0;
+    padding: .25rem;
+    border: 1px solid #1e293b;
+    border-radius: 5px;
+    background: #ffffff;
+    color: #1e293b;
+}
+input.mba-profile-form-field::placeholder, textarea.mba-profile-form-field::placeholder {
+  font-size: .80rem;
+  font-style:italic;
+}
+.mba-profile-form-field:focus {
+  outline: none;
+  background-color:lightgoldenrodyellow;       
+  border: 1px solid #93c5fd;
+}
+
+/* Field sizing */
+/*
+  input[name="lname"]
+, input[name="fname"]
+, input[name="mname"]
+, input[name="p_nickname"]
+, input[name="csis"]
+, input[name="studentid"]
+, input[name="ssn"] {
+    width: 8rem;
+}
+
+input[name="grade"] {
+    width: 4em;
+}
+
+input[name="teacherorcounselorname"] {
+    width: 12rem;
+}
+
+input[data-mba-patient-profile-autocomplete-for-save-as-name="siteid"] {
+    width:16rem;
+}
+*/
+/*
+  select[name="sex"] {
+, select[name="parentConsentMCAL"]
+, select[name="ferpaconsent"]
+, select[name="treatmentconsent"]
+, select[name="hasplan"]    
+, select[name="intransitionalhousingstatus"]
+{
+    width: 10em;
+}
+*/
+
+label[data-mba-patient-profile-required]::after {
+    content: "*";
+    color:red;
+    font-size:inherit;
+    background-color:inherit;
+    margin-left: .25rem; /* Add some spacing */
+}
+
+label.mba-profile-form-field-label[for$="-lname"]::before,
+label.mba-profile-form-field-label[for$="-fname"]::before,
+label.mba-profile-form-field-label[for$="-mname"]::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f007 ";
+    margin-right: 0.2rem;
+    color: #1e293b;
+}
+label.mba-profile-form-field-label[for$="-dob"]::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f073 ";
+    margin-right: 0.2rem;
+    color: #1e293b;
+}
+
+label.mba-profile-form-field-label[for$="-sex"]::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f228 ";
+    margin-right: 0.2rem;
+    color: #1e293b;
+}
+
+label.mba-profile-form-field-label[for$="-siteid"]::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f549 ";
+    margin-right: 0.2rem;
+    color: #1e293b;
+}
+
+label.mba-profile-form-field-label[for$="-grade"]::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f19d ";
+    margin-right: 0.2rem;
+    color: #1e293b;
+}
+
+label.mba-profile-form-field-label[for$="-csis"]::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f2c2 ";
+    margin-right: 0.2rem;
+    color: #1e293b;
+}
+
+label.mba-profile-form-field-label[for$="-studentid"]::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f2c2 ";
+    margin-right: 0.2rem;
+    color: #1e293b;
+}
+
+label.mba-profile-form-field-label[for$="-p_nickname"]::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f02b ";
+    margin-right: 0.2rem;
+    color: #1e293b;
+}
+
+label.mba-profile-form-field-label[for$="-siteName"]::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f549 ";
+    margin-right: 0.2rem;
+    color: #1e293b;
+}
+
+label.mba-profile-form-field-label[for$="-teacherorcounselorname"]::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f51c ";
+    margin-right: 0.2rem;
+    color: #1e293b;    
+}
+
+.avatar-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+}
+
+
+ul.mba-profile-form-field-auto-complete-menu {
+    font-size: .90rem;
+    width: 25vw;
+    height:auto;
+    background-color: lightgoldenrodyellow;
+    z-index:20 !important;  /* Workaround to prevents select control button from showing through for adjacent menus */
+}
+
+li.mba-profile-form-field-auto-complete-menu-item {
+    font-size: .90rem;
+    background-color: lightgoldenrodyellow;
+}
+
+a.mba-profile-form-field-auto-complete-menu-item {
+    font-size: .90rem;
+    background-color: lightgoldenrodyellow;
+}
+
+span.mba-profile-form-field-auto-complete-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+button.mba-profile-form-field-auto-complete-button {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1e293b;
+}
+
+button.mba-profile-form-field-auto-complete-button:hover {
+  color: #1e293b;
+}
+
+input[data-mba-patient-profile-autocomplete="supportfield"] {
+    padding-right: 30px !important;
+}
+
+i.mba-profile-form-field-auto-complete-spinner {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+    color: #1e293b;
+}
+
+button.mba-profile-form-field-files-manage-button {
+    display: inline-block;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    color: #1e293b;
+    font-size: .8rem;
+    width: fit-content;
+}
+
+i.mba-profile-form-field-files-manage-icon {
+    display:block;
+    border:none;
+    margin:0;
+    padding:0;
+    font-size:.8rem;
+    color: #1e293b;
+}
+
+button.mba-profile-form-field-files-manage-hidden {
+   display:none;
+}
+
+/* Shrink and restore - Rules start */
+div.mba-profile-header-row-1.mba-profile-shrink-size, div.mba-profile-header-row-2.mba-profile-shrink-size, div.mba-profile-ctrl-notice-required-field-notice.mba-profile-shrink-size, form.mba-profile-form.mba-profile-shrink-size {
+    width: 0 !important;
+    height: 0 !important;
+    transform: scale(0%) !important;
+    transition: all .5s ease-in-out !important;
+}
+
+i.mba-profile-header-person-image {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    color: #6b7280;
+    background: linear-gradient(135deg, #e8f3ff 0%, #d0e7ff 50%, #b8dcff 100%);
+    border-radius: 50%;
+}
+
+
+/*ssid container*/
+.mba-profile-ssid-search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    background: linear-gradient(135deg, #1a365d, #2c5282);
+    border-radius: 12px;
+    border: 1px solid #2d5aa0;
+    margin-bottom: 3px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+    .mba-profile-ssid-search-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #2563eb, #1e40af, #1e3a8a);
+        transition: left 0.8s ease-in-out;
+        z-index: 1;
+    }
+
+    .mba-profile-ssid-search-container.scanning::before {
+        left: 0;
+    }
+
+    .mba-profile-ssid-search-container::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, #ff9500, #ff7300, #ea580c);
+        z-index: 3;
+    }
+
+    .mba-profile-ssid-search-container > * {
+        position: relative;
+        z-index: 2;
+    }
+
+    .mba-profile-ssid-search-container.scanning > * {
+        opacity: 0.9;
+    }
+
+.mba-profile-ssid-search-label {
+    font-weight: 600;
+    color: white;
+    font-size: 12px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+    .mba-profile-ssid-search-label .network-name {
+        color: #ff9500;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        text-shadow: 0 0 10px rgba(255, 149, 0, 0.3);
+    }
+
+.mba-profile-ssid-search-input {
+    padding: 7px 12px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 24px;
+    font-size: 13px;
+    width: 140px;
+    transition: all 0.3s ease;
+    outline: none;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+    .mba-profile-ssid-search-input:focus {
+        border-color: #ff9500;
+        box-shadow: 0 0 0 3px rgba(255, 149, 0, 0.15);
+        background: white;
+    }
+
+.mba-profile-ssid-search-button {
+    padding: 7px 14px;
+    background: linear-gradient(135deg, #ff9500, #ff7300);
+    border: none;
+    border-radius: 28px;
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 16px rgba(255, 149, 0, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.3);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+    .mba-profile-ssid-search-button:hover {
+        background: linear-gradient(135deg, #ff7300, #e65100);
+        transform: translateY(-1px);
+        box-shadow: 0 6px 20px rgba(255, 149, 0, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.3);
+    }
+
+    .mba-profile-ssid-search-button.scanning {
+        background: linear-gradient(135deg, #ff9500, #ff7300);
+        animation: pulse-orange 1.5s infinite;
+    }
+
+@keyframes pulse-orange {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 4px 16px rgba(255, 149, 0, 0.3);
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(255, 149, 0, 0.5);
+    }
+}
+
+header.mba-profile-header.mba-profile-header-minor-consent-active {
+    background: linear-gradient(135deg, #fff8ee 0%, #fde8c8 100%) !important;
+    border: none !important;
+    box-shadow: 0 8px 24px rgba(245, 166, 35, 0.12), 0 14px 34px rgba(245, 166, 35, 0.08), inset 0 1px 1px rgba(255, 255, 255, 0.45) !important;
+}
+
+header.mba-profile-header.mba-profile-header-minor-consent-active {
+    transform: translateY(-1px);
+}
+
+.mba-profile-minor-consent-notice {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin: 4px 0 0 0;
+    padding: 10px 18px 4px 18px;
+    box-sizing: border-box;
+    color: #1f1f1f;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.32s ease, transform 0.32s ease;
+    animation: mbaMinorConsentReveal 0.38s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.mba-profile-minor-consent-notice-hidden {
+    display: none;
+}
+
+.mba-profile-minor-consent-notice-icon {
+    color: #e53935;
+    font-size: 24px;
+    animation: mbaMinorConsentPulse 1.8s ease-in-out infinite;
+    transform-origin: center;
+}
+
+.mba-profile-minor-consent-notice-text {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+}
+
+@keyframes mbaMinorConsentReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes mbaMinorConsentPulse {
+    0%, 100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 0 rgba(229, 57, 53, 0));
+    }
+
+    50% {
+        transform: scale(1.08);
+        filter: drop-shadow(0 0 6px rgba(229, 57, 53, 0.25));
+    }
+}
+button.mba-profile-portal-invite-button.mba-profile-portal-status-red {
+    background: linear-gradient(135deg, #fecaca 0%, #f87171 100%) !important;
+    border: 1.5px solid #f87171 !important;
+    color: #ffffff !important;
+}
+
+button.mba-profile-portal-invite-button.mba-profile-portal-status-green {
+    background: linear-gradient(135deg, #6ee7b7 0%, #34d399 100%) !important;
+    border: 1.5px solid #34d399 !important;
+    color: #ffffff !important;
+}
+
+button.mba-profile-portal-invite-button.mba-profile-portal-status-yellow {
+    background: linear-gradient(135deg, #fde68a 0%, #fbbf24 100%) !important;
+    border: 1.5px solid #fbbf24 !important;
+    color: #ffffff !important;
+}
+
+    button.mba-profile-portal-invite-button.mba-profile-portal-status-red i,
+    button.mba-profile-portal-invite-button.mba-profile-portal-status-green i,
+    button.mba-profile-portal-invite-button.mba-profile-portal-status-yellow i {
+        color: #ffffff !important;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+.mba-profile-email-required-missing {
+    border: 2px solid #dc2626 !important;
+    box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.18);
+    animation: mbaEmailPulse 1s ease-in-out infinite;
+}
+
+@keyframes mbaEmailPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.30);
+    }
+
+    50% {
+        box-shadow: 0 0 0 6px rgba(220, 38, 38, 0.10);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.30);
+    }
+}
+
+#tab-communications .pp-msg-widget-list {
+    height: 190px !important;
+    max-height: 210px !important;
+    overflow-y: auto !important;
+}
+
+#tab-communications.patient-communications-tab {
+    width: 100%;
+    padding: 12px 0 24px;
+}
+
+#datamanagerowscommunications.patient-communications-container {
+    width: 100%;
+} 
+
+#tab-communications .patient-notifications-fieldset {
+    width: 100%;
+    margin: 0;
+    padding: 18px 20px 16px 20px;
+    border: 1px solid #d7e3ef;
+    border-radius: 0;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    box-shadow: none;
+}
+
+#tab-communications .patient-notifications-legend {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    width: auto;
+    max-width: 100%;
+    padding: 0 12px;
+    margin: 0;
+    background: #ffffff;
+    color: #1f566f;
+    border: none;
+    font-size: inherit;
+}
+
+#tab-communications .patient-notifications-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #f4f8fd 0%, #eef4ff 100%);
+    border: 1px solid #d7e3ef;
+    color: #5b82d4;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    flex-shrink: 0;
+}
+
+#tab-communications .patient-notifications-title-wrap {
+    display: inline-flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+#tab-communications .patient-notifications-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f566f;
+    line-height: 1.2;
+}
+
+#tab-communications .patient-notifications-subtitle {
+    font-size: 13px;
+    font-weight: 400;
+    color: #8fa8bc;
+    margin-top: 2px;
+    line-height: 1.2;
+}
+
+#tab-communications .patient-notifications-fieldset-body {
+    width: 100%;
+    padding-top: 8px;
+}
+
+#tab-communications .mba-portal-messages-widget {
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+#tab-communications .pp-widget-root {
+    width: 100%;
+}
+
+#tab-communications .pp-msg-widget-list,
+#tab-communications .mba-messages-widget-messages-row {
+    max-height: calc(100vh - 330px) !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+.communications-tab-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 6px;
+    margin-left: 6px;
+    background: #dc3545;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1;
+    border-radius: 999px;
+    vertical-align: middle;
+}

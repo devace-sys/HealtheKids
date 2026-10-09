@@ -1,0 +1,89 @@
+[ 
+            {
+                  id: 'CDE-800'
+                , fileClass: '800'
+                , fileSubClass: ''
+                , name: 'CdeSwdPlanComplianceAuditPatients'
+                , label: 'CDE SWD Plan Compliance Audit Patients'
+                , description: ''
+                , headerRowNum:1
+                , fields: [
+				  {
+                          name: 'lastName'
+                        , columnRequired: true
+                        , dataRequired: false
+						, dataType: 'noun'
+                        , label: 'Student Last Name'
+                        , description: 'Last name only please'
+                        , commonColumnNames: [
+                              'Last Name'                            
+                            , 'LastName'
+                            , 'Last Name'
+                            , 'Last_Name'
+                            , 'Last Name 20'
+                            , 'Last'
+                            , 'Student Last Name'
+                            , 'Student_Last_Name'
+                            , 'lname'
+                            , 'LAST_NAME'
+                            , 'STUDLNAME']
+                    }
+                    , {
+                        name: 'firstName'
+                        , columnRequired: true
+                        , dataRequired: false
+                        , dataType: 'noun'
+						, label: 'Student First Name'
+                        , description: 'First name only please'
+                        , commonColumnNames: [
+                              'firstName'
+                            , 'FirstName'
+                            , 'First Name'
+                            , 'First_Name'
+                            , 'First Name 15'
+                            , 'First'
+                            , 'Student First Name'
+                            , 'Student_First_Name'
+                            , 'fname'
+                            , 'FIRST_NAME'
+                            , 'STUDFNAME']
+                    }
+                    ,{
+                        name: 'ssid'
+                        , columnRequired: true
+                        , dataRequired: false
+						, dataType: 'ssid'
+                        , label: 'CSIS/SSID #'
+                        , description: 'Statewide Student Identifier (SSID)'
+                        , commonColumnNames: [
+                              'ssid'
+                            , 'csis'
+                            , 'CSIS / SSID #'
+                            , 'CSIS / SSID#'
+							, 'CSIS / SSID'
+                            , 'SSID'
+                            , 'SSID 10'
+                            , 'CSIS'
+                            , 'State Student ID'                            
+                            , 'State_StudentNumber'
+                            , 'State Student Number'
+                            , 'State ID'
+                            , 'stateID'
+                            , 'Student SSID'
+                            , 'SSID #'
+                            , 'CSIS #'
+                            , 'CSIS/SSID#'
+                            , 'SSID#'
+                            , 'CSIS#'
+                            , 'SSID/CSIS#'
+                            , 'SSID / CSIS #'
+                            , 'CSIS/SSID #'
+                            , 'State SID#'
+                            , 'SSID Number'                            
+							, 'SSID Num'   
+                        ]
+                    }                    
+ 
+                ]
+            }
+]

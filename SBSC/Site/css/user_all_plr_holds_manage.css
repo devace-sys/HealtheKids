@@ -1,0 +1,28 @@
+button[data-mba-rest-view-ctrl-def-name="markRow"] {
+  border: none !important;
+}
+
+button[data-mba-rest-view-ctrl-def-name="markRow"] > i.fa-thumbs-down {
+   color: #c34141 !important;
+}
+
+button[data-mba-rest-view-ctrl-def-name="markRow"] > i.fa-thumbs-up {
+   color: #338e33 !important;
+}
+
+button[data-mba-rest-view-ctrl-def-name="markRow"] > i.mba-rest-view.mba-rest-view-ctrl-icon.mba-rest-view-mark-row-icon.mba-rest-view-unselected {
+  opacity:1 !important;
+}
+
+button[data-mba-rest-view-ctrl-def-name="markRow"] > i.mba-rest-view.mba-rest-view-ctrl-icon.mba-rest-view-mark-row-icon.mba-rest-view-selected {
+  opacity: 1 !important;    
+}
+
+button[data-mba-rest-view-ctrl-def-name="markRow"] > i.mba-rest-view.mba-rest-view-ctrl-icon.mba-rest-view-mark-row-icon.mba-rest-view-selected::after {
+  font:var(--fa-font-regular);
+  content:'\f00c';
+  font-size:.50em;
+  margin-left:.10em;
+  color:#000;
+  background-color:yellow;
+}

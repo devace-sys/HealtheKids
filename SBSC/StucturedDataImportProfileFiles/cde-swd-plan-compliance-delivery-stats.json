@@ -1,0 +1,257 @@
+[ 
+            {
+                  id: 'CDE-801'
+                , fileClass: '801'
+                , fileSubClass: ''
+                , name: 'CdeSwdPlanComplianceAuditUserProvidedDeliveryComplianceStats'
+                , label: 'CDE SWD Plan Compliance Audit User Provided Delivery Compliance Stats'
+                , description: ''
+                , headerRowNum:1
+                , fields: [
+				  {
+                          name: 'lastName'
+                        , columnRequired: true
+                        , dataRequired: false
+						, dataType: 'noun'
+                        , label: 'Student Last Name'
+                        , description: 'Last name only please'
+                        , commonColumnNames: [
+                              'Last Name'                            
+                            , 'LastName'
+                            , 'Last Name'
+                            , 'Last_Name'
+                            , 'Last Name 20'
+                            , 'Last'
+                            , 'Student Last Name'
+                            , 'Student_Last_Name'
+                            , 'lname'
+                            , 'LAST_NAME'
+                            , 'STUDLNAME']
+                    }
+                    , {
+                        name: 'firstName'
+                        , columnRequired: true
+                        , dataRequired: false
+                        , dataType: 'noun'
+						, label: 'Student First Name'
+                        , description: 'First name only please'
+                        , commonColumnNames: [
+                              'firstName'
+                            , 'FirstName'
+                            , 'First Name'
+                            , 'First_Name'
+                            , 'First Name 15'
+                            , 'First'
+                            , 'Student First Name'
+                            , 'Student_First_Name'
+                            , 'fname'
+                            , 'FIRST_NAME'
+                            , 'STUDFNAME']
+                    },
+                    
+					{
+                        name: 'ssid'
+                        , columnRequired: true
+                        , dataRequired: false
+			            , dataType: 'ssid'
+                        , label: 'CSIS/SSID #'
+                        , description: 'Statewide Student Identifier (SSID)'
+                        , commonColumnNames: [
+                              'ssid'
+                            , 'csis'
+                            , 'CSIS / SSID #'
+                            , 'CSIS / SSID#'
+							, 'CSIS / SSID'
+                            , 'SSID'
+                            , 'SSID 10'
+                            , 'CSIS'
+                            , 'State Student ID'                            
+                            , 'State_StudentNumber'
+                            , 'State Student Number'
+                            , 'State ID'
+                            , 'stateID'
+                            , 'Student SSID'
+                            , 'SSID #'
+                            , 'CSIS #'
+                            , 'CSIS/SSID#'
+                            , 'SSID#'
+                            , 'CSIS#'
+                            , 'SSID/CSIS#'
+                            , 'SSID / CSIS #'
+                            , 'CSIS/SSID #'
+                            , 'State SID#'
+                            , 'SSID Number'                            
+							, 'SSID Num'   
+                        ]
+                    },
+	                
+					{
+                        name: 'spEdServiceCode'
+                        , columnRequired: true
+                        , dataRequired: true
+                        , dataType: 'string'
+						, label: 'Service Code or Name'
+                        , description: ''
+                        , commonColumnNames: [
+                              'SpEdSvcCode'
+							, 'Service'
+							, 'code'
+                            , 'svcCode'							
+							, 'Service Code'
+							, 'svcCde'
+							, 'service'
+							, 'Service Name'
+                            , 'svcName'
+							, 'serviceCode'
+							]
+                    },
+				
+                    {
+                          name: 'planStartDate'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'date'
+						, label: 'Plan Start Date'
+                        , description: ''
+                        , commonColumnNames: [
+							 'startDate'
+                            ,'Start Date'
+							,'svcStartDate'
+                            ,'Service Begin'
+                            ,'Service Start'							
+                            ,'Service Begins'
+                            ,'Service Starts'
+                            ,'Plan Start Date'							
+						]
+                    },                   
+				   
+				   	{
+                          name: 'planEndDate'
+                        , columnRequired: false
+                        , dataRequired: false
+                        , dataType: 'date'
+						, label: 'Plan End Date'
+                        , description: ''
+                        , commonColumnNames: [
+							 'endDate'
+                            ,'End Date'  
+                            ,'Service End'
+                            ,'Service Ends'
+                            ,'svcEndDate'	
+                            ,'Plan End Date'							
+						]
+                    },
+ 				    
+					{
+                        name: 'spEdFreqCode'
+                        , columnRequired: true
+                        , dataRequired: true
+                        , dataType: 'string'
+						, label: 'Service Frequency Code or Name'
+                        , description: ''
+                        , commonColumnNames: [
+							  
+							 'frequency'
+                            ,'serviceFrequency'
+							,'svcFrequency'
+							,'service frequency'
+						  ]
+                    }, 
+		           
+				   {
+                        name: 'minsPerFreq'
+                        , columnRequired: true
+                        , dataRequired: true
+                        , dataType: 'integer'
+						, label: 'Service Duration'
+                        , description: ''
+                        , commonColumnNames: [
+							  'duration'                       
+							, 'svcDuration'
+							,'Service Duration'
+						    ,'serviceDuration'
+                            ,'Total Minutes / Frequency'							
+							,'minutes'
+							,'totalMinutes'
+							,'minutes per frequency'
+							,'mins per freq'
+							,'minutes/frequency'
+						]
+                    },						   
+                    
+					{
+                          name: 'forImportMinutesExpected'
+                        , columnRequired: false
+                        , dataRequired: true
+			            , dataType: 'integer'
+                        , label: 'Minutes Expected (for manual Import)'
+                        , description: 'Number of Expected Minutes to Use For CDE Audit.  No negative numbers.'
+                        , commonColumnNames: [
+                                'Minutes Expected (for manual Import)'
+							  , 'For Import Minutes Expected'
+							  , 'minutesExpected'
+							  , 'Minutes Expected'
+							  , 'Prescribed Minutes'
+							  , 'total expected'
+							  , 'mins expected'
+                        ]
+                    },
+
+					{
+                          name: 'forImportMinutesSatisfied'
+                        , columnRequired: false
+                        , dataRequired: true
+			            , dataType: 'integer'
+                        , label: 'Minutes Satisfied (for manual Import)'
+                        , description: 'Number of Expected Minutes Satisfied to Use For CDE Audit.  No negative numbers.'
+                        , commonColumnNames: [
+                                'Minutes Satisfied (for manual Import)'
+							  , 'For Import Minutes Satisfied'
+							  , 'Delivered Minutes'
+							  , 'minutesSatisfied'
+							  , 'Minutes Satisfied'
+							  , 'total delivered'
+							  , 'minutes delivered'
+							  , 'mins delivered'
+                        ]
+                    },
+
+                    {
+                          name: 'forImportPercentSatisfied'
+                        , columnRequired: false
+                        , dataRequired: false
+			            , dataType: 'integer'
+                        , label: 'Percent Satisfied (for manual Import)'
+                        , description: 'Percentage of Minutes Expected Satisfied to Use For CDE Audit.  Numbers from 0 to 100 only.'
+                        , commonColumnNames: [
+                              'Percent Satisfied (for manual Import)' 
+							 , 'For Import Percent Satisfied'
+							 , 'percent'
+							 , 'percentComplete'
+							 , 'Percent Complete'
+							 , 'percent satisfied'
+							 , 'percent delivered'
+                        ]
+                    },
+
+					{
+                        name: 'forImportNotes'
+                        , columnRequired: true
+                        , dataRequired: true
+                        , dataType: 'string'
+						, label: 'Notes (for manual Import)'
+                        , description: 'Include any information that may be needed for an audit'
+                        , commonColumnNames: [
+                                'Notes (for manual Import)'
+							  , 'For Import Notes'
+							  , 'userProvidedDeliveryComplianceNotes'
+							  , 'import notes'
+							  , 'notes'
+							]
+                    },
+					
+					
+                   
+                ]
+            }
+]

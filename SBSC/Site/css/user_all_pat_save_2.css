@@ -1,0 +1,87 @@
+/* Custom rules for this page*/
+
+
+div.mba-tabs-container {
+    font-size: .85em;
+}
+
+div.mba-rest-view mba-rest-view-container {
+    font-size:.85em;
+}
+
+div.mba-rest-view-container.rest-view-display-minimal section.mba-rest-view-table-container {
+    border: none;
+}
+
+div.mba-rest-view-container.rest-view-display-minimal {
+    border: none;
+    border-radius: inherit;
+    box-shadow: inherit;
+}
+
+div.rest-view-display-minimal th.mba-rest-view, div.rest-view-display-minimal td.mba-rest-view {
+    background-color: #fff !important;
+    padding: 0 !important;
+}
+
+div.rest-view-display-minimal span.mba-rest-view-dsp-current-status {
+    display: none;
+}
+
+.portal-invite-cell {
+   margin-top:1px;
+}
+
+.portal-invite-btn {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.portal-invite-red {
+    color: #d9534f;
+}
+
+.portal-invite-yellow {
+    color: #f0ad4e;
+}
+
+.portal-invite-green {
+    color: #5cb85c;
+}
+
+.portal-invite-disabled {
+    color: #bfbfbf;
+}
+
+.portal-invite-btn-disabled,
+.portal-invite-btn:disabled {
+    cursor: default;
+    opacity: 0.65;
+    pointer-events: none;
+}
+
+.patient-msg-btn {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 2px 0;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+    .patient-msg-btn:focus,
+    .patient-msg-btn:active,
+    .patient-msg-btn:focus:active {
+        outline: none !important;
+        box-shadow: 0 0 0 2px transparent;
+    }

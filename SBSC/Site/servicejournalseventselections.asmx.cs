@@ -1,0 +1,152 @@
+using System;
+using System.Collections.Generic;
+using System.Web;
+using System.Web.Services;
+using System.Web.Script.Services;
+using System.Web.Services.Protocols;
+using System.Web.Script.Serialization;
+using System.ComponentModel;
+using System.Data;
+using System.Data.Sql;
+using System.Data.SqlClient;
+using MBA;
+
+namespace Spedmon
+{
+  /***************************************************************************
+   * ServiceJournalsEventSelectionsSvc */
+  /*
+   * Web services end point for Publication methods.
+   *
+   * Unless indicated, each of these methods require that the caller is 
+   * logged in.
+   * 
+   * Each end point method provides a wrapper for a coresponding framework
+   * method that is not accessible from the outside.
+   * 
+   * These wrappers handle access control and parameter replacement.
+   * 
+   * The method is restricted to calls for given user groups
+   * 
+   * Parameter replacement is used to enforce additional access control within
+   * the user group but this is limited.
+   *
+   * The final line of defense for access control are the database udfs or 
+   * sprocs that return or save data
+   ***************************************************************************/
+
+  [WebService(Namespace = "http://spedcare.com/")]
+  [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+  [ScriptService]
+  
+  public class ServiceJournalsEventSelectionsSvc : MBA.WebSvc
+  {
+    
+    /***************************************************************************
+     * viewSel */
+    /**
+     * Selection view of publications
+     * 
+     * @param  term         Required, search term string (last, first)
+     ***************************************************************************/    
+
+    [WebMethod]
+    [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+
+    public ReturnSel viewSel (string term, string journalid, string pracid)
+    {
+      return (ReturnSel) 
+      callMethod(typeof(ReturnSel), 
+      delegate()
+      {
+        return Spedmon.ServiceJournalsJournalEventSelections.viewSel(this.dbConnApp, this.log, this.uInfo,true,"",journalid,pracid,term);
+      },
+      Constants.ROLE_ALL_PCAL_AND_CLIENT); // Who can call this method
+    }
+        
+    /***************************************************************************
+     * viewSelJournalEventsAndPatOrders */
+    /**
+     * Selection view
+     * 
+     * @param  term         Required, search term string (last, first)
+     ***************************************************************************/    
+
+    [WebMethod]
+    [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+    public ReturnSel viewSelJournalEventsAndPatOrders ( string clientid
+                                                      , string term
+                                                      , string journalid
+                                                      , string pracid
+                                                      , string patid
+                                                      , string orpdoctypeid
+                                                      , string groupid )
+    {
+      return (ReturnSel) 
+      callMethod(typeof(ReturnSel), 
+      delegate()
+      {
+        return Spedmon.ServiceJournalsJournalEventSelections.viewSelJournalEventsAndPatOrders(this.dbConnApp, this.log, this.uInfo,true,"", clientid, journalid, patid,pracid,orpdoctypeid,groupid, term);
+      },
+      Constants.ROLE_ALL_PCAL_AND_CLIENT); // Who can call this method
+    }
+ 
+   /***************************************************************************
+     * viewSelJournalPatOrdersForPracticeOffice */
+    /**
+     * Selection view
+     * 
+     * @param  term         Required, search term string (last, first)
+     ***************************************************************************/    
+
+    [WebMethod]
+    [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+    public ReturnSel viewSelJournalPatOrdersOnly (  string  clientid
+                                                   , string term
+                                                   , string pracid
+                                                   , string patid
+                                                   , string groupid )
+    {
+      return (ReturnSel) 
+      callMethod(typeof(ReturnSel), 
+      delegate()
+      {
+        return Spedmon.ServiceJournalsJournalEventSelections.viewSelJournalPatOrdersOnly (
+              this.dbConnApp
+            , this.log
+            , this.uInfo
+            , true
+            , ""
+            , clientid
+            , patid
+            , pracid
+            , groupid
+            , term );
+      },
+      Constants.ROLE_ALL_PCAL_AND_CLIENT); // Who can call this method
+    }
+    
+    /***************************************************************************
+     * getEventSelectionData */
+    /**
+     * Get event selection data
+     * 
+     * @param  eventid      Event id
+     ***************************************************************************/    
+
+    [WebMethod]
+    [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+
+    public ReturnServiceJournalEventSelection getEventSelectionData (string eventid, string journalid)
+    {
+      return (ReturnServiceJournalEventSelection) 
+      callMethod(typeof(ReturnServiceJournalEventSelection), 
+      delegate()
+      {
+        return Spedmon.ServiceJournalsJournalEventSelections.getEventSelectionReturnData(this.dbConnApp, this.log, this.uInfo,eventid,journalid);
+      },
+      Constants.ROLE_ALL_PCAL_AND_CLIENT); // Who can call this method
+    }
+          
+  }
+}

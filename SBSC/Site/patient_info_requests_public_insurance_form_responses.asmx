@@ -1,0 +1,1 @@
+<%@ WebService Language="C#" CodeBehind="patient_info_requests_public_insurance_form_responses.asmx.cs" Class="Spedmon.PatientInfoRequestsPublicInsuranceFormResponsesSvc" %>

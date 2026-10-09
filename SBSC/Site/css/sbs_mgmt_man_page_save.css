@@ -1,0 +1,33 @@
+/* format date inputs to look like other dataEntryRow inputs */
+
+input[type=date], input[type=text] {
+    width: 16em;
+    height: 2.2em;
+    border-radius: 4px;
+    border: 1px solid #aaaaaa;
+}
+
+input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+}
+
+.ui-spedmon-data-entry-row.row {
+    margin-bottom: 1em;
+}
+
+/* Img Upload */
+
+#featuredimgfilepicker {
+    margin-top: 1em;
+    width: 25vw;
+    height: auto;
+    display: block;
+}
+
+#featuredimg {
+    display: block;
+    border: 1px solid #000;
+    margin-top: 1em;
+    width: 20vw;
+}

@@ -1,0 +1,261 @@
+using System;
+using System.Collections.Generic;
+using System.Web;
+using System.Web.Services;
+using System.Web.Script.Services;
+using System.Web.Services.Protocols;
+using System.Web.Script.Serialization;
+using System.ComponentModel;
+using System.Data;
+using System.Data.Sql;
+using System.Data.SqlClient;
+using MBA;
+
+namespace Spedmon
+{
+
+  
+  /***************************************************************************
+   * ServiceAuthorizationRequestsSvc */
+  /*
+   * Web services end point.
+   *
+   * Unless indicated, each of these methods require that the caller is 
+   * logged in.
+   * 
+   * Each end point method provides a wrapper for a coresponding framework
+   * method that is not accessible from the outside.
+   * 
+   * These wrappers handle access control and parameter replacement.
+   * 
+   * The method is restricted to calls for given user groups
+   * 
+   * Parameter replacement is used to enforce additional access control within
+   * the user group but this is limited.
+   *
+   * The final line of defense for access control are the database udfs or 
+   * sprocs that return or save data
+   ***************************************************************************/
+
+  [WebService(Namespace = "http://spedcare.com/")]
+  [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+  [ScriptService]
+  
+  public class ServiceAuthorizationRequestsSvc : MBA.WebSvc
+  {
+
+
+   /***************************************************************************
+     * save */
+    /**
+     * Save new or edit existing record
+     * Note: This requires the same signature/parameters as the deleteandsavenew 
+     * method
+     ***************************************************************************/    
+
+    [WebMethod]
+    [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+
+    public ReturnSaveRecord save ( string   clientid
+                                 , string   districtcontactuserid
+                                 , string   patid
+                                 , string   svcauthorizationrequesttypeid
+                                 , string   referencedentityid
+                                 , string   svcdescription
+                                 , string   formBuilderAnswersJSONForOrderFormBuilderQuestionsJSON
+                                 , string   formBuilderAnswersJSONForOrder
+                                 , string   reqsvcauthfromselectionid
+                                 , string   reqsvcauthmethodselectionid
+                                 , string   prtgrd1personid
+                                 , string   prtgrd2personid
+                                 , string   orppracid   
+                                 , string   selectedfilelist
+                                 , string   editDelReason
+                                 , string   validaterec
+                                 , string   savetype
+                                 , string   recid )
+    {
+      return (ReturnSaveRecord) 
+     
+      callMethod(typeof(ReturnSaveRecord),
+      delegate()
+      {                     
+        return Spedmon.ServiceAuthorizationRequests.save (
+            this.dbConnApp
+          , this.dbConnUser
+          , this.log
+          , this.uInfo   
+          , clientid
+          , districtcontactuserid
+          , patid
+          , svcauthorizationrequesttypeid
+          , referencedentityid
+          , svcdescription
+          , formBuilderAnswersJSONForOrderFormBuilderQuestionsJSON
+          , formBuilderAnswersJSONForOrder
+          , reqsvcauthfromselectionid
+          , reqsvcauthmethodselectionid
+          , prtgrd1personid
+          , prtgrd2personid
+          , orppracid
+          , selectedfilelist
+          , editDelReason
+          , validaterec
+          , savetype
+          , recid);                                           
+      },
+      Constants.ROLE_ALL_PCAL_AND_CLIENT);  // Who can call this method           
+    }
+    
+    /***************************************************************************
+     * closeandsavenew */
+    /**
+     * Note: This requires the same signature/parameters as the save method
+     ***************************************************************************/    
+
+    [WebMethod]
+    [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+
+    public ReturnSaveRecord closeandsavenew (   string   clientid
+                                              , string   districtcontactuserid
+                                              , string   patid
+                                              , string   svcauthorizationrequesttypeid
+                                              , string   referencedentityid
+                                              , string   svcdescription
+                                              , string   formBuilderAnswersJSONForOrderFormBuilderQuestionsJSON
+                                              , string   formBuilderAnswersJSONForOrder
+                                              , string   reqsvcauthfromselectionid
+                                              , string   reqsvcauthmethodselectionid
+                                              , string   prtgrd1personid
+                                              , string   prtgrd2personid
+                                              , string   orppracid
+                                              , string   selectedfilelist
+                                              , string   editDelReason
+                                              , string   validaterec
+                                              , string   savetype
+                                              , string   recid )
+    {
+      return (ReturnSaveRecord) 
+     
+      callMethod(typeof(ReturnSaveRecord),
+      delegate()
+      {                     
+        return Spedmon.ServiceAuthorizationRequests.closeAndSaveNew (
+            this.dbConnApp
+          , this.dbConnUser
+          , this.log
+          , this.uInfo   
+          , clientid
+          , districtcontactuserid
+          , patid
+          , svcauthorizationrequesttypeid
+          , referencedentityid
+          , svcdescription
+          , formBuilderAnswersJSONForOrderFormBuilderQuestionsJSON
+          , formBuilderAnswersJSONForOrder
+          , reqsvcauthfromselectionid
+          , reqsvcauthmethodselectionid
+          , prtgrd1personid
+          , prtgrd2personid
+          , orppracid
+          , selectedfilelist
+          , editDelReason
+          , validaterec
+          , savetype
+          , recid);                                           
+      },
+      Constants.ROLE_ALL_PCAL_AND_CLIENT);  // Who can call this method           
+    }
+
+   /***************************************************************************
+     * deleteandsavenew */
+    /**
+     * Note: This requires the same signature/parameters as the save method
+     ***************************************************************************/    
+
+    [WebMethod]
+    [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+
+    public ReturnSaveRecord deleteandsavenew (  string   clientid
+                                              , string   districtcontactuserid
+                                              , string   patid
+                                              , string   svcauthorizationrequesttypeid
+                                              , string   referencedentityid
+                                              , string   svcdescription
+                                              , string   formBuilderAnswersJSONForOrderFormBuilderQuestionsJSON
+                                              , string   formBuilderAnswersJSONForOrder
+                                              , string   reqsvcauthfromselectionid
+                                              , string   reqsvcauthmethodselectionid
+                                              , string   prtgrd1personid
+                                              , string   prtgrd2personid
+                                              , string   orppracid
+                                              , string   selectedfilelist
+                                              , string   editDelReason
+                                              , string   validaterec
+                                              , string   savetype
+                                              , string   recid )
+    {
+      return (ReturnSaveRecord) 
+     
+      callMethod(typeof(ReturnSaveRecord),
+      delegate()
+      {                     
+        return Spedmon.ServiceAuthorizationRequests.deleteAndSaveNew (
+            this.dbConnApp
+          , this.dbConnUser
+          , this.log
+          , this.uInfo   
+          , clientid
+          , districtcontactuserid
+          , patid
+          , svcauthorizationrequesttypeid
+          , referencedentityid
+          , svcdescription
+          , formBuilderAnswersJSONForOrderFormBuilderQuestionsJSON
+          , formBuilderAnswersJSONForOrder
+          , reqsvcauthfromselectionid
+          , reqsvcauthmethodselectionid
+          , prtgrd1personid
+          , prtgrd2personid
+          , orppracid
+          , selectedfilelist
+          , editDelReason
+          , validaterec
+          , savetype
+          , recid);                                           
+      },
+      Constants.ROLE_ALL_PCAL_AND_CLIENT);  // Who can call this method           
+    }
+
+    
+   /***************************************************************************
+     * delete */
+    /**
+     *
+     ***************************************************************************/    
+
+    [WebMethod]
+    [ScriptMethod (ResponseFormat = ResponseFormat.Json)]
+    public ReturnSaveRecord delete (  string   editDelReason
+                                    , string   validaterec
+                                    , string   savetype
+                                    , string   recid )
+    {
+      return (ReturnSaveRecord) 
+     
+      callMethod(typeof(ReturnSaveRecord),
+      delegate()
+      {                     
+        return Spedmon.ServiceAuthorizationRequests.delete (
+            this.dbConnApp
+          , this.log
+          , this.uInfo   
+          , editDelReason
+          , validaterec
+          , recid);                                           
+      },
+      Constants.ROLE_ALL_PCAL_AND_CLIENT);  // Who can call this method           
+    }
+    
+  }
+}

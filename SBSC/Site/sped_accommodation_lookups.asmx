@@ -1,0 +1,1 @@
+<%@ WebService Language="C#" CodeBehind="sped_accommodation_lookups.asmx.cs" Class="Spedmon.SpEdAccommodationLookupsSvc" %>

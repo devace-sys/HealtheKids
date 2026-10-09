@@ -1,0 +1,101 @@
+
+#search-splash {
+  background-color:  #f29a29;
+}
+
+#col3-hex-herosplash .big-splash {
+
+    max-width: -webkit-fill-available;
+    max-height: -webkit-fill-available;
+
+    max-width: 32vw;
+
+}
+
+#secondsection-blue {
+  background-color: #04234b;
+  min-height: 105vh;
+}
+
+#col3-hex-herosplash .cropped-splash {
+
+    max-width: -webkit-fill-available;
+    max-height: -webkit-fill-available;
+
+    max-width: 100vw;
+
+}
+
+div.help-box-container {
+  display:block;
+  width:100%;
+  margin:0;
+  padding:0;
+  margin-bottom:1em;
+}
+
+div.help-box-container p {
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+div.help-box {
+  display:block;
+  color:#000;
+  width:50%;
+  margin:0 auto;
+  padding:1em;
+  background-color:#FEFEFE; /* Light*/
+  border:1px solid #000; /* Same as background in screen.css */
+  border-radius: 5px;
+}
+
+/* Clear float */
+div.help-box-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.help-box p {
+  padding:.25em;
+  display:block;
+  text-align:center;
+  width:100%;
+}
+
+div-help-box a {
+  color:#000;
+}
+
+div.help-box-primary {
+  background-color:#cce5ff
+}
+
+div.help-box-secondary {
+  background-color:#e2e3e5
+}
+
+div.help-box-success {
+  background-color:#D4EDDA;
+}
+
+div.help-box-info {
+  background-color:#D1ECF1;
+}
+
+div.help-box-warning {
+  background-color:#FFF3CD;
+}
+
+div.help-box-danger {
+  background-color:#F8D7DA;
+}
+
+div.help-box-light {
+  background-color:#FEFEFE;
+}
+
+div.help-box-dark {
+  background-color:#D6D8D9;
+}

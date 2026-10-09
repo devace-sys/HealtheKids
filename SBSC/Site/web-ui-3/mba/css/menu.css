@@ -1,0 +1,103 @@
+/* ul.navigation-main and ul.navigation-sub */
+
+@font-face {
+	font-family: robotoCondensedRegular;
+	src: url('./web-ui-3/mba/css/roboto-condensed-regular.ttf');
+}
+@font-face {
+	font-family: robotoCondensedBold;
+	src: url('./web-ui-3/mba/css/roboto-condensed-bold.ttf');
+}
+@font-face {
+	font-family: abelRegular;
+	src: url('./web-ui-3/mba/css/Abel-Regular-400.ttf');
+}
+
+#app-drawer {
+	background-color: #dcdcdc !important;
+}
+#app-drawer > div.mdc-drawer__content {
+  height:100vh;
+}
+
+#nav-container {
+	padding-left:1em;
+}
+
+ul.navigation-main, ul.navigation-sub {
+  display:block;
+  margin:0;
+  padding:0;
+  list-style-type: none;
+}
+
+ul.navigation-sub {
+  margin-left:.75em;
+}
+
+/* Selects all li elements inside ul.navigation-main */
+
+ul.navigation-main li {
+  display:block;
+  margin:0;
+  padding:0;
+  display:block;
+  font-family:abelRegular;
+  font-size:1em;
+}
+
+/* Selects all a elements inside ul.navigation-main */
+/* Note: We override the font size on some of these later on */
+ul.navigation-main a {
+  display:block;
+  /*margin:.25em;*/
+  padding:.25em;
+  padding-left:.10em;
+  min-width:80%;
+  text-decoration:none;
+  color:#000;
+  border:1px solid #dcdcdc;
+  border-bottom: 1px solid #aaa;
+  font-family:abelRegular;
+  font-size:.90em;
+  transition: all .1s ease-in-out;
+}
+
+ul.navigation-main a:hover {
+  background-color:#F5F5F5;
+  border:1px solid #aaa;
+  cursor:pointer;
+}
+
+.menu-drop-icon-clear-float:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.menu-drop-icon {
+  color:#000;
+  float:right;
+  font-size:.90em;
+}
+
+li.menu-item-hidden {
+  display:none !important;
+  width:0 !important;
+  height:0 !important;
+  margin:0 !important;
+  padding:0 !important;
+}
+
+/* Apply style to just top level menu items*/ 
+
+ul.navigation-main > li.menu-item-visible > a{
+	font-weight:bold;
+	font-size:1em;
+}
+a.navigation-sub-toggle {
+	font-weight:bold;
+    font-size:1em;
+}
+
+

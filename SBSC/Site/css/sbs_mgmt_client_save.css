@@ -1,0 +1,274 @@
+.data-entry-row-input {
+    width: 16em;
+    height: 2.5em;
+    border-radius: 4px;
+    border: 1px solid #aaaaaa;
+}
+
+  #feeStructureCont input
+, #feeStructureCont select {
+    width: 15.5em;
+    height: 2.5em;
+    border-radius: 4px;
+    border: 1px solid #aaaaaa;
+}
+
+.currencyInput {
+    width: 15.25em !important;
+    height: 2.5em;
+    border-radius: 4px;
+    border: 1px solid #aaaaaa;
+}
+
+.percentageInput {
+    width: 15.15em !important;
+    height: 2.5em;
+    border-radius: 4px;
+    border: 1px solid #aaaaaa;
+}
+
+.tblRecsJSON {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tblRecsJSON > thead > tr > th {
+    font-weight: bold;
+    background-color: #dddddd;
+    color: #000;
+    padding: .25em;
+    min-width: 30px;
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+.tblRecsJSON > tbody > tr > td {
+    color: #000;
+    padding: .25em;
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+#tblRecsContactJSON > tbody > tr > td {
+    max-width: 15em;
+}
+
+.largerInputContact {
+    min-width: 14em !important;
+}
+
+#tblRecsContactJSON > tbody > tr > td > input[type=text] {
+    padding: 10px;
+}
+
+  .tblRecsJSON > tbody > tr > td > select
+, .tblRecsJSON > tbody > tr > td > input {
+    width: 100%;
+    min-width: 7em;
+    height: 2.2em;
+    font-size: 1.1em;
+    border-radius: 4px;
+    border: 1px solid #aaaaaa;
+}
+
+i {
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+i.fa-plus {
+    margin: .5em;
+    color: #76a6d2;
+    font-size: 1.5em;
+}
+
+i.fa-plus:hover {
+    color: #8C9CAA;
+}
+
+i.fa-trash-alt,
+i.fa-trash {
+    color: #995D55;
+}
+
+i.fa-trash-alt:hover,
+i.fa-trash:hover {
+    color: #561B1F;
+}
+
+i.fa-paperclip {
+    color: grey;
+}
+
+i.fa-save:hover{
+    color: #636F87;
+}
+
+i.fa-paperclip:hover {
+    color: black;
+}
+
+.pracSelectionCol {
+    max-width: 13em !important;
+}
+
+  .pracSelectionCol > div > span
+, .roleSelectionCol > div > span{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+}
+
+  .pracSelectionCol > div > span > input
+, .roleSelectionCol > div > span > input{
+    width: 80%;
+}
+
+  .pracSelectionCol > div > span > button.ui-spedmon-box-select-box-select-action
+, .roleSelectionCol > div > span > button.ui-spedmon-box-select-box-select-action {
+    width: 20%;
+}
+
+.radio-button-label:active {
+    background: black !important;
+    color: white;
+}
+
+
+.radio-button:checked + .radio-button-label-red {
+    color: white;
+    background: linear-gradient(to bottom, #fe1a00, #ce0100, #fe1a00);
+}
+
+
+.radio-button:checked + .radio-button-label-green {
+    color: white;
+    background: linear-gradient(to bottom, #77d42a, #64bb1e, #77d42a);
+}
+
+.additional-fields {
+    display: none;
+    margin-left: 2.5em;
+}
+
+/* for Address completion field */
+
+#clientAddress {
+    margin: 0.8em 0em;
+}
+
+#clientAddress > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#clientAddress > div > * {
+    margin-bottom: 0.5em;
+}
+
+#zip5_street1_contclientAddress > span:nth-child(3) {
+    order: 1;
+}
+#zip5_street1_contclientAddress > span:nth-child(1) {
+    order: 2;
+}
+#zip5_street1_contclientAddress > span:nth-child(2) {
+    order: 3;
+}
+
+/* 'view fee details' button (contract tab) */
+.feeDetsBut {
+    width: 100%;
+}
+
+.feeDetsBut > span {
+    padding: 0px !important;
+}
+
+.boldText {
+    text-decoration: underline !important;
+    font-weight: bold !important;
+}
+
+#feeQuestionsCont {
+    border-collapse: collapse;
+    margin: auto;
+    background-color: #F5F5F5;
+}
+
+.rowSeparator {
+    border-bottom: 1px solid black;
+    margin-bottom: 2em;
+}
+
+.rowSeparator td {
+    padding-top: 2em;
+}
+
+#carePlanLegalLang {
+    width: 100%;
+}
+
+/* Logo Upload */
+
+#clientlogofilepicker {
+    margin-top: 1em;
+    width: 25vw;
+    height: auto;
+    display: block;
+}
+
+#clientlogoimg {
+    display: block;
+    border: 1px solid #000;
+    margin-top: 1em;
+    width: 25vw;
+}
+
+/* fix the dropdown styling in our tables */
+
+table.tblRecsJSON span.ui-widget.ui-widget-container.ui-spedmon-box-container {
+    padding: 0;
+    height: 2.4em;
+}
+
+
+/* rest view styling */
+
+td.mba-rest-view select,
+td.mba-rest-view input,
+td.mba-rest-view textarea {
+    font-size: 1em;
+}
+
+.mba-rest-view-visible-tbl-td-or-th {
+    text-align: center;
+}
+
+th.mba-rest-view {
+    position: sticky !important;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+*.mba-rest-view-cell-value, th.mba-rest-view {
+    font-size: 1em;
+}
+
+span.mba-rest-view-data-type-text, span.mba-rest-view-data-type-number, span.mba-rest-view-data-type-usd {
+    text-align: center;
+}
+
+#restviewinvoices {
+    margin-top: 1em;
+    width: 100%;
+    max-width: 100% !important;
+}
+
+#restviewinvoices textarea.mba-rest-view-data-type-textarea {
+    margin: auto;
+}

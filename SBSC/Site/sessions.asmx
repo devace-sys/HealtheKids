@@ -1,0 +1,1 @@
+<%@ WebService Language="C#" CodeBehind="sessions.asmx.cs" Class="Spedmon.SessionsSvc" %>

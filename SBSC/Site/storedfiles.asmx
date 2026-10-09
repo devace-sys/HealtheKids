@@ -1,0 +1,1 @@
+<%@ WebService Language="C#" CodeBehind="storedfiles.asmx.cs" Class="Spedmon.StoredFilesSvc" %>

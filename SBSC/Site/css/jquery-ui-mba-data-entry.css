@@ -1,0 +1,449 @@
+/*-------------------------------
+ * Data entry
+ *------------------------------*/
+ 
+h4.ui-spedmon-data-entry-rows-title {
+  text-align:center;
+  display:block;
+  width:95%;
+  margin:0 auto;
+}
+
+address.ui-spedmon-select-entity-address-container {
+  display:inline-block;  
+  padding:.25em;
+}
+
+a.ui-spedmon-select-entity-email {
+  display:inline-block;
+  margin-right:.50em;
+}
+
+a.ui-spedmon-select-entity-email[href^="mailto"]::before {
+  content: "\2709 \2009"; /* Envelope followed by thin space */
+}
+
+a.ui-spedmon-select-entity-phone {
+  display:inline-block;
+  margin-right:.50em;
+}
+a.ui-spedmon-select-entity-phone[href^="tel"]::before {
+   content: "\260F \2009"; /* White phone followed by thin space */ 
+}
+
+div.ui-spedmon-data-entry-row {
+  margin-top:.50em;
+}
+
+
+div.ui-spedmon-data-entry-row-no-input-allowed   {display:none !important;}
+
+
+div.ui-spedmon-data-entry-row-input-hide-until-needed {
+  display:none;
+}
+
+div.ui-spedmon-data-entry-col-label> h5 {font-size:1em;}
+
+
+div.ui-spedmon-select-entity-additional-info {
+  display:block;
+  padding:.25em;  
+}
+
+div.ui-spedmon-select-entity-additional-info > span.ui-spedmon-select-entity-additional-info-icon { 
+  display:inline-block;
+}
+
+div.ui-spedmon-select-entity-additional-info > span.ui-spedmon-select-entity-additional-info-text {
+  display:inline;
+  font-size:.90em;
+  font-style: italic;
+}
+
+
+/* Overrides for return info table */
+
+div.ui-spedmon-data-entry-col-entry table.returninfo {
+  min-width:100% !important;
+  max-width:100% !important;
+  width:100% !important;
+}
+
+div.ui-spedmon-data-entry-col-entry  table.returninfo thead tr * {
+  width:auto !important;  
+}
+
+div.ui-spedmon-data-entry-col-entry  table.returninfo tbody tr *{
+  width:auto !important;  
+}
+
+/* Overrides for datagrid */
+
+div.ui-spedmon-data-entry-col-entry  table.ui-spedmon-datagrid {
+  width:100% !important;
+}
+
+div.ui-spedmon-data-entry-col-entry  table.ui-spedmon-datagrid  thead tr * {
+  width:auto !important;
+}
+
+div.ui-spedmon-data-entry-col-entry  table.ui-spedmon-datagrid  tbody tr * {
+  width:auto !important;
+}
+
+div.ui-spedmon-data-entry-records-view-container {
+
+}
+/* Overrides for text box */
+
+div.ui-spedmon-data-entry-col-entry  input.mba-web-ui-field-data-text { width:100%; }
+/* Save or Edit Row */
+
+div.ui-spedmon-data-entry-row-save-or-edit {
+  border-top:5px solid #ccc;
+  padding-top:1em;
+}
+
+div.ui-spedmon-data-entry-row-save-or-edit > div.ui-spedmon-data-entry-col-label > h5 {
+   font-size:.90em;
+   font-style: italic;   
+}
+
+div.ui-spedmon-data-entry-row-save-or-edit > div.ui-spedmon-data-entry-col-entry  {
+  text-align:right;
+}
+
+/*-------------------------------
+ * Data entry validate and Save
+ * dialog
+ *------------------------------*/
+
+div.ui-spedmon-data-entry-row-dialog  > div.ui-spedmon-data-entry-row-dialog-instructions {
+  font-size:1em;
+}
+
+/* Status overrides */
+
+div.ui-spedmon-data-entry-row-dialog  > ul.details
+{
+  margin:0px auto;
+  padding:.25em;
+  width: 100%;
+  line-height: 2;
+}
+
+div.ui-spedmon-data-entry-row-dialog  > ul.details  > li{  
+  display:block;
+  padding:.25em;
+  text-align:left;
+}
+
+div.ui-spedmon-data-entry-row-dialog  > ul.details  > li > a{  
+  padding:.25em;
+}
+
+div.ui-spedmon-data-entry-row-dialog  > ul.details  > li > a span {     
+  font-size:.90em;
+}
+
+
+/*-------------------------------
+ * Select entity control 
+ * Inherits from Data Entry
+ *------------------------------*/
+ 
+div.ui-spedmon-select-entity-container {
+  width:100%;
+}
+div.ui-spedmon-select-entity-container   > label.mba-web-ui-inline {
+  display:inline-block;
+}
+
+div.ui-spedmon-select-entity-container   > div.ui-spedmon-select-entity-mgmt-controls {
+  display:inline-block;
+  margin-bottom: 0.5em;
+}
+
+
+div.ui-spedmon-select-entity-container   > div.ui-spedmon-box-radio-box-container {
+  display:inline-block;
+}
+
+div.ui-spedmon-select-entity-container   >  div.ui-spedmon-box-select-box-container {
+  display:inline-block;  
+}
+
+div.ui-spedmon-select-entity-container   >  div.ui-spedmon-box-select-box-container-single-select {
+   display:inline-block;
+}
+
+div.ui-spedmon-select-entity-container   >  div.ui-spedmon-box-select-box-container-multi-select {
+  display:block;
+}
+
+
+/*-------------------------------
+ * Audit table styling
+ *------------------------------*/
+
+.ui-spedmon-data-entry-audit-summary {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Modification History Table */
+
+.ui-spedmon-data-entry-audit-content-container {
+    width: 100%;
+    margin: 0 auto;
+    margin: 0.5em 0;
+}
+
+.ui-spedmon-data-entry-audit-content-container > table {
+    width: 100% !important;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+.ui-spedmon-data-entry-audit-content-container > table > thead th {
+    font-weight: bold;
+}
+
+.ui-spedmon-data-entry-audit-content-container > table > caption {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    caption-side: top;
+}
+
+.ui-spedmon-data-entry-audit-content-container > table > tfoot > tr > th {
+    text-align: center;
+    color: #000;
+    text-align: center;
+    font-size: .90em;
+}
+
+/* modern style for tables */
+.ui-spedmon-gradient-data-table {
+    border-collapse: collapse;
+    min-width: 400px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 20px;
+    box-shadow: 2px 2px 8px 4px #bababa;
+    border-radius: 10px;
+}
+
+.ui-spedmon-gradient-data-table thead tr {
+    color: black;
+    border-radius: 5px;
+}
+
+.ui-spedmon-gradient-data-table thead > tr > th {
+    font-weight: bold;
+    border-right: thin solid #929292;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    z-index: 2;
+    background: #dddddd;
+    text-shadow: 0 0 3px white;
+    -webkit-box-shadow: 0px 4px 6px 0px rgb(139 182 185);
+    -moz-box-shadow: 0px 4px 6px 0px rgb(139 182 185);
+    box-shadow: 0px 4px 6px 0px rgb(139 182 185);
+}
+
+.ui-spedmon-gradient-data-table > thead > tr > th:nth-child(1) {
+    border-top-left-radius: 10px;
+}
+
+.ui-spedmon-gradient-data-table > thead > tr > th:nth-last-child(1) {
+    border-top-right-radius: 10px;
+    border-right: none;
+}
+
+.ui-spedmon-gradient-data-table tbody tr {
+    transition: all 0.1s ease-in-out;
+}
+
+.ui-spedmon-gradient-data-table tbody tr:nth-of-type(even) {
+    background: #ebf0f7ef;
+}
+
+.ui-spedmon-gradient-data-table tbody td:hover {
+    background: #dddddd;
+    font-weight: bold;
+}
+
+
+.ui-spedmon-gradient-data-table th,
+.ui-spedmon-gradient-data-table td {
+    transition: all 0.2s ease-in-out;
+    padding: 10px;
+}
+
+
+/* Authorization History Table */
+
+.ui-spedmon-auth-hist-content-container {
+    width: 100%;
+    margin: 0 auto;
+    margin: 0.5em 0;
+    overflow-x: auto;
+}
+
+.ui-spedmon-auth-hist-content-container > table {
+    width: 100% !important;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+.ui-spedmon-auth-hist-content-container > table > thead th {
+    font-weight: bold;
+}
+
+.ui-spedmon-auth-hist-content-container > table > caption {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    caption-side: top;
+}
+
+.ui-spedmon-auth-hist-content-container > table > tfoot > tr > th {
+    text-align: center;
+    color: #000;
+    text-align: center;
+    font-size: .90em;
+}
+
+/* Styling for table inside modal */
+.ui-spedmon-mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.ui-spedmon-mb-10 {
+    margin-bottom: 10px !important;
+}
+
+.ui-spedmon-gradient-rounded-but-md {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    border: solid 1px black;
+    border-radius: 10px;
+    background: linear-gradient(#a1d4d8, #fff 26%, #d6f1f3, #a1d4d8);
+    transition: all 0.2s ease-in-out;
+}
+
+.ui-spedmon-gradient-rounded-but-md:hover {
+    cursor: pointer;
+    color: #79999c; 
+}
+
+.ui-spedmon-gradient-rounded-but-md:active {
+    font-size: 1.5em;
+}
+
+/* source: https://stackoverflow.com/a/17348698 */
+.ui-spedmon-rotate-180deg-animation {
+    -webkit-transform: rotate(180deg); /* Chrome, Safari 3.1+ */
+    -moz-transform: rotate(180deg); /* Firefox 3.5-15 */
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -o-transform: rotate(180deg); /* Opera 10.50-12.00 */
+    transform: rotate(180deg); /* Firefox 16+, IE 10+, Opera 12.10+ */
+}
+
+
+/* Floating label styling for data-entry-row in "field" mode */
+
+span.ui-spedmon-data-entry-field-container {
+  position:relative; /* Must be relative */
+  display:inline-block;
+  margin:0;
+  padding:0;
+  outline:none;
+}
+
+span.ui-spedmon-data-entry-field-container.ui-spedmon-data-entry-field-input-hide-until-needed {
+  display:none;
+}
+span.ui-spedmon-data-entry-field-entry {
+    height: 2em;
+    padding: .25em;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+label.ui-spedmon-data-entry-field-label {  
+  position:absolute;
+  left:1em;
+  top:1em;
+  display:inline-block;
+  margin:0;
+  padding:0;
+  height:1em;
+  line-height:1em;  
+  outline:none;
+  border:none;
+  color:#333;
+  font-size:.90em;
+  transition: all .250s ease-in-out;
+}
+
+
+span.ui-spedmon-data-entry-field-entry input::placeholder {
+  color:#fff; /* Must be same color as background to hide */
+}
+
+/* Moves label out of way on focus for data entry and keeps label moved if data is selected */
+  
+ span.ui-spedmon-data-entry-field-entry:focus-within + label.ui-spedmon-data-entry-field-label
+,span.ui-spedmon-data-entry-field-entry[data-entry-field-has-data="true"] + label.ui-spedmon-data-entry-field-label
+{
+  transform: translate(0, -100%);
+  font-size:.70em;
+}
+
+
+/* Icon Colors */
+
+i.ui-spedmon-data-entry-fa-icon {
+  font-size: 1.2em;
+}
+
+i.ui-spedmon-data-entry-fa-icon.fa-plus,
+i.ui-spedmon-data-entry-fa-icon.fa-user-plus {
+  color: #76a6d2;
+}
+
+i.ui-spedmon-data-entry-fa-icon.fa-pencil-alt {
+  color: #beb07b;
+}
+
+i.ui-spedmon-data-entry-fa-icon.fa-book {
+  color: #4b9b45;
+}
+
+i.ui-spedmon-data-entry-fa-icon.fa-paperclip {
+  color: #7b7b7b;
+}
+
+i.ui-spedmon-data-entry-fa-icon.fa-times-circle {
+  color: #FF7F7F;
+}
+
+i.ui-spedmon-data-entry-fa-icon.fa-bookmark { 
+   color: #FFCC00;
+}

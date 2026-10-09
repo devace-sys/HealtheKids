@@ -1,0 +1,23 @@
+﻿iframe#crcsManagePartialViewContainer {
+    min-height: 80vh;
+}
+
+i.fa-folder-open {
+    color: #fdb900;
+    font-size: 1.5em;
+}
+
+i.fa-file-download {
+    font-size: 1.5em;
+    color: #008bcd;
+}
+
+i.fa-clipboard-check {
+    font-size: 1.5em;
+    color: #4b9b45;
+}
+
+i.fa-clipboard-list {
+    font-size: 1.25em;
+    color: #389dff;
+}

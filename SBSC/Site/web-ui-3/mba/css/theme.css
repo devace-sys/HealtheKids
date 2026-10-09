@@ -1,0 +1,71 @@
+/* overriding the default bootstrap primary-btn colors with VCF Seafoam */
+
+.btn-primary{
+  color:#555;background-color:rgb(157,200,204);border-color:#ade0d0;
+}
+
+.btn-link{
+  color:rgb(91, 153, 158);
+} /*
+     the "official" Seafoam color, while conspicuous enough as a button color, is barely visible as text against the greyish hero image.
+     I picked a "blacker", more visible variant.  Don't tell Vic!  :D
+   */
+
+.btn-primary:hover{
+  color:#333;background-color:#dcdcdc;border-color:#999;
+}
+
+.btn-primary.focus,.btn-primary:focus{
+box-shadow:0 0 0 .2rem rgba(91, 153, 158,.5);
+}
+
+.btn-primary.disabled,.btn-primary:disabled{
+  color:#333;background-color:#dcdcdc;border-color:#999;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,.btn-primary:not(:disabled):not(.disabled):active,.show>.btn-primary.dropdown-toggle{
+  color:#333;background-color:#dcdcdc;border-color:#999;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,.btn-primary:not(:disabled):not(.disabled):active:focus,.show>.btn-primary.dropdown-toggle:focus{
+  color:#333;background-color:#dcdcdc;border-color:#999;
+}
+
+/* New alert style */ 
+.alert-garish {
+  background-color: red;
+  color: #000;
+  font-size: 2.4em;
+  line-height: 1em;
+}
+
+/* Tweaking danger alert style */
+
+.alert-danger {
+  font-weight: bolder;  
+}
+
+/* MDC style overrides */
+
+input.mdc-text-field__input {
+    color: rgb(71, 91, 93) !important;
+}
+
+.mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+    color: rgba(0,0,0,.6);
+}
+
+.mdc-text-field .mdc-text-field__input {
+	caret-color: rgba(0,0,0,.6);
+}
+
+
+.mdc-text-field--invalid:not(.mdc-text-field--disabled) .mdc-floating-label {
+    color: rgba(0,0,0,.6);
+	caret-color: rgba(0,0,0,.6);
+}
+
+.mdc-floating-label--float-above {
+    color: rgb(91, 153, 158) !important;
+}
+

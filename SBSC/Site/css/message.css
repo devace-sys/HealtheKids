@@ -1,0 +1,68 @@
+/***************************************************************************
+ * screen */
+/**
+ * Standard set of rules for all WebUI pages
+ ***************************************************************************/
+
+html {
+  height: 95vh;
+}
+
+body {
+  height:95%;
+  padding:1em;
+  font-family: segoe ui, Arial, sans-serif;
+  font-size: 1em;
+  background: url('./css/background-2.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#container {
+  height: 95%;  
+  width:auto;
+  display: block;
+}
+
+#header {
+  display:block;
+}
+
+#content {
+  display:block;
+}
+
+div.message {
+  margin:1em;
+  padding:1em;
+  background: #eeeeee;
+  background: linear-gradient(#eeeeee 0%, #ffffff 100%);
+  background: -webkit-linear-gradient(#eeeeee 0%, #ffffff 100%);
+  background: -moz-linear-gradient(#eeeeee 0%, #ffffff 100%);  
+  border:1px solid #000000; 
+  border-top-left-radius:.25em;
+  border-top-right-radius:.25em; 
+  border-bottom-left-radius:.25em;
+  border-bottom-right-radius:.25em;   
+  display: block;
+}
+
+div.message-notice {
+  background:#FFFF99; 
+  text-align:center; 
+  font-size:1.3em;
+}
+
+h1 {
+  font-size: 2em;
+  text-align:center;
+  display: block;
+}
+
+h2 {
+  font-size:1.3em;
+  display:block;
+}
+

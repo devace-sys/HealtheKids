@@ -1,0 +1,1 @@
+<%@ WebService Language="C#" CodeBehind="workinprogresssavepoints.asmx.cs" Class="Spedmon.WorkInProgressSavePointsSvc" %>

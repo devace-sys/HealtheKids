@@ -1,0 +1,497 @@
+#otheroptionsrow {
+  padding-bottom:1em;
+}
+
+.cg-top-option-button {
+  display: inline-block;
+  margin-left:1em;
+}
+
+div.cg-column-options-ctrls-cont {
+  display:block;
+  margin:1em;
+  min-height:2em;
+  line-height:1em;
+  padding-bottom:1em;
+}
+
+#qs1 {
+  margin-left:-1em;
+}
+div.cg-client-prac-info-container {
+  padding: .25em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+div.cg-client-prac-info-header {
+  padding:.25em;
+}
+
+div.cg-client-prac-info-body {
+  padding:.50em;
+}
+
+div.cg-columns {
+  position:relative;
+  clear:both;
+}
+
+div.cg-column-left {
+  display:inline-block;
+  width:45% !important;
+  float:left;
+  /*max-height:25em;
+  overflow-y:scroll;*/
+}
+
+div.cg-column-right {
+  display:inline-block;
+  width:45%;
+  float:right;
+  /*max-height:25em;
+  overflow-y:scroll;*/
+}
+
+input.checkbox-item {
+    width: 15px;
+    height: 15px;
+    display: block;
+    margin: auto;
+}
+
+.margins-lb {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+#recordservicesfordos {
+    margin-top: 10px;
+}
+
+/* Styling for service treatments compliance table */
+.service-record-compliance {
+    border-collapse: collapse;
+    min-width: 400px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.service-record-compliance thead tr {
+    color: black;
+    border-radius: 5px;
+}
+
+.service-record-compliance thead > tr > th {
+    font-weight: bold;
+    border-right: thin solid #929292;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    z-index: 2;
+    background-color: #dddddd;
+    text-shadow: 0 0 3px white;
+    -webkit-box-shadow: 0px 4px 6px 0px rgb(139 182 185);
+    -moz-box-shadow: 0px 4px 6px 0px rgb(139 182 185);
+    box-shadow: 0px 4px 6px 0px rgb(139 182 185);
+}
+
+.service-record-compliance > thead > tr > th:nth-child(1) {
+    border-top-left-radius: 10px;
+}
+
+.service-record-compliance > thead > tr > th:nth-last-child(1) {
+    border-top-right-radius: 10px;
+    border-right: none;
+}
+
+.service-record-compliance tbody tr {
+    border-bottom: thin solid #dddddd;
+    transition: all 0.1s ease-in-out;
+}
+
+.service-record-compliance tbody tr:nth-of-type(even) {
+    background: #ebf0f7ef;
+}
+
+.service-record-compliance tbody tr:hover {
+    background: #c7cdd7ef;
+    transform: scale(1.02);
+}
+
+.service-record-compliance tbody tr:hover td {
+    font-weight: bold;
+}
+
+.service-record-compliance th,
+.service-record-compliance td {
+    padding: 10px;
+}
+
+.adjacent-buts-cont {
+    display: flex;
+    justify-content: center;
+}
+
+i.fa-user-plus.mba-add-pat-to-caseload, i.fa-plus.mba-add-prac-grp {
+    color: #76a6d2;
+}
+
+i.fas:hover {
+    transform: scale(1.3);
+}
+
+i.fa-university {
+    color: #90739c;
+}
+
+span.mba-rest-view-data-type-text, span.mba-rest-view-data-type-number, td[data-mba-rest-view-field-name="pracID"] {
+    text-align: center;
+}
+
+.caseload-remove-svc-icon {
+    font-size: 1.55em !important;
+}
+
+.spedmon-select {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px 1px #e4e4e4;
+    transition: all .2s ease-in-out;
+}
+
+/* frequency dropdown should use smaller width */
+
+#spedfreqcode_selection {
+    width: 8em;
+    height: 2em; /* fixes height issue for smaller screens */
+}
+
+/* ============================================
+          REST VIEW USER GROUPS STYLES
+   ============================================ */
+
+.icon-color-default {
+    color: black;
+}
+
+.icon-color-assigned {
+    color: green;
+}
+
+.icon-color-selected {
+    color: orange;
+}
+
+
+/* ============================================
+   PATIENT GROUP MANAGEMENT DIALOG STYLES
+   ============================================ */
+
+/* Main Container */
+.patient-manage-dialog-content {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Patient Info Section */
+.patient-info-section {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 0 5px;
+}
+
+/* Patients Flex Container */
+.patients-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Individual Patient Item */
+.patient-item {
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    backdrop-filter: blur(15px);
+    transition: all 0.3s ease;
+}
+
+    .patient-item:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-color: rgba(255, 255, 255, 0.35);
+        transform: translateY(-2px);
+    }
+
+/* Patient Name Section */
+.patient-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+    .patient-name .fa-check-circle {
+        cursor: pointer;
+        margin-right: 12px;
+        color: #64b5f6;
+    }
+
+.patient-name-text {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Tag Container */
+.tag-container {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* Group Tag Badges */
+.group-tag {
+    background: linear-gradient(135deg, #e91e63 0%, #ad1457 100%);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(233, 30, 99, 0.3);
+    transition: transform 0.2s;
+}
+
+/* Delete Icon for Tags */
+.tag-container .fa-trash {
+    position: absolute;
+    top: -5px;
+    left: -8px;
+    cursor: pointer;
+    font-size: 0.70rem;
+    z-index: 10;
+    color: #ff4444;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    padding: 2px;
+    margin-left: 7px;
+}
+
+/* Select Section */
+.select-section {
+    margin-bottom: 25px;
+}
+
+.select-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Group Select Input */
+.group-select {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    border-radius: 8px;
+    color: white;
+    padding: 12px 15px;
+    font-size: 14px;
+    width: 300px;
+    max-width: 100%;
+    backdrop-filter: blur(15px);
+    transition: all 0.3s ease;
+}
+
+    .group-select:focus {
+        border-color: #64b5f6;
+        background: rgba(255, 255, 255, 0.25);
+        outline: none;
+    }
+
+    .group-select::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+/* Add New Button */
+.btn-add-new {
+    background: linear-gradient(135deg, #63a0e1 0%, #4895c4 100%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 111, 0, 0.3);
+    position: relative;
+    flex-shrink: 0;
+}
+
+    .btn-add-new:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(255, 111, 0, 0.4);
+    }
+
+/* New Badge */
+.new-badge {
+    background: linear-gradient(135deg, #ff1744 0%, #d50000 100%);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(255, 23, 68, 0.4);
+    position: absolute;
+    top: -16px;
+    right: -26px;
+    z-index: 10;
+}
+
+/* Empty State Message */
+.patient-info-section p {
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+/* ============================================
+   DIALOG STYLES (jQuery UI Overrides)
+   ============================================ */
+
+/* Main Dialog Container */
+.ui-dialog.patient-dialog {
+    background: linear-gradient(135deg, #283593 0%, #3949ab 50%, #5c6bc0 100%);
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+    /* Dialog Title Bar */
+    .ui-dialog.patient-dialog .ui-dialog-titlebar {
+        background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 20px 25px;
+        text-align: left;
+        position: relative;
+    }
+
+    /* Dialog Title */
+    .ui-dialog.patient-dialog .ui-dialog-title {
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    /* Close Button */
+    .ui-dialog.patient-dialog .ui-dialog-titlebar-close {
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        color: white;
+        font-size: 26px;
+        font-weight: bold;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.2s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+        .ui-dialog.patient-dialog .ui-dialog-titlebar-close:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-50%) scale(1.05);
+        }
+
+        /* Hide default close icon */
+        .ui-dialog.patient-dialog .ui-dialog-titlebar-close .ui-icon {
+            display: none;
+        }
+
+    /* Dialog Content */
+    .ui-dialog.patient-dialog .ui-dialog-content {
+        background: transparent;
+        border: none;
+        padding: 30px 25px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+    .select-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .group-select {
+        width: 100%;
+    }
+
+    .patients-flex-container {
+        flex-direction: column;
+    }
+
+    .patient-item {
+        margin-bottom: 10px;
+    }
+
+    .ui-dialog.patient-dialog {
+        width: 95% !important;
+        height: auto !important;
+        max-height: 90vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .ui-dialog.patient-dialog .ui-dialog-titlebar {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+
+    .ui-dialog.patient-dialog .ui-dialog-content {
+        padding: 20px 15px;
+    }
+
+    .patient-item {
+        padding: 15px;
+    }
+
+    .section-title {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+}

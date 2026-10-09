@@ -1,0 +1,30 @@
+﻿.mba-action-item-content-circle-number-count {
+    border: 5px solid #995D55 !important;
+}
+
+.mba-action-item-content-wrapper:hover .mba-action-item-content-circle-number-count {
+    animation: shrinkAndExpand 0.2s;
+}
+
+.mba-action-item-content-circle-number-count:hover {
+    background-color: #561b1f13;
+    border: 8px solid #995D55 !important;
+}
+
+.mba-action-item-content-circle-number-sum {
+    border: 5px solid #4b9b45 !important;
+}
+
+.mba-action-item-content-wrapper:hover .mba-action-item-content-circle-number-sum {
+    animation: shrinkAndExpand 0.5s;
+}
+
+
+.mba-action-item-content-circle-number-sum:hover {
+    background-color: #636f8713;
+    border: 8px solid #4b9b45 !important;
+}
+
+.mba-action-item-content-circle-number-sum > span {
+    font-size: smaller;
+}

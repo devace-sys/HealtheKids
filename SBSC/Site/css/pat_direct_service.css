@@ -1,0 +1,158 @@
+﻿input[type=date], input[type=text] {
+    height: 2.2em;
+    border-radius: 4px;
+    border: 1px solid #aaaaaa;
+}
+
+input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+i.fa-plus {
+    margin: .5em;
+    font-size: 1.5em;
+}
+
+i.fa-plus {
+    color: #76a6d2;
+}
+
+    i.fa-plus:hover {
+        color: #8C9CAA;
+    }
+
+i.fa-save:hover {
+    color: #636F87;
+}
+
+div.manage-patient-label-svcrec {
+    font-size: 1.02em;
+    font-weight: bold;
+    margin-top: .50em;
+    padding-left: 1.5em;
+}
+
+/* New Service Record Btn */
+.btn_create_new_scv_rec, .btn_create_new_schd_scv_rec {
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    color: black;
+    background-color: transparent;
+}
+
+    .btn_create_new_scv_rec:focus, .btn_create_new_schd_scv_rec:focus, .btn_create_new_scv_rec:active, .btn_create_new_schd_scv_rec:active {
+        box-shadow: none;
+        outline: none;
+    }
+
+#scheduledservicesforpracandpatondosview-summary {
+    width: 15em;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 0;
+    transition: all 300ms linear;
+    list-style: none;
+}
+
+#scheduledservicesforpracandpatondosview-restview-container[open] > #scheduledservicesforpracandpatondosview-summary {
+    width: 100%;
+    border-bottom: 1px solid #000;
+    margin-bottom: 1em;
+    padding-bottom: .50em;
+}
+
+.border-container {
+    position: relative;
+    padding-top: 20px;
+    border: 1px solid #88b5f2;
+    border-radius: 8px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+    .border-container:hover {
+        box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .border-container > label {
+        position: absolute;
+        top: -13px;
+        left: 10px;
+        background-color: white;
+        padding: 0 10px;
+        font-style: italic;
+        font-weight: bold;
+        color: #88b5f2;
+    }
+
+.label-services {
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.2s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.border-container.show {
+    display: block;
+}
+
+.save-icon,
+.check-icon {
+    background-color: white;
+    transition: opacity 0.5s ease-in-out;
+}
+
+i.sch_svc {
+    margin-top: 1.50em;
+}
+
+.btn_Svc_Sch_Save_Pat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 0;
+}
+
+div.tab-subsection-divider {
+    border-top: 1px solid #000;
+    margin-top: 2em;
+    padding-top: 1em;
+}
+
+i.prescription_icon_for_pat {
+    color: blueviolet;
+    background-color: white;
+}
+
+i.calendar_icon_for_pat {
+    color: firebrick;
+    background-color: white;
+}
+
+i.chart_icon_for_pat {
+    color: chocolate;
+    background-color: white;
+}
+
+

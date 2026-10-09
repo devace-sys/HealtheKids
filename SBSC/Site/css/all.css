@@ -1,0 +1,132 @@
+/***************************************************************************
+ * All */
+/**
+ * Common styling
+ ***************************************************************************/
+div.ui-spedmon-help-container{
+  font-size:1em;
+  width:100%
+}
+
+p.ui-spedmon-help-note{
+  width:50%;
+  margin:0 auto;
+  padding:1em;	
+  border:1px dashed;	
+}
+
+h2.ui-spedmon-help{
+  text-align:center;
+  font-weight:bold;
+  font-size:1.5em;
+  padding:1em;
+}
+
+h3.ui-spedmon-help
+{
+  padding-top:1em;
+  font-weight:bold;
+  font-size:1.3em;
+  width:100%;
+  border-bottom:1px solid;
+}
+
+ul.ui-spedmon-help
+{
+  padding-top:1em;
+  list-style:circle;
+  list-style-position:inside;
+  margin-left:2em;
+}
+
+ol.ui-spedmon-help {
+  padding:1em;
+  list-style-type: decimal;
+  list-style-position:inside;
+  margin-left:2em;
+}
+
+.contact_pcal  {text-align:center;font-weight:bold;}
+.contact_org   {font-weight:bold;text-align:center;padding-bottom:6px;}
+.contact_email {text-align:center;padding-bottom:6px;}
+.contact_phone {text-align:center;padding-bottom:3px;}
+.contact_fax   {text-align:center;padding-bottom:6px;}
+.contact_mail  {text-align:center;}
+
+canvas.ui-spedmon-signature-pad-canvas {
+    border: ridge #c5c5c5 3px;
+    cursor: crosshair;
+    background: #f4faff;
+    box-shadow: 3px 4px 12px 3px #cecece;
+}
+
+i.fa, i.fas {
+    cursor: pointer;
+    transition: all 0.2 ease-in-out;
+}
+
+i.fa:hover, i.fas:hover {
+    opacity: 0.8;
+}
+
+.fa-eye {
+    color: #5a84ab;
+    font-size: 2em;
+    vertical-align: middle;
+}
+
+.fa-eye-slash {
+    color: #53616b;
+    font-size: 1.8em;
+    vertical-align: middle;
+}
+
+.spedmon-linked-list-box-parent {
+    width: fit-content;
+    box-shadow: 5px 5px 5px 0 #cecece;
+}
+
+.spedmon-linked-list-box-child {
+    width: 100%;
+    padding: 1em;
+    border: solid 2px #a5a5a5;
+    transition: all 0.2s ease-in-out;
+    background: #d9dadd;
+    color: black;
+    text-shadow: 0 0 10px #ffffff;
+}
+
+.spedmon-linked-list-box-child:hover {
+    cursor: pointer;
+    background: #e7effbef;
+    border: solid 2px #989898;
+    transform: translate(4px);
+    box-shadow: 5px 2px 5px 0 #c7c7c7;
+}
+
+.spedmon-header-text-class {
+    text-shadow: 2px 3px 5px #a2a2a2;
+}
+
+  .spedmon-reset-style
+  a.spedmon-reset-style
+, .spedmon-reset-style:hover 
+, .spedmon-reset-style:active 
+, .spedmon-reset-style:focus 
+, .spedmon-reset-style:link 
+, .spedmon-reset-style:visited {
+    all: unset;
+    color: inherit;
+}
+
+  .spedmon-btn-no-style  
+, .spedmon-btn-no-style:hover 
+, .spedmon-btn-no-style:active 
+, .spedmon-btn-no-style:focus 
+, .spedmon-btn-no-style:link 
+, .spedmon-btn-no-style:visited {
+    all: unset;
+    color: unset;
+    background-color: unset;
+}
+

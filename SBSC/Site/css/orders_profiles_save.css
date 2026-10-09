@@ -1,0 +1,30 @@
+﻿.spedmon-select {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px 1px #e4e4e4;
+    transition: all .2s ease-in-out;
+}
+
+.spedmon-select:hover {
+    box-shadow: 0 0 5px #85cdff;
+}
+
+span.mba-rest-view-data-type-text, span.mba-rest-view-data-type-date, td.mba-rest-view-cell {
+    text-align: center;
+}
+
+.plantype-extra-field {
+    display: flex;
+    align-items: center;
+}
+
+.new-form-data-prompt-cont {
+    background-color: #e3e3e3;
+}
+
+/* plan type instructions icon */
+
+#planTypeInstructionsIcon {
+    font-size: 1.2em;
+}

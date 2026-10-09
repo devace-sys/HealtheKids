@@ -1,0 +1,16 @@
+C:\MBA\Common\MBA_X12\bin\Debug\MBA_X12.dll
+C:\MBA\Common\MBA_X12\bin\Debug\MBA_X12.pdb
+C:\MBA\Common\MBA_X12\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\MBA\Common\MBA_X12\bin\Debug\Ionic.Zip.dll
+C:\MBA\Common\MBA_X12\bin\Debug\NPOI.dll
+C:\MBA\Common\MBA_X12\bin\Debug\NPOI.OOXML.dll
+C:\MBA\Common\MBA_X12\bin\Debug\NPOI.OpenXml4Net.dll
+C:\MBA\Common\MBA_X12\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\MBA\Common\MBA_X12\bin\Debug\OopFactory.X12.dll
+C:\MBA\Common\MBA_X12\bin\Debug\OopFactory.X12.pdb
+C:\MBA\Common\MBA_X12\bin\Debug\OopFactory.X12.xml
+C:\MBA\Common\MBA_X12\obj\x86\Debug\MBA_X12.csproj.AssemblyReference.cache
+C:\MBA\Common\MBA_X12\obj\x86\Debug\MBA_X12.csproj.CoreCompileInputs.cache
+C:\MBA\Common\MBA_X12\obj\x86\Debug\MBA_X12.csproj.CopyComplete
+C:\MBA\Common\MBA_X12\obj\x86\Debug\MBA_X12.dll
+C:\MBA\Common\MBA_X12\obj\x86\Debug\MBA_X12.pdb

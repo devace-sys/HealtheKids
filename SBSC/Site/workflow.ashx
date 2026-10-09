@@ -1,0 +1,1 @@
+<%@ WebHandler Language="C#" Class="Spedmon.WorkflowRpt" CodeBehind="workflow.ashx.cs"%>

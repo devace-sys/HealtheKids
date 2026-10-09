@@ -1,0 +1,15 @@
+C:\MBA\Common\MediaFile\bin\Debug\MediaFile.dll
+C:\MBA\Common\MediaFile\bin\Debug\MediaFile.pdb
+C:\MBA\Common\MediaFile\bin\Debug\bccrypto.dll
+C:\MBA\Common\MediaFile\bin\Debug\itextsharp.dll
+C:\MBA\Common\MediaFile\bin\Debug\Logger.dll
+C:\MBA\Common\MediaFile\bin\Debug\taglib-sharp.dll
+C:\MBA\Common\MediaFile\bin\Debug\Logger.pdb
+C:\MBA\Common\MediaFile\bin\Debug\bccrypto.xml
+C:\MBA\Common\MediaFile\bin\Debug\itextsharp.xml
+C:\MBA\Common\MediaFile\bin\Debug\taglib-sharp.xml
+C:\MBA\Common\MediaFile\obj\Debug\MediaFile.csproj.AssemblyReference.cache
+C:\MBA\Common\MediaFile\obj\Debug\MediaFile.csproj.CoreCompileInputs.cache
+C:\MBA\Common\MediaFile\obj\Debug\MediaFile.csproj.CopyComplete
+C:\MBA\Common\MediaFile\obj\Debug\MediaFile.dll
+C:\MBA\Common\MediaFile\obj\Debug\MediaFile.pdb

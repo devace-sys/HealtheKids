@@ -1,0 +1,14 @@
+table.ui-mba-entity-record-manage {
+  border-collapse: collapse;
+}
+
+button.ui-mba-entity-record-manage {
+}
+
+ table.ui-mba-entity-record-manage thead tr th
+,table.ui-mba-entity-record-manage tbody tr th
+,table.ui-mba-entity-record-manage thead tr td
+,table.ui-mba-entity-record-manage tbody tr td
+{
+  
+}

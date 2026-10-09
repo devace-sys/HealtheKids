@@ -1,0 +1,59 @@
+
+i.mba-rest-view.fa.fa-book {
+    color: #4b9b45;
+}
+
+i.mba-rest-view.fa.fa-check {
+    margin-left: 0.5em;
+    color: #4b9b45;
+}
+
+
+
+button[data-mba-rest-view-ctrl-def-name="markRow"] {
+    border: none !important;
+}
+
+tr[data-mba-rest-view-row-marked="1"] {
+    border: 4px #d7d07f solid;
+    border-left: 4px #f56a19 solid;
+}
+
+
+button[data-mba-rest-view-ctrl-def-name="markRow"] > i.fa-check {
+    color: #6b7c8b !important;
+}
+
+tr[data-mba-rest-view-row-marked="1"] button[data-mba-rest-view-ctrl-def-name="markRow"] > i.fa-check {
+    color: red !important;
+}
+
+tr[data-mba-rest-view-row-marked="1"] td.mba-rest-view-row-controls > * {
+    margin-left: 12px;
+}
+
+tr.mba-rest-view-row[data-mba-rest-view-row-marked="1"] td.mba-rest-view:nth-of-type(1) {
+  text-decoration-line:       underline;
+  text-decoration-thickness:  3px;
+}
+
+tr.mba-rest-view-row[data-mba-rest-view-row-marked="1"]:nth-of-type(2n) td.mba-rest-view {
+  background-color: #f7eed4;
+}
+
+tr.mba-rest-view-row[data-mba-rest-view-row-marked="1"]:nth-of-type(2n+1) td.mba-rest-view {
+  background-color: #fffddb;
+}
+
+tr[data-mba-rest-view-row-marked="1"] button[data-mba-rest-view-ctrl-def-name="markRow"] > i.fa-check {
+    background-color: #8dc931 !important;
+}
+
+
+button[data-mba-rest-view-ctrl-def-name="markRow"] > i.mba-rest-view.mba-rest-view-ctrl-icon.mba-rest-view-mark-row-icon.mba-rest-view-unselected {
+    opacity: 1 !important;
+}
+
+button[data-mba-rest-view-ctrl-def-name="markRow"] > i.mba-rest-view.mba-rest-view-ctrl-icon.mba-rest-view-mark-row-icon.mba-rest-view-selected {
+    opacity: 1 !important;
+}

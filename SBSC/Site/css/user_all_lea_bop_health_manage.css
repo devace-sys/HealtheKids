@@ -1,0 +1,32 @@
+﻿/*Based on https://www.florin-pop.com/blog/2019/03/css-pulse-effect/ */
+
+@keyframes rpt-kf-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+.claims-paid-reports-cont span {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.claims-paid-reports-cont span:hover {
+    transform: scale(1.2);
+}
+
+*.animation-pulse {
+    animation: rpt-kf-pulse 2s infinite;
+}
+
+rect.scrollbar {
+    x: 184;
+}

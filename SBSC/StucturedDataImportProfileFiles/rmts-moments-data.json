@@ -1,0 +1,439 @@
+[ 
+	{
+		  id: 'RMTS-MOMENT-625'
+		, fileClass: '625'
+		, fileSubClass: ''
+		, name: 'RMTS Moment List'
+		, label: 'RMTS Moment List'
+		, description: 'RMTS Moment List'
+		, headerRowNum:1
+		, fields: [
+			{
+				  name: 'CostPool.Name'
+				, columnRequired: false
+                , dataRequired: false
+				, dataType: 'string'
+				, label: 'Participant Pool'
+				, description: 'Participant Pool'
+				, commonColumnNames: [
+					  'Participant Pool'
+					, 'participant pool'
+					, 'participantpool'
+					, 'participantPool'
+					, 'ParticipantPool'
+					, 'Participant.Pool'
+					, 'participant.pool'
+					, 'participant.Pool'
+					, 'Participant Pool Name'
+					, 'participant pool name'
+					, 'participantpoolname'
+					, 'participantPoolName'
+					, 'ParticipantPoolName'
+					, 'Participant.Pool'
+					, 'participant.pool'
+					, 'participant.Pool'
+					, 'CostPool.Name'
+					, 'costpool.name'
+					, 'costPool.name'
+					, 'costPool.Name'
+					, 'CostPool Name'
+					, 'CostPool name'
+					, 'costPool name'
+					, 'costpool name'
+					, 'costpool Name'
+					, 'costPoolName'
+					, 'CostPoolName'
+					, 'costpoolname'
+					, 'cost pool name'
+					, 'Cost Pool Name'
+					, 'Cost Pool'
+					, 'cost pool'
+					, 'cost.pool'
+					, 'costPool'
+					, 'costpool'
+					, 'pool'
+					, 'Pool'
+					, 'POOL'
+				]
+			}
+			, {
+				  name: 'LEA'
+                , columnRequired: false
+                , dataRequired: false
+				, dataType: 'string'
+				, label: 'LEA'
+				, description: 'LEA'
+				, commonColumnNames: [
+					  'LEA'
+				    , 'lea'
+					, 'LEA Name'
+					, 'lea name'
+					, 'LEA.Name'
+					, 'lea.name'
+					, 'AgencyName'
+					, 'Agency'
+					, 'agency'
+					, 'agencyName'					
+					, 'agency.name'
+					, 'Agency.Name'
+				]
+			}
+			, {
+				  name: 'email'
+				, columnRequired: false
+                , dataRequired: false
+				, dataType: 'email'
+				, label: 'Email Address'
+				, description: 'Practitioner Email Address'
+				, commonColumnNames: [
+					  'email'
+					, 'Email'
+					, 'emailAddress'
+					, 'EmailAddress'
+					, 'e-mail'
+					, 'E-mail'
+					, 'e-mail Address'
+					, 'E-mail Address'
+					, 'e-mail_Address'
+					, 'E-mail_Address'
+					, 'person.email'
+					, 'person.Email'
+					, 'Person.Email'
+				]
+			}
+			, {
+				  name: 'Last Name'
+                , columnRequired: false
+                , dataRequired: false
+				, dataType: 'string'
+				, label: 'Last Name'
+				, description: 'Last name only please'
+				, commonColumnNames: [
+					  'Last Name'                            
+					, 'LastName'
+					, 'Last Name'
+					, 'Last_Name'
+					, 'Last Name 20'
+					, 'Last'
+					, 'Practitioner Last Name'
+					, 'Practitioner_Last_Name'
+					, 'Prac Last Name'
+					, 'Prac_Last_Name'
+					, 'Employee Last Name'
+					, 'Employee_Last_Name'
+					, 'Emp Last Name'
+					, 'Emp_Last_Name'
+					, 'lname'
+					, 'LAST_NAME'
+					, 'PRACLNAME'
+					, 'Person.LastName'
+					, 'person.lastName'
+					, 'person.lastname'
+				]
+			}
+			, {
+				  name: 'First Name'
+                , columnRequired: false
+                , dataRequired: false				  
+				, dataType: 'string'
+				, label: 'First Name'
+				, description: 'First name only please'
+				, commonColumnNames: [
+					  'firstName'
+					, 'FirstName'
+					, 'First Name'
+					, 'First_Name'
+					, 'First Name 15'
+					, 'First'
+					, 'Practitioner First Name'
+					, 'Practitioner_First_Name'
+					, 'Prac First Name'
+					, 'Prac_First_Name'
+					, 'Employee First Name'
+					, 'Employee_First_Name'
+					, 'Emp First Name'
+					, 'Emp_First_Name'
+					, 'fname'
+					, 'FIRST_NAME'
+					, 'PRACFNAME'					
+					, 'Person.FirstName'
+					, 'person.firstName'
+					, 'person.firstname'
+				]
+			}	
+			, {
+				  name: 'Job Title'
+				, columnRequired: false
+                , dataRequired: false
+				, dataType: 'string'
+				, label: 'Job Title'
+				, description: 'Job Title'
+				, commonColumnNames: [
+					  'Job Title'
+					, 'JobPosition.JobTitle'
+					, 'JobTitle'
+					, 'jobTitle'
+					, 'jobtitle'
+				]
+			}
+			, {
+				  name: 'Job Classification'
+				, columnRequired: false
+                , dataRequired: false
+				, dataType: 'string'
+				, label: 'Job Classification'
+				, description: 'Job Classification'
+				, commonColumnNames: [
+					  'Job Classification'
+					, 'job classification'
+					, 'JobCategory.Name'
+					, 'JobCategory.name'
+					, 'jobCategory.Name'
+					, 'jobCategory.name'
+					, 'jobcategory.name'
+					, 'Job Category'
+					, 'Job.Category'
+					, 'job classification'
+				]
+			}
+			, {
+				  name: 'Sampled Moment'
+				, columnRequired: false
+                , dataRequired: false				
+				, dataType: 'datetime'
+				, label: 'Sampled Moment'
+				, description: 'Date and time for the moment'
+				, commonColumnNames: [
+					  'Sampled Moment'
+					, 'sampled moment'
+					, 'sampledmoment'
+					, 'SampledMoment'
+					, 'Moment.DateTime'
+					, 'moment.datetime'
+					, 'Moment Date'
+					, 'MomentDate'
+					, 'Moment DateTime'
+					, 'MomentDateTime'
+				]
+			}
+			, {
+				  name: 'Activity Code'
+				, columnRequired: false
+                , dataRequired: false				
+				, dataType: 'string'
+				, label: 'Activity Code'
+				, description: 'Activity Code'
+				, commonColumnNames: [
+					  'Activity Code'
+					, 'ActivityCode'
+					, 'activity code'
+					, 'activityCode'
+					, 'activitycode'
+					, 'CodeType.Name'
+					, 'codeType.name'
+					, 'codetype.name'
+				]
+			}
+			, {
+				  name: 'SMAA - Code 16 Audit Required'
+				, columnRequired: false
+                , dataRequired: false				
+				, dataType: 'string'
+				, label: 'SMAA - Code 16 Audit Required'
+				, description: 'SMAA - Code 16 Audit Required'
+				, commonColumnNames: [
+					  'SMAA - Code 16 Audit Required'
+					, 'smaa - code 16 audit required'
+					, 'Code 16 Audit Required'
+					, 'code 16 audit required'
+				]
+			}
+			, {
+				  name: 'LEABOP - Code 2A Audit Required'
+				, columnRequired: false
+                , dataRequired: false				
+				, dataType: 'string'
+				, label: 'LEABOP - Code 2A Audit Required'
+				, description: 'LEABOP - Code 2A Audit Required'
+				, commonColumnNames: [
+					  'LEABOP - Code 2A Audit Required'
+					, 'leabop - code 2a audit required'
+					, 'Code 2A Audit Required'
+					, 'code 2a audit required'
+				]
+			}	
+			, {
+				  name: 'Related to Student Assessment/IEP/IFSP/Care Plan?'
+				, columnRequired: false
+                , dataRequired: false				
+				, dataType: 'string'
+				, label: 'Related to Student Assessment/IEP/IFSP/Care Plan?'
+				, description: 'Related to Student Assessment/IEP/IFSP/Care Plan?'
+				, commonColumnNames: [
+					  'Related to Student Assessment/IEP/IFSP/Care Plan?'
+					, 'related to student assessment/iep/ifsp/care plan?'					
+					, 'Related to Student Assessment/IEP/IFSP/Care Plan'
+					, 'related to student assessment/iep/ifsp/care plan'
+					, 'MomentQuestions.Was this activity related to an assessment or screening, or related to a service that is authorized in an Ind...'
+					
+				]
+			}	
+			, {
+				  name: 'Who were you with?'
+				, columnRequired: false
+                , dataRequired: false				
+				, dataType: 'string'
+				, label: 'Who were you with?'
+				, description: 'Who were you with?'
+				, commonColumnNames: [
+					  'Who were you with?'
+					, 'who were you with?'
+					, 'Who were you with'
+					, 'who were you with'
+					, 'MomentQuestions.Who were you with?'
+					, 'MomentQuestions.who were you with?'
+					, 'MomentQuestions.Who were you with'
+					, 'MomentQuestions.who were you with'
+					, 'momentQuestions.Who were you with?'
+					, 'momentQuestions.who were you with?'
+					, 'momentQuestions.Who were you with'
+					, 'momentQuestions.who were you with'
+					, 'momentquestions.Who were you with?'
+					, 'momentquestions.who were you with?'
+					, 'momentquestions.Who were you with'
+					, 'momentquestions.who were you with'									
+				]
+			}	
+			, {
+				  name: 'What were you doing?'
+				, columnRequired: false
+                , dataRequired: false				
+				, dataType: 'string'
+				, label: 'What were you doing?'
+				, description: 'What were you doing?'
+				, commonColumnNames: [
+					  'What were you doing?'
+					, 'what were you doing?'
+					, 'What were you doing'
+					, 'what were you doing'
+					, 'MomentQuestions.What were you doing?'
+					, 'MomentQuestions.what were you doing?'
+					, 'MomentQuestions.What were you doing'
+					, 'MomentQuestions.what were you doing'
+					, 'momentQuestions.What were you doing?'
+					, 'momentQuestions.what were you doing?'
+					, 'momentQuestions.What were you doing'
+					, 'momentQuestions.what were you doing'
+					, 'momentquestions.What were you doing?'
+					, 'momentquestions.what were you doing?'
+					, 'momentquestions.What were you doing'
+					, 'momentquestions.what were you doing'								
+				]
+			}	
+			, {
+				  name: 'Why were you performing this activity?'
+				, columnRequired: false
+                , dataRequired: false				
+				, dataType: 'string'
+				, label: 'Why were you performing this activity?'
+				, description: 'Why were you performing this activity?'
+				, commonColumnNames: [
+					  'Why were you performing this activity?'
+					, 'why were you performing this activity?'
+					, 'Why were you performing this activity'
+					, 'Why were you performing this activity'
+					, 'MomentQuestions.Why were you performing this activity?'
+					, 'MomentQuestions.why were you performing this activity?'
+					, 'MomentQuestions.Why were you performing this activity'
+					, 'MomentQuestions.Why were you performing this activity'
+					, 'momentQuestions.Why were you performing this activity?'
+					, 'momentQuestions.why were you performing this activity?'
+					, 'momentQuestions.Why were you performing this activity'
+					, 'momentQuestions.Why were you performing this activity'
+					, 'momentquestions.Why were you performing this activity?'
+					, 'momentquestions.why were you performing this activity?'
+					, 'momentquestions.Why were you performing this activity'
+					, 'momentquestions.Why were you performing this activity'						
+				]
+			}	
+			, {
+				  name: 'Participant Clarifying Question 1'
+				, columnRequired: false
+                , dataRequired: false				
+				, dataType: 'string'
+				, label: 'Participant Clarifying Question 1'
+				, description: 'Participant Clarifying Question 1'
+				, commonColumnNames: [
+					  'Participant Clarifying Question 1'
+					, 'Participant clarifying question 1'
+					, 'participant clarifying question 1'
+					, 'ParticipantInteractions.QCComment_1'
+					, 'articipantInteractions.QCComment_1'
+					, 'participantinteractions.qccomment_1'
+				]
+			}	
+			, {
+				  name: 'Participant Clarifying Answer 1'
+				, columnRequired: false
+                , dataRequired: false				
+				, dataType: 'string'
+				, label: 'Participant Clarifying Answer 1'
+				, description: 'Participant Clarifying Answer 1'
+				, commonColumnNames: [
+					  'Participant Clarifying Answer 1'
+					, 'Participant clarifying answer 1'
+					, 'participant clarifying answer 1'
+					, 'ParticipantInteractions.ParticipantFollowUpAnswer_1'
+					, 'participantInteractions.participantFollowUpAnswer_1'
+					, 'participantinteractions.participantfollowupanswer_1'
+				]
+			}	
+			, {
+				  name: 'Participant Clarifying Question 2'
+				, columnRequired: false
+                , dataRequired: false				
+				, dataType: 'string'
+				, label: 'Participant Clarifying Question 2'
+				, description: 'Participant Clarifying Question 2'
+				, commonColumnNames: [
+					  'Participant Clarifying Question 2'
+					, 'Participant clarifying question 2'
+					, 'participant clarifying question 2'
+					, 'ParticipantInteractions.QCComment_2'
+					, 'articipantInteractions.QCComment_2'
+					, 'participantinteractions.qccomment_2'
+				]
+			}	
+			, {
+				  name: 'Participant Clarifying Answer 2'
+				, columnRequired: false
+                , dataRequired: false				
+				, dataType: 'string'
+				, label: 'Participant Clarifying Answer 2'
+				, description: 'Participant Clarifying Answer 2'
+				, commonColumnNames: [
+					  'Participant Clarifying Answer 2'
+					, 'Participant clarifying answer 2'
+					, 'participant clarifying answer 2'
+					, 'ParticipantInteractions.ParticipantFollowUpAnswer_2'
+					, 'participantInteractions.participantFollowUpAnswer_2'
+					, 'participantinteractions.participantfollowupanswer_2'
+				]
+			}	
+			, {
+				  name: 'Coding Comments'
+				, columnRequired: false
+                , dataRequired: false				
+				, dataType: 'string'
+				, label: 'Coding Comments'
+				, description: 'Coding Comments'
+				, commonColumnNames: [
+					  'Coding Comments'
+					, 'Coding comments'
+					, 'coding comments'
+				]
+			}
+		]
+	}
+			
+]

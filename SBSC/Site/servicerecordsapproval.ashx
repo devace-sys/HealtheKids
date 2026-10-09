@@ -1,0 +1,1 @@
+<%@ WebHandler Language="C#" Class="Spedmon.ServiceRecordsApprovalRpt" CodeBehind="servicerecordsapproval.ashx.cs"%>

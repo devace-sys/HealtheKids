@@ -1,0 +1,71 @@
+using System;
+using System.Collections;
+using System.Globalization;
+using System.Threading;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Web;
+using System.Web.SessionState;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.HtmlControls;
+using System.Text.RegularExpressions;
+
+namespace MBA
+{
+
+  /**************************************************************************
+   * SelectPractitionerDisciplineFamily */
+  /**
+   * 
+   *************************************************************************/
+  public class DataEntryRowSelectPractitionerDisciplineFamily:DataEntryRowSelectEntity
+  {
+    public DataEntryRowSelectPractitionerDisciplineFamily(): base()
+	  {	     
+      _selectTitle                        = "Name";
+      _dataPrivate                        = true;
+      _dataURL                            = "groups_service_classes.asmx/viewSelForOrpDocs";
+      _hasDataSource                      = false;
+      _hasAddNew                          = false;
+      _hasEditSelected                    = false;
+      _hasViewNotes                       = false;
+      _dataSourceParameterName            = null;
+      _preSelectedDataSource              = null;
+      _saveDataSourceSelectedAsPreference = false;
+      _nounPlural                         = "Discipline Families";
+      _nounSingular                       = "Discipline Family";
+    
+      _entryAllowedFn = delegate (ref RequestResponse rd) {
+        if (rd.wu.usr.userGroupID == Constants.USER_GROUP_CLIENT) 
+        {
+          if (rd.wu.usr.roleID == Constants.ROLE_LEA_PROVIDER_ID)
+          {
+            return false;
+          }
+        }
+        return true;        
+      };
+          
+      _entryNotAllowedReplacementValueFn = delegate (ref RequestResponse rd) {
+        _selectValue = rd.wu.pr.orpGroupServiceClassNameID.ToString();
+        _selectName  = rd.wu.pr.orpGroupServiceClassName;
+        return true;
+      };      
+    }
+    
+
+	  protected override void Render(HtmlTextWriter writer)
+    {     	    
+                           
+      /* Use default control ids if nothing was provided */
+
+      if (String.IsNullOrWhiteSpace(_entityControlID))            _entityControlID           = Constants.PARM_GRP_SVC_CLS_NME_ID;
+      
+                                	          
+      base.Render(writer);
+    }
+  }
+}

@@ -1,0 +1,92 @@
+ul.app-notifications {
+  display:block;
+  list-style-type: none;
+  padding:0;
+  margin:0;
+  height:auto;  
+}
+
+ul.app-notifications li.app-notification {
+  display:block;
+  color:#000;  
+  padding:.75em;
+  margin:0;
+  background-color:#FEFEFE; /* Light*/
+  border:1px solid #ffffff; /* Same as background in screen.css */
+  border-radius: 5px;
+  text-align:center;
+}
+
+ul.app-notifications li.app-notification a {  
+  color:#000;
+}
+
+ul.app-notifications li.app-notification-primary {
+  background-color:#cce5ff
+}
+
+ul.app-notifications li.app-notification-secondary {
+  background-color:#e2e3e5
+}
+
+ul.app-notifications li.app-notification-success {
+  background-color:#D4EDDA;
+}
+
+ul.app-notifications  li.app-notification-info {
+  background-color:#D1ECF1;
+}
+
+ul.app-notifications  li.app-notification-warning {
+  background-color:#FFF3CD;
+}
+
+ul.app-notifications  li.app-notification-danger {
+  background-color:#F8D7DA;
+}
+
+ul.app-notifications  li.app-notification-light {
+  background-color:#FEFEFE;
+}
+
+ul.app-notifications  li.app-notification-dark {
+  background-color:#D6D8D9;
+}
+
+/* Dismiss button */
+
+ul.app-notifications li.app-notification button.app-notification-dismiss {
+  display:inline-block;
+  float:right;
+  background-color:inherit;
+  background-color:transparent; /* IE Fix */
+  color:#000;
+  border:none;  
+  padding:0;  
+  height:1em;
+  width:1em;
+  font-weight:bold;  
+  font-size:1em;
+  margin-left:1em; 
+  margin-right:0;
+  line-height:1em;  
+  vertical-align:text-top;
+}
+
+/* Clear floats */
+
+ul.app-notifications li.app-notification  {
+    clear: both;
+}
+
+ul.app-notifications li.app-notification button.app-notification-dismiss:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Dismiss button hover */
+
+ul.app-notifications li.app-notification button.app-notification-dismiss:hover {  
+  cursor:pointer;
+}

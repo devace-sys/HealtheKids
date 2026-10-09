@@ -1,0 +1,788 @@
+﻿.iep-present-tab-accordion-controls {
+    float: right;
+    display: flex;
+    gap: 0.375rem;
+    margin: 0 0 0.5rem 1rem;
+}
+
+.iep-present-tab-accordion-controls__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #4b5563;
+    background: #fff;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+    .iep-present-tab-accordion-controls__btn:hover {
+        background: #f9fafb;
+        border-color: #9ca3af;
+    }
+
+    .iep-present-tab-accordion-controls__btn:focus {
+        outline: 2px solid #3b82f6;
+        outline-offset: 1px;
+    }
+
+.iep-present-tab-accordion {
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    background: #fff;
+    overflow: hidden;
+}
+
+.iep-present-tab-accordion--collapsed {
+    margin-bottom: 0.25rem;
+}
+
+.iep-present-tab-accordion > legend {
+    display: none;
+}
+
+.iep-present-tab-accordion__header {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    background: linear-gradient(to bottom, #f9fafb, #f3f4f6);
+    border-bottom: 1px solid #e5e7eb;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.15s ease;
+}
+
+    .iep-present-tab-accordion__header:hover {
+        background: linear-gradient(to bottom, #f3f4f6, #e5e7eb);
+    }
+
+    .iep-present-tab-accordion__header:focus {
+        outline: 2px solid #3b82f6;
+        outline-offset: -2px;
+    }
+
+.iep-present-tab-accordion--collapsed .iep-present-tab-accordion__header {
+    border-bottom: none;
+    padding: 0.375rem 0.625rem;
+}
+
+.iep-present-tab-accordion__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+}
+
+.iep-present-tab-accordion--collapsed .iep-present-tab-accordion__icon {
+    width: 22px;
+    height: 22px;
+    font-size: 0.7rem;
+}
+
+.iep-present-tab-accordion__icon--yellow {
+    background-color: #fef3c7;
+    color: #d97706;
+}
+
+.iep-present-tab-accordion__icon--blue {
+    background-color: #dbeafe;
+    color: #2563eb;
+}
+
+.iep-present-tab-accordion__icon--green {
+    background-color: #d1fae5;
+    color: #059669;
+}
+
+.iep-present-tab-accordion__icon--purple {
+    background-color: #ede9fe;
+    color: #7c3aed;
+}
+
+.iep-present-tab-accordion__icon--red {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+
+.iep-present-tab-accordion__icon--teal {
+    background-color: #ccfbf1;
+    color: #0d9488;
+}
+
+.iep-present-tab-accordion__icon--pink {
+    background-color: #fce7f3;
+    color: #db2777;
+}
+
+.iep-present-tab-accordion__icon--indigo {
+    background-color: #e0e7ff;
+    color: #4f46e5;
+}
+
+.iep-present-tab-accordion__icon--orange {
+    background-color: #ffedd5;
+    color: #ea580c;
+}
+
+.iep-present-tab-accordion__icon--gray {
+    background-color: #f3f4f6;
+    color: #4b5563;
+}
+
+.iep-present-tab-accordion__title {
+    flex: 1;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+}
+
+.iep-present-tab-accordion--collapsed .iep-present-tab-accordion__title {
+    font-size: 0.8125rem;
+}
+
+.iep-present-tab-accordion__status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.6875rem;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 9999px;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.iep-present-tab-accordion__status--empty {
+    display: none;
+}
+
+.iep-present-tab-accordion__status--na {
+    background-color: #f3f4f6;
+    color: #6b7280;
+    border: 1px solid #e5e7eb;
+}
+
+    .iep-present-tab-accordion__status--na .iep-present-tab-accordion__status-icon {
+        color: #9ca3af;
+    }
+
+.iep-present-tab-accordion__status--in-progress {
+    background-color: #fef3c7;
+    color: #92400e;
+    border: 1px solid #fcd34d;
+}
+
+    .iep-present-tab-accordion__status--in-progress .iep-present-tab-accordion__status-icon {
+        color: #d97706;
+    }
+
+.iep-present-tab-accordion__status--draft {
+    background-color: #dbeafe;
+    color: #1e40af;
+    border: 1px solid #93c5fd;
+}
+
+    .iep-present-tab-accordion__status--draft .iep-present-tab-accordion__status-icon {
+        color: #3b82f6;
+    }
+
+.iep-present-tab-accordion__status--finalized {
+    background-color: #d1fae5;
+    color: #065f46;
+    border: 1px solid #6ee7b7;
+}
+
+    .iep-present-tab-accordion__status--finalized .iep-present-tab-accordion__status-icon {
+        color: #059669;
+    }
+
+.iep-present-tab-accordion__status--needs-review {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fca5a5;
+}
+
+    .iep-present-tab-accordion__status--needs-review .iep-present-tab-accordion__status-icon {
+        color: #dc2626;
+    }
+
+.iep-present-tab-accordion__status--not-checked {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fca5a5;
+}
+
+    .iep-present-tab-accordion__status--not-checked .iep-present-tab-accordion__status-icon {
+        color: #dc2626;
+    }
+
+.iep-present-tab-accordion__status--checked {
+    background-color: #d1fae5;
+    color: #065f46;
+    border: 1px solid #6ee7b7;
+}
+
+    .iep-present-tab-accordion__status--checked .iep-present-tab-accordion__status-icon {
+        color: #059669;
+    }
+
+.iep-present-tab-accordion__status-icon {
+    font-size: 0.625rem;
+}
+
+.iep-present-tab-accordion--collapsed .iep-present-tab-accordion__status {
+    padding: 0.125rem 0.375rem;
+    font-size: 0.625rem;
+}
+
+.iep-present-tab-accordion--collapsed .iep-present-tab-accordion__status-icon {
+    font-size: 0.5625rem;
+}
+
+.iep-present-tab-accordion__chevron {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    color: #6b7280;
+    transition: transform 0.2s ease;
+    font-size: 0.75rem;
+}
+
+.iep-present-tab-accordion--collapsed .iep-present-tab-accordion__chevron {
+    transform: rotate(-90deg);
+}
+
+.iep-present-tab-accordion__content {
+    padding: 0.625rem 0.75rem;
+    display: block;
+}
+
+.iep-present-tab-accordion--collapsed .iep-present-tab-accordion__content {
+    display: none;
+}
+
+.iep-present-tab-accordion--na .iep-present-tab-accordion__header {
+    background: linear-gradient(to bottom, #f9fafb, #f3f4f6);
+}
+
+.iep-present-tab-accordion--na .iep-present-tab-accordion__title {
+    color: #9ca3af;
+}
+
+.iep-present-tab-accordion--na .iep-present-tab-accordion__icon {
+    opacity: 0.5;
+}
+
+.iep-present-tab-accordion__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.2rem;
+    margin-bottom: 0.1rem;
+}
+
+.iep-present-tab-accordion__row--top {
+    padding-bottom: 0.01rem;
+    border-bottom: 0.1px solid #e5e7eb;
+    margin-bottom: 0.01rem;
+}
+
+.iep-present-tab-accordion__row--baseline {
+    background: #f9fafb;
+    padding: 0.1rem;
+    border-radius: 4px;
+    margin-bottom: 0.1rem;
+    gap: 0.75rem;
+}
+
+.iep-present-tab-accordion__field {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.iep-present-tab-accordion__field--grow {
+    flex: 1 1 200px;
+}
+
+.iep-present-tab-accordion__field--full {
+    flex: 1 1 100%;
+}
+
+.iep-present-tab-accordion__field .data-entry-row,
+.iep-present-tab-accordion__row .data-entry-row {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    margin: 0;
+    padding: 0;
+}
+
+    .iep-present-tab-accordion__field .data-entry-row label,
+    .iep-present-tab-accordion__row .data-entry-row label {
+        margin: 0;
+        padding: 0;
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: #374151;
+        white-space: nowrap;
+    }
+
+.iep-present-tab-accordion__field input[type="text"],
+.iep-present-tab-accordion__field select,
+.iep-present-tab-accordion__row input[type="text"],
+.iep-present-tab-accordion__row select {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8125rem;
+}
+
+.iep-present-tab-accordion__field input[type="checkbox"] {
+    margin: 0 0.25rem 0 0;
+    flex-shrink: 0;
+}
+
+.iep-present-tab-accordion__section-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #374151;
+    margin: 0.25rem 0;
+    padding: 0;
+}
+
+.iep-present-tab-accordion__field--full .data-entry-row {
+    display: block;
+    width: 100%;
+}
+
+    .iep-present-tab-accordion__field--full .data-entry-row label {
+        display: block;
+        margin-bottom: 0.25rem;
+    }
+
+.iep-present-tab-accordion__progress-link {
+    padding-top: 0.375rem;
+    border-top: 1px solid #f3f4f6;
+    margin-top: 0.375rem;
+    font-size: 0.75rem;
+}
+
+    .iep-present-tab-accordion__progress-link .fa-chart-line {
+        color: #3b82f6;
+        cursor: pointer;
+        transition: color 0.15s ease;
+    }
+
+        .iep-present-tab-accordion__progress-link .fa-chart-line:hover {
+            color: #1d4ed8;
+        }
+
+#tab-sped-iep-present-levels h4:first-of-type {
+    clear: both;
+}
+
+
+.sped-accordion {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    background: #ffffff;
+    overflow: hidden;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .sped-accordion:hover {
+        border-color: #cbd5e0;
+    }
+
+    .sped-accordion.sped-accordion-expanded {
+        border-color: #4299e1;
+        box-shadow: 0 2px 8px rgba(66, 153, 225, 0.15);
+    }
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  Accordion Header                                                                                                                                           */
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.sped-accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+    cursor: pointer;
+    background: #f8fafc;
+    border-bottom: 1px solid transparent;
+    transition: background-color 0.2s ease;
+    user-select: none;
+}
+
+    .sped-accordion-header:hover {
+        background: #f1f5f9;
+    }
+
+.sped-accordion.sped-accordion-expanded .sped-accordion-header {
+    background: #ebf8ff;
+    border-bottom-color: #bee3f8;
+}
+
+.sped-accordion-header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sped-accordion-header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  Accordion Icon                                                                                                                                             */
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.sped-accordion-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e2e8f0;
+    color: #4a5568;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  Icon Color Variants                                                                                                                                        */
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.sped-accordion-icon-yellow {
+    background: #faf089;
+    color: #744210;
+}
+
+.sped-accordion-icon-blue {
+    background: #90cdf4;
+    color: #2a4365;
+}
+
+.sped-accordion-icon-green {
+    background: #9ae6b4;
+    color: #22543d;
+}
+
+.sped-accordion-icon-purple {
+    background: #d6bcfa;
+    color: #44337a;
+}
+
+.sped-accordion-icon-red {
+    background: #fed7d7;
+    color: #742a2a;
+}
+
+.sped-accordion-icon-teal {
+    background: #81e6d9;
+    color: #234e52;
+}
+
+.sped-accordion-icon-pink {
+    background: #fbb6ce;
+    color: #702459;
+}
+
+.sped-accordion-icon-indigo {
+    background: #a3bffa;
+    color: #3c366b;
+}
+
+.sped-accordion-icon-orange {
+    background: #fbd38d;
+    color: #744210;
+}
+
+.sped-accordion-icon-gold {
+    background: #f6e05e;
+    color: #744210;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  Accordion Title                                                                                                                                            */
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.sped-accordion-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.sped-accordion.sped-accordion-expanded .sped-accordion-title {
+    color: #2b6cb0;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  Chevron                                                                                                                                                    */
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.sped-accordion-chevron {
+    font-size: 14px;
+    color: #a0aec0;
+    transition: transform 0.25s ease, color 0.2s ease;
+}
+
+.sped-accordion.sped-accordion-expanded .sped-accordion-chevron {
+    transform: rotate(180deg);
+    color: #4299e1;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  Accordion Content                                                                                                                                          */
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.sped-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.sped-accordion.sped-accordion-expanded .sped-accordion-content {
+    max-height: 5000px;
+}
+
+.sped-accordion-content-inner {
+    padding: 18px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  Fields Container                                                                                                                                           */
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.sped-accordion-fields-container {
+    /* Default state - fields are enabled */
+}
+
+    .sped-accordion-fields-container.sped-accordion-fields-disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  N/A Toggle                                                                                                                                                 */
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.sped-accordion-na-toggle {
+    padding: 12px 18px;
+    background: #f7fafc;
+    border-bottom: 1px solid #e2e8f0;
+    transition: background-color 0.2s ease;
+}
+
+    .sped-accordion-na-toggle.sped-accordion-na-toggle-checked {
+        background: #fed7d7;
+        border-bottom-color: #feb2b2;
+    }
+
+    .sped-accordion-na-toggle label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0;
+        cursor: pointer;
+        font-size: 14px;
+        color: #4a5568;
+    }
+
+    .sped-accordion-na-toggle.sped-accordion-na-toggle-checked label {
+        color: #c53030;
+        font-weight: 500;
+    }
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  Source Tags                                                                                                                                                */
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.sped-accordion-source-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 10px;
+    padding: 8px 0;
+}
+
+.sped-accordion-source-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    background: #edf2f7;
+    border-radius: 16px;
+    font-size: 13px;
+    color: #4a5568;
+}
+
+.sped-accordion-source-tag-remove {
+    cursor: pointer;
+    color: #a0aec0;
+    font-size: 11px;
+    transition: color 0.15s ease;
+    margin-left: 4px;
+}
+
+    .sped-accordion-source-tag-remove:hover {
+        color: #e53e3e;
+    }
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  Hidden Utility                                                                                                                                             */
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.sped-accordion-hidden {
+    display: none !important;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  Present Levels Toolbar                                                                                                                                     */
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.present-levels-toolbar {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+    .present-levels-toolbar .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  Present Levels Additional Fields Section                                                                                                                   */
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.present-levels-additional-fields {
+    padding: 20px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+    .present-levels-additional-fields .ui-spedmon-data-entry-row {
+        margin-bottom: 15px;
+    }
+
+        .present-levels-additional-fields .ui-spedmon-data-entry-row:last-child {
+            margin-bottom: 0;
+        }
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  Prepared By Box                                                                                                                                            */
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.prepared-by-box {
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #4a5568;
+}
+
+    .prepared-by-box span:first-child {
+        font-weight: 600;
+    }
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  View Current Progress Link                                                                                                                                 */
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.sped-accordion-content-inner .cursor-pointer {
+    cursor: pointer;
+    color: #4299e1;
+    transition: color 0.15s ease;
+}
+
+    .sped-accordion-content-inner .cursor-pointer:hover {
+        color: #2b6cb0;
+    }
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  Section Headers Inside Accordion                                                                                                                           */
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.sped-accordion-content-inner h5 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a5568;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+    .sped-accordion-content-inner h5:first-child {
+        margin-top: 0;
+    }
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  Form Spacing Inside Accordion                                                                                                                              */
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.sped-accordion-content-inner .ui-spedmon-data-entry-row {
+    margin-bottom: 12px;
+}
+
+    .sped-accordion-content-inner .ui-spedmon-data-entry-row:last-child {
+        margin-bottom: 0;
+    }
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  Responsive Adjustments                                                                                                                                     */
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+    .sped-accordion-header {
+        padding: 12px 14px;
+    }
+
+    .sped-accordion-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .sped-accordion-title {
+        font-size: 14px;
+    }
+
+    .sped-accordion-content-inner {
+        padding: 14px;
+    }
+
+    .present-levels-toolbar {
+        flex-wrap: wrap;
+    }
+}

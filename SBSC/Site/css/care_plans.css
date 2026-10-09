@@ -1,0 +1,125 @@
+﻿
+.mba-care-plan > i {
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.mba-care-plan i:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.mba-care-plan-trash-alt,
+.mba-care-plan-trash-times {
+    color: #995D55;
+}
+
+.mba-care-plan-trash-alt:hover,
+.mba-care-plan-trash-times:hover {
+    color: #561B1F;
+}
+
+.mba-care-plan-save:hover {
+    color: #636F87;
+}
+
+.mba-care-plan-signature,
+.mba-care-plan-pencil-alt {
+    color: #BEB07B;
+}
+
+.mba-care-plan-signature:hover,
+.mba-care-plan-pencil-alt:hover {
+    color: #D28F79;
+}
+
+.mba-care-plan-check {
+    color: #3c955e;
+}
+
+.mba-care-plan-check:hover {
+    color: #7C8981;
+}
+
+.mba-care-plan-user {
+    color: #94b4c8;
+}
+
+.mba-care-plan-user:hover {
+        color: #748A9E;
+}
+
+.mba-care-plan-plus {
+    color: #76a6d2;
+}
+
+.mba-care-plan-plus:hover {
+    color: #8C9CAA;
+}
+
+.mba-care-plan-edit-processor > i.fa-edit {
+    color: #887bb0;
+}
+
+.mba-care-plan-arrow {
+    transform: translate(-12px, -5px);
+}
+
+.fa-stack:hover .mba-care-plan-arrow, .fa-stack:hover .mba-care-plan-pdf {
+    color: #995D55 !important;
+}
+
+
+#carePlanDiagnosisDescInputID {
+    min-height: 30em;
+}
+
+.planwriter-diagnosis-sel-content-parent-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.planwriter-diagnosis-sel-content-parent-cont > *:nth-child(1) {
+        width: 85%;
+}
+
+.planwriter-diagnosis-sel-content-parent-cont > *:nth-child(2) {
+        width: 10%;
+}
+
+
+.btn-link,
+.btn-link:hover {
+    color: unset;
+}
+
+.mba-care-plan-heart {
+    color: #B22222;
+}
+
+.mba-care-plan-book-medical {
+    color: #62abea;
+}
+
+span.mba-rest-view-data-type-text, span.mba-rest-view-data-type-date, td.mba-rest-view-cell {
+    text-align: center;
+}
+
+
+@media(min-width:768px) {
+    .reverse-on-lg {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+#saveCtrlButtons {
+    display: flex;
+    flex-direction: row;
+}
+
+#saveCtrlButtons * {
+    display: flex;
+    flex-direction: row;
+}

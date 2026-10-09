@@ -1,0 +1,249 @@
+[ 
+	{
+		  id: 'RMTS-600'
+		, fileClass: '600'
+		, fileSubClass: ''
+		, name: 'TSP List'
+		, label: 'TSP List'
+		, description: 'TSP List File'
+		, headerRowNum:1
+		, fields: [
+			{
+				  name: 'lastName'
+                , columnRequired: true
+                , dataRequired: true
+				, dataType: 'noun'
+				, label: 'Last Name'
+				, description: 'Last name only please'
+				, commonColumnNames: [
+					  'Last Name'                            
+					, 'LastName'
+					, 'Last Name'
+					, 'Last_Name'
+					, 'Last Name 20'
+					, 'Last'
+					, 'Practitioner Last Name'
+					, 'Practitioner_Last_Name'
+					, 'Prac Last Name'
+					, 'Prac_Last_Name'
+					, 'Employee Last Name'
+					, 'Employee_Last_Name'
+					, 'Emp Last Name'
+					, 'Emp_Last_Name'
+					, 'lname'
+					, 'LAST_NAME'
+					, 'PRACLNAME']
+			}
+			, {
+				  name: 'firstName'
+                , columnRequired: true
+                , dataRequired: true				  
+				, dataType: 'noun'
+				, label: 'First Name'
+				, description: 'First name only please'
+				, commonColumnNames: [
+					  'firstName'
+					, 'FirstName'
+					, 'First Name'
+					, 'First_Name'
+					, 'First Name 15'
+					, 'First'
+					, 'Practitioner First Name'
+					, 'Practitioner_First_Name'
+					, 'Prac First Name'
+					, 'Prac_First_Name'
+					, 'Employee First Name'
+					, 'Employee_First_Name'
+					, 'Emp First Name'
+					, 'Emp_First_Name'
+					, 'fname'
+					, 'FIRST_NAME'
+					, 'PRACFNAME'
+				]
+			}
+			, {
+				  name: 'middleName'
+				, columnRequired: false
+                , dataRequired: false
+				, dataType: 'noun'
+				, label: 'Practitioner Middle Initial'
+				, description: 'Initial only please'
+				, commonColumnNames: [
+					  'middleInitial'
+					, 'Middle_Initial'
+					, 'Middle Initial'
+					, 'MiddleInitial'
+					, 'Middle Name'
+					, 'M/I'
+					, 'MI'
+					, 'mi'
+					, 'Middle I 1'
+					, 'middleI'
+					, 'Middle I'
+					, 'Middle'
+					, 'MIDDLE_NAME'
+					, 'midInitial'
+					, 'mInitial'
+					, 'Practitioner Middle Name'
+					, 'Practitioner_Middle_Name'
+					, 'Practitioner Middle Name'
+					, 'Practitioner_Middle_Name'
+					, 'Employee Middle Name'
+					, 'Employee_Middle_Name'
+					, 'Emp Middle Name'
+					, 'Emp_Middle_Name'
+					, 'mname'
+					, 'mName'
+					, 'PRACMI'
+					, 'middleName'
+				]
+			}
+			, {
+				  name: 'title'
+				, columnRequired: false
+                , dataRequired: false
+				, dataType: 'string'
+				, label: 'Title'
+				, description: 'Practitioner Job Title'
+				, commonColumnNames: [
+					  'title'
+					, 'Title'
+					, 'Job Title'
+					, 'job title'
+					, 'Job title'
+					, 'job Title'
+					, 'jobtitle'
+					, 'jobTitle'
+					, 'JobTitle'
+					, 'jobTitle'
+					, 'practitioner title'
+					, 'Practitioner Title'
+					, 'practitioner Title'
+					, 'Practitioner title'
+					, 'practitionertitle'
+					, 'Practitionertitle'
+					, 'PractitionerTitle'
+					, 'practitionerTitle'
+					, 'prac title'
+					, 'Prac Title'
+					, 'prac Title'
+					, 'Prac title'
+					, 'practitle'
+					, 'Practitle'
+					, 'PracTitle'
+					, 'pracTitle'
+				]
+			}
+			, {
+				  name: 'email'
+				, columnRequired: true
+                , dataRequired: true
+				, dataType: 'email'
+				, label: 'Email Address'
+				, description: 'Practitioner Email Address'
+				, commonColumnNames: [
+					  'email'
+					, 'Email'
+					, 'emailAddress'
+					, 'EmailAddress'
+					, 'e-mail'
+					, 'E-mail'
+					, 'e-mail Address'
+					, 'E-mail Address'
+					, 'e-mail_Address'
+					, 'E-mail_Address'
+				]
+			}
+			, {
+				  name: 'startDate'
+				, columnRequired: false
+                , dataRequired: false
+				, dataType: 'date'
+				, label: 'Participation Start Date'
+				, description: 'Date Practitioner was added'
+				, commonColumnNames: [
+					  'startDate'
+					, 'start date'
+					, 'Start Date'
+					, 'start_date'
+					, 'Start_Date'
+					, 'startdate'
+					, 'StartDate'
+					, 'beginDate'
+					, 'begin date'
+					, 'Begin Date'
+					, 'begin_date'
+					, 'Begin_Date'
+					, 'begindate'
+					, 'BeginDate'
+				]
+			}
+			, {
+				  name: 'endDate'
+				, columnRequired: false
+                , dataRequired: false				
+				, dataType: 'date'
+				, label: 'Participation End Date'
+				, description: 'Date Practitioner\'s participation ended'
+				, commonColumnNames: [
+					  'endDate'
+					, 'end date'
+					, 'End Date'
+					, 'end_date'
+					, 'End_Date'
+					, 'enddate'
+					, 'EndDate'
+				]
+			}
+			, {
+				  name: 'participantPool'
+				, columnRequired: true
+                , dataRequired: true
+				, dataType: 'string'
+				, label: 'Participant Pool'
+				, description: 'Participant Pool'
+				, commonColumnNames: [
+					  'Participant Pool'
+					, 'participant pool'
+					, 'participantpool'
+					, 'participantPool'
+					, 'ParticipantPool'
+					, 'Participant.Pool'
+					, 'participant.pool'
+					, 'participant.Pool'
+					, 'Participant Pool Name'
+					, 'participant pool name'
+					, 'participantpoolname'
+					, 'participantPoolName'
+					, 'ParticipantPoolName'
+					, 'Participant.Pool'
+					, 'participant.pool'
+					, 'participant.Pool'
+					, 'CostPool.Name'
+					, 'costpool.name'
+					, 'costPool.name'
+					, 'costPool.Name'
+					, 'CostPool Name'
+					, 'CostPool name'
+					, 'costPool name'
+					, 'costpool name'
+					, 'costpool Name'
+					, 'costPoolName'
+					, 'CostPoolName'
+					, 'costpoolname'
+					, 'cost pool name'
+					, 'Cost Pool Name'
+					, 'Cost Pool'
+					, 'cost pool'
+					, 'cost.pool'
+					, 'costPool'
+					, 'costpool'
+					, 'pool'
+					, 'Pool'
+					, 'POOL'
+				]
+			}
+		]
+	}
+			
+]

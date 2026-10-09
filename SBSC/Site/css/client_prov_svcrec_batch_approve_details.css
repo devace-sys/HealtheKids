@@ -1,0 +1,45 @@
+div.ui-spedmon-step-content {
+  clear:both;
+}
+
+#recordscont {
+  display:inline-block;
+  height:400px;
+  max-width:50%;
+  float:left;
+}
+#recorddetail {
+  display:inline-block;
+  height:400px;
+  min-width:48%;
+  max-width:48%;
+  float:right;
+}
+
+#validatelist {
+  clear:both;
+}
+
+/* Service record approve and hold icons (thumbs up and thumbs down) */
+
+  i.fa-thumbs-up.svcrec-approve-or-hold-in-journal.mba-color-grey
+, i.fa-thumbs-down.svcrec-approve-or-hold-in-journal.mba-color-grey {
+    color: #828282;
+}
+
+i.fa-thumbs-up.svcrec-approve-or-hold-in-journal {
+    color: #338e33;
+}
+
+i.fa-thumbs-down.svcrec-approve-or-hold-in-journal {
+    color: #c34141;
+}
+
+
+i.fa-thumbs-up.svcrec-approve-or-hold-in-journal:hover {
+    color: #60b360f8 !important;
+}
+
+i.fa-thumbs-down.svcrec-approve-or-hold-in-journal:hover {
+    color: #c34141f8 !important;
+}

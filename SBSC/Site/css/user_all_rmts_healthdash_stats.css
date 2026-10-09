@@ -1,0 +1,40 @@
+
+
+body {
+  background-color: #fafcfe;  /* very imperceptibly offwhite; helps to make a true white more conspicuous, on the background and foreground */
+}
+
+a.a-statlink:hover {
+    text-decoration: underline !important;
+    text-decoration-color: blue !important;
+}
+
+section.mba-action-item-common-container
+{
+  height: 5em;
+}
+
+h3.mba-action-item-common-label
+{
+    display: block;
+    font-size: 1.1em;
+    font-weight: bold;
+    height: 3.3em;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+#gotodetailedfigures {
+  font-size: 0.9em;
+   align-content: end;
+   margin-top: 15px;
+}
+
+#colwrap-navbutton {
+      align-content: end;
+      margin-top: 15px;
+}

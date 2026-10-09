@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CLEAR_LABEL" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="CLEAR_TITLE" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Common_Header_Content" xml:space="preserve">
+    <value>Are feeling unsafe right now?</value>
+  </data>
+  <data name="Common_Header_Request_ID_Label" xml:space="preserve">
+    <value>Request ID</value>
+  </data>
+  <data name="Common_Header_Request_Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Common_Header_Text_No" xml:space="preserve">
+    <value>Thank you for letting us know. We understand that reaching out can be difficult, and we are here to support you. A school counselor will review your request and follow up with you as soon as possible. If your situation changes or becomes urgent, please reach out to a trusted adult or use one of the crisis resources below for immediate support:&lt;br&gt;-Text HOME to 741741 for 24/7 crisis counseling.&lt;br&gt;-Call the National Suicide Prevention Lifeline at 988 for free, confidential support.&lt;br&gt;&lt;br&gt;Your safety and well-being are our top priority.</value>
+  </data>
+  <data name="Common_Header_Text_Yes" xml:space="preserve">
+    <value>We understand that you are feeling unsafe, and we want to ensure you get the help you need right away. Please know you are not alone. Here are immediate resources available to you:&lt;br&gt;-Call 911 if you are in immediate danger.&lt;br&gt;-Text HOME to 741741 to connect with a trained Crisis Text Line counselor 24/7.&lt;br&gt;-Call the National Suicide Prevention Lifeline at 988 for free and confidential support, available 24/7.&lt;br&gt;&lt;br&gt;If you are at school, please go to the nearest trusted adult (teacher, counselor, or staff member) right away for assistance. You can also submit this form, and a school counselor will follow up with you as soon as possible.</value>
+  </data>
+  <data name="Covered_CA_Message_Bottom_Left" xml:space="preserve">
+    <value>Please visit</value>
+  </data>
+  <data name="Covered_CA_Message_Bottom_Right" xml:space="preserve">
+    <value>for more information.</value>
+  </data>
+  <data name="Covered_CA_Message_Top" xml:space="preserve">
+    <value>Did you know that free or low cost health insurance options may be available for your child?</value>
+  </data>
+  <data name="Detail_Info_Placeholder" xml:space="preserve">
+    <value>Please provide details about this request for assistance...</value>
+  </data>
+  <data name="Form_Title" xml:space="preserve">
+    <value>Mental Health Support Request</value>
+  </data>
+  <data name="Page_Init_Not_OK" xml:space="preserve">
+    <value>This information request has been answered already or it has been cancelled or it is invalid.</value>
+  </data>
+  <data name="Responder_Choice_Label" xml:space="preserve">
+    <value>How would you prefer we contact the person being referred? Please complete one or more fields below.</value>
+  </data>
+  <data name="Responder_Email_Label" xml:space="preserve">
+    <value>Your Email</value>
+  </data>
+  <data name="Responder_Email_PlaceHolder" xml:space="preserve">
+    <value>Enter Email</value>
+  </data>
+  <data name="Responder_First_Name_Label" xml:space="preserve">
+    <value>Your First Name</value>
+  </data>
+  <data name="Responder_First_Name_PlaceHolder" xml:space="preserve">
+    <value>Enter First Name</value>
+  </data>
+  <data name="Responder_Last_Name_Label" xml:space="preserve">
+    <value>Your Last Name</value>
+  </data>
+  <data name="Responder_Last_Name_PlaceHolder" xml:space="preserve">
+    <value>Enter Last Name</value>
+  </data>
+  <data name="Responder_Phone_Label" xml:space="preserve">
+    <value>Your Phone</value>
+  </data>
+  <data name="Responder_Phone_PlaceHolder" xml:space="preserve">
+    <value>Enter Phone</value>
+  </data>
+  <data name="Response_Title" xml:space="preserve">
+    <value>Your Response Has Been Submitted.  Thank You.</value>
+  </data>
+  <data name="Role_Option0" xml:space="preserve">
+    <value>Please select relationship</value>
+  </data>
+  <data name="Role_Option1" xml:space="preserve">
+    <value>Parent/Guardian</value>
+  </data>
+  <data name="Role_Option2" xml:space="preserve">
+    <value>Self</value>
+  </data>
+  <data name="Role_Option3" xml:space="preserve">
+    <value>Teacher</value>
+  </data>
+  <data name="Role_Option4" xml:space="preserve">
+    <value>Nurse</value>
+  </data>
+  <data name="Role_Option5" xml:space="preserve">
+    <value>Peer</value>
+  </data>
+  <data name="Role_Option6" xml:space="preserve">
+    <value>Other school staff</value>
+  </data>
+  <data name="Source_Role_Label" xml:space="preserve">
+    <value>Select your relationship to the student</value>
+  </data>
+  <data name="Student_DOB_Label" xml:space="preserve">
+    <value>Student DOB</value>
+  </data>
+  <data name="Student_DOB_PlaceHolder" xml:space="preserve">
+    <value>mm/dd/yy</value>
+  </data>
+  <data name="Student_First_Name_Label" xml:space="preserve">
+    <value>Student First Name</value>
+  </data>
+  <data name="Student_First_Name_PlaceHolder" xml:space="preserve">
+    <value>Enter First Name</value>
+  </data>
+  <data name="Student_Gender_Label" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="Student_ID_Label" xml:space="preserve">
+    <value>Student ID</value>
+  </data>
+  <data name="Student_ID_PlaceHolder" xml:space="preserve">
+    <value>Enter Student ID</value>
+  </data>
+  <data name="Student_Last_Name_Label" xml:space="preserve">
+    <value>Student Last Name</value>
+  </data>
+  <data name="Student_Last_Name_PlaceHolder" xml:space="preserve">
+    <value>Enter Last Name</value>
+  </data>
+  <data name="Student_Teacher_Label" xml:space="preserve">
+    <value>Teacher</value>
+  </data>
+  <data name="Student_Teacher_PlaceHolder" xml:space="preserve">
+    <value>Enter Teacher Name</value>
+  </data>
+  <data name="SUBMIT_LABEL" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="SUBMIT_TITLE" xml:space="preserve">
+    <value />
+  </data>
+</root>

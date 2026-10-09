@@ -1,0 +1,56 @@
+details.mba-disclosure, summary.mba-disclosure {
+    position: relative;
+    line-height: 1em;
+    opacity: 1;
+    background-color: white;
+    color: black;
+}
+
+details.mba-disclosure {
+    width: auto;
+    display:block;
+    margin:0;
+    margin-right:.25em;
+}
+
+details.mba-disclosure > *:not(summary) {
+    margin:.5em;
+}
+
+details.mba-disclosure ul {
+  display:block;
+  list-style:disc;
+  list-style-position:inside;
+}
+
+summary.mba-disclosure {
+    height: 2em;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 1em;
+}
+
+details[open].mba-disclosure > summary.mba-disclosure {
+    border-bottom: 1px solid #000;
+}
+
+details.mba-disclosure:not([open]) {
+    height: 2em;
+}
+
+details[open].mba-disclosure {
+    transition: all .20s linear;
+    height: auto;
+    background-color:#ffd60d;
+    box-shadow: 3px 3px 8px 3px #bababa;
+}
+
+details[open].mba-disclosure.mba-disclosure-inline {
+}
+
+details[open].mba-disclosure.mba-disclosure-overlay {
+    position: absolute;
+    top:auto;
+    left:auto;
+    z-index: 9999;
+}

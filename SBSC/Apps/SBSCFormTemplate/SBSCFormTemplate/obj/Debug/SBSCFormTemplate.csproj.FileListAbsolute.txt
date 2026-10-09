@@ -1,0 +1,10 @@
+C:\dev\sd\SBSCFormTemplate\SBSCFormTemplate\bin\Debug\SBSCFormTemplate.exe
+C:\dev\sd\SBSCFormTemplate\SBSCFormTemplate\bin\Debug\SBSCFormTemplate.pdb
+C:\dev\sd\SBSCFormTemplate\SBSCFormTemplate\obj\Debug\ResolveAssemblyReference.cache
+C:\dev\sd\SBSCFormTemplate\SBSCFormTemplate\obj\Debug\SBSCFormTemplate.Form1.resources
+C:\dev\sd\SBSCFormTemplate\SBSCFormTemplate\obj\Debug\SBSCFormTemplate.Properties.Resources.resources
+C:\dev\sd\SBSCFormTemplate\SBSCFormTemplate\obj\Debug\SBSCFormTemplate.csproj.GenerateResource.Cache
+C:\dev\sd\SBSCFormTemplate\SBSCFormTemplate\obj\Debug\SBSCFormTemplate.exe
+C:\dev\sd\SBSCFormTemplate\SBSCFormTemplate\obj\Debug\SBSCFormTemplate.pdb
+C:\SBSC\Spedmon\Apps\SBSCFormTemplate\SBSCFormTemplate\obj\Debug\SBSCFormTemplate.exe
+C:\SBSC\Spedmon\Apps\SBSCFormTemplate\SBSCFormTemplate\obj\Debug\SBSCFormTemplate.pdb

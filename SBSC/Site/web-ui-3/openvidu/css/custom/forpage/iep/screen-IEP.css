@@ -1,0 +1,61 @@
+﻿:root {
+    --input_color: #f7f7f7;
+    --input-color-hover: #d1fff0;
+    --spedcare-green: #ade0d0;
+    --spedcare-blue: #9dc8cc;
+}
+
+body {
+    padding: 10px;
+}
+
+h6 {
+  font-weight:bold;
+  margin-top:.5em;
+  margin-bottom:.5em;
+}
+
+form > div > p.agree-attest {
+  font-size:1em;
+  font-style:italic;
+}
+
+#iep-info-comments textarea {
+  width: 70%;
+  min-height: 20vh;
+}
+
+#iep-form h4 {
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.checkbox-margin {
+    margin-left: 1.5em; /* about the outerwidth of checkbox */
+}
+.checkbox-margin-wider {
+    margin-left: 2em; /* about the outerwidth of checkbox */
+}
+
+.bordered-area {
+    border: double 4px black;
+    padding: 5px;
+}
+
+#roles-tab-dropdown {
+    margin: 10px 0px 10px 15px;
+    min-height: 30px;
+}
+
+#more-info-tab {
+    border: solid 2px black;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+/* bootstrap xs */
+@media screen and (max-width: 575px) {
+    .bs-sm-left-margin {
+        margin-left: 15px;
+    }
+}

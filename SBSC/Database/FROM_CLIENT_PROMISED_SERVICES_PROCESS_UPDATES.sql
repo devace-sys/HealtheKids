@@ -1,0 +1,8 @@
+USE spedmon
+GO
+
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('dbo.FROM_CLIENT_PROMISED_SERVICES_PROCESS_UPDATES') AND type IN (N'P', N'PC'))
+DROP PROCEDURE dbo.FROM_CLIENT_PROMISED_SERVICES_PROCESS_UPDATES
+GO
+
+/* TODO: Remove once all systems are updated */

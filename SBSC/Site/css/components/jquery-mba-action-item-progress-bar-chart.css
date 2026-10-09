@@ -1,0 +1,140 @@
+﻿div.mba-action-item-progress-bar-chart-meter {
+	height: auto;
+}
+
+table.mba-action-item-progress-bar-chart-chart-table {	
+	margin:0 auto;
+}
+
+
+th.mba-action-item-progress-bar-chart-chart-col
+, td.mba-action-item-progress-bar-chart-chart-cell {
+	padding: .50rem;
+    vertical-align:middle;
+}
+
+span.mba-action-item-progress-bar-chart-chart-col-text {
+	display: block;
+	width: 95%;
+	text-align: center;
+	font-weight: bold;
+}
+
+span[data-mba-action-item-progress-bar-chart-has-action-url] {
+	cursor:pointer;
+}
+
+span[data-mba-action-item-progress-bar-chart-has-action-url]:hover {
+	text-decoration: underline;
+}
+
+/* Label header */
+
+th.mba-action-item-progress-bar-chart-chart-cell-or-col-progress-label.mba-action-item-progress-bar-chart-chart-cell-or-col-pct-width {
+  width: 38%;
+}
+
+/* Bar and pct header  */
+
+th.mba-action-item-progress-bar-chart-chart-cell-or-col-progress-bar.mba-action-item-progress-bar-chart-chart-cell-or-col-pct-width {
+  width:62%;
+}
+
+/* Label column*/
+
+td.mba-action-item-progress-bar-chart-chart-cell-or-col-progress-label.mba-action-item-progress-bar-chart-chart-cell-or-col-pct-width {
+  width: 38%;
+}
+
+/* Bar column */
+
+td.mba-action-item-progress-bar-chart-chart-cell-or-col-progress-bar.mba-action-item-progress-bar-chart-chart-cell-or-col-pct-width {
+	width: 60%;
+}
+
+/* Pct column */
+
+td.mba-action-item-progress-bar-chart-chart-cell-or-col-progress-percent.mba-action-item-progress-bar-chart-chart-cell-or-col-pct-width {
+  width: 2%;
+}
+
+/* Label itself */
+
+span.mba-action-item-progress-bar-chart-progress-label {
+	display:inline-block;
+	width:100%;
+	vertical-align:middle;
+	text-align:left;
+}
+
+
+/* Bar itself */
+
+progress.mba-action-item-progress-bar-chart-progress-bar {
+	display: inline-block;
+	width:100%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+/* Pct itself */
+
+span.mba-action-item-progress-bar-chart-progress-percent {
+	display: inline-block;
+	width: 100%;
+	vertical-align: middle;
+	text-align: right;
+}
+
+/* Overrides for small size */
+
+th.mba-action-item-progress-bar-chart-chart-col.mba-action-item-progress-bar-chart-small
+, td.mba-action-item-progress-bar-chart-chart-cell.mba-action-item-progress-bar-chart-small {
+	padding: .25rem;
+}
+
+span.span.mba-action-item-progress-bar-chart-chart-col-text.mba-action-item-progress-bar-chart-small {
+	font-size:0.75rem;
+}
+span.mba-action-item-progress-bar-chart-progress-label.mba-action-item-progress-bar-chart-small {
+	font-size: 0.75rem;
+}
+
+progress.mba-action-item-progress-bar-chart-progress-bar.mba-action-item-progress-bar-chart-small {
+	font-size: 0.75rem;
+}
+
+span.mba-action-item-progress-bar-chart-progress-percent.mba-action-item-progress-bar-chart-small {
+	font-size: 0.75rem;
+}
+
+/* Label header */
+
+th.mba-action-item-progress-bar-chart-chart-cell-or-col-progress-label.mba-action-item-progress-bar-chart-chart-cell-or-col-pct-width.mba-action-item-progress-bar-chart-small {
+	width: 60%;
+}
+
+/* Bar and pct header  */
+
+th.mba-action-item-progress-bar-chart-chart-cell-or-col-progress-bar.mba-action-item-progress-bar-chart-chart-cell-or-col-pct-width.mba-action-item-progress-bar-chart-small {
+	width: 40%;
+}
+
+/* Label column*/
+
+td.mba-action-item-progress-bar-chart-chart-cell-or-col-progress-label.mba-action-item-progress-bar-chart-chart-cell-or-col-pct-width.mba-action-item-progress-bar-chart-small {
+	width: 60%;
+}
+
+/* Bar column */
+
+td.mba-action-item-progress-bar-chart-chart-cell-or-col-progress-bar.mba-action-item-progress-bar-chart-chart-cell-or-col-pct-width.mba-action-item-progress-bar-chart-small {
+	width: 38%;
+}
+
+/* Pct column */
+
+td.mba-action-item-progress-bar-chart-chart-cell-or-col-progress-percent.mba-action-item-progress-bar-chart-chart-cell-or-col-pct-width.mba-action-item-progress-bar-chart-small {
+	width: 2%;
+}

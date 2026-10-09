@@ -1,0 +1,519 @@
+[
+  {
+    "id": "SEIS-PATIENT-GOALS",
+    "fileClass": "SEIS-PATIENT-GOALS",
+    "fileSubClass": "",
+    "name": "SEIS Patient Goal Records",
+    "label": "SEIS Patient Goal Records",
+    "description": "Patient goal records exported from SEIS",
+    "fields": [
+      {
+        "name": "ssid",
+        "columnRequired": true,
+        "dataRequired": true,
+        "dataType": "ssid",
+        "label": "SSID",
+        "description": "SSID",
+        "commonColumnNames": [
+          "SSID"
+        ],
+        "acceptableValues": [],
+        "maxChars": 10
+      },
+      {
+        "name": "schoolCDSCode",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "schoolcdscode",
+        "label": "School CDS Code",
+        "description": "School CDS Code",
+        "commonColumnNames": [
+          "School CDS Code"
+        ],
+        "acceptableValues": [],
+        "maxChars": 7
+      },
+      {
+        "name": "startDate",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "oadate",
+        "label": "Start Date",
+        "description": "Start Date",
+        "commonColumnNames": [
+          "Start Date"
+        ],
+        "acceptableValues": [],
+        "maxChars": 0
+      },
+      {
+        "name": "endDate",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "oadate",
+        "label": "End Date",
+        "description": "End Date",
+        "commonColumnNames": [
+          "End Date"
+        ],
+        "acceptableValues": [],
+        "maxChars": 0
+      },
+      {
+        "name": "seisID",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "string",
+        "label": "SEIS ID",
+        "description": "SEIS ID",
+        "commonColumnNames": [
+          "SEIS ID"
+        ],
+        "acceptableValues": [],
+        "maxChars": 50
+      },
+      {
+        "name": "districtID",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "string",
+        "label": "District ID",
+        "description": "District ID",
+        "commonColumnNames": [
+          "District ID"
+        ],
+        "acceptableValues": [],
+        "maxChars": 50
+      },
+      {
+        "name": "lastName",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "string",
+        "label": "Last Name",
+        "description": "Last Name",
+        "commonColumnNames": [
+          "Last Name"
+        ],
+        "acceptableValues": [],
+        "maxChars": 256
+      },
+      {
+        "name": "firstName",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "string",
+        "label": "First Name",
+        "description": "First Name",
+        "commonColumnNames": [
+          "First Name"
+        ],
+        "acceptableValues": [],
+        "maxChars": 256
+      },
+      {
+        "name": "birthdate",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "oadate",
+        "label": "Birthdate",
+        "description": "Birthdate",
+        "commonColumnNames": [
+          "Birthdate"
+        ],
+        "acceptableValues": [],
+        "maxChars": 0
+      },
+      {
+        "name": "grade",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "string",
+        "label": "Grade",
+        "description": "Grade",
+        "commonColumnNames": [
+          "Grade"
+        ],
+        "acceptableValues": [],
+        "maxChars": 50
+      },
+      {
+        "name": "schoolOfAttendance",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "string",
+        "label": "School of Attendance",
+        "description": "School of Attendance",
+        "commonColumnNames": [
+          "School of Attendance"
+        ],
+        "acceptableValues": [],
+        "maxChars": 512
+      },
+      {
+        "name": "districtOfService",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "string",
+        "label": "District of Service",
+        "description": "District of Service",
+        "commonColumnNames": [
+          "District of Service"
+        ],
+        "acceptableValues": [],
+        "maxChars": 512
+      },
+      {
+        "name": "caseManager",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "string",
+        "label": "Case Manager",
+        "description": "Case Manager",
+        "commonColumnNames": [
+          "Case Manager"
+        ],
+        "acceptableValues": [],
+        "maxChars": 512
+      },
+      {
+        "name": "iepDate",
+        "columnRequired": true,
+        "dataRequired": true,
+        "dataType": "oadate",
+        "label": "IEP Date",
+        "description": "IEP Date",
+        "commonColumnNames": [
+          "IEP Date"
+        ],
+        "acceptableValues": [],
+        "maxChars": 0
+      },
+      {
+        "name": "eligibilityStatus",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "string",
+        "label": "Eligibility Status",
+        "description": "Eligibility Status",
+        "commonColumnNames": [
+          "Eligibility Status"
+        ],
+        "acceptableValues": [],
+        "maxChars": 256
+      },
+      {
+        "name": "areaOfNeed",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "string",
+        "label": "Area Of Need",
+        "description": "Area Of Need",
+        "commonColumnNames": [
+          "Area Of Need"
+        ],
+        "acceptableValues": [],
+        "maxChars": 512
+      },
+      {
+        "name": "goalNumber",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "string",
+        "label": "Annual Goal #",
+        "description": "Annual Goal #",
+        "commonColumnNames": [
+          "Annual Goal #"
+        ],
+        "acceptableValues": [],
+        "maxChars": 100
+      },
+      {
+        "name": "baseline",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "string",
+        "label": "Baseline",
+        "description": "Baseline",
+        "commonColumnNames": [
+          "Baseline"
+        ],
+        "acceptableValues": [],
+        "maxChars": 0
+      },
+      {
+        "name": "goalText",
+        "columnRequired": true,
+        "dataRequired": true,
+        "dataType": "string",
+        "label": "Goal",
+        "description": "Goal",
+        "commonColumnNames": [
+          "Goal"
+        ],
+        "acceptableValues": [],
+        "maxChars": 0
+      },
+      {
+        "name": "purposeOfGoal",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "string",
+        "label": "Purpose(s) of Goal",
+        "description": "Purpose(s) of Goal",
+        "commonColumnNames": [
+          "Purpose(s) of Goal"
+        ],
+        "acceptableValues": [],
+        "maxChars": 0
+      },
+      {
+        "name": "standard",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "string",
+        "label": "Standard",
+        "description": "Standard",
+        "commonColumnNames": [
+          "Standard"
+        ],
+        "acceptableValues": [],
+        "maxChars": 0
+      },
+      {
+        "name": "personResponsible",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "string",
+        "label": "Person Responsible",
+        "description": "Person Responsible",
+        "commonColumnNames": [
+          "Person Responsible"
+        ],
+        "acceptableValues": [],
+        "maxChars": 512
+      },
+      {
+        "name": "objective1",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "string",
+        "label": "Objective 1",
+        "description": "Objective 1",
+        "commonColumnNames": [
+          "Objective 1"
+        ],
+        "acceptableValues": [],
+        "maxChars": 0
+      },
+      {
+        "name": "objective1Met",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "string",
+        "label": "Objective 1 Met",
+        "description": "Objective 1 Met",
+        "commonColumnNames": [
+          "Objective 1 Met"
+        ],
+        "acceptableValues": [],
+        "maxChars": 50
+      },
+      {
+        "name": "objective1DateMet",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "oadate",
+        "label": "Objective 1 Date Met",
+        "description": "Objective 1 Date Met",
+        "commonColumnNames": [
+          "Objective 1 Date Met"
+        ],
+        "acceptableValues": [],
+        "maxChars": 0
+      },
+      {
+        "name": "objective2",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "string",
+        "label": "Objective 2",
+        "description": "Objective 2",
+        "commonColumnNames": [
+          "Objective 2"
+        ],
+        "acceptableValues": [],
+        "maxChars": 0
+      },
+      {
+        "name": "objective2Met",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "string",
+        "label": "Objective 2 Met",
+        "description": "Objective 2 Met",
+        "commonColumnNames": [
+          "Objective 2 Met"
+        ],
+        "acceptableValues": [],
+        "maxChars": 50
+      },
+      {
+        "name": "objective2DateMet",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "oadate",
+        "label": "Objective 2 Date Met",
+        "description": "Objective 2 Date Met",
+        "commonColumnNames": [
+          "Objective 2 Date Met"
+        ],
+        "acceptableValues": [],
+        "maxChars": 0
+      },
+      {
+        "name": "objective3",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "string",
+        "label": "Objective 3",
+        "description": "Objective 3",
+        "commonColumnNames": [
+          "Objective 3"
+        ],
+        "acceptableValues": [],
+        "maxChars": 0
+      },
+      {
+        "name": "objective3Met",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "string",
+        "label": "Objective 3 Met",
+        "description": "Objective 3 Met",
+        "commonColumnNames": [
+          "Objective 3 Met"
+        ],
+        "acceptableValues": [],
+        "maxChars": 50
+      },
+      {
+        "name": "objective3DateMet",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "oadate",
+        "label": "Objective 3 Date Met",
+        "description": "Objective 3 Date Met",
+        "commonColumnNames": [
+          "Objective 3 Date Met"
+        ],
+        "acceptableValues": [],
+        "maxChars": 0
+      },
+      {
+        "name": "annualReview",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "oadate",
+        "label": "Annual Review",
+        "description": "Annual Review",
+        "commonColumnNames": [
+          "Annual Review"
+        ],
+        "acceptableValues": [],
+        "maxChars": 0
+      },
+      {
+        "name": "comments",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "string",
+        "label": "Comments",
+        "description": "Comments",
+        "commonColumnNames": [
+          "Comments      "
+        ],
+        "acceptableValues": [],
+        "maxChars": 0
+      },
+      {
+        "name": "goalMet",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "flag",
+        "label": "Goal Met",
+        "description": "Goal Met",
+        "commonColumnNames": [
+          "Goal Met"
+        ],
+        "acceptableValues": [],
+        "maxChars": 50
+      },
+      {
+        "name": "addedOn",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "oadate",
+        "label": "Added On",
+        "description": "Added On",
+        "commonColumnNames": [
+          "Added On"
+        ],
+        "acceptableValues": [],
+        "maxChars": 0
+      },
+      {
+        "name": "addedBy",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "string",
+        "label": "Added By",
+        "description": "Added By",
+        "commonColumnNames": [
+          "Added By"
+        ],
+        "acceptableValues": [],
+        "maxChars": 512
+      },
+      {
+        "name": "updatedBy",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "string",
+        "label": "Updated By",
+        "description": "Updated By",
+        "commonColumnNames": [
+          "Updated By"
+        ],
+        "acceptableValues": [],
+        "maxChars": 512
+      },
+      {
+        "name": "updatedOn",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "oadate",
+        "label": "Updated On",
+        "description": "Updated On",
+        "commonColumnNames": [
+          "Updated On"
+        ],
+        "acceptableValues": [],
+        "maxChars": 0
+      },
+      {
+        "name": "lastAffirmedPR",
+        "columnRequired": true,
+        "dataRequired": false,
+        "dataType": "oadate",
+        "label": "Last Affirmed PR",
+        "description": "Last Affirmed PR",
+        "commonColumnNames": [
+          "Last Affirmed PR"
+        ],
+        "acceptableValues": [],
+        "maxChars": 0
+      }
+    ]
+  }
+]

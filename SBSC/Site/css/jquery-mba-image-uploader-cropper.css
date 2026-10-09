@@ -1,0 +1,600 @@
+﻿
+/* Container and Base Styles */
+.mba-image-uploader-container {
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Upload Area */
+.mba-image-uploader-upload-area {
+    border: 2px dashed #d1d5db;
+    border-radius: 12px;
+    padding: 40px 20px;
+    text-align: center;
+    background: #f9fafb;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    position: relative;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .mba-image-uploader-upload-area:hover,
+    .mba-image-uploader-drag-over {
+        border-color: #3b82f6;
+        background: #eff6ff;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
+    }
+
+.mba-image-uploader-upload-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.mba-image-uploader-upload-icon {
+    color: #6b7280;
+    transition: all 0.3s ease;
+}
+
+.mba-image-uploader-upload-area:hover .mba-image-uploader-upload-icon {
+    color: #3b82f6;
+    transform: scale(1.1);
+}
+
+.mba-image-uploader-upload-text {
+    color: #6b7280;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.mba-image-uploader-upload-btn {
+    background: #3b82f6;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+    .mba-image-uploader-upload-btn:hover {
+        background: #2563eb;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+    }
+
+.mba-image-uploader-upload-input {
+    display: none !important;
+}
+
+/* Preview Area */
+.mba-image-uploader-preview-area {
+    margin-top: 20px;
+    padding: 16px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.mba-image-uploader-preview-image {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto 12px auto;
+}
+
+.mba-image-uploader-preview-info {
+    text-align: center;
+    color: #6b7280;
+    font-size: 12px;
+}
+
+.mba-image-uploader-filename {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #374151;
+}
+
+.mba-image-uploader-filesize {
+    display: block;
+    font-size: 11px;
+}
+
+/* Progress Bar */
+.mba-image-uploader-progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 16px 0;
+    position: relative;
+}
+
+.mba-image-uploader-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #3b82f6 0%, #1d4ed8 100%);
+    transition: width 0.3s ease;
+    border-radius: 4px;
+    position: relative;
+}
+
+    .mba-image-uploader-progress-fill::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient( 90deg, transparent, rgba(255, 255, 255, 0.2), transparent );
+        animation: mba-image-uploader-progress-shine 1.5s infinite;
+    }
+
+@keyframes mba-image-uploader-progress-shine {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Messages */
+.mba-image-uploader-error-message,
+.mba-image-uploader-success-message {
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin: 12px 0;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.mba-image-uploader-error-message {
+    background: #fef2f2;
+    color: #dc2626;
+    border: 1px solid #fecaca;
+}
+
+    .mba-image-uploader-error-message::before {
+        content: '⚠️';
+        font-size: 16px;
+    }
+
+.mba-image-uploader-success-message {
+    background: #f0fdf4;
+    color: #16a34a;
+    border: 1px solid #bbf7d0;
+}
+
+    .mba-image-uploader-success-message::before {
+        content: '✅';
+        font-size: 16px;
+    }
+
+/* Status Classes */
+.mba-image-uploader-uploading .mba-image-uploader-upload-area {
+    border-color: #f59e0b;
+    background: #fffbeb;
+    pointer-events: none;
+}
+
+.mba-image-uploader-completed .mba-image-uploader-upload-area {
+    border-color: #10b981;
+    background: #ecfdf5;
+}
+
+.mba-image-uploader-error .mba-image-uploader-upload-area {
+    border-color: #ef4444;
+    background: #fef2f2;
+}
+
+/* Image Cropper Modal Styles */
+.mba-image-uploader-cropper-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    animation: mba-image-uploader-modal-fade-in 0.3s ease-out;
+}
+
+@keyframes mba-image-uploader-modal-fade-in {
+    from {
+        opacity: 0;
+        backdrop-filter: blur(0px);
+    }
+
+    to {
+        opacity: 1;
+        backdrop-filter: blur(8px);
+    }
+}
+
+.mba-image-uploader-cropper-container {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 16px;
+    padding: 24px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: mba-image-uploader-modal-slide-up 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes mba-image-uploader-modal-slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.mba-image-uploader-cropper-header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 16px;
+}
+
+    .mba-image-uploader-cropper-header h4 {
+        color: #1f2937;
+        margin: 0 0 8px 0;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .mba-image-uploader-cropper-header p {
+        color: #6b7280;
+        margin: 0;
+        font-size: 14px;
+    }
+
+/* Cropper Canvas Area - Instagram Style */
+.mba-image-uploader-cropper-canvas {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 20px auto;
+    border: 2px solid #d1d5db;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #000;
+    cursor: grab;
+}
+
+    .mba-image-uploader-cropper-canvas:active {
+        cursor: grabbing;
+    }
+
+.mba-image-uploader-main-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Grid Overlay - Instagram Style */
+.mba-image-uploader-cropper-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 2;
+    opacity: 0.6;
+}
+
+.mba-image-uploader-grid-line {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    pointer-events: none;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.mba-image-uploader-grid-vertical {
+    width: 1px;
+    height: 100%;
+    top: 0;
+}
+
+.mba-image-uploader-grid-horizontal {
+    height: 1px;
+    width: 100%;
+    left: 0;
+}
+
+/* Circular Crop Overlay - Instagram Style */
+.mba-image-uploader-cropper-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 3px solid rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.6), inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    z-index: 3;
+}
+
+/* Cropper Controls - Simplified Instagram Style */
+.mba-image-uploader-cropper-controls {
+    background: transparent;
+    border: none;
+    padding: 16px 0;
+}
+
+/* Cropper Buttons - Instagram Style */
+.mba-image-uploader-cropper-btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: none;
+    letter-spacing: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid transparent;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 100px;
+    justify-content: center;
+}
+
+.mba-image-uploader-crop-cancel {
+    background: transparent;
+    border-color: #d1d5db;
+    color: #6b7280;
+}
+
+    .mba-image-uploader-crop-cancel:hover {
+        background: #f3f4f6;
+        border-color: #9ca3af;
+        color: #4b5563;
+        transform: translateY(-1px);
+    }
+
+.mba-image-uploader-crop-save {
+    background: #3b82f6;
+    border-color: #3b82f6;
+    color: white;
+}
+
+    .mba-image-uploader-crop-save:hover {
+        background: #2563eb;
+        border-color: #2563eb;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+    }
+
+/* Preview Section - Instagram Style */
+.mba-image-uploader-cropper-preview {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mba-image-uploader-preview-label {
+    color: #6b7280;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.mba-image-uploader-preview-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 3px solid #d1d5db;
+    background: #f9fafb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.mba-image-uploader-preview-canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Remove the old control styles */
+.mba-image-uploader-cropper-controls .form-label,
+.mba-image-uploader-cropper-controls .form-range,
+.mba-image-uploader-cropper-controls .form-range::-webkit-slider-thumb,
+.mba-image-uploader-crop-reset {
+    display: none;
+}
+    /* Remove the old control styles */
+    .mba-image-uploader-cropper-controls .form-label,
+    .mba-image-uploader-cropper-controls .form-range,
+    .mba-image-uploader-cropper-controls .form-range::-webkit-slider-thumb,
+    .mba-image-uploader-crop-reset {
+        display: none;
+    }
+
+@media (max-width: 768px) {
+    .mba-image-uploader-cropper-container {
+        padding: 16px;
+        margin: 10px;
+    }
+
+    .mba-image-uploader-cropper-canvas {
+        width: 280px;
+        height: 280px;
+    }
+
+    .mba-image-uploader-preview-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .mba-image-uploader-upload-area {
+        padding: 30px 15px;
+        min-height: 150px;
+    }
+
+    .mba-image-uploader-security-warning {
+        padding: 24px;
+        margin: 20px;
+    }
+
+    .mba-image-uploader-cropper-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+        min-width: 90px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mba-image-uploader-cropper-canvas {
+        width: 250px;
+        height: 250px;
+    }
+
+    .mba-image-uploader-preview-circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .mba-image-uploader-upload-text {
+        font-size: 14px;
+    }
+
+    .mba-image-uploader-upload-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .mba-image-uploader-cropper-btn {
+        padding: 8px 16px;
+        font-size: 12px;
+        min-width: 80px;
+    }
+
+    .mba-image-uploader-cropper-controls {
+        padding: 12px 0;
+    }
+
+    .mba-image-uploader-cropper-header h4 {
+        font-size: 18px;
+    }
+
+    .mba-image-uploader-cropper-header p {
+        font-size: 12px;
+    }
+}
+
+/* Enhanced Visual Effects for Instagram Feel */
+.mba-image-uploader-cropper-canvas::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient( 45deg, transparent 48%, rgba(255, 255, 255, 0.1) 49%, rgba(255, 255, 255, 0.1) 51%, transparent 52% );
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.mba-image-uploader-cropper-canvas:hover::before {
+    opacity: 1;
+}
+
+/* Smooth cursor transitions */
+.mba-image-uploader-cropper-canvas {
+    transition: transform 0.1s ease;
+}
+
+    .mba-image-uploader-cropper-canvas:active {
+        transform: scale(0.98);
+    }
+
+    /* Enhanced grid visibility on hover */
+    .mba-image-uploader-cropper-canvas:hover .mba-image-uploader-cropper-grid {
+        opacity: 0.8;
+    }
+
+/* Accessibility */
+.mba-image-uploader-upload-area:focus-within {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+.mba-image-uploader-cropper-btn:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+.mba-image-uploader-upload-btn:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+/* Animation Utilities */
+.mba-image-uploader-fade-in {
+    animation: mba-image-uploader-fade-in 0.3s ease-out;
+}
+
+.mba-image-uploader-fade-out {
+    animation: mba-image-uploader-fade-out 0.3s ease-out;
+}
+
+@keyframes mba-image-uploader-fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes mba-image-uploader-fade-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+/* Hidden State */
+.mba-image-uploader-hidden {
+    display: none !important;
+}

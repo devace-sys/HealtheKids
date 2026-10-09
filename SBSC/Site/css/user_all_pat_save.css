@@ -1,0 +1,447 @@
+#notesCont {
+    text-align: center;
+    margin-top: 1em;
+}
+
+/* format date inputs to look like other dataEntryRow inputs */
+/*
+  input[type=date]
+, input[type=text] {
+    height: 2.2em;
+    border-radius: 4px;
+    border: 1px solid #aaaaaa;
+}
+*/
+
+/* tables */
+
+.tblRecsJSON {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tblRecsJSON tbody tr:nth-of-type(even) {
+    background: #ebf0f7ef;
+}
+
+.tblRecsJSON > thead > tr > th {
+    font-weight: bold;
+    background-color: #dddddd;
+    color: #000;
+    padding: .25em;
+    min-width: 30px;
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+.tblRecsJSON > tbody > tr > td {
+    color: #000;
+    padding: .25em;
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+  .tblRecsJSON > tbody > tr > td > select
+, .tblRecsJSON > tbody > tr > td > input {
+    width: 100%;
+    min-width: 7em;
+    height: 2.2em;
+    font-size: 1.1em;
+    border-radius: 4px;
+    border: 1px solid #aaaaaa;
+}
+
+#tblRecsTransportationJSON > tbody > tr {
+    margin-top: 1em;
+    border-bottom: 1px solid black;
+}
+
+#tblRecsTransportationJSON > tbody > tr > td {
+    max-width: 13em;
+    vertical-align: top !important;
+    padding-top: 0.5em;
+}
+
+  #tblRecsServiceJSON > tbody > tr > td
+, #tblRecsFileJSON > tbody > tr > td {
+    padding: 0.5em 0;
+}
+
+#tblRecsDocumentationJSON > tbody > tr > td {
+    max-width: 15em;
+}
+
+#tblRecsFileJSON > tbody > tr > td {
+    max-width: 15em;
+}
+
+#tblRecsServiceJSON .viewDetsBut {
+    padding: 0.25em 0;
+}
+
+.transportDaysColumn {
+    width: 12em;
+}
+
+input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+}
+
+i {
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+i.fa-plus {
+    margin: .5em;
+    font-size: 1.5em;
+}
+
+  i.fa-plus
+, i.fa-copy {
+    color: #76a6d2;
+  }
+
+  i.fa-plus:hover
+, i.fa-copy:hover {
+    color: #8C9CAA;
+}
+
+i.fa-trash-alt,
+i.fa-trash,
+i.fa-download {
+    color: #995D55;
+}
+
+i.fa-trash-alt:hover,
+i.fa-trash:hover,
+i.fa-download:hover {
+    color: #561B1F;
+}
+
+i.fa-save:hover{
+    color: #636F87;
+}
+
+i.fa-user-md {
+    color: #94b4c8;
+}
+
+i.fa-user-md:hover {
+    color: #748A9E;
+}
+
+i.fa-pencil-alt {
+    color: #BEB07B;
+}
+
+i.fa-pencil-alt:hover {
+    color: #D28F79;
+}
+
+i.fa-users {
+    color: #76a6d2;
+}
+
+.viewDetsBut {
+    width: 100%;
+}
+
+.viewDetsBut > span {
+    padding: 0px !important;
+}
+
+.contactAddressCol {
+    min-height: 2em;
+}
+
+/* for Address completion field */
+
+#patContactAddress {
+    margin: 0.8em 0em;
+}
+
+#patContactAddress > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#patContactAddress > div > * {
+    margin-bottom: 0.5em;
+}
+
+#zip5_street1_contpatContactAddress > span:nth-child(3) {
+    order: 1;
+}
+#zip5_street1_contpatContactAddress > span:nth-child(1) {
+    order: 2;
+}
+#zip5_street1_contpatContactAddress > span:nth-child(2) {
+    order: 3;
+}
+
+/* additional physician questions */
+
+#physicianQuestionsCont {
+    border-collapse: collapse;
+    margin: auto;
+    background-color: #F5F5F5;
+}
+
+/* am/pm controls */
+
+.ui-spedmon-box-radio-am-pm-container + div.ui-spedmon-box-radio-box-container label span {
+    transition: all .1s ease-in-out;
+    padding: 0.4em;
+}
+
+.ui-spedmon-box-radio-am-pm-container + div.ui-spedmon-box-radio-box-container label.ui-state-default {
+    margin: 0 0 0 5px !important;
+    background: linear-gradient(to bottom, #ececec, white, #ececec);
+    border-radius: 6px;
+    border: 1px solid black;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+  .ui-spedmon-box-radio-am-pm-container + div.ui-spedmon-box-radio-box-container label.ui-corner-left:hover
+, .ui-spedmon-box-radio-am-pm-container + div.ui-spedmon-box-radio-box-container label.ui-corner-left.ui-state-active {
+    background: linear-gradient(to bottom, #99dcf0, white, #99dcf0);
+}
+
+  .ui-spedmon-box-radio-am-pm-container + div.ui-spedmon-box-radio-box-container label.ui-corner-right:hover
+, .ui-spedmon-box-radio-am-pm-container + div.ui-spedmon-box-radio-box-container label.ui-corner-right.ui-state-active {
+    background: linear-gradient(to bottom, #88b5f2, white, #88b5f2);
+}
+
+.ui-spedmon-box-radio-am-pm-container + div.ui-spedmon-box-radio-box-container label:active span {
+    transform: scale(0.75);
+}
+
+.transportSelectBoxColumn > div > span {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+}
+
+.transportSelectBoxColumn > div:nth-child(2) {
+    text-align: left;
+    margin: 0.5em 0;
+}
+
+.transportSelectBoxColumn > div > span > input{
+    width: 80%;
+}
+
+.transportSelectBoxColumn > div > span > button.ui-spedmon-box-select-box-select-action {
+    width: 20%;
+}
+
+.transportAmPmColumn * {
+    margin: 0;
+}
+
+#transportationFieldsCont {
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.distanceColumn div {
+    padding-top: 1em;
+}
+
+/* fix the dropdown styling in our tables */
+
+table.tblRecsJSON span.ui-widget.ui-widget-container.ui-spedmon-box-container {
+    padding: 0;
+    height: 2.4em;
+}
+
+/* Goals Rest View styles */
+
+#goalsRestView input {
+    height: unset;
+}
+
+#goalsRestView td.mba-rest-view textarea {
+    height: 2em;
+    width: 30em;
+}
+
+/* Add a new stop button */
+
+#addNewStopBut {
+    background: none;
+    border: none;
+    margin-right: 2em;
+}
+
+#addNewStopBut:focus {
+    outline: none;
+}
+
+#addNewStopBut i.fa-plus {
+    transform: translate(5px,-10px);
+    font-size: 0.8em;
+    color: #7a9fbf;
+}
+
+#addNewStopBut i.fa-building {
+    font-size: 1.5em;
+    color: #9b9b9b;
+}
+
+
+/* tab layout */
+
+#tab-sped-iep div.ui-spedmon-data-entry-row,
+div.basic-info div.ui-spedmon-data-entry-row {
+    display: block !important;
+    margin-top: 1.5em;
+}
+
+#tab-sped-iep div.ui-spedmon-data-entry-col.ui-spedmon-data-entry-col-label,
+#pattabs div.ui-spedmon-data-entry-col.ui-spedmon-data-entry-col-label {
+    max-width: 95%;
+}
+
+#tab-sped-iep div.ui-spedmon-data-entry-row input[type=date],
+#pattabs  div.ui-spedmon-data-entry-row input[type=date],
+#tab-sped-iep div.ui-spedmon-data-entry-row input.mba-web-ui-field-data-text,
+#pattabs  div.ui-spedmon-data-entry-row input.mba-web-ui-field-data-text {
+    width: 19.2em;
+}
+
+table.mba-rest-view.mba-rest-view-table input[type=date],
+table.mba-rest-view.mba-rest-view-table input[type=text] {
+    height: unset;
+}
+
+/* styles for sped tabs */
+
+#patspedtabs {
+    border: none;
+    box-shadow: none;
+}
+
+#patspedtabs ul.ui-tabs-nav {
+    flex-wrap: wrap;
+}
+
+#patspedtabs ul.ui-tabs-nav li {
+    white-space: normal;
+}
+
+#patspedtabs ul.ui-tabs-nav li > a {
+    font-size: 0.8em;
+}
+
+#patspedtabs button.ui-button {
+    background: #dddddd;
+}
+
+#selectSpEdLangauge input.ui-spedmon-box.mba-web-ui-field-input-base {
+    width: 25em;
+}
+
+#patspedtabs div.ui-spedmon-box-select-box-container span.ui-widget.ui-widget-container.ui-spedmon-box-container {
+    padding: 0.8em 0.5em;
+}
+
+#filestoshareuploadids_selection_cont {
+    padding: 0.6em 0.5em !important;
+}
+
+/* spEd services dataGrid */
+#patspedtabs input[data-mba-rest-view-field-name="minsPerFreq"] {
+    width: 6em;
+}
+
+div.manage-patient-label {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: .50em;
+    padding-left: 2.5em;
+}
+
+div.manage-patient-label-svcrec {
+    font-size: 1.02em;
+    font-weight: bold;
+    margin-top: .50em;
+    padding-left: 1.5em;
+}
+
+#vitalsignscomponentview-restview-container[open] > #vitalsignscomponentview-summary {
+    width: 100%;
+    border-bottom: 1px solid #000;
+    margin-bottom: 1em;
+}
+
+/* patient vitals (summary) */
+
+#vitalsignscomponentview-summary {
+    width: 7em;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 0;
+    transition: all 300ms linear;
+    list-style: none;
+}
+
+/* New Visit Btn */
+.btn_create_new_visit {
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    color: black;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    transition-duration: .3s;
+}
+
+.btn_create_new_visit::after {
+    content: 'Create New Visit';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-70%);
+    opacity: 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+    transition: opacity 0.3s ease, left 0.3s ease;        
+}
+
+
+.btn_create_new_visit:hover {
+    width: 200px;
+    border-radius: 30px;
+    transition-duration: .3s;
+}
+
+.btn_create_new_visit:hover::after {
+    opacity: 1; 
+}
+
+.btn_create_new_visit:hover i {
+    color: #fff;
+}
+ 
+.btn_create_new_visit:focus, .btn_create_new_visit:active {
+    box-shadow: none; 
+}

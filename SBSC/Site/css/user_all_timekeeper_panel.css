@@ -1,0 +1,413 @@
+.ui-mba-content-selection-content-list-item a {
+    color: #222 !important;
+    background-color: white !important;
+    border-color:white;
+
+}
+
+.ui-mba-content-selection-content-list-item a.tab-selected {
+    background-color: #f9fbfe !important;
+    width:100%;
+    margin-right: 0%;
+}
+
+.ui-mba-content-selection-content-list-item p {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+
+.ui-mba-content-selection-content-list-item a:hover {
+    background: #e9ebed !important;
+}
+
+ul.ui-tabs-nav li.ui-state-active a {
+
+    border-bottom: solid 2px #8587ad;
+}
+
+ul.ui-tabs-nav li a{
+
+    border-bottom: solid 2px #f9fbfe;
+}
+
+ul.ui-tabs-nav a:hover{
+
+    border-bottom: solid 2px #a9d3ca;
+}
+
+li.ui-tabs-selected a:after {
+    content: none;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background-color: #fff !important;
+}
+
+.day-selection-button {
+  border: none;
+  border-bottom: solid 2px rgba(0,0,0,0);
+  padding: 4px !important;
+  font-family: 'Lucida Sans';
+}
+
+.weekday-selected {
+  border-bottom: solid 2px #8587ad;
+}
+
+.alert-warning {
+  background-color: #fffcf3;
+}
+
+.day-selection-button span {
+  font-size: 21px;
+  font-family: 'Gadugi';
+}
+
+.h-day-total-weekentries, #h-week-hrs-total-weekentries {
+    font-family: 'Lucida Sans' !important;
+    font-size: 12px !important;
+}
+
+div#man_page_selections {
+    border-left: solid 7px #c4cace !important;
+}
+/* todo: media query min width 992 is being ignored here */
+
+.slick-slide p {
+    
+    font-family: 'Gadugi';
+    font-size: 18px;
+}
+
+.tipso_bubble {
+  border: solid 1px #777;
+}
+
+.mba-entity-group-member {
+  border-color:white !important;
+  padding: 0.2em;
+  border-radius: 6px 6px 6px 6px;
+}
+
+.mba-entity-group-member:hover {
+  background-color:#f9fbfe !important;
+}
+
+.mba-entity-group-member-line .mba-entity-group-member-label {
+  width: 80%;
+}
+
+input.mba-entity-group-content-control {
+  margin: 1em 0;
+}
+
+.ui-widget.ui-widget-content {
+  border-color: #fff !important;
+}
+
+.slick-arrow {
+    background-color: #fcfdfe;
+}
+
+.ui-widget-header {
+    background-color: #f9fbfe !important;
+    background-image: none !important;
+    border-color: #eee;
+    height: 3em;
+    /* text-align: center; */
+    justify-content: center !important;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+div.mba-entity-groups-header {
+    padding: 0 .4em !important;
+    margin-bottom: .5em;
+    clear: both;
+}
+
+div.mba-entity-groups div.mba-entity-group {
+    border-color: #e9e9e9 !important;
+    padding: 0;
+    min-width: 16em;
+}
+
+div.mba-entity-groups div.mba-entity-group .ui-widget-header {
+    border: none !important;
+}
+
+.mba-entity-group-content-controls input, .mba-entity-groups-content-controls input {
+    border-radius: 8px 0 0 8px;
+    border: 1px solid #efefef;
+    padding-left: 10px;
+}
+
+
+.ui-mba-content-selection-container .slick-arrow {
+background-color: #fcfdfe;
+    border: solid 1px rgba(0,0,0,0);
+    color: rgba(0,0,0,0.25) !important;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    font-size: 22px;
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    font-weight: 900;
+}
+
+.ui-mba-content-selection-container:hover .slick-arrow {
+    opacity: 1;
+}
+
+.btn.bg-white {
+  transition: background-color .5s ease-in-out;
+}
+
+.btn.bg-white:hover {
+  background-color: #f9fafd !important;
+}
+
+.h-content-disp-date {
+  font-family: 'Gadugi';
+  font-size: 28px;
+}
+
+#weekentries-h-toolbar-one .btn {
+      font-family: 'Gadugi';
+      font-weight: 300;
+}
+
+#weekentries-h-toolbar-one .btn.addbutton {
+      font-weight: 500;
+}
+
+#hvest-table tr td {
+  font-family: 'Lucida Sans';
+}
+
+#hvest-table tr td * {
+  font-family: 'Lucida Sans';
+}
+
+#hvest-table tr td .fa, #hvest-table tr td .far, #hvest-table tr td .fas {
+    font-family: "Font Awesome 5 Free";
+}
+
+
+#hvest-table tr td:first-child {
+  font-family: 'Gadugi';
+  font-size: 19px;
+  line-height: 32px;
+  vertical-align: middle;
+}
+
+#hvest-table tr td:first-child * {
+  font-family: 'Gadugi';
+  font-size: 15px;
+  line-height: 32px;
+}
+
+.ui-spedmon-gradient-rounded-but-md i {
+  font-family: "Font Awesome 5 Free" !important;
+} 
+
+.item-description-subtitle {
+  color: #777;
+}
+
+.weekview-day-cell {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: stretch;
+    justify-content: space-evenly;
+    vertical-align: unset;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.weekview-day-cell i /* .fa, .fas */ {
+  font-size: 16px;
+}
+
+.weekview-day-cell .text-primary {
+  color: #033f58 !important
+}
+
+.tipso_style {
+  border: none;
+}
+
+.weekview-time-field {
+  max-width: 5em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.weekend-cell {
+  background-color: #fefefe;
+  /*
+  border-left: solid 1px #efefef;
+  border-right: solid 1px #efefef;
+  */
+}
+
+.weekend-cell input {
+  color: #898989;
+}
+
+
+.weekview-time-field {
+  font-weight: 500;
+}
+
+.top-tabswitch {
+
+    background-color: #f9fbfe !important;
+    background-image: none !important;
+    border-color: #fff;
+    height: 3em;
+    justify-content: flex-start !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0 15px;
+}
+
+#addmodal-top-tabswitch li {
+  border: none !important;
+  margin: 0 6px;
+  padding: 0 6px;
+  background-color: #f9fbfe !important;
+}
+
+#top-tabswitch li {
+  border: none !important;
+  margin: 0 6px;
+  padding: 0 6px;
+  background-color: #f9fbfe !important;
+}
+
+.top-tabswitch a {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    font-family: 'Gadugi';
+}
+
+.ui-dialog, .ui-dialog-content, #viewModalAddEntry {
+  padding: 0;
+}
+
+.ui-dialog-titlebar {
+  background-color:#f9fbfe !important;
+  border: none;
+}
+
+.ui-dialog-title {
+    font-family: 'Gadugi';
+    font-weight: 100;
+    font-size: 22px;
+}
+
+.ui-dialog.ui-widget.ui-widget-content {
+    border: solid 6px #e2e7e9 !important;
+    border-color: #e2e7e9 !important;
+    border-radius: 14px 14px 14px 14px;
+}
+
+#addentry-form, form.ui-dialog-content.ui-widget-content {
+  text-align:center;
+  height: 100%;
+}
+
+#addentry-form-tbl {
+  display: inline-block;
+  width: 85%;
+  height: 90%;
+  overflow-y: scroll;
+}
+
+#addentry-form-tbl tr td:nth-child(2) {
+  text-align: left;
+  padding-left: 15px;
+}
+
+#addentry-form > tbody > tr > td {
+    padding: 10px 15px;
+}
+
+#addscheduleitem-form > tbody > tr > td {
+    padding: 10px 15px;
+}
+
+#addscheduleitem-form > thead > tr > th {
+    padding: 10px 15px;
+}
+#addentry-form input {
+  width: 45%;
+}
+
+#addentry-form textarea {
+  width: 45%;
+}
+
+#addentry-form select {
+  width: 70%;
+}
+
+#addscheduleitem-form table {
+  width:99%;
+}
+
+#addscheduleitem-form select {
+  width: 90%;
+}
+
+.weekview-day-cell .text-primary {
+  font-size: 14px;
+}
+
+.weekview-day-cell input {
+  font-size: 16px;
+}
+
+.weekview-day-cell {
+  font-size: 14px;
+}
+
+thead.dayview th {
+  width: 12.5%;
+}
+
+button.ui-button span.ui-button-text {
+    font-size: 19px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-control-placeholder {
+    position: absolute;
+    top: 0;
+    padding: 7px 0 0 13px;
+    transition: all 200ms;
+    /* opacity: 0.5; */
+}
+
+.form-control:focus + .form-control-placeholder,
+.form-control:not(:placeholder-shown) + .form-control-placeholder {
+    font-size: 75%;
+    transform: translate3d(0, -100%, 0);
+    /* opacity: 1; */
+}
+

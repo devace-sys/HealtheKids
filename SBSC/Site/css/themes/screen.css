@@ -1,0 +1,293 @@
+a.page-app-logo {  
+  display:block;
+  background-color:#ffffff !important;
+  
+  width:20em !important;
+  height:50% !important;
+}
+
+img.page-app-logo {  
+  display:block;
+  width:100%;
+  height:100%;
+}
+
+div.app-notice {
+  display:block; 
+  text-align:center;
+  font-size:1em;
+  font-weight:normal;
+  color:black;
+  background-color:yellow;
+  border:1px solid black;
+  margin-top:.5em;
+}
+
+h1.app-notice {
+  color:black;
+  background-color:yellow;
+}
+
+h1,h2,h3,h4,h5,h6, 
+ul.ui-listview li a {
+  overflow: visible !important;
+  white-space: normal !important;
+}
+
+ul.details
+{
+  margin:0;
+  padding:0;
+  margin-top:1em;
+  text-align: center;
+  display:block;
+}
+
+ul.details li
+{
+  font-size:smaller;
+  display:block;
+}
+
+ul.details li a {
+  text-decoration:none;
+}
+
+ul.details li a span{
+  margin-left:.5em;
+}
+
+/* Status and Detail List Item Content Variants for Different Return States*/
+
+img.detail        {border:none;display:inline;}
+.status_none    {display:none;}
+
+li.detail           {background-color:#6FB42C; color:#ffffff;}   /* Default */
+li.detail_good {background-color:#33cc00; color:#000000;}   /* Success */
+li.detail_info {background-color:#0066ff; color:#ffffff;}   /* Info */
+li.detail_warn {background-color:#ffff33; color:#000000;}   /* Warn */
+li.detail_crit {background-color:#660000; color:#ffffff;}   /* Critical */
+li.detail_wait {background-color:#ffffff; color:#000000;}   /* Status wait */
+
+a.detail           {background-color:#6FB42C; color:#ffffff;}    /* Default */
+a.detail_good {background-color:#33cc00; color:#000000;}   /* Success */
+a.detail_info {background-color:#0066ff; color:#ffffff;}   /* Info */
+a.detail_warn {background-color:#ffff33; color:#000000;}   /* Warn */
+a.detail_crit {background-color:#660000; color:#ffffff;}   /* Critical */
+a.detail_wait {background-color:#ffffff; color:#000000;}   /* Status wait */
+
+span.detail           {background-color:#6FB42C; color:#ffffff;}    /* Default */
+span.detail_good {background-color:#33cc00; color:#000000;}   /* Success */
+span.detail_info {background-color:#0066ff; color:#ffffff;}   /* Info */
+span.detail_warn {background-color:#ffff33; color:#000000;}   /* Warn */
+span.detail_crit {background-color:#660000; color:#ffffff;}   /* Critical */
+span.detail_wait {background-color:#ffffff; color:#000000;}   /* Status wait */
+
+
+h1.page-app-sub-title{
+}
+
+
+
+div.page-app-user-data {
+  text-align:right;
+  padding-right:1em;  
+  font-size:smaller;  
+}
+
+div.ui-footer p {
+  font-size:smaller;
+  text-align:center;
+  margin:0 auto;
+}
+
+.ui-selectmenu.ui-popup .ui-input-search {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+input.ui-selectmenu-search-input {
+}
+
+div.ui-selectmenu-search-instructions { 
+  padding:0;
+  margin:0;
+}
+
+div.ui-selectmenu-search-instructions h4 { 
+  padding:0;
+  margin:.15em;
+  text-align:center;
+}
+
+div.ui-selectmenu-search-instructions h5 { 
+  padding:0;
+  margin:0;
+  text-align:left;
+}
+
+div.ui-selectmenu-search-instructions h6{ 
+  text-align:center;
+  padding:0;
+  margin:0;
+}
+
+
+div.ui-selectmenu-search-instruction-filter {
+  padding:.5em;
+  font-size:1em;
+  text-align:center;
+}
+
+div.ui-selectmenu-search-instruction-close-bot {
+  margin-top:2em;
+}
+
+.ui-selectmenu.ui-dialog .ui-content {
+    padding-top: 0;
+}
+.ui-selectmenu.ui-dialog .ui-selectmenu-list {
+    margin-top: 0;
+}
+.ui-selectmenu.ui-popup .ui-selectmenu-list li.ui-first-child .ui-btn {
+    border-top-width: 1px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+.ui-selectmenu.ui-dialog .ui-header {
+    border-bottom-width: 1px;
+}
+
+
+div.mba-servicenoteguidedanswer-header {
+  margin-bottom:1em;
+}
+
+div.mba-servicenoteguidedanswer-header-svcinfo {
+  font-size:larger;
+  font-weight:bold;
+  text-align:center;
+}
+
+div.mba-servicenoteguidedanswer-header-step {  
+  font-size:smaller;
+  text-align:center;
+}
+
+div.mba-servicenoteguidedanswer-header-instruction {
+  font-size:2em;
+  text-align:center;
+  font-weight:bold;
+  margin:.5em;
+  
+}
+ul.mba-servicenoteguidedanswer-header-service-rec
+{
+  font-size:smaller;
+  display:block;
+  text-align:center;
+  margin:0 auto;  
+}
+
+
+ul.mba-servicenoteguidedanswer-header-service-rec li strong { 
+  font-size:larger;
+}
+
+div.mba-servicenoteguidedanswer-footer {    
+  margin-top:1em;
+}
+
+div.mba-servicenoteguidedanswer-footer-instruction {
+  font-size:larger;
+  text-align:center;
+  font-weight:bold;
+}
+
+label.mba-servicenoteguidedanswerpartanswerselections-label {
+  font-size:1em;
+  text-align:center;
+  padding:.25em;  
+}
+
+div.mba-servicenoteguidedanswerpart {
+  border:1px solid;
+  margin:1em;
+  padding:.25em;
+}
+
+div.mba-servicenoteguidedanswerpart-header {
+  padding:0;
+  padding-left:.5em;
+  margin-top:.5em;
+  margin-bottom:.5em;
+}
+
+div.mba-servicenoteguidedanswerpart-header-step {
+  display:inline-block;
+  font-size:smaller;
+  text-align:left;  
+}
+
+div.mba-servicenoteguidedanswerpart-header-label {
+  display:inline-block;
+  font-size:1.5em;
+  text-align:left;
+  font-weight:bold;
+  margin-left:.5em;
+}
+
+div.mba-servicenoteguidedanswerpart-header-controls {
+  font-size:1em;
+  font-weight:bold;
+  display:block;
+  text-align:center;  
+}
+
+div.mba-servicenoteguidedanswer-response {
+  font-size:1.5em;
+  padding:1em;
+  margin-top:1em;
+  margin-bottom:1em;
+  text-align:center;
+  border:1px solid #000;
+  color:white;
+  background-color:red;  
+  
+}
+
+ul.servicenoteguidedanswersdata {
+
+}
+
+.mba-ui-form-option-button {
+  margin-right:1em;
+}
+
+/* Common styles continued */
+
+h2.mba-page-sub-title, h3.mba-page-sub-title {
+  text-align:center;
+  margin:0 !important;
+  padding:0 !important;
+}
+
+
+.mba-ui-form-options-control {
+  margin-right:1em !important;
+}
+strong.strong-big-bold {
+  font-weight:bold;
+  font-size:larger;
+}
+
+div.mba-ui-form-validation-message {
+  display:block; 
+  text-align:center;
+  font-size:1em;
+  font-weight:normal;
+  color:white;
+  background-color:red;
+  border:1px solid black;  
+}
+

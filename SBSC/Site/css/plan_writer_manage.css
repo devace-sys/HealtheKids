@@ -1,0 +1,29 @@
+
+div.pw-columns {
+  width:100%;
+  display:block;
+  position:relative;
+  padding:0;
+  margin:0 auto;
+  clear:both;
+}
+
+div.pw-column {
+  display:inline-block;
+  width:45%;
+}
+
+div.pw-column-left {
+  display:inline-block;
+  width:45%;
+  float:left;
+}
+
+div.pw-column-right {
+  display:inline-block;
+  width:45%;
+  float:right;
+}  
+
+/* Bolds dialog labels... overrides default */
+label.mba-entity-dia-form-grid-col-label {font-weight:bold;}

@@ -1,0 +1,13 @@
+﻿
+
+#butManageConsentText span.ui-button-text {
+   font-size:1em;
+}
+
+#butManageFiles span.ui-button-text {
+   font-size: 1em;
+}
+
+#restViewPatientParentMcalConsents {
+    margin-top:1em;
+}

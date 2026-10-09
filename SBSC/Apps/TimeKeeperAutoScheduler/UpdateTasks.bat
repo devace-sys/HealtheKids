@@ -1,0 +1,13 @@
+
+TimeKeeperAutoScheduler.exe -d:"3-5-2021"
+TimeKeeperAutoScheduler.exe -d:"3-6-2021"
+TimeKeeperAutoScheduler.exe -d:"3-7-2021"
+TimeKeeperAutoScheduler.exe -d:"3-8-2021"
+TimeKeeperAutoScheduler.exe -d:"3-9-2021"
+TimeKeeperAutoScheduler.exe -d:"3-10-2021"
+TimeKeeperAutoScheduler.exe -d:"3-11-2021"
+TimeKeeperAutoScheduler.exe -d:"3-12-2021"
+TimeKeeperAutoScheduler.exe -d:"3-13-2021"
+TimeKeeperAutoScheduler.exe -d:"3-14-2021"
+TimeKeeperAutoScheduler.exe -d:"3-15-2021"
+TimeKeeperAutoScheduler.exe -d:"3-16-2021"

@@ -1,0 +1,10 @@
+C:\dev\sd\SBSCParentTemplate\SBSCParentTemplate\bin\Debug\SBSCParentTemplate.exe
+C:\dev\sd\SBSCParentTemplate\SBSCParentTemplate\bin\Debug\SBSCParentTemplate.pdb
+C:\dev\sd\SBSCParentTemplate\SBSCParentTemplate\obj\Debug\ResolveAssemblyReference.cache
+C:\dev\sd\SBSCParentTemplate\SBSCParentTemplate\obj\Debug\SBSCParentTemplate.Properties.Resources.resources
+C:\dev\sd\SBSCParentTemplate\SBSCParentTemplate\obj\Debug\SBSCParentTemplate.csproj.GenerateResource.Cache
+C:\dev\sd\SBSCParentTemplate\SBSCParentTemplate\obj\Debug\SBSCParentTemplate.exe
+C:\dev\sd\SBSCParentTemplate\SBSCParentTemplate\obj\Debug\SBSCParentTemplate.pdb
+C:\dev\sd\SBSCParentTemplate\SBSCParentTemplate\obj\Debug\SBSCParentTemplate.Form1.resources
+C:\SBSC\Spedmon\Apps\SBSCParentTemplate\SBSCParentTemplate\obj\Debug\SBSCParentTemplate.exe
+C:\SBSC\Spedmon\Apps\SBSCParentTemplate\SBSCParentTemplate\obj\Debug\SBSCParentTemplate.pdb

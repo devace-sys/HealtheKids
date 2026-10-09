@@ -1,0 +1,322 @@
+/*###########################################################################
+  # Screen
+  ###########################################################################*/	
+
+@media screen
+{
+  
+  /*###########################################################################
+    # Links
+    ###########################################################################*/	
+
+  a.mf-link {
+    display:inline-block;
+    font-size:inherit;
+    text-decoration:underline;
+    color:Inherit;
+    background-color:Transparent;
+    border:1px solid Transparent;
+  }
+
+  a.mf-link:hover {
+    color:#000;
+    background-color:#f7f2ba;
+    border:1px solid #000;
+  }
+
+  /*###########################################################################
+    # Label
+    ###########################################################################*/	
+
+  span.mf-label {
+    display:inline-block;
+    vertical-align:middle; 
+  }
+
+  /*###########################################################################
+    # Tags
+    ###########################################################################*/	
+
+  span.mf-tag {
+    display:inline-block;
+    font-size:smaller; 
+    padding:.25em;
+    margin-left:.25em;
+    border:1px solid #000;
+  }
+
+  span.mf-tag-name  {font-weight:bolder;}
+  span.mf-tag-value {font-weight:lighter;}
+
+  span.mf-tag.file_class          {background-color:Teal; color:White; }
+  span.mf-tag.file_type           {background-color:Teal; color:White;}
+  span.mf-tag.content_dimension   {background-color:Orange; color:Black;}
+  span.mf-tag.recording_device    {background-color:Green; color:White;}
+  span.mf-tag.recording_date_time {background-color:DarkBlue; color:White;}
+  span.mf-tag.recording_location  {background-color:Blue; color:White;}
+  
+
+  /*###########################################################################
+    # Selection Folder
+    ###########################################################################*/	
+
+  div.mf-folder-container {
+    margin-left:1em;
+    margin-top:1em;
+    width:95%;
+    outline:1px solid #ccc;
+ }
+
+  h3.mf-folder-header {
+    /*width:99%;*/
+    font-weight:bold;
+    font-size:smaller;
+    border-bottom:2px solid #000;
+    text-align:left;
+  }
+ 
+  div.mf-folder-content {
+    padding-top:1em;
+  }
+  
+  h3.mf-folder-header.depth-0 { text-align:center; font-size:xx-large; padding:.25em; background-color:#004400; color:#ffffff; border:1px solid #000000;}
+  h3.mf-folder-header.depth-1 { font-size:x-large;  padding:.25em; background-color:#007700; color:#ffffff; border:1px solid #000000;}
+  h3.mf-folder-header.depth-2 { font-size:large;    padding:.25em; background-color:#009900; color:#ffffff; border:1px solid #000000;}
+  h3.mf-folder-header.depth-3 { font-size:medium;   padding:.25em; background-color:#00BB00; color:#000000; border:1px solid #000000;}
+  h3.mf-folder-header.depth-4 { font-size:small;    padding:.25em; background-color:#00DD00; color:#000000; border:1px solid #000000;}
+  h3.mf-folder-header.depth-5 { font-size:x-small;  padding:.25em; background-color:#00DD00; color:#000000; border:1px solid #000000;}
+  h3.mf-folder-header.depth-6 { font-size:xx-small;  padding:.25em; background-color:#00DD00; color:#000000; border:1px solid #000000;}
+  
+  div.mf-folder-content {
+    width:100%;
+    font-size:medium;
+  }
+
+  /*###########################################################################
+    # Selections
+    ###########################################################################*/	
+
+  ul.mf-selections {
+    display:block;
+    list-style:none;
+  }
+
+
+  /*###########################################################################
+    # Selection
+    ###########################################################################*/	
+
+  ul.mf-selections li {    
+    width:30%;
+    display:inline-block;
+    height:3em;    
+    margin-left:2%;  
+    vertical-align:middle;
+    text-align:center;
+  }  
+  
+  /*###########################################################################
+    # Display handler
+    ###########################################################################*/	
+  
+  div.mf-display-container {
+    width:100%;
+    height:95%;
+  }
+
+  div.mf-display-header {
+    display:block;
+    text-align:center;
+    background-color:#004400; 
+    color:#ffffff; 
+    border:1px solid #000000;    
+    padding:.25em;
+  }
+  
+  div.mf-display-header h3 {
+    display:block;
+    text-align:center;
+    vertical-align:middle;
+    font-size:normal;
+    margin:0;
+    padding:0;
+  }
+  
+  div.mf-display-content {
+    display:block;
+    margin:0 auto;
+    padding-top:1em;
+    padding-bottom:1em;
+    max-height:70%;
+  }
+
+  div.mf-display-content-file {
+    display:block;
+    margin:0 auto;
+  }
+
+  div.mf-display-content-meta {
+    display:none;
+    height:0;
+    /*padding-top:1em;
+    display:block;
+    margin:0 auto;
+    text-align:center;  */
+  }
+
+  div.mf-display-content-meta ul.mf-tags {    
+    display:none;
+    height:0;
+  /*display:block
+    margin:.25em;
+    padding:0;
+    list-style:none;*/ 
+  }
+
+  div.mf-display-content-meta ul.mf-tags li {
+    display:none;
+    height:0;
+    /*display:inline-block;*/
+  }
+
+  div.mf-display-footer {
+    display:none;
+    height:0;
+   /* display:block;
+    border:1px solid #000;
+    background-color:#019BE3;
+    text-align:center;    */
+  }
+
+  ul.mf-display-footer {
+    display:none;
+    height:0;    
+    /*display:block;
+    padding:0;
+    list-style:none;*/    
+  }
+
+  ul.mf-display-footer li {    
+  display:none;
+    height:0;
+    /*display:inline-block;
+    margin-left:.50em;
+    padding:0;*/
+  }
+
+  ul.mf-display-footer li a {    
+    display:none;
+    height:0;
+    /*text-decoration:none;
+    background-color:#ccc;
+    border:1px solid #000;
+    padding:.50em;
+    font-weight:bold;
+    -moz-border-radius: 10px; 
+    -webkit-border-radius: 10px; 
+    -khtml-border-radius: 10px;
+    border-radius: 10px;*/
+  }
+
+  /*###########################################################################
+    # Media
+    ###########################################################################*/	
+
+  /*============================================================
+   * Images 
+   *============================================================*/
+
+  div.mf-image-container {
+    max-width:100% !important;
+    height:auto !important; 
+    display:block;
+  }
+
+  img.mf-image {
+    max-width:100% !important;
+    height:auto !important;
+    display:block;
+  } 
+
+  /*============================================================
+   * Objects
+   *============================================================*/
+
+  div.mf-object-container {
+    max-width:100% !important; 
+    width:100% !important;
+    display:block;
+    margin:0 auto;
+  }
+
+  object.mf-object {
+    display:block;
+    width:100% !important;
+  }
+ 
+
+ /*============================================================
+   * Video and Audio
+   *============================================================*/
+
+  div.jp-title {
+    display:none;
+  }
+
+  /*============================================================
+   * Video
+   *============================================================*/
+
+  div.jp-video {
+    margin:0 auto;
+  }
+
+  /*============================================================
+   * Audio
+   *============================================================*/
+
+  div.jp-audio {
+    margin:0 auto;
+  }  
+ 
+
+  
+  /*###########################################################################
+    # Messages
+    ###########################################################################*/	
+
+  span.mf-error {  
+    display:inline-block;
+    background-color:#f00;
+    color:#fff;
+    font-weight:bold;
+    padding:.25em;
+    margin:.25em;
+    border:1px solid #ccc;
+  }
+
+  div.mf-upgrade-required {
+    width:95%;
+    height:95%;
+    text-align:center;
+    margin:0 auto;
+    overflow:auto;
+    display:block;
+    padding:.50em;    
+    border:1px solid black;
+    background-color:yellow;
+  }
+
+
+}
+
+/*###########################################################################
+  # Print
+  ###########################################################################*/	
+
+@media print
+{
+}
+
+
+
